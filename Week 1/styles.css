@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0d1117;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  height: 58px;
+  justify-content: space-around;
+
+  margin-left: 180px;
+  margin-right: 170px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.docs,
+.updates,
+.blog,
+.api,
+.extentions,
+.faq,
+.github {
+  font-size: 16px;
+  color: #9ba3b4;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+.logo img {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+.vs {
+  color: #e9eaeb;
+  font-size: 20px;
+  font-weight: 500;
+  word-spacing: 3px;
+  margin-right: 20px;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.download button {
+  height: 32px;
+  width: 108px;
+  padding: 8px 16px;
+  color: #e9eaeb;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #0078d4;
+  border: none;
+  border-radius: 4px;
+}
+
+.theme {
+  color: rgba(255, 255, 255, 0.416);
+  font-size: 22px;
+  margin-right: 10px;
+  font-weight: light;
+  margin-top: 2px;
+}
+
+.input input {
+  background-color: #0d1117;
+  border: 0.2px solid #e9eaeb64;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+  height: 32px;
+  width: 200px;
+  padding: 0 10px;
+}
+
+.main1 {
+  color: #e9eaeb;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.main2 {
+  color: #9ba3b4;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.download2 {
+  height: 47px;
+  width: 215px;
+  padding: 10px 18px;
+  color: #e9eaeb;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #0078d4;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.copilot {
+  height: 47px;
+  width: 215px;
+  padding: 10px 18px;
+  color: #e9eaeb;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  border: 0.1px solid rgba(255, 255, 255, 0.118);
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.img img {
+  height: 760px;
+  width: 1240px;
+}
