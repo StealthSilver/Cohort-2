@@ -13,6 +13,8 @@ Properties of JS
 1. Interpreted 
 It runs line by line and it is compiled at run time
 
+JS is JIT -> Just in time Interpreted
+
 rust compiles very slow, it is really memory safe, compilation is better as the binary file can run really fast so it is much better in production.
 in JS much more checks are there on run time, TYPESCRIPT resolve this
 
