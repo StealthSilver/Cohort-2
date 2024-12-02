@@ -16,5 +16,6 @@ let user = {
 }
 
 console.log(greet(user));
+
 console.log(user["age"]);
 console.log(user.age);
