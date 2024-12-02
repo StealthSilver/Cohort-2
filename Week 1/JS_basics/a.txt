@@ -1,0 +1,33 @@
+JS - JavaScript
+
+JS is primarily a web dev library but we can do other stuff like  mediasoup library -> web RTC
+
+React and NextJS are frameworks, they compile down to HTML, CSS and JS. Browser only understands this it just understands JS
+the code written in C++ or other languages in the coding platforms runs in the local servers and then it is converted back to JS and rendered by the Browser
+
+C++ and Rust and other languages can be compiled on the browser through Web Assembly
+
+
+Properties of JS
+
+1. Interpreted 
+It runs line by line and it is compiled at run time
+
+rust compiles very slow, it is really memory safe, compilation is better as the binary file can run really fast so it is much better in production.
+in JS much more checks are there on run time, TYPESCRIPT resolve this
+
+2. Dynamically Typed
+we can change the data types of the variables in JS 
+
+3. Single Threaded
+JS processes one task at a time , it can use one CPU of the machine 
+
+Rust, Go these are multi threaded 
+
+4. Garbage Collection 
+
+there are three ways in which a language manages the memory 
+a. garbage  collector - e.g. java , JS
+b. manual
+c. rust way
+
