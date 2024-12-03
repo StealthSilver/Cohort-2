@@ -1,0 +1,2 @@
+Synchoronous code : this is executed line by line in order
+
