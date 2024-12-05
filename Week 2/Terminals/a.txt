@@ -1,5 +1,7 @@
 Bash Commands
 
+use command + K to clear the terminal 
+
 pwd -> print working directory
 
 cd -> change directory
