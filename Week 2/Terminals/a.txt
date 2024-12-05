@@ -1,0 +1,15 @@
+Bash Commands
+
+pwd -> print working directory
+
+cd -> change directory
+
+ls -> list items in the directory
+
+cd ../.. -> to go two folders behind
+
+mkdir -> make new folder 
+
+touch -> create new files
+
+cat -> print the contents of the file
