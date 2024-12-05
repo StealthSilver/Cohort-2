@@ -13,3 +13,4 @@ function setTimeoutSync(timeout) {
 
 setTimeoutSync(1000);
 console.log("hi there")
+
