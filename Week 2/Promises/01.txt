@@ -10,3 +10,10 @@ primitive types
 complex types
 1. object
 2. array
+
+JS does not have a concept of destructor -> it does the memeory management by itself
+
+
+02.js
+JS has ita own classes 
+e.g. Date class -> for the time related stuff , Map class
