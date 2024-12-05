@@ -13,3 +13,19 @@ mkdir -> make new folder
 touch -> create new files
 
 cat -> print the contents of the file
+
+vi -> vim command -> opens the command
+
+to start writing -> i (insert mode)
+to save the content and exit -> esc :wq!
+to exit the file -> esc :q!
+
+
+mv -> move files from the terminal
+
+cp -> copy files
+cp -r -> to copy folders (recursive flag) 
+
+nvm -> this is the node version manager, used to install node 
+node -> this takes you to a js runctime env.
+npm -> node packege manager, let's you install node packages
