@@ -18,7 +18,7 @@ JS does not have a concept of destructor -> it does the memeory management by it
 JS has ita own classes 
 e.g. Date class -> for the time related stuff , Map class
 
-03.js , 04.js
+03.js , 04.js , 05.js
 
 Promise class 
 promise class gives a promise, that it will return something in future
