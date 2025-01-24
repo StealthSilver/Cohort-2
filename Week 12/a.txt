@@ -4,5 +4,7 @@ TYPOGRAPHY
 
 it is the family of the font 
 
-Font-faces : Serif , Sans-serif , Monospace
-Font-Weight : boldness
+Font-Faces : Serif , Sans-serif , Monospace
+Font-Weight : Boldness
+Font-Sizes : The size of the font 
+Properties : Line Height(Leading) , Letter Spacing(Tracking)
