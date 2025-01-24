@@ -7,4 +7,7 @@ it is the family of the font
 Font-Faces : Serif , Sans-serif , Monospace
 Font-Weight : Boldness
 Font-Sizes : The size of the font 
-Properties : Line Height(Leading) , Letter Spacing(Tracking)
+Properties : Line Height(Leading) , Letter Spacing(Tracking) , 
+
+testing typography : typescale.com
+font libraries: fontshare.com , googlefonts.com , fontjoy.com(font-pairs) , freefaces.com , uncut.wtf 
