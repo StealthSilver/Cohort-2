@@ -11,3 +11,7 @@ Properties : Line Height(Leading) , Letter Spacing(Tracking) ,
 
 testing typography : typescale.com
 font libraries: fontshare.com , googlefonts.com , fontjoy.com(font-pairs) , freefaces.com , uncut.wtf 
+
+COLORS 
+
+colors enhance the mood, draw attention and impact the overall user experience
