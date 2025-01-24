@@ -4,4 +4,5 @@ TYPOGRAPHY
 
 it is the family of the font 
 
-Fontfaces : Serif , Sans-serif , Monoispace
+Font-faces : Serif , Sans-serif , Monospace
+Font-Weight : boldness
