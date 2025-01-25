@@ -37,3 +37,5 @@ User Experience
 
 1. Hick's Law : don't provide too much options in front of the user on a single page
 2. Fitt's Law : The time to reach the target depends upon its size and distance
+3. Jakob's Law : the user prefers interface that are familiar
+4. Miller's Law : People can hold at most 7 choices in their memory
