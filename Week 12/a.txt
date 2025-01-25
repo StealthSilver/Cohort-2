@@ -22,3 +22,6 @@ Websites
 realtimecolors.com -> pallete choosing website 
 uicolors.app -> tailwind color generator
 humint.com -> color generator
+
+UI -> user interface (the things the user sees)
+UX -> User experience (the things user experiences)
