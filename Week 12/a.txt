@@ -29,3 +29,5 @@ UX -> User experience (the things user experiences)
 User Interface 
 
 1. Hierarchy : the order of he content
+2. Consistency : keep the functionalities same if the visuals are same 
+3. Whitespace : it makes the important stuff stand out
