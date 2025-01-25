@@ -36,3 +36,4 @@ User Interface
 User Experience
 
 1. Hick's Law : don't provide too much options in front of the user on a single page
+2. Fitt's Law : The time to reach the target depends upon its size and distance
