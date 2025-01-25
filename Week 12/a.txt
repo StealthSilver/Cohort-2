@@ -15,6 +15,10 @@ font libraries: fontshare.com , googlefonts.com , fontjoy.com(font-pairs) , free
 COLORS 
 
 colors enhance the mood, draw attention and impact the overall user experience 
-pallete choosing website (realtimecolors.com)
 
 Contrast : (60%) Primary (Black or White) , Secondary (30%) , Brand Color (10%)
+
+Websites
+realtimecolors.com -> pallete choosing website 
+uicolors.app -> tailwind color generator
+humint.com -> color generator
