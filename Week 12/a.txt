@@ -39,3 +39,5 @@ User Experience
 2. Fitt's Law : The time to reach the target depends upon its size and distance
 3. Jakob's Law : the user prefers interface that are familiar
 4. Miller's Law : People can hold at most 7 choices in their memory
+5. Law of Proximity : the objects close to each other are percieved as related 
+6. Astethic - Usability effect : user percieves visually appealing design better
