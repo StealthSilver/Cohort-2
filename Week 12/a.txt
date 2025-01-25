@@ -34,7 +34,7 @@ Colors enhance the mood, draw attention, and impact the overall user experience.
   Color Resources  :
 -   Palette Selection  : [realtimecolors.com](https://realtimecolors.com)
 -   Tailwind Color Generator  : [uicolors.app](https://uicolors.app)
--   Color Generator  : [humint.com](https://humint.com)
+-   Color Generator  : [humint.com](https://huemint.com)
 
 ---
 
@@ -62,3 +62,5 @@ Colors enhance the mood, draw attention, and impact the overall user experience.
   For Images  
 
 -   AI-Generated, Copyright-Free Images  : [lummi.ai](https://lummi.ai)
+
+FOr inspirations 
