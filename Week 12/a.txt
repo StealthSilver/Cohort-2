@@ -1,47 +1,64 @@
 UI / UX PRIMITIVES
 
-TYPOGRAPHY
+  TYPOGRAPHY  
 
-it is the family of the font 
+Typography is the style and appearance of text used in design.
 
-Font-Faces : Serif , Sans-serif , Monospace
-Font-Weight : Boldness
-Font-Sizes : The size of the font 
-Properties : Line Height(Leading) , Letter Spacing(Tracking) , 
+- Font-Faces  : Serif, Sans-serif, Monospace
+- Font-Weight  : Defines the boldness of the text.
+- Font-Sizes  : Determines the size of the font.
+- Properties  :
+  - Line Height (Leading): The vertical spacing between lines of text.
+  - Letter Spacing (Tracking): The spacing between characters in text.
 
-testing typography : typescale.com
-font libraries: fontshare.com , googlefonts.com , fontjoy.com(font-pairs) , freefaces.com , uncut.wtf 
+Tools for Testing and Resources  :
+- Type Scale  : [typescale.com](https://typescale.com) (for testing typography)
+- Font Libraries  :
+  - [fontshare.com](https://fontshare.com)
+  - [googlefonts.com](https://googlefonts.com)
+  - [fontjoy.com](https://fontjoy.com) (for font pairing)
+  - [freefaces.com](https://freefaces.com)
+  - [uncut.wtf](https://uncut.wtf)
 
-COLORS 
+---
 
-colors enhance the mood, draw attention and impact the overall user experience 
+COLORS
 
-Contrast : (60%) Primary (Black or White) , Secondary (30%) , Brand Color (10%)
+Colors enhance the mood, draw attention, and impact the overall user experience.
 
-Websites
-realtimecolors.com -> pallete choosing website 
-uicolors.app -> tailwind color generator
-humint.com -> color generator
+- Contrast:
+  - Primary: 60% (e.g., Black or White)
+  - Secondary: 30%
+  - Brand Color: 10%
 
-UI -> user interface (the things the user sees)
-UX -> User experience (the things user experiences)
+  Color Resources  :
+-   Palette Selection  : [realtimecolors.com](https://realtimecolors.com)
+-   Tailwind Color Generator  : [uicolors.app](https://uicolors.app)
+-   Color Generator  : [humint.com](https://humint.com)
 
-User Interface 
+---
 
-1. Hierarchy : the order of he content
-2. Consistency : keep the functionalities same if the visuals are same 
-3. Whitespace : it makes the important stuff stand out
-4. Continuity : there must be a flow in the content placement
+  UI vs. UX  
 
-User Experience
+-   UI (User Interface)  : The visual elements the user interacts with.
+-   UX (User Experience)  : How the user feels while interacting with the interface.
 
-1. Hick's Law : don't provide too much options in front of the user on a single page
-2. Fitt's Law : The time to reach the target depends upon its size and distance
-3. Jakob's Law : the user prefers interface that are familiar
-4. Miller's Law : People can hold at most 7 choices in their memory
-5. Law of Proximity : the objects close to each other are percieved as related 
-6. Astethic - Usability effect : user percieves visually appealing design better
+  Key Principles of User Interface  :
+1.   Hierarchy  : Establish a clear order for the content.
+2.   Consistency  : Ensure similar visuals have similar functionality.
+3.   Whitespace  : Use empty space to make important elements stand out.
+4.   Continuity  : Maintain a logical flow in content placement.
 
-For Images 
+  Key Principles of User Experience  :
+1.   Hick's Law  : Avoid overwhelming users with too many options on a single page.
+2.   Fitt's Law  : The time to reach a target is influenced by its size and distance.
+3.   Jakob's Law  : Users prefer interfaces that feel familiar.
+4.   Miller's Law  : People can hold at most 7 items in their short-term memory.
+5.   Law of Proximity  : Objects close to each other are perceived as related.
+6.   Aesthetic-Usability Effect  : Users perceive visually appealing designs as more usable.
 
-lummi.ai -> ai images copyright free
+---
+
+  For Images  
+
+-   AI-Generated, Copyright-Free Images  : [lummi.ai](https://lummi.ai)
