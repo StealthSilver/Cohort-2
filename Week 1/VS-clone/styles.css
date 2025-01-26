@@ -69,6 +69,10 @@ body {
   cursor: pointer;
 }
 
+.download:hover {
+  background-color: #0262ac;
+}
+
 .theme {
   color: rgba(255, 255, 255, 0.416);
   font-size: 22px;
@@ -127,6 +131,10 @@ body {
   cursor: pointer;
 }
 
+.download2:hover {
+  background-color: #0262ac;
+}
+
 .copilot {
   height: 47px;
   width: 215px;
@@ -139,6 +147,10 @@ body {
   border-radius: 4px;
   border: 0.1px solid rgba(255, 255, 255, 0.118);
   cursor: pointer;
+}
+
+.copilot:hover {
+  background-color: rgba(211, 209, 209, 0.1);
 }
 
 .img {
