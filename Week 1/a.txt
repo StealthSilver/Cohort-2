@@ -1,6 +1,5 @@
 WEB DEV + DEVOPS COHORT
 
-
 Syllabus
 
 Web Dev - https://blog.100xdevs.com/Web-dev-6e1c515142e14347ae174c55e6c953c6
