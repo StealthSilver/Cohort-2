@@ -13,7 +13,6 @@ body {
   display: flex;
   height: 58px;
   justify-content: space-around;
-
   margin-left: 180px;
   margin-right: 170px;
   align-items: center;
@@ -36,6 +35,7 @@ body {
   display: flex;
   margin-left: 20px;
   margin-top: 4px;
+  cursor: pointer;
 }
 
 .logo img {
