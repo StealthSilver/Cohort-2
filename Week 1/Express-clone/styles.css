@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.navbar {
+  display: flex;
+}
+
 .logo-img img {
   width: 175px;
   height: 35px;
