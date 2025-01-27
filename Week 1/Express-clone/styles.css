@@ -154,14 +154,18 @@ body {
 }
 
 .content-2 {
-}
-
-.content2-text {
-  flex: 1;
-  padding: 1rem;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: white;
+  margin-left: 100px;
+  border-radius: 10px;
 }
 
 .content2-img img {
+  margin-left: 50px;
   width: 370px;
   height: 176px;
 }
