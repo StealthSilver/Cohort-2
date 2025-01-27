@@ -297,6 +297,12 @@ body {
   color: #001d2f;
 }
 
+.content-btn button:hover {
+  border: none;
+  background-color: #d4e300;
+  color: #001d2f;
+}
+
 /* Footer */
 .footer {
   background-color: #001d2f;
