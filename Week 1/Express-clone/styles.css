@@ -129,13 +129,16 @@ body {
   color: #666;
 }
 
+.main-text {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 2rem;
+}
+
 /* Content Sections */
 
 .content-1 {
   background-color: #fefefe;
-}
-
-.content-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +146,14 @@ body {
   background-color: white;
   margin-left: 400px;
   border-radius: 10px;
+}
+
+.content1-img img {
+  width: 370px;
+  height: 365px;
+}
+
+.content-2 {
 }
 
 .content2-text {
@@ -173,11 +184,6 @@ body {
   flex: 1;
   padding: 1rem;
   margin-left: 50px;
-}
-
-.content1-img img {
-  width: 370px;
-  height: 365px;
 }
 
 .content-text div {
