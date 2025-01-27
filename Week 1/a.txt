@@ -20,7 +20,6 @@ HTML -> Hyper Text Markup Language
 CSS -> Cascading Style Sheets
 
 CLONED: 
-
 1. VS CODE LANDING PAGE 
 2. ZERODHA LANDING PAGE 
 3. MOOLA LANDING PAGE 
