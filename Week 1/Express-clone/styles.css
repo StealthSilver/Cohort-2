@@ -76,17 +76,17 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: #fefaf0; /* Light yellow background */
+  background-color: #f9f8f2; /* Light yellow background */
   text-align: center;
   padding: 4rem 2rem;
-  margin-top: 80px;
+  margin-top: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .img-hero img {
-  max-width: 50%;
-  height: auto;
+  width: 800px;
+  height: 635px;
 }
 
 .cta {
@@ -98,11 +98,16 @@ body {
   font-size: 98px;
   font-weight: bold;
   margin-top: 1rem;
+  text-align: left;
+  line-height: 120px;
+  color: #001d2f;
 }
 
 .hero .text-2 {
   font-size: 1.5rem;
-  margin: 1rem 0;
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 500;
 }
 
 .hero button {
@@ -117,16 +122,18 @@ body {
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.hero button:hover {
-  background-color: #e68a00;
+  margin-right: 340px;
+  margin-top: 40px;
 }
 
 .hero .text-3 {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #666;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-right: 320px;
+}
+.hero button:hover {
+  background-color: #d4e300;
+  color: #001d2f;
 }
 
 .main-text {
@@ -196,7 +203,18 @@ body {
   margin-bottom: 1rem;
 }
 
+.content2-text div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .content-text p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.content2-text p {
   font-size: 1rem;
   color: #666;
   margin-bottom: 1rem;
