@@ -219,6 +219,7 @@ body {
 }
 
 .containers {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -226,15 +227,19 @@ body {
 }
 
 .container-box {
-  width: 300px;
-  height: 150px;
-  background-color: white;
+  width: 360px;
+  height: 310px;
+  background-color: #f9f8f2;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  margin-bottom: 4rem;
 }
 
+.small {
+  font-size: 12px;
+}
 .random {
   margin-top: 4rem;
   margin-bottom: 1rem;
