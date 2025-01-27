@@ -95,12 +95,13 @@ body {
 }
 
 .hero .text-1 {
-  font-size: 98px;
+  font-size: 80px;
   font-weight: bold;
   margin-top: 1rem;
   text-align: left;
   line-height: 120px;
   color: #001d2f;
+  font-family: "Noto Serif", serif;
 }
 
 .hero .text-2 {
@@ -140,6 +141,8 @@ body {
   text-align: center;
   font-size: 48px;
   margin-top: 2rem;
+  font-family: "Noto Serif", serif;
+  color: #001d2f;
 }
 
 /* Content Sections */
@@ -195,28 +198,31 @@ body {
   flex: 1;
   padding: 1rem;
   margin-left: 50px;
+  color: #001d2f;
 }
 
 .content-text div {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: "Noto Serif", serif;
 }
 
 .content2-text div {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: "Noto Serif", serif;
 }
 
 .content-text p {
   font-size: 1rem;
-  color: #666;
+  color: #001d2f;
   margin-bottom: 1rem;
 }
 .content2-text p {
   font-size: 1rem;
-  color: #666;
+  color: #001d2f;
   margin-bottom: 1rem;
 }
 
@@ -251,6 +257,7 @@ body {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 2rem;
+  font-family: "Noto Serif", serif;
 }
 
 .testimonials ul {
@@ -296,6 +303,7 @@ body {
   justify-content: center;
   font-weight: 600;
   font-size: 32px;
+  font-family: "Noto Serif", serif;
 }
 
 .customers {
@@ -351,6 +359,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: "Noto Serif", serif;
 }
 
 .services p {
@@ -421,4 +430,16 @@ body {
 
 .footer .media i:hover {
   color: #d4e300;
+}
+
+.link a {
+  color: #0f866c;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.test .reviews-list {
+  color: #001d2f;
+  font-size: 18px;
+  font-weight: 300;
 }
