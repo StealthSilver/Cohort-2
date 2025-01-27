@@ -235,9 +235,18 @@ body {
   padding: 1rem;
 }
 
+.random {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 32px;
+}
+
 .customers {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .customers div {
