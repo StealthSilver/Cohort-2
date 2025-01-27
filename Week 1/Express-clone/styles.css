@@ -134,13 +134,11 @@ body {
 .content-2,
 .content-3 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 3rem 2rem;
   background-color: white;
-  margin: 2rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 400px;
   border-radius: 10px;
 }
 
@@ -151,12 +149,22 @@ body {
 .content-text {
   flex: 1;
   padding: 1rem;
+  margin-left: 50px;
 }
 
-.content-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.content3-img img {
+  width: 370px;
+  height: 387.99px;
+}
+
+.content1-img img {
+  width: 370px;
+  height: 365px;
+}
+
+.content2-img img {
+  width: 370px;
+  height: 176px;
 }
 
 .content-text div {
@@ -198,6 +206,7 @@ body {
 }
 
 .testimonials-text1 {
+  margin-top: 2rem;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 2rem;
