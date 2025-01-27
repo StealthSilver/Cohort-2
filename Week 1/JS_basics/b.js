@@ -2,6 +2,5 @@
 
 let number = 34; // number
 let name = "pogo"; // string
-let isAdult = true; // true
+let isAdult = true; // boolean
 let color = ["red", "green", "yellow"]; //array
-
