@@ -443,3 +443,17 @@ body {
   font-size: 18px;
   font-weight: 300;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .cta {
+    margin-left: 0;
+    text-align: center;
+  }
+  .img-hero img {
+    width: 100%;
+    height: auto;
+  }
+}
