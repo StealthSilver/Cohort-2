@@ -253,9 +253,15 @@ body {
   text-align: center;
 }
 
-.services img {
-  max-width: 100%;
-  height: auto;
+.left img {
+  width: 152px;
+  height: 130px;
+  margin-bottom: 1rem;
+}
+
+.right img {
+  width: 107px;
+  height: 130px;
   margin-bottom: 1rem;
 }
 
@@ -272,17 +278,23 @@ body {
 }
 
 .services .btn-ser {
-  background-color: #007bff;
-  color: white;
+  background-color: white;
+  color: #0f866c;
   padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid #0f866c;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 234px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .services .btn-ser:hover {
-  background-color: #0056b3;
+  border: none;
+  background-color: #d4e300;
+  color: #001d2f;
 }
 
 /* Footer */
