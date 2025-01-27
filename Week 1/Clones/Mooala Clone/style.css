@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: transparent;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.nav-text {
+  opacity: 85%;
+  transition: all 0.35s;
+}
+
+.nav-text:hover {
+  opacity: 100%;
+  font-size: 19px;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.logo img {
+  width: 153px;
+  height: 125px;
+  cursor: pointer;
+}
+
+.logo div {
+  margin-left: 40px;
+}
+
+.options {
+  margin-right: 100px;
+}
+
+.options i {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: url(./assets/hero.webp);
+
+  height: 100vh;
+}
+.wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.314));
+  height: 100vh;
+}
+
+.heading {
+  color: white;
+  font-size: 82px;
+  margin-left: 150px;
+  margin-top: 350px;
+  font-family: "Baskervville";
+  width: 30%;
+  text-shadow: 1px 1px #000000;
+  font-weight: 700;
+}
+
+.sub-heading {
+  color: white;
+  font-size: 20px;
+  margin-left: 150px;
+  margin-top: 20px;
+  font-family: "DM Sans";
+  width: 30%;
+}
+
+.shop {
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: "Dm Sans";
+  border-radius: 3px;
+  height: 40px;
+  width: 130px;
+  margin-left: 150px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  transition: all 0.25s;
+}
+
+.shop:hover {
+  font-size: 18px;
+  box-shadow: 2px 2px #000000ab;
+  cursor: pointer;
+}
+
+.products {
+  background-color: #ffffff;
+  height: 50vh;
+}
+
+.our-products {
+  font-size: 40px;
+  font-family: "Baskervville";
+  font-weight: 100;
+  margin-left: 150px;
+  padding-top: 50px;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.items img {
+  height: 167px;
+  width: 167px;
+  border: 10px solid rgba(216, 216, 216, 0.338);
+  border-radius: 70px;
+  transition: all 0.25s;
+}
+
+.items img:hover {
+  box-shadow: 0 2px 2px 2px #0000002e;
+  margin-top: -1px;
+  border: 11px solid white;
+  cursor: pointer;
+}
+
+.product {
+  margin-left: 65px;
+}
+
+.product div {
+  text-align: center;
+  font-family: "Dm Sans";
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.sample {
+  background-color: #d3dac9;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sample img {
+  margin-left: 100px;
+  margin-right: 0px;
+  width: 90%;
+  height: 100%;
+}
+
+.sample-heading {
+  font-size: 60px;
+  font-family: "Baskervville";
+  font-weight: 400;
+  margin-left: 75px;
+  margin-top: 100px;
+}
+
+.sample-text {
+  font-size: 20px;
+  margin-left: 75px;
+  margin-top: 20px;
+  font-family: "DM Sans";
+}
+
+.shop2 {
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: "Dm Sans";
+  border-radius: 3px;
+  height: 40px;
+  width: 130px;
+  margin-top: 20px;
+  margin-left: 75px;
+  font-size: 17px;
+  font-weight: 400;
+  transition: all 0.25s;
+}
+.shop2:hover {
+  font-size: 18px;
+  box-shadow: 2px 2px #000000ab;
+  cursor: pointer;
+}
+
+.customers {
+  background-color: rgb(255, 255, 255);
+  height: 40vh;
+}
+
+.customer-heading {
+  font-size: 40px;
+  font-family: "Baskervville";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.customer-names {
+  display: flex;
+  justify-content: center;
+}
+
+.customer-names img {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.name {
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
+  border: 4px solid rgba(130, 130, 130, 0.486);
+  border-radius: 30px;
+  margin-left: 20px;
+  padding: 4px;
+  opacity: 70%;
+  transition: all 0.25s;
+}
+
+.name:hover {
+  opacity: 100%;
+  border: 4px solid rgba(130, 130, 130, 0.836);
+  box-shadow: 0 1px 1px 1px #0000007f;
+  cursor: pointer;
+}
+
+.benefits {
+  background-color: #d3dac9;
+  height: 65vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits img {
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-right: 100px;
+  height: 553px;
+  width: 553px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.benefits-heading {
+  font-size: 45px;
+  font-family: "Baskervville";
+  font-weight: 400;
+  margin-left: 75px;
+  margin-top: 100px;
+}
+
+.benefits-text {
+  font-size: 17px;
+  margin-left: 75px;
+  margin-top: 60px;
+  font-family: "DM Sans";
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.signup {
+  background-color: #d3dac9;
+  height: 30vh;
+  padding-top: 50px;
+}
+
+.signup-heading {
+  font-size: 35px;
+  font-family: "Baskervville";
+  font-weight: 400;
+  text-align: center;
+}
+
+.signup-text {
+  font-size: 17px;
+  margin-top: 30px;
+  font-family: "DM Sans";
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.email {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.email-input {
+  border: none;
+  padding-left: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.Subscribe {
+  background-color: #080808;
+  width: 150px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "DM Sans";
+  border-radius: 3px;
+  height: 50px;
+  transition: all 0.25s;
+}
+
+.Subscribe:hover {
+  background-color: #0b0b0be5;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.about {
+  height: 55vh;
+  background-color: #efebeb;
+  display: flex;
+}
+
+.about img {
+  margin: 30px;
+  height: 480px;
+  width: 30%;
+  border-radius: 20px;
+  margin-left: 150px;
+}
+.about-text {
+  margin-left: 1030px;
+  margin-top: -515px;
+  width: 30%;
+  border-radius: 30px;
+  border: 3px solid rgba(220, 220, 220, 0.814);
+  padding: 25px;
+  height: 430px;
+  width: 30%;
+  font-family: "DM Sans";
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.405);
+}
+
+.about-btn {
+  background-color: #080808;
+  width: 150px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "DM Sans";
+  border-radius: 3px;
+  height: 50px;
+  margin-top: 20px;
+  transition: all 0.25s;
+}
+
+.about-btn:hover {
+  background-color: #0b0b0be4;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.copyright {
+  background-color: efebeb;
+  height: 7vh;
+  border-top: 1px solid rgba(143, 142, 142, 0.517);
+}
+
+.copyright div {
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 14px;
+  opacity: 60%;
+  padding-top: 30px;
+}
