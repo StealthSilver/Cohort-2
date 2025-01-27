@@ -193,7 +193,7 @@ body {
 .testimonials {
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #fff8e1;
+  background-color: #f9f8f2;
   margin: 2rem 0;
 }
 
@@ -235,15 +235,24 @@ body {
   padding: 1rem;
 }
 
+.customers {
+  display: flex;
+  justify-content: center;
+}
+
+.customers div {
+  margin-left: 50px;
+}
+
 /* Services Section */
 .services {
   display: flex;
   justify-content: center;
-  /* padding: 4rem 2rem; */
+  padding: 6rem 0;
   background-color: white;
 
   border-radius: 10px;
-  margin-left: 200px;
+  margin-left: 160px;
 }
 
 .services .left,
@@ -255,11 +264,11 @@ body {
 }
 
 .services .left {
-  border-right: 1px solid rgba(141, 141, 141, 0.048);
+  border-right: 1px solid rgba(68, 68, 68, 0.303);
 }
 
 .services .right {
-  margin-left: 40px;
+  margin-left: 100px;
 }
 
 .left img {
