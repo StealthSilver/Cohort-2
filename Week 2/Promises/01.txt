@@ -15,6 +15,7 @@ JS does not have a concept of destructor -> it does the memeory management by it
 
 
 02.js
+
 JS has ita own classes 
 e.g. Date class -> for the time related stuff , Map class
 
