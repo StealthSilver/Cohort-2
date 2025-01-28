@@ -12,3 +12,5 @@ it’s waiting for something to finish (like loading data or waiting for a
 response from a server). This means the program doesn't need to wait for
 the async task to finish before continuing to the next one.
 (the code runs out of order)
+
+I/O Heavy Operations
