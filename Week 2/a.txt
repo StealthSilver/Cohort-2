@@ -22,3 +22,8 @@ there are some processes which take time
 3. HTTP requests
 
 running the I/O bound tasks asynchronously is hte best approach
+
+
+Functional arguments
+
+Passing a function to another function as an argument
