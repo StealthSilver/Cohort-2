@@ -14,3 +14,9 @@ the async task to finish before continuing to the next one.
 (the code runs out of order)
 
 I/O Heavy Operations
+
+there are some processes which take time 
+
+1. reading contents of a file
+2. Starting a clock
+3. HTTP requests
