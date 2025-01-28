@@ -1,4 +1,4 @@
-SYNCHRONOUS FUNCTIONS 
+SYNCHRONOUS FUNCTIONS  (01.js)
 
 A synchronous (sync) function is one that runs one after the other.
 It means that the program will wait for the current task to finish
@@ -17,6 +17,6 @@ I/O Heavy Operations
 
 there are some processes which take time 
 
-1. reading contents of a file
+1. reading contents of a file (02.js)
 2. Starting a clock
 3. HTTP requests
