@@ -3,7 +3,7 @@
 console.log("Hi!");
 
 setTimeout(function timeout() {
-    console.log("Click the button!");
+  console.log("set tiumeout complete");
 }, 5000);
 
-console.log("Welcome to loupe.");
+console.log("the set timeout is running");
