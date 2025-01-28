@@ -6,6 +6,11 @@ ls -> list files
 ls -l -> for more info about the files
 ls -R -> check the contents of the files 
 ls -t -> check the time modified 
+
 we can combine these commands (ls -lt)
 
 ls -la -> to check the hidden files
+ls -lRa -> all the hidden files within the files
+ls -lr -> gives the files in the reverse oder of modification
+ls -s -> files by their size 
+ls -lR | grep .json -> selectively giving the .json files
