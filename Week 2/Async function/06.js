@@ -4,6 +4,7 @@ function timeout() {
 
 console.log("hi");
 
+// dummy i/o intensive task
 setTimeout(timeout, 1000);
 
 console.log("set timeout still running");
