@@ -60,5 +60,8 @@ grep -hir "one" b.txt -> gives the occorence of one in the complete folder
 grep -hiro "one" b.txt -> gives the occorence of one in the complete folder where one comes seperately
 
 
-history -> gives the history of all the commands ran
+history -> gives the history of all the commands ran 
 
+
+we can create bash files will multiple lines of scripts 
+newscript.sh 
