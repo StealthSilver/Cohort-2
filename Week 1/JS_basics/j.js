@@ -1,26 +1,36 @@
+// function to find the males with age > 18
+let newArr = [];
+
 function find(array) {
-    // Filter for male users aged 18 or older and map their names
-    return array
-        .filter(user => user.age >= 18 && user.gender === "male")
-        .map(user => user.name);
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].age >= 18) {
+      if (array[i].gender == "male") {
+        newArr.push(array[i].name);
+      }
+    }
+  }
+
+  return newArr;
 }
 
 let b = [
-    {
-        name: "logo",
-        age: 89,
-        gender: "male"
-    },
-    {
-        name: "pogo",
-        age: 18,
-        gender: "female"
-    },
-    {
-        name: "jogo",
-        age: 19,
-        gender: "male"
-    }
+  {
+    name: "logo",
+    age: 89,
+    gender: "male",
+  },
+
+  {
+    name: "pogo",
+    age: 18,
+    gender: "female",
+  },
+
+  {
+    name: "jogo",
+    age: 19,
+    gender: "male",
+  },
 ];
 
-console.log(find(b)); // Output: ["logo", "jogo"]
+console.log(find(b));
