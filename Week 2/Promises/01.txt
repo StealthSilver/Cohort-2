@@ -13,6 +13,7 @@ complex types
 
 JS does not have a concept of destructor -> it does the memeory management by itself
 
+classes will have the properties and methods
 
 02.js
 
