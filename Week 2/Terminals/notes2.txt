@@ -25,3 +25,6 @@ mkdir -p frontend/scripts    |
 mkdir -p frontend/img        |
 mkdir -p frontend/assets     | ->recursively creating folders with different name
 mkdir -p frontend/scss       |
+
+mv script.js runtime_script.js  -> rename the script.js file 
+mv script.js app/frontend/scripts -> moving the file
