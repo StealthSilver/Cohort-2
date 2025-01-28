@@ -19,3 +19,9 @@ ls Zoo* -> to get the files starting with zoo
 cat -> to view the file 
 cat > newFile.txt [random text] -> adding (random text) to newFile.txt 
 mkdir test && cd test -> making and entering at the same time
+
+
+mkdir -p frontend/scripts    |
+mkdir -p frontend/img        |
+mkdir -p frontend/assets     | ->recursively creating folders with different name
+mkdir -p frontend/scss       |
