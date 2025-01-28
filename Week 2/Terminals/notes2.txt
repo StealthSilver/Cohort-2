@@ -14,3 +14,8 @@ ls -lRa -> all the hidden files within the files
 ls -lr -> gives the files in the reverse oder of modification
 ls -s -> files by their size 
 ls -lR | grep .json -> selectively giving the .json files in the directory and sub directory
+ls Zoo* -> to get the files starting with zoo 
+
+cat -> to view the file 
+cat > newFile.txt [random text] -> adding (random text) to newFile.txt 
+mkdir test && cd test -> making and entering at the same time
