@@ -11,3 +11,9 @@ let country = {
   capital: "Tokyo",
   currency: "Yen",
 };
+
+console.log(number);
+console.log(name);
+console.log(isAdult);
+console.log(color);
+console.log(country);
