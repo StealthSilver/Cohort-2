@@ -27,3 +27,12 @@ running the I/O bound tasks asynchronously is hte best approach
 Functional arguments
 Passing a function to another function as an argument
 
+Execution of the JS code
+
+http://latentflip.com/loupe 
+
+there are three sections the call stack, the Web API's section and the callback Queue.
+the call stack calls the code synchronously one by one, all the async functions are sent to the web api's to maintain
+the clock until they are executed.
+The call stack keeps running, when the async functions complete then they wait in the callback queue until all the sync code runs
+once the sync code completes then all the async execution happens one by one
