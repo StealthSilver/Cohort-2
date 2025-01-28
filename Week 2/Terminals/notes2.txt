@@ -40,3 +40,12 @@ chmod ugo-rwx -> changing the permissions of files (u- user, g - group , o - oth
 chmod -R ugo-rwx -> changing the permissions of folders
 chmod u+wx a.txt -> now the user can write and execute the a.txt
 chmod u-x b.txt -> now the user cannot execute b.txt
+
+
+echo "hello" -> displays the message on terminal
+echo $PATH -> displays the path variable
+
+
+head a.txt -> first 5 rows of the file
+tail a.txt -> last 5 rows of the file
+head -20 a.txt -> first 20 rows of the file
