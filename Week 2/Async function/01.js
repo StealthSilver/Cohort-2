@@ -1,5 +1,3 @@
-// this is synchronous code
-
 // function to add two numbers
 function sum(a, b) {
   return parseInt(a) + parseInt(b);
