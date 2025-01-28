@@ -25,5 +25,5 @@ running the I/O bound tasks asynchronously is hte best approach
 
 
 Functional arguments
-
 Passing a function to another function as an argument
+
