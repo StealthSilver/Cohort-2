@@ -12,6 +12,7 @@ console.log("set timeout still running");
 let c = 0;
 
 // CPU intensive task
+
 for (let i = 0; i < 1000000000; i++) {
   c = c + 1;
 }
