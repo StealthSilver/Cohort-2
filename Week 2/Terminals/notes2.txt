@@ -50,3 +50,7 @@ head a.txt -> first 5 rows of the file
 tail a.txt -> last 5 rows of the file
 head -20 a.txt -> first 20 rows of the file
 command1 | command2 -> the execution of command 1 flows to command 2
+
+wc b.txt -> gives the number of lines, number of words, and number of characters in order
+
+grep "one" b.txt -> all places where one was used in the file
