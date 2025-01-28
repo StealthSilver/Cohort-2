@@ -1,5 +1,4 @@
 // promisified read file
-
 const fs = require("fs");
 
 function readFilePromisified(filePath, encoding = "utf8") {
