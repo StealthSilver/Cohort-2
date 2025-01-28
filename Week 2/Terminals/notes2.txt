@@ -7,3 +7,5 @@ ls -l -> for more info about the files
 ls -R -> check the contents of the files 
 ls -t -> check the time modified 
 we can combine these commands (ls -lt)
+
+ls -la -> to check the hidden files
