@@ -1,33 +1,47 @@
 Bash Commands
 
-use command + K to clear the terminal 
+Basic Terminal Operations
 
-pwd -> print working directory
+- Clear the Terminal: Use Command + K (on macOS) to clear the terminal screen.
 
-cd -> change directory
+- Print Working Directory: pwd → Displays the current directory path.
 
-ls -> list items in the directory
+- Change Directory: cd → Navigate to another directory.
 
-cd ../.. -> to go two folders behind
+- Go Two Folders Back: cd ../.. → Moves up two levels in the directory tree.
 
-mkdir -> make new folder 
+- List Items in Directory: ls → Lists all files and folders in the current directory.
 
-touch -> create new files
+File and Folder Operations
 
-cat -> print the contents of the file
+- Make a New Folder: mkdir [folder-name]
 
-vi -> vim command -> opens the command
+- Create New Files: touch [file-name]
 
-to start writing -> i (insert mode)
-to save the content and exit -> esc :wq!
-to exit the file -> esc :q!
+- Print File Contents: cat [file-name]
 
+Using vi (Vim Command-Line Editor)
 
-mv -> move files from the terminal
+- Open a file: vi [file-name]
 
-cp -> copy files
-cp -r -> to copy folders (recursive flag) 
+- Start writing: Press i to enter insert mode.
 
-nvm -> this is the node version manager, used to install node 
-node -> this takes you to a js runctime env.
-npm -> node packege manager, let's you install node packages
+- Save and exit: Press ESC, then type :wq! and hit Enter.
+
+- Exit without saving: Press ESC, then type :q! and hit Enter.
+
+File Management
+
+- Move Files: mv [source] [destination] → Moves files or folders.
+
+- Copy Files: cp [source] [destination]
+
+- Copy Folders: cp -r [source-folder] [destination-folder] → The -r flag enables recursive copying.
+
+Node.js and npm
+
+Node Version Manager: nvm → Manages Node.js versions (install, use, or switch versions).
+
+Node.js Runtime Environment: node → Opens the Node.js runtime environment where JavaScript can be executed.
+
+Node Package Manager: npm → Used to install and manage Node.js packages.
