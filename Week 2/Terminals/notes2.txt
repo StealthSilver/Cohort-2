@@ -34,4 +34,8 @@ cp -> copy files
 cp -r scripts/tests -> copying folder to another folder
 
 rm a.txt -> delete a file 
-rm -r frontend -> delete a folder
+rm -r frontend -> delete a folder 
+
+chmod ugo-rwx -> changing the permissions of files (u- user, g - group , o - other | r - read , w - write , x - execute)
+chmod -R ugo-rwx -> changing the permissions of folders
+chmod u+wx a.txt -> now the user can write and execute the a.txt
