@@ -31,5 +31,6 @@ e.g. Date class -> for the time related stuff , Map class
 03.js , 04.js , 05.js
 
 Promise is also a class 
+A promise is an object that represents the eventual completetion (or faliure ) of an async operation and its resulting value
 
 callback based approach and promise based approach both can be used but the later one is better
