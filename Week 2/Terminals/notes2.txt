@@ -39,3 +39,4 @@ rm -r frontend -> delete a folder
 chmod ugo-rwx -> changing the permissions of files (u- user, g - group , o - other | r - read , w - write , x - execute)
 chmod -R ugo-rwx -> changing the permissions of folders
 chmod u+wx a.txt -> now the user can write and execute the a.txt
+chmod u-x b.txt -> now the user cannot execute b.txt
