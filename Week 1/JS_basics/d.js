@@ -28,11 +28,11 @@ console.log(4, "pogo");
 
 function canVote(age) {
   if (age >= 18) {
-    console.log("can vote");
+    return true;
   } else {
-    console.log("cannot vote");
+    return false;
   }
 }
 
-canVote(90);
-canVote(3);
+console.log(canVote(90));
+console.log(canVote(3));
