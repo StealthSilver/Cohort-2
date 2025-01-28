@@ -14,7 +14,7 @@ Code written in languages like C++ or Rust can run on local servers, be converte
 ### 1. Interpreted
 - JavaScript is interpreted, meaning it runs line by line and is compiled at runtime.
 - It uses **Just-In-Time (JIT)** compilation, combining the benefits of interpreted and compiled languages.
-- FOr compiled languages like c++ it first the code compiles to a binary file and then it is executed
+- For compiled languages like c++ it first the code compiles to a binary file and then it is executed
 
 **Comparison with Rust:**
 - Rust has a slower compilation process but produces highly optimized binary files for fast execution in production.
