@@ -1,9 +1,12 @@
 class Rectangle {
+  // properties
   constructor(width, height, color) {
     this.width = width;
     this.height = height;
     this.color = color;
   }
+
+  // methods
 
   area() {
     const area = this.width * this.height;
