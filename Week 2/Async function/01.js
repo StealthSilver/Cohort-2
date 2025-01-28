@@ -1,4 +1,5 @@
 // this is synchronous code
+
 // function to add two numbers
 function sum(a, b) {
   return parseInt(a) + parseInt(b);
@@ -18,3 +19,10 @@ function rec(n) {
 }
 
 console.log(rec(10));
+
+// the above function just in order 1
+function better(a) {
+  return (a * (a + 1)) / 2;
+}
+
+console.log(better(10));
