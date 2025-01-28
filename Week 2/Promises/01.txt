@@ -15,6 +15,14 @@ JS does not have a concept of destructor -> it does the memeory management by it
 
 classes will have the properties and methods
 
+key features in classes
+1. Class decleration
+2. Constructors
+3. Methods 
+4. Inheritance
+5. Static Methods
+6. Getters and Setters
+
 02.js
 
 JS has ita own classes 
