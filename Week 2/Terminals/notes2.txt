@@ -28,3 +28,10 @@ mkdir -p frontend/scss       |
 
 mv script.js runtime_script.js  -> rename the script.js file 
 mv script.js app/frontend/scripts -> moving the file
+mv script.js app/frontend/scripts/scripts.js -> moving the file and renaming
+
+cp -> copy files
+cp -r scripts/tests -> copying folder to another folder
+
+rm a.txt -> delete a file 
+rm -r frontend -> delete a folder
