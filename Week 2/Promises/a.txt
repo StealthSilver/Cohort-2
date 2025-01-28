@@ -32,5 +32,4 @@ e.g. Date class -> for the time related stuff , Map class
 
 Promise is also a class 
 
-
 callback based approach and promise based approach both can be used but the later one is better
