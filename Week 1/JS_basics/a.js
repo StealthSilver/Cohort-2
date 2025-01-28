@@ -13,5 +13,5 @@ let height = 190; // integer type variable
 let pizza = true; // boolean variable, can be true or false
 
 console.log(
-  `My favourite color is ${color} , my height is ${height} and likePizza is ${pizza}`
+  `My favourite color is ${color} , my height is ${height}cm and likePizza is ${pizza}`
 );
