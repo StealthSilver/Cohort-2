@@ -36,3 +36,6 @@ the call stack calls the code synchronously one by one, all the async functions 
 the clock until they are executed.
 The call stack keeps running, when the async functions complete then they wait in the callback queue until all the sync code runs
 once the sync code completes then all the async execution happens one by one
+
+Natively async functions
+1. readFile, setTimeout, fetch , database calls
