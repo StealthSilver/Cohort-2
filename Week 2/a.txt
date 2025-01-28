@@ -1,0 +1,14 @@
+SYNCHRONOUS FUNCTIONS 
+
+A synchronous (sync) function is one that runs one after the other.
+It means that the program will wait for the current task to finish
+before moving on to the next task.
+(the code euns in order)
+
+ASYNCHRONOUS FUNCTIONS 
+
+An asynchronous (async) function is one that allows other tasks to run while
+it’s waiting for something to finish (like loading data or waiting for a
+response from a server). This means the program doesn't need to wait for
+the async task to finish before continuing to the next one.
+(the code runs out of order)
