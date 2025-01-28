@@ -39,3 +39,6 @@ once the sync code completes then the event loop calls all the async outputs and
 
 Natively async functions
 1. readFile, setTimeout, fetch , database calls
+
+
+* as JS is single threaded so it just has a single call stack
