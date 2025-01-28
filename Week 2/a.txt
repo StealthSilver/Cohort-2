@@ -21,3 +21,4 @@ there are some processes which take time
 2. Starting a clock
 3. HTTP requests
 
+running the IO bound tasks asynchronously is hte best approach
