@@ -1,4 +1,4 @@
-// function to find the males with age > 18
+// function to find the males with age >= 18
 let newArr = [];
 
 function find(array) {
