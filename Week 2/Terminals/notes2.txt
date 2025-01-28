@@ -68,3 +68,6 @@ newscript.sh
 
 grep "ERROR" log.txt -> grab all the error messages from log.txt 
 grep -v "ERROR" log.txt -> grab all the messages apart from the error message from log.txt 
+grep -B 5 "ERROR" log.txt -> grab 5 lines before the first error message
+grep -A 5 "ERROR" log.txt -> grab 5 lines after the first error message
+grep -C 5 "ERROR" log.txt -> grab 5 lines after and before the first error message
