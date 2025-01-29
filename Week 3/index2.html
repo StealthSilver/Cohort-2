@@ -6,11 +6,14 @@
     <title>Dynamic TODO</title>
   </head>
   <body>
-    <h1>TODO List</h1>
-    <h4>1. Study</h4>
-    <br />
-    <input type="text" placeholder="add todo" />
-    <button>Add TODO</button>
+    <div class="container">
+      <h1>TODO List</h1>
+      <br />
+      <input type="text" placeholder="add todo" />
+      <button onclick="addTask()">Add TODO</button>
+      <br />
+      <ul id="taskList"></ul>
+    </div>
 
     <script src="./script2.js"></script>
   </body>
