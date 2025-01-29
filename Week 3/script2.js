@@ -1,10 +1,12 @@
+// delete functionality
+
+let ctr = 1;
+function deleteTodo(index) {
+  const element = document.getElementById("todo-" + index);
+  element.parentNode.removeChild(element);
+}
+
 function addTodo() {
-  // delete functionality
-  let ctr = 1;
-  function deleteTodo(index) {
-    const element = document.getElementById("todo-" + index);
-    element.parentNode.removeChild(element);
-  }
   // getting the input element
   const inputEl = document.querySelector("input");
   const value = inputEl.value;
