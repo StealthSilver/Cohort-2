@@ -16,3 +16,5 @@ Basic functions on the document object
 6. createElement
 7. appendChild
 8. setAttribute
+
+COMPLEX DOM MANIPUALTION
