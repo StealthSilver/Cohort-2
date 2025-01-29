@@ -12,4 +12,3 @@ Basic functions on the document object
 2. querySelectorAll
 3. getElementById
 4. getElementByClassName
-5. getElementsByClassName
