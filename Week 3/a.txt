@@ -28,4 +28,4 @@ State -> the variable parts of the app (vidoes , profile pic , description in li
 Component -> the structure (backbone) of the app (navbar , search bar in linked in)
 Rendering -> taking hte state and putting it on the components in the DOM
 
-using the render function and updating hte state variables -> index4.html
+using the render function and updating the state variables -> index4.html
