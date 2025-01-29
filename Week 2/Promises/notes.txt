@@ -39,3 +39,8 @@ to get rid of callback hells promises were introduced
 callback hells are avoided by promise chaining 
 
 Async-Await syntax
+
+the async function starts with the await keyword
+there is a async wrapper over the async function
+
+to catch the errors the try catch wrapper is used
