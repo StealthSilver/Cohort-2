@@ -1,2 +1,3 @@
 DOM : Document Object Model 
 
+the DOM represents the structure of a web page as a tree of objects
