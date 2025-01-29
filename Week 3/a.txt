@@ -17,5 +17,8 @@ Basic functions on the document object
 7. appendChild
 8. setAttribute
 
+Dynamic Website - index2.html 
+Final Website - index3.html
+
 COMPLEX DOM MANIPUALTION
 
