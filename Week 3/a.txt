@@ -10,6 +10,6 @@ Basic functions on the document object
 
 1. querySelector
 2. querySelectorAll
-3. 
-4.
-5.
+3. getElementById
+4. getElementByClassName
+5. getElementsByClassName
