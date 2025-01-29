@@ -1,7 +1,7 @@
 function addTodo() {
   // delete functionality
   let ctr = 1;
-  function deleteTodo() {
+  function deleteTodo(index) {
     const element = document.getElementById("todo-" + index);
     element.parentNode.removeChild(element);
   }
