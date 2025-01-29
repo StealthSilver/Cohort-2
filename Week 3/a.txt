@@ -15,3 +15,4 @@ Basic functions on the document object
 5. removeChild
 6. createElement
 7. appendChild
+8. setAttribute
