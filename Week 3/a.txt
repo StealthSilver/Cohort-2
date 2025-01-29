@@ -30,4 +30,4 @@ Rendering -> taking hte state and putting it on the components in the DOM
 
 using the render function and updating the state variables -> index4.html
 
-react does reconcilation in which it updates the state 
+react does reconcilation in which it updates the state and rerenders the components
