@@ -5,7 +5,7 @@ function setTimeoutPromisified(duration) {
 }
 
 function callback() {
-  console.log("1 sec has passed");
+  console.log("5 sec are passed");
 }
 
 setTimeoutPromisified(5000).then(callback);
