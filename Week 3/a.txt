@@ -27,3 +27,5 @@ for making the manipulation easier state and component were introduced
 State -> the variable parts of the app (vidoes , profile pic , description in linked in)
 Component -> the structure (backbone) of the app (navbar , search bar in linked in)
 Rendering -> taking hte state and putting it on the components in the DOM
+
+using the render function and updating hte state variables -> index4.html
