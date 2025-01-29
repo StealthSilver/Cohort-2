@@ -4,4 +4,6 @@ function addTodo() {
 
   const newDivEl = document.createElement("div");
   newDivEl.innerHTML = value;
+
+  document.querySelector("body").appendChild(newDivEl);
 }
