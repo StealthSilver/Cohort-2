@@ -13,3 +13,5 @@ Basic functions on the document object
 3. getElementById
 4. getElementByClassName
 5. removeChild
+6. createElement
+7. appendChild
