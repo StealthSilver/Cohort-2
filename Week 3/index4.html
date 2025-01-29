@@ -7,49 +7,83 @@
   </head>
 
   <body>
+    <!-- Input field to enter a new to-do -->
     <input type="text" />
+
+    <!-- Button to add a new to-do -->
     <button onclick="addTodo()">Add todo!</button>
 
+    <!-- Button to delete the last to-do item -->
     <button onclick="deleteLastTodo()">Delete last todo</button>
 
+    <!-- Button to delete the first to-do item -->
     <button onclick="deleteFirstTodo()">Delete first todo</button>
+
+    <!-- Container where all the to-do items will be displayed -->
     <div id="todos"></div>
+
     <script>
+      // Array to store all to-do items
       let todos = [];
+
+      // Function to add a new to-do item
       function addTodo() {
+        // Get the input value and create a new to-do object
         todos.push({
-          title: document.querySelector("input").value,
+          title: document.querySelector("input").value, // Stores the input value
         });
+
+        // Re-render the UI with the updated to-do list
         render();
       }
 
+      // Function to delete the last to-do item
       function deleteLastTodo() {
-        todos.splice(todos.length - 1, 1); // remove the last element from the arr
-        render();
+        todos.splice(todos.length - 1, 1); // Removes the last element from the array
+        render(); // Update the UI
       }
 
+      // Function to delete the first to-do item
       function deleteFirstTodo() {
-        todos.splice(0, 1); // remove the last element from the arr
-        render();
+        todos.splice(0, 1); // Removes the first element from the array
+        render(); // Update the UI
       }
 
-      function createTodoComponent(todo) {
-        const div = document.createElement("div");
-        const h1 = document.createElement("h1");
-        const button = document.createElement("button");
-        button.innerHTML = "Delete";
-        h1.innerHTML = todo.title;
+      // Function to delete a specific to-do item by its index
+      function deleteTodo(index) {
+        todos.splice(index, 1); // Removes the to-do at the given index
+        render(); // Update the UI
+      }
+
+      // Function to create a single to-do item component
+      function createTodoComponent(todo, index) {
+        const div = document.createElement("div"); // Creates a new div
+        const h1 = document.createElement("h1"); // Creates an h1 element for the title
+        const button = document.createElement("button"); // Creates a delete button
+
+        button.innerHTML = "Delete"; // Sets the button text
+        h1.innerHTML = todo.title; // Sets the to-do title
+
+        // When the delete button is clicked, call deleteTodo() with the correct index
+        button.onclick = function () {
+          deleteTodo(index);
+        };
+
+        // Append the title and delete button to the div
         div.append(h1);
         div.append(button);
-        return div;
+
+        return div; // Return the created to-do component
       }
 
-      // react
+      // Function to render (update) the to-do list
       function render() {
-        document.querySelector("#todos").innerHTML = "";
+        document.querySelector("#todos").innerHTML = ""; // Clear the existing to-do list
+
+        // Loop through all to-dos and create UI elements for each
         for (let i = 0; i < todos.length; i++) {
-          const element = createTodoComponent(todos[i]);
-          document.querySelector("#todos").appendChild(element);
+          const element = createTodoComponent(todos[i], i); // Create a to-do component
+          document.querySelector("#todos").appendChild(element); // Add it to the page
         }
       }
     </script>
