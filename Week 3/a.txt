@@ -5,3 +5,11 @@ the DOM allows the scripts to manipulate the content and structure dynamically
 
 
 Static Website - index.html
+
+Basic functions on the document object 
+
+1. querySelector
+2. querySelectorAll
+3. 
+4.
+5.
