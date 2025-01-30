@@ -11,16 +11,15 @@ function requestIncreaser() {
   console.log(`total no of requests = ${requestcount}`);
 }
 
-// better routing and database, middlewares
-
-app.get("/sum", function (req, res) {
-  requestIncreaser();
+function realSumHandler(req, res) {
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
 
   res.json({
     ans: a + b,
   });
-});
+}
+
+app.get("/sum", requestIncreaser, realSumHandler);
 
 app.listen(3000);
