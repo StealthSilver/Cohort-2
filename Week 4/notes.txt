@@ -49,3 +49,7 @@ to get the node_modules locally we just have to run npm install
 
  the three numbers represent the changes MAJOR.MINOR.PATCH 
  the ^ sign means that npm will install latest version below 5
+
+ package-lock.json 
+
+ we lock versions of dependencies so that multiple developers can have the same version of the dependency
