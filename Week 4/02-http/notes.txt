@@ -46,5 +46,7 @@ they are action keywords which denote the CRUD operations
 
 C -> CREATE -> POST
 R -> READ -> GET
-U -> UPDATE -> PATCH
+U -> UPDATE -> PUT
 D -> DELETE -> DELETE
+
+
