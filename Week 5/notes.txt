@@ -28,4 +28,4 @@ axios is an external library for calling libraries
 
 index.js -> creating a http server
 
-the fetch and axios run on AJAX -> 
+the fetch and axios run on AJAX -> Asynchronous JSON and XML 
