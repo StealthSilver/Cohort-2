@@ -31,3 +31,6 @@ to get a live website
 PORTS 
 
 they are logical endpoints in networking used by protocols to identify specific processes running on a computer or a server
+
+most moders websites run on port 443 on the web
+locally we can run websites on different ports 
