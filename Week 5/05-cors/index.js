@@ -5,9 +5,8 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(express.json());
-
-app.use(cors());
+app.use(express.json()); // Ensure JSON parsing is enabled
+app.use(cors()); // Enable CORS
 
 app.post("/sum", function (req, res) {
   const a = parseInt(req.body.a);
@@ -18,4 +17,6 @@ app.post("/sum", function (req, res) {
   });
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
