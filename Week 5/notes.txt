@@ -49,4 +49,5 @@ commonly used middlewares
 2. cors -> cross origin resource sharing
 
 in express by default cross origin requests are blocked
+
 this lets the frontends communicate with the backend securely
