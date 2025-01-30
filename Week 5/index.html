@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>Hello World</h1>
+    <div id="posts"></div>
 
     <script>
       async function getRecentPost() {
@@ -20,6 +21,8 @@
         console.log(data);
 
         console.log("Request has been processed");
+
+        document.getElementById("posts").innerHTML = data.body;
       }
 
       // Call the function to fetch data
