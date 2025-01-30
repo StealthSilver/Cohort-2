@@ -85,3 +85,5 @@ HTTPS -> HYPER TEXT TRANSFER PROTOCOL SECURED
 index.js -> creating a http server 
 
 use the express library
+
+ping localhost -> returns the ip of the own machine
