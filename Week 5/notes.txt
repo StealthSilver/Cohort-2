@@ -9,9 +9,12 @@ there are both request and response headers which send different types of reques
 
 FETCH API 
 
+index.html 
+
 there are two ways to send http requests
 1. direct request
 2. background requests -> fetch api
 
 fetch("https://jsonplaceholder.typicode.com/posts/1");
 fetch sends the request to other server get the data
+
