@@ -41,3 +41,9 @@ middlewares are the functions that have access to the request object
 
 the middleware may or may notchane the request object 
 the middleware will either stop the request or forward the request to the real route handler
+
+commonly used middlewares 
+
+1. express.json()
+2.
+3.
