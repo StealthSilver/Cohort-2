@@ -86,4 +86,4 @@ index.js -> creating a http server
 
 use the express library
 
-ping localhost -> returns the ip of the own machine
+ping localhost -> returns the ip of your own machine
