@@ -48,4 +48,4 @@ to get the node_modules locally we just have to run npm install
  this is there in the dpendencies 
 
  the three numbers represent the changes MAJOR.MINOR.PATCH 
- the ^ sign means that npm will install latest version below 4
+ the ^ sign means that npm will install latest version below 5
