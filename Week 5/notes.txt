@@ -10,3 +10,5 @@ there are both request and response headers which send different types of reques
 FETCH API 
 
 there are two ways to send http requests
+1. direct request
+2. background requests -> fetch api
