@@ -49,4 +49,4 @@ R -> READ -> GET
 U -> UPDATE -> PUT
 D -> DELETE -> DELETE
 
-
+to check and send requests -> download postman
