@@ -39,3 +39,5 @@ Using the external library
 
 index.js
 import chalk from "chalk"; -> importing the library
+
+node_modules is a very heavy folder
