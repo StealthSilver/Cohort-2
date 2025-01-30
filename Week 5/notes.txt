@@ -7,6 +7,6 @@ they mostly contain metadata, authentication data , content type , referer
 
 there are both request and response headers which send different types of requests
 
-FETCH 
+FETCH API 
 
 there are two ways to send http requests
