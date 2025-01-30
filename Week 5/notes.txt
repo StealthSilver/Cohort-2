@@ -45,5 +45,4 @@ the middleware will either stop the request or forward the request to the real r
 commonly used middlewares 
 
 1. express.json() -> used to parse incoming request bodies that are formatted as JSON
-2.
-3.
+2. cors -> cross origin resource sharing
