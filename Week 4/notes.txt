@@ -32,3 +32,5 @@ description:         |
 npm
 pacakage maangers allows us to use the external packages , libraries or packages 
 packages contain the reusable code
+
+npm install chalk -> using the "chalk" library
