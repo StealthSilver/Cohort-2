@@ -1,4 +1,5 @@
 // using express.json
+// we can also use body parses instead of json
 
 const express = require("express");
 
