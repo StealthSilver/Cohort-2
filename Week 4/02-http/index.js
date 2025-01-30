@@ -11,5 +11,9 @@ app.get("/asd", function (req, res) {
   res.send("hello customer");
 });
 
+app.post("/bd", function (req, res) {
+  res.send("hello customer");
+});
+
 // listning on the port
 app.listen(3000);
