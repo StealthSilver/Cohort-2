@@ -22,3 +22,8 @@ the check the ip address of any server use the ping gommand
 
 ping google.com -> to get the ip address 
 use sudo vi /etc/hosts -> to check which ip is pointing to which domain name
+
+to get a live website
+1. buy a server instance from AES -> get the ip address 
+2. buy a domain name from say godddy 
+3. point the domain name to the IP address
