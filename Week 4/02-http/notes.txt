@@ -51,4 +51,11 @@ D -> DELETE -> DELETE
 
 to check and send requests -> download postman
 
+RESPONSES
+
+the server can return teh respponses in various formats 
+
 JSON -> JavaScript Object Notation
+PLAIN TEXT  
+JSON DATA
+
