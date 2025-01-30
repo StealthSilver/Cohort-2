@@ -6,3 +6,7 @@ the headers are key value pairs between a client and a server
 they mostly contain metadata, authentication data , content type , referer
 
 there are both request and response headers which send different types of requests
+
+FETCH 
+
+there are two ways to send http requests
