@@ -10,6 +10,8 @@ function requestIncreaser(req, res, next) {
   requestcount = requestcount + 1;
 
   console.log(`total no of requests = ${requestcount}`);
+
+  // either call next() , or give some error message
   res.json({
     message: "I ended the request early",
   });
