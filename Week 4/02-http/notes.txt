@@ -59,3 +59,5 @@ JSON -> JavaScript Object Notation
 PLAIN TEXT 
 HTML
 
+STATUS CODES 
+
