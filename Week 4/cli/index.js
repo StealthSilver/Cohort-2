@@ -9,7 +9,7 @@ program
 
 program
   .command("count")
-  .description("Count the number of words in a file") // Fixed typo
+  .description("Count the number of words in a file")
   .argument("<file>", "File to count words from")
   .action((file) => {
     fs.readFile(file, "utf-8", (err, data) => {
@@ -18,7 +18,6 @@ program
         return;
       }
 
-      // Corrected word count logic
       const words = data.trim().split(/\s+/).length;
       console.log(`There are ${words} words in ${file}`);
     });
