@@ -1,4 +1,4 @@
-// using a middlware to log the method , timestamp and the url
+// using a middlware to log the method , timestamp and the url and host
 
 const express = require("express");
 
@@ -8,6 +8,7 @@ const app = express();
 function loggerMiddleware(req, res, next) {
   console.log("Method is " + req.method);
   console.log("URL is " + req.url);
+  console.log("Host is " + req.hostname);
   console.log(new Date());
 
   next();
