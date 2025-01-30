@@ -10,10 +10,31 @@ app.get("/sum", function (req, res) {
   });
 });
 
-app.get("/dif", function (req, res) {});
+app.get("/dif", function (req, res) {
+  const a = req.query.a;
+  const b = req.query.b;
 
-app.get("/mul", function (req, res) {});
+  res.json({
+    answer: a - b,
+  });
+});
 
-app.get("/div", function (req, res) {});
+app.get("/mul", function (req, res) {
+  const a = req.query.a;
+  const b = req.query.b;
+
+  res.json({
+    answer: a * b,
+  });
+});
+
+app.get("/div", function (req, res) {
+  const a = req.query.a;
+  const b = req.query.b;
+
+  res.json({
+    answer: a / b,
+  });
+});
 
 app.listen(3000);
