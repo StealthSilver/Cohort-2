@@ -12,3 +12,6 @@ FETCH API
 there are two ways to send http requests
 1. direct request
 2. background requests -> fetch api
+
+fetch("https://jsonplaceholder.typicode.com/posts/1");
+fetch sends the request to other server get the data
