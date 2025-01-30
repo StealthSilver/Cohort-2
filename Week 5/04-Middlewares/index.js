@@ -6,9 +6,11 @@ const app = express();
 let requestcount = 0;
 
 //middleware
-function requestIncreaser() {
+function requestIncreaser(req, res, next) {
   requestcount = requestcount + 1;
   console.log(`total no of requests = ${requestcount}`);
+
+  next(); // if the middleware calls next() then only the realSumHandler is called
 }
 
 function realSumHandler(req, res) {
