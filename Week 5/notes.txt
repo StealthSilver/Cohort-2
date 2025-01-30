@@ -30,3 +30,6 @@ index.js -> creating a http server
 
 the fetch and axios run on AJAX -> Asynchronous JSON and XML 
 EJS -> (Embeded JavaScript) is used for tampleting
+
+MIDDLEWARES
+
