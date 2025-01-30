@@ -15,3 +15,4 @@ EcmaScript is the standard JS organizational code
 
 -> npm init -y (initialize the nodejs project)
 this will create a package.json file
+this is a configuration file, stores the important info. for the project
