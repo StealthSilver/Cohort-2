@@ -9,14 +9,10 @@ let requestcount = 0;
 function requestIncreaser(req, res, next) {
   requestcount = requestcount + 1;
 
-  if (req.body.cookie === "google") {
-    next();
-  } else {
-    console.log(`total no of requests = ${requestcount}`);
-    res.json({
-      message: "I ended the request early",
-    });
-  }
+  console.log(`total no of requests = ${requestcount}`);
+  res.json({
+    message: "I ended the request early",
+  });
 
   // next is not called
 }
