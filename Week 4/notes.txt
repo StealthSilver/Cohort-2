@@ -22,4 +22,5 @@ PACKAGE.JSON
 name : name of the directory
 version : version of node js 
 main : the entry point of the project 
-scripts : 
+scripts : it contains the commands which are used for execution 
+
