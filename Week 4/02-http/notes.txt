@@ -27,3 +27,7 @@ to get a live website
 1. buy a server instance from AES -> get the ip address 
 2. buy a domain name from say godddy 
 3. point the domain name to the IP address
+
+PORTS 
+
+they are logical endpoints in networking used by protocols to identify specific processes running on a computer or a server
