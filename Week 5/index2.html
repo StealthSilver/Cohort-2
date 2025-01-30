@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>HEllO WORLD</h1>
+    <div id="posts"></div>
+
+    <script>
+      async function getRecentPosts() {
+        const response = await axios.get(
+          "https://jsonplaceholder.typicode.com/posts/1"
+        );
+
+        document.getElementById("posts").innerHTML = response.data.title;
+      }
+
+      getRecentPosts();
+    </script>
+  </body>
+</html>
