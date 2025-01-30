@@ -73,3 +73,7 @@ BODY :
 
 it refers to the part of an HTTP message that contains the actual data being sent to the server
 usually the data is transferred in the JSON format
+
+ROUTES :
+
+routes are the paths or endpoints 
