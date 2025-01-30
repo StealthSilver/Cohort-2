@@ -12,3 +12,13 @@ whenever you are visiting any website you are communication via http requests
 these requests can be checked on the network tab in inspect mode
 
 the http protocol runs on the request response model
+
+creating the protocol -> https://datatracker.ietf.org/doc/html/rfc2616 
+
+DOMAIN NAME / IP
+
+the names associated with teh server ip address are called the domain names 
+the check the ip address of any server use the ping gommand
+
+ping google.com -> to get the ip address 
+use sudo vi /etc/hosts -> to check which ip is pointing to which domain name
