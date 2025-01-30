@@ -56,6 +56,6 @@ RESPONSES
 the server can return teh respponses in various formats 
 
 JSON -> JavaScript Object Notation
-PLAIN TEXT  
-JSON DATA
+PLAIN TEXT 
+HTML
 
