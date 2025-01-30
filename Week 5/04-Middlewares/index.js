@@ -5,6 +5,7 @@ const app = express();
 
 let requestcount = 0;
 
+//middleware
 function requestIncreaser() {
   requestcount = requestcount + 1;
   console.log(`total no of requests = ${requestcount}`);
