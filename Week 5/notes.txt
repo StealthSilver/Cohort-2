@@ -4,3 +4,6 @@ along with the request there is some other information sent in form of the heade
 
 the headers are key value pairs between a client and a server
 they mostly contain metadata, authentication data , content type , referer
+
+there are both request and response headers
+
