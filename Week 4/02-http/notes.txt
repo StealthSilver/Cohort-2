@@ -81,3 +81,7 @@ routes are the paths or endpoints that defne how te incoming requests will be ha
 HEADERS: 
 
 HTTPS -> HYPER TEXT TRANSFER PROTOCOL SECURED
+
+index.js -> creating a http server 
+
+use the express library
