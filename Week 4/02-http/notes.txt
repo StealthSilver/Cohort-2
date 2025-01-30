@@ -35,6 +35,11 @@ they are logical endpoints in networking used by protocols to identify specific 
 most moders websites run on port 443 on the web
 locally we can run websites on different ports 
 
+default ports: 
+HTTp -> 80
+HTTPS -> 443
+SSH -> 22
+
 METHODS 
 
 they are action keywords which denote the CRUD operations
