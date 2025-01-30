@@ -13,3 +13,5 @@ BUN is another JS runtime, which is faster and it is written in Zig
 
 EcmaScript is the standard JS organizational code
 
+-> npm init -y (initialize the nodejs project)
+this will create a package.json file
