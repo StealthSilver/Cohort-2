@@ -1,2 +1,10 @@
 NODE JS
 
+Node JS is the open source runtime for JS 
+
+1997 -> Netscape Nevigator
+2012 / 2013 -> Node JS lets us run the JS in a server
+
+Node JS is built on the Chrome V8 engine
+
+JS Engines : Chrome -> V8 , Mozila -> SpiderMonkey
