@@ -10,3 +10,5 @@ Ruby -> Rails
 
 whenever you are visiting any website you are communication via http requests
 these requests can be checked on the network tab in inspect mode
+
+teh http protocol runs on the request response model
