@@ -9,4 +9,4 @@ Python -> Django
 Ruby -> Rails
 
 whenever you are visiting any website you are communication via http requests
-tyhese requests can be checked on the network tab in inspect mode
+these requests can be checked on the network tab in inspect mode
