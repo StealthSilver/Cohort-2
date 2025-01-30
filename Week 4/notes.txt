@@ -38,4 +38,4 @@ npm install chalk -> using the "chalk" library
 Using the external library
 
 index.js
-import chalk from "chalk"; -> importing the libraty
+import chalk from "chalk"; -> importing the library
