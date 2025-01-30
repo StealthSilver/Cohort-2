@@ -24,3 +24,6 @@ AXIOS LIBRARY
 index2.html
  
 axios is an external library for calling libraries
+
+
+index.js -> creating a http server
