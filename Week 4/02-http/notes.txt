@@ -34,3 +34,12 @@ they are logical endpoints in networking used by protocols to identify specific 
 
 most moders websites run on port 443 on the web
 locally we can run websites on different ports 
+
+METHODS 
+
+they are action keywords which denote the CRUD operations
+
+C -> CREATE -> POST
+R -> READ -> GET
+U -> UPDATE -> PATCH
+D -> DELETE -> DELETE
