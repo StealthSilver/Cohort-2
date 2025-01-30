@@ -5,11 +5,15 @@ const app = express();
 
 let requestcount = 0;
 
+function requestIncreaser() {
+  requestcount = requestcount + 1;
+  console.log(`total no of requests = ${requestcount}`);
+}
+
 // better routing and database, middlewares
 
 app.get("/sum", function (req, res) {
-  requestcount = requestcount + 1;
-  console.log(`total no of requests = ${requestcount}`);
+  requestIncreaser();
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
 
