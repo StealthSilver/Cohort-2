@@ -8,3 +8,5 @@ Node JS is the open source runtime for JS
 Node JS is built on the Chrome V8 engine
 
 JS Engines : Chrome -> V8 , Mozilla -> SpiderMonkey , Safari -> JavaScriptCore
+
+BUN is another JS runtime, which is faster and it is written in Zig
