@@ -28,3 +28,7 @@ keywords:            |
 author:              |   metadata, used when publishing into npm (node package manager)
 licence:             |
 description:         | 
+
+npm
+pacakage maangers allows us to use the external packages , libraries or packages 
+packages contain the reusable code
