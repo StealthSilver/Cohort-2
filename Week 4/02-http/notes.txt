@@ -77,3 +77,6 @@ usually the data is transferred in the JSON format
 ROUTES :
 
 routes are the paths or endpoints that defne how te incoming requests will be handles by the servers
+
+HEADERS: 
+
