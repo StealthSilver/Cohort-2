@@ -24,3 +24,7 @@ version : version of node js
 main : the entry point of the project 
 scripts : it contains the commands which are used for execution 
 
+keywords:            |
+author:              |   metadata, used when publishing into npm (node package manager)
+licence:             |
+description:         | 
