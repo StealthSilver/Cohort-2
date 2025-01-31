@@ -57,8 +57,10 @@ app.post("/signin", function (req, res) {
   }
 });
 
+// auth as a middleware
+
 // sending the token to the server in the header
-app.get("/me", function (req, res) {
+app.get("/me", auth, function (req, res) {
   const token = req.headers.token; //jwt
   const decodedData = jwt.verify(token, JWT_SECRET); // converting the JWT
 
