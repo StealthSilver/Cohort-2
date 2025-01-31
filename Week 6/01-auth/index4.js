@@ -64,6 +64,7 @@ function auth(req, res, next) {
   const decodedData = jwt.verify(token, JWT_SECRET);
 
   if (decodedData.username) {
+    req.username = decodedData.username;
     next();
   } else {
     res.json({
@@ -72,11 +73,13 @@ function auth(req, res, next) {
   }
 }
 
+// auth middleware has to pass data
+
 app.get("/me", auth, function (req, res) {
   let foundUser = null;
 
   for (let i = 0; i < users.length; i++) {
-    if (users[i].username === decodedData.username) {
+    if (users[i].username === req.username) {
       foundUser = users[i];
     }
   }
