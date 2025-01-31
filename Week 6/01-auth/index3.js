@@ -1,7 +1,9 @@
-// creating a token and asking for user's data
+// creating a JWT
 
 const express = require("express");
+const jwt = require("jsonwebtoken");
 
+const JWT_SECRET = "randomstringhello";
 const app = express();
 
 // this middleware will let us parse the post body
@@ -46,8 +48,14 @@ app.post("/signin", function (req, res) {
   //     }
   //   });
 
+  // signing the token
   if (foundUser) {
-    const token = generateToken();
+    const token = jwt.sign(
+      {
+        username: username,
+      },
+      JWT_SECRET
+    );
     foundUser.token = token;
     res.json({
       message: token,
