@@ -11,4 +11,4 @@ JWT -> JSON WEB TOKENS
 
 the JWT are compact ans self contained way to represent information between two parties
 JWT's contain all teh information needed to authenticate a request, so the server dosen't need to store session data.
-All the data is stored in the token itself
+All the data is stored in the token itself 
