@@ -59,25 +59,32 @@ app.post("/signin", function (req, res) {
 
 // auth as a middleware
 
-// sending the token to the server in the header
-app.get("/me", auth, function (req, res) {
-  const token = req.headers.token; //jwt
-  const decodedData = jwt.verify(token, JWT_SECRET); // converting the JWT
+function auth(req, res, next) {
+  const token = req.header.token;
+  const decodedData = jwt.verify(token, JWT_SECRET);
 
   if (decodedData.username) {
-    let foundUser = null;
-
-    for (let i = 0; i < users.length; i++) {
-      if (users[i].username === decodedData.username) {
-        foundUser = users[i];
-      }
-    }
-
+    next();
+  } else {
     res.json({
-      username: foundUser.username,
-      password: foundUser.password,
+      message: "you are not logged in",
     });
   }
+}
+
+app.get("/me", auth, function (req, res) {
+  let foundUser = null;
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].username === decodedData.username) {
+      foundUser = users[i];
+    }
+  }
+
+  res.json({
+    username: foundUser.username,
+    password: foundUser.password,
+  });
 });
 
 app.listen(3000, () => {
