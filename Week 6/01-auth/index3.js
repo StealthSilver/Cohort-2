@@ -56,16 +56,18 @@ app.post("/signin", function (req, res) {
       },
       JWT_SECRET
     );
-    foundUser.token = token;
+
     res.json({
-      message: token,
+      token: token,
     });
   }
 });
 
 // sending the token to the server in the header
 app.get("/me", function (req, res) {
-  const token = req.headers.token;
+  const token = req.headers.token; //jwt
+  const decodedInformation = jwt.verify(token, JWT_SECRET); // converting the JWT
+  const username = decodedInformation.username;
 
   let foundUser = null;
 
