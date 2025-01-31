@@ -2,6 +2,7 @@ const express = require("express");
 
 const app = express();
 
+// this middleware will let us parse the post body
 app.use(express.json());
 
 app.post("/signup", function (req, res) {});
