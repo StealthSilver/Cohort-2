@@ -16,3 +16,5 @@ JWT's contain all teh information needed to authenticate a request, so the serve
 All the data is stored in the token itself 
 
 JWT prevent 1 round trip from the backend server and database for any user request
+
+to decode JWT's -> jwt.io
