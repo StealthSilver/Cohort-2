@@ -7,6 +7,8 @@ following are the steps how authentication works on any website
 3. the user gets back a token
 4. in every subsequesnt request, the user sends the token to identify it self to the backend
 
+
+index3.js
 JWT -> JSON WEB TOKENS
 
 the JWT are compact ans self contained way to represent information between two parties
