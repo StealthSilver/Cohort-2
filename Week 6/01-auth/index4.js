@@ -66,7 +66,7 @@ app.get("/me", function (req, res) {
     let foundUser = null;
 
     for (let i = 0; i < users.length; i++) {
-      if (users[i].username === username) {
+      if (users[i].username === decodedData.username) {
         foundUser = users[i];
       }
     }
