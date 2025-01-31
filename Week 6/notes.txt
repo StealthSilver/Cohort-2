@@ -20,3 +20,5 @@ JWT are stateless
 JWT prevent 1 round trip from the backend server and database for any user request
 
 to decode JWT's -> jwt.io
+
+to every request user sent to the backend, user has to send the token along with it in the header
