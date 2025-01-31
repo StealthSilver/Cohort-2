@@ -1,6 +1,6 @@
 AUTHENTICATION 
 
 following are the steps how authentication works on any website
-1. you will sign in using your username and password the backend server will return you a token 
-2. whenever you will go to that website the server will check your token and indentify you 
 
+1. the user comes to your website
+2. the user sends a request 
