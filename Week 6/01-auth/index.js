@@ -1,8 +1,8 @@
+// this middleware will let us parse the post body
 const express = require("express");
 
 const app = express();
 
-// this middleware will let us parse the post body
 app.use(express.json());
 
 // creating a in memory variable (database)
