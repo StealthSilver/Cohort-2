@@ -16,6 +16,10 @@ app.post("/signup", function (req, res) {
     username: username,
     password: password,
   });
+
+  res.json({
+    message: "you are signed in",
+  });
 });
 
 app.post("/signin", function (req, res) {});
