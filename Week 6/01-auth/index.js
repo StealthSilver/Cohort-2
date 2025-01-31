@@ -8,7 +8,7 @@ app.use(express.json());
 // creating a in memory variable (database)
 const users = [];
 
-// generating token
+// generating token using a random string
 
 function generateToken() {
   return Math.random();
