@@ -132,6 +132,25 @@ app.post("/signin", function (req, res) {
 // sending the token to the server in the header
 app.get("/me", function (req, res) {
   const token = req.headers.token;
+
+  const foundUser = null;
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].token == token) {
+      foundUser = users[i];
+    }
+  }
+
+  if (foundUser) {
+    res.json({
+      username: foundUser.username,
+      password: foundUser.password,
+    });
+  } else {
+    res.json({
+      message: "token invalid",
+    });
+  }
 });
 
 app.listen(3000);
