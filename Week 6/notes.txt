@@ -12,8 +12,8 @@ index3.js
 JWT -> JSON WEB TOKENS
 
 the JWT are compact ans self contained way to represent information between two parties
-JWT's contain all teh information needed to authenticate a request, so the server dosen't need to store session data.
-All the data is stored in the token itself 
+JWT's contain all the information needed to authenticate a request, so the server dosen't need to store session data.
+All the data is encoded in the token itself 
 
 JWT prevent 1 round trip from the backend server and database for any user request
 
