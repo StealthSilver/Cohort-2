@@ -102,13 +102,28 @@ app.post("/signin", function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
 
-  const user = users.find(function (u) {
-    if (u.username == username) {
-      return true;
-    } else {
-      return false;
+  let foundUser = null;
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].username == username && users[i].password == password) {
+      foundUser = users[i];
     }
-  });
+  }
+
+  //   const user = users.find(function (u) {
+  //     if (u.username == username) {
+  //       return true;
+  //     } else {
+  //       return false;
+  //     }
+  //   });
+
+  if (foundUser) {
+    const token = generateToken();
+    res.json({
+      message: token,
+    });
+  }
 });
 
 app.listen(3000);
