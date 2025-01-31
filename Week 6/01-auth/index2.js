@@ -1,4 +1,4 @@
-// creating a token
+// creating a token and asking for user's data
 
 const express = require("express");
 
@@ -129,6 +129,9 @@ app.post("/signin", function (req, res) {
   }
 });
 
-app.get("/me", function (req, res) {});
+// sending the token to the server in the header
+app.get("/me", function (req, res) {
+  const token = req.headers.token;
+});
 
 app.listen(3000);
