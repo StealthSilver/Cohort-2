@@ -59,33 +59,21 @@ app.post("/signin", function (req, res) {
 
 // sending the token to the server in the header
 app.get("/me", function (req, res) {
-  try {
-    const token = req.headers.token; //jwt
-    const decodedInformation = jwt.verify(token, JWT_SECRET); // converting the JWT
-    const username = decodedInformation.username;
+  const token = req.headers.token; //jwt
+  const decodedData = jwt.verify(token, JWT_SECRET); // converting the JWT
 
+  if (decodedData.username) {
     let foundUser = null;
 
     for (let i = 0; i < users.length; i++) {
-      if (users[i].username == username) {
-        // Fixed the bug here
+      if (users[i].username === username) {
         foundUser = users[i];
       }
     }
 
-    if (foundUser) {
-      res.json({
-        username: foundUser.username,
-        password: foundUser.password,
-      });
-    } else {
-      res.status(401).json({
-        message: "Invalid token",
-      });
-    }
-  } catch (err) {
-    res.status(401).json({
-      message: "Invalid or expired token",
+    res.json({
+      username: foundUser.username,
+      password: foundUser.password,
     });
   }
 });
