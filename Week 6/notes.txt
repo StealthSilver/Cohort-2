@@ -6,3 +6,6 @@ following are the steps how authentication works on any website
 2. the user sends a request to /signin with their username and password 
 3. the user gets back a token
 4. in every subsequesnt request, the user sends the token to identify it self to the backend
+
+JWT -> JSON WEB TOKENS
+
