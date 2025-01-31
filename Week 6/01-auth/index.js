@@ -98,6 +98,17 @@ app.post("/signup", function (req, res) {
   });
 });
 
-app.post("/signin", function (req, res) {});
+app.post("/signin", function (req, res) {
+  const username = req.body.username;
+  const password = req.body.password;
+
+  const user = users.find(function (u) {
+    if (u.username == username) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+});
 
 app.listen(3000);
