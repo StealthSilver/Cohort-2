@@ -1,4 +1,4 @@
-// token-based authentication
+// token-based authentication using a middleware
 
 const express = require("express");
 const jwt = require("jsonwebtoken");
