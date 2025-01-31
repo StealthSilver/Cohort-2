@@ -80,6 +80,8 @@ function generateToken() {
   for (let i = 0; i < 32; i++) {
     token = token + options[Math.floor(Math.random() * options.length())];
   }
+
+  return token;
 }
 
 app.post("/signup", function (req, res) {
