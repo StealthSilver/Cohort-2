@@ -1,5 +1,3 @@
-// creating a JWT
-
 const express = require("express");
 const jwt = require("jsonwebtoken");
 
@@ -9,11 +7,10 @@ const app = express();
 // this middleware will let us parse the post body
 app.use(express.json());
 
-// creating a in memory variable (database)
+// creating an in-memory variable (database)
 const users = [];
 
 // generating token using a random string
-
 app.post("/signup", function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
@@ -40,15 +37,6 @@ app.post("/signin", function (req, res) {
     }
   }
 
-  //   const user = users.find(function (u) {
-  //     if (u.username == username) {
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   });
-
-  // signing the token
   if (foundUser) {
     const token = jwt.sign(
       {
@@ -60,33 +48,46 @@ app.post("/signin", function (req, res) {
     res.json({
       token: token,
     });
+  } else {
+    res.status(401).json({
+      message: "Invalid username or password",
+    });
   }
 });
 
 // sending the token to the server in the header
 app.get("/me", function (req, res) {
-  const token = req.headers.token; //jwt
-  const decodedInformation = jwt.verify(token, JWT_SECRET); // converting the JWT
-  const username = decodedInformation.username;
+  try {
+    const token = req.headers.token; //jwt
+    const decodedInformation = jwt.verify(token, JWT_SECRET); // converting the JWT
+    const username = decodedInformation.username;
 
-  let foundUser = null;
+    let foundUser = null;
 
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].username == token) {
-      foundUser = users[i];
+    for (let i = 0; i < users.length; i++) {
+      if (users[i].username == username) {
+        // Fixed the bug here
+        foundUser = users[i];
+      }
     }
-  }
 
-  if (foundUser) {
-    res.json({
-      username: foundUser.username,
-      password: foundUser.password,
-    });
-  } else {
-    res.json({
-      message: "token invalid",
+    if (foundUser) {
+      res.json({
+        username: foundUser.username,
+        password: foundUser.password,
+      });
+    } else {
+      res.status(401).json({
+        message: "Invalid token",
+      });
+    }
+  } catch (err) {
+    res.status(401).json({
+      message: "Invalid or expired token",
     });
   }
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
