@@ -9,3 +9,4 @@ following are the steps how authentication works on any website
 
 JWT -> JSON WEB TOKENS
 
+the JWT are compact ans self contained way to represent information between two parties
