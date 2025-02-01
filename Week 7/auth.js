@@ -4,19 +4,17 @@ const JWT_SECRET = "s3cret";
 function auth(req, res, next) {
   const token = req.headers.authorization;
 
-  const response = jwt.verify(token, JWT_SECRET);
+  if (!token) {
+    return res.status(401).json({ message: "No token provided." });
+  }
 
-  if (response) {
-    req.userId = response.id;
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET);
+    req.userId = decoded.id;
     next();
-  } else {
-    res.status(403).json({
-      message: "Incorrect creds",
-    });
+  } catch (error) {
+    res.status(403).json({ message: "Invalid or expired token." });
   }
 }
 
-module.exports = {
-  auth,
-  JWT_SECRET,
-};
+module.exports = { auth, JWT_SECRET };
