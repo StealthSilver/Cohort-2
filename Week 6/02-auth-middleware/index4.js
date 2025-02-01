@@ -1,5 +1,3 @@
-//JWT auth as the moddleware
-
 const express = require("express");
 const jwt = require("jsonwebtoken");
 
@@ -61,8 +59,6 @@ app.post("/signin", logger, function (req, res) {
     );
     res.header("jwt", token);
 
-    res.header("random", "harkirat");
-
     res.json({
       token: token,
     });
@@ -70,26 +66,28 @@ app.post("/signin", logger, function (req, res) {
 });
 
 function auth(req, res, next) {
-  const token = req.headers.token;
-  const decodedData = jwt.verify(token, JWT_SECRET);
+  const token = req.headers.jwt; // Fixed to read the correct header
+  try {
+    const decodedData = jwt.verify(token, JWT_SECRET);
 
-  if (decodedData.username) {
-    // req = {status, headers...., username, password, userFirstName, random; ":123123"}
-    req.username = decodedData.username;
-    next();
-  } else {
+    if (decodedData.username) {
+      req.username = decodedData.username;
+      next();
+    } else {
+      res.json({
+        message: "You are not logged in",
+      });
+    }
+  } catch (err) {
     res.json({
-      message: "You are not logged in",
+      message: "Invalid or expired token",
     });
   }
 }
 
 app.get("/me", logger, auth, function (req, res) {
-  // req = {status, headers...., username, password, userFirstName, random; ":123123"}
   const currentUser = req.username;
-  // const token = req.headers.token;
-  // const decodedData = jwt.verify(token, JWT_SECRET);
-  // const currentUser = decodedData.username
+  let foundUser = null; // Declared foundUser
 
   for (let i = 0; i < users.length; i++) {
     if (users[i].username === currentUser) {
@@ -97,10 +95,18 @@ app.get("/me", logger, auth, function (req, res) {
     }
   }
 
-  res.json({
-    username: foundUser.username,
-    password: foundUser.password,
-  });
+  if (foundUser) {
+    res.json({
+      username: foundUser.username,
+      password: foundUser.password,
+    });
+  } else {
+    res.json({
+      message: "User not found",
+    });
+  }
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
