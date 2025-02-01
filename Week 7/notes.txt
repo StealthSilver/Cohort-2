@@ -18,3 +18,5 @@ the schema is flexoible
 
 2. Scalability
 the nosql databases aer designed to scale horizontally, in case of SQL we have to use sharding
+
+a mongo cluster is a bunch of machines where data is stored
