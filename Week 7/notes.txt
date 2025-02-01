@@ -6,3 +6,6 @@ including a database will make the backend stateless (persiisting the data)
 A database is a organised collection of data that are structured to enable efficient storage, retrieval and management of information
 
 MONGO DB and NoSQL databases 
+
+sql databases were the norm, then nosql databases came and they are designed to handele a variety of data models that may not
+neatly fit into the tabular scheme of relational databases
