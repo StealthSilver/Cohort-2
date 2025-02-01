@@ -78,6 +78,11 @@ function auth(req, res, next) {
 
   if (decodedData) {
     req.userId = decodedData.userId;
+    next();
+  } else {
+    res.status(403).json({
+      message: "incorrect credentials",
+    });
   }
 }
 
