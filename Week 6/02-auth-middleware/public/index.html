@@ -10,9 +10,19 @@
   <body>
     <div>
       <h1>Signup</h1>
-      <input type="text" name="username" placeholder="username" />
+      <input
+        id="signup-username"
+        type="text"
+        name="username"
+        placeholder="username"
+      />
 
-      <input type="text" name="password" placeholder="password" />
+      <input
+        id="signup-password"
+        type="text"
+        name="password"
+        placeholder="password"
+      />
       <button class="signup()">Submit</button>
     </div>
 
@@ -20,9 +30,19 @@
 
     <div>
       <h1>Signin</h1>
-      <input type="text" name="username" placeholder="username" />
+      <input
+        id="signin-uaername"
+        type="text"
+        name="username"
+        placeholder="username"
+      />
 
-      <input type="text" name="password" placeholder="password" />
+      <input
+        id="signin-password"
+        type="text"
+        name="password"
+        placeholder="password"
+      />
       <button class="signin()">Submit</button>
     </div>
 
@@ -36,5 +56,17 @@
     <div>
       <button onclick="logout()">Logout</button>
     </div>
+
+    <script>
+      async function signup() {
+        const username = document.getElementById("siguup-username").value;
+        const password = document.getElementById("siguup-password").value;
+
+        await axios.post("http://localhost:3000/signup", {
+          username: username,
+          password: password,
+        });
+      }
+    </script>
   </body>
 </html>
