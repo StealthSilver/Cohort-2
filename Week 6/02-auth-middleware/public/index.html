@@ -4,6 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auth Moddleware</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <h1>Signup</h1>
+      <input type="text" name="username" placeholder="username" />
+
+      <input type="text" name="password" placeholder="password" />
+      <button class="signup()">Submit</button>
+    </div>
+
+    <br />
+
+    <div>
+      <h1>Signin</h1>
+      <input type="text" name="username" placeholder="username" />
+
+      <input type="text" name="password" placeholder="password" />
+      <button class="signin()">Submit</button>
+    </div>
+
+    <br />
+
+    <div>
+      User Information <br />
+      <div id="information"></div>
+    </div>
+
+    <div>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </body>
 </html>
