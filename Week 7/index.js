@@ -86,9 +86,17 @@ function auth(req, res, next) {
   }
 }
 
-app.post("/todo", function (req, res) {});
+app.post("/todo", auth, function (req, res) {
+  const userId = req.userId;
+});
 
-app.get("/todos", function (req, res) {});
+app.get("/todos", auth, function (req, res) {
+  const userId = req.userId;
+
+  res.json({
+    userId: userId,
+  });
+});
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
