@@ -10,3 +10,4 @@ MONGO DB and NoSQL databases
 sql databases were the norm, then nosql databases came and they are designed to handele a variety of data models that may not
 neatly fit into the tabular scheme of relational databases
 
+MONGO id schemaless
