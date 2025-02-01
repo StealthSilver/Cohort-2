@@ -12,8 +12,14 @@ app.use(express.json());
 // creating an in-memory variable (database)
 const users = [];
 
+// logger moddleware
+
+function logger(req, res, next) {
+  console.log(req.method + " request came ");
+}
+
 // generating token using a random string
-app.post("/signup", function (req, res) {
+app.post("/signup", logger, function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
 
@@ -27,7 +33,7 @@ app.post("/signup", function (req, res) {
   });
 });
 
-app.post("/signin", function (req, res) {
+app.post("/signin", logger, function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
 
@@ -78,7 +84,7 @@ function auth(req, res, next) {
 
 // auth middleware has to pass data
 
-app.get("/me", auth, function (req, res) {
+app.get("/me", logger, auth, function (req, res) {
   let foundUser = null;
 
   for (let i = 0; i < users.length; i++) {
