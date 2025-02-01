@@ -31,7 +31,7 @@
     <div>
       <h1>Signin</h1>
       <input
-        id="signin-uaername"
+        id="signin-username"
         type="text"
         name="username"
         placeholder="username"
@@ -75,15 +75,15 @@
         const username = document.getElementById("signin-username").value;
         const password = document.getElementById("signin-password").value;
 
-        await axios.post("http://localhost:3000/signin", {
+        const response = await axios.post("http://localhost:3000/signin", {
           username: username,
           password: password,
         });
 
-        // saving the token in the local storage
+        // Saving the token in local storage
         localStorage.setItem("token", response.data.token);
 
-        alert("user signed in");
+        alert("User signed in successfully!");
       }
     </script>
   </body>
