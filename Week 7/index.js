@@ -39,7 +39,27 @@ app.post("/signup", async function (req, res) {
   });
 });
 
-app.post("/signin", function (req, res) {});
+app.post("/signin", function (req, res) {
+  const email = req.body.email;
+  const password = req.body.password;
+
+  const user = UserModel.findOne({
+    email: email,
+    password: password,
+  });
+
+  if(user){
+    const token = "";
+    res.json({
+
+    }),
+
+  }else{
+    res.status(403).json({
+        message:"incorrect credentials"
+    })
+  }
+});
 
 app.post("/todo", function (req, res) {});
 
