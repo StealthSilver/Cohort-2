@@ -1,4 +1,10 @@
+// backend for the todo application with DB
+
 const express = require("express");
+
+// importing the models
+const { UserModel, TodoModel } = require("./db");
+
 const jwt = require("jsonwebtoken");
 const bodyParser = require("body-parser");
 
