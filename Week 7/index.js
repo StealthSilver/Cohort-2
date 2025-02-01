@@ -71,6 +71,16 @@ app.post("/signin", async function (req, res) {
 
 // authentication middleware
 
+function auth(req, res, next) {
+  const token = req.header.token;
+
+  const decodedData = jwt.verify(token, JWT_SECRET);
+
+  if (decodedData) {
+    req.userId = decodedData.userId;
+  }
+}
+
 app.post("/todo", function (req, res) {});
 
 app.get("/todos", function (req, res) {});
