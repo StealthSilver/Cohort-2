@@ -1,28 +1,16 @@
-// backend for the todo application with DB
-
 const express = require("express");
-const mongoose = require("mongoose");
-// importing the models
 const { UserModel, TodoModel } = require("./db");
-
+const { auth, JWT_SECRET } = require("./auth");
 const jwt = require("jsonwebtoken");
-const JWT_SECRET = "asdasd1234";
-const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
-const app = express();
-app.use(bodyParser.json());
-
-// MongoDB connection
 mongoose.connect("mongodb://localhost:27017/todo-app", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "Connection error:"));
-db.once("open", () => {
-  console.log("Connected to MongoDB");
-});
+const app = express();
+app.use(express.json());
 
 app.post("/signup", async function (req, res) {
   const email = req.body.email;
@@ -36,7 +24,7 @@ app.post("/signup", async function (req, res) {
   });
 
   res.json({
-    massage: "You are logged in",
+    message: "You are signed up",
   });
 });
 
@@ -44,72 +32,55 @@ app.post("/signin", async function (req, res) {
   const email = req.body.email;
   const password = req.body.password;
 
-  const user = await UserModel.findOne({
+  const response = await UserModel.findOne({
     email: email,
     password: password,
   });
 
-  console.log(user);
-
-  // signing the jwt with the userID payload
-  if (user) {
+  if (response) {
     const token = jwt.sign(
       {
-        id: user._id.toString(),
+        id: response._id.toString(),
       },
       JWT_SECRET
     );
+
     res.json({
-      token: token,
+      token,
     });
   } else {
     res.status(403).json({
-      message: "incorrect credentials",
+      message: "Incorrect creds",
     });
   }
 });
 
-// authentication middleware
-
-function auth(req, res, next) {
-  const token = req.headers.token;
-
-  const decodedData = jwt.verify(token, JWT_SECRET);
-
-  if (decodedData) {
-    req.userId = decodedData.id;
-    next();
-  } else {
-    res.status(403).json({
-      message: "incorrect credentials",
-    });
-  }
-}
-
-app.post("/todo", auth, function (req, res) {
+app.post("/todo", auth, async function (req, res) {
   const userId = req.userId;
   const title = req.body.title;
+  const done = req.body.done;
 
-  TodoModel.create({
-    title,
+  await TodoModel.create({
     userId,
+    title,
+    done,
   });
 
   res.json({
-    userId: userId,
+    message: "Todo created",
   });
 });
 
 app.get("/todos", auth, async function (req, res) {
   const userId = req.userId;
+
   const todos = await TodoModel.find({
-    userId: userId,
+    userId,
   });
+
   res.json({
-    userId: userId,
+    todos,
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
+app.listen(3000);
