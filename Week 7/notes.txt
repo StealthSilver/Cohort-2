@@ -4,3 +4,5 @@ in a fullstack application there is a frontend, backend and a database
 including a database will make the backend stateless (persiisting the data)
 
 A database is a organised collection of data that are structured to enable efficient storage, retrieval and management of information
+
+MONGO DB and NoSQL databases 
