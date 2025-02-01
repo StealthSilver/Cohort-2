@@ -16,3 +16,5 @@ Properties of Nosql db
 this is a good choice for an application where there are nested folders, or the data is unscructured
 the schema is flexoible
 
+2. Scalability
+the nosql databases aer designed to scale horizontally, in case of SQL we have to use sharding
