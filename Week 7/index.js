@@ -23,7 +23,21 @@ db.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
-app.post("/signup", function (req, res) {});
+app.post("/signup", async function (req, res) {
+  const email = req.body.email;
+  const password = req.body.password;
+  const name = req.body.name;
+
+  await UserModel.insert({
+    mail: email,
+    password: password,
+    name: name,
+  });
+
+  res.json({
+    massage: "You are logged in",
+  });
+});
 
 app.post("/signin", function (req, res) {});
 
