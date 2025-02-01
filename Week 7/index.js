@@ -40,11 +40,11 @@ app.post("/signup", async function (req, res) {
   });
 });
 
-app.post("/signin", function (req, res) {
+app.post("/signin", async function (req, res) {
   const email = req.body.email;
   const password = req.body.password;
 
-  const user = UserModel.findOne({
+  const user = await UserModel.findOne({
     email: email,
     password: password,
   });
