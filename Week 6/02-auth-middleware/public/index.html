@@ -85,6 +85,18 @@
 
         alert("User signed in successfully!");
       }
+
+      async function getUserInformation() {
+        const response = await axios.get("http://localhost:3000/me", {
+          headers: {
+            token: localStorage.getItem("token"),
+          },
+        });
+
+        (document.getElementById("information").innerHTML =
+          "Username: " + response.data),
+          username + " Password" + response.data.password;
+      }
     </script>
   </body>
 </html>
