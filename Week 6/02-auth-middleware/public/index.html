@@ -1,57 +1,31 @@
+// === Frontend (index.html) ===
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auth Moddleware</title>
-
+    <title>Auth Middleware</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div>
       <h1>Signup</h1>
-      <input
-        id="signup-username"
-        type="text"
-        name="username"
-        placeholder="username"
-      />
-
-      <input
-        id="signup-password"
-        type="text"
-        name="password"
-        placeholder="password"
-      />
-      <button onclick="signup()">Submit</button>
+      <input id="signup-username" type="text" placeholder="Username" />
+      <input id="signup-password" type="password" placeholder="Password" />
+      <button onclick="signup()">Signup</button>
     </div>
-
-    <br />
 
     <div>
       <h1>Signin</h1>
-      <input
-        id="signin-username"
-        type="text"
-        name="username"
-        placeholder="username"
-      />
-
-      <input
-        id="signin-password"
-        type="text"
-        name="password"
-        placeholder="password"
-      />
-      <button onclick="signin()">Submit</button>
+      <input id="signin-username" type="text" placeholder="Username" />
+      <input id="signin-password" type="password" placeholder="Password" />
+      <button onclick="signin()">Signin</button>
     </div>
-
-    <br />
 
     <div>
       <h1>User Information</h1>
-      <br />
       <div id="information"></div>
+      <button onclick="getUserInformation()">Get Info</button>
     </div>
 
     <div>
@@ -63,39 +37,60 @@
         const username = document.getElementById("signup-username").value;
         const password = document.getElementById("signup-password").value;
 
-        await axios.post("http://localhost:3000/signup", {
-          username: username,
-          password: password,
-        });
-
-        alert("user signed up");
+        try {
+          const response = await axios.post("http://localhost:3000/signup", {
+            username,
+            password,
+          });
+          alert(response.data.message);
+        } catch (err) {
+          console.error(err);
+          alert("Signup failed");
+        }
       }
 
       async function signin() {
         const username = document.getElementById("signin-username").value;
         const password = document.getElementById("signin-password").value;
 
-        const response = await axios.post("http://localhost:3000/signin", {
-          username: username,
-          password: password,
-        });
+        try {
+          const response = await axios.post("http://localhost:3000/signin", {
+            username,
+            password,
+          });
 
-        // Saving the token in local storage
-        localStorage.setItem("token", response.data.token);
-
-        alert("User signed in successfully!");
+          localStorage.setItem("token", response.data.token);
+          alert("User signed in successfully!");
+        } catch (err) {
+          console.error(err);
+          alert("Signin failed");
+        }
       }
 
       async function getUserInformation() {
-        const response = await axios.get("http://localhost:3000/me", {
-          headers: {
-            token: localStorage.getItem("token"),
-          },
-        });
+        try {
+          const token = localStorage.getItem("token");
+          const response = await axios.get("http://localhost:3000/me", {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
 
-        (document.getElementById("information").innerHTML =
-          "Username: " + response.data),
-          username + " Password" + response.data.password;
+          const { username, password } = response.data;
+          document.getElementById("information").innerHTML = `
+            <p>Username: ${username}</p>
+            <p>Password: ${password}</p>
+          `;
+        } catch (err) {
+          console.error(err);
+          alert("Failed to fetch user info");
+        }
+      }
+
+      function logout() {
+        localStorage.removeItem("token");
+        document.getElementById("information").innerHTML = "";
+        alert("Logged out successfully!");
       }
     </script>
   </body>

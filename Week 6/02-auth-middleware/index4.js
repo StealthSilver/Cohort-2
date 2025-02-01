@@ -1,3 +1,4 @@
+// === Backend (server.js) ===
 const express = require("express");
 const jwt = require("jsonwebtoken");
 
@@ -13,97 +14,65 @@ function logger(req, res, next) {
   next();
 }
 
-// localhost:3000
+// Serve the frontend
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/public/index.html");
 });
 
+// Signup route
 app.post("/signup", logger, function (req, res) {
-  const username = req.body.username;
-  const password = req.body.password;
-  users.push({
-    username: username,
-    password: password,
-  });
+  const { username, password } = req.body;
 
-  // we should check if a user with this username already exists
+  // Check if user already exists
+  const existingUser = users.find((user) => user.username === username);
+  if (existingUser) {
+    return res.json({ message: "User already exists" });
+  }
 
-  res.json({
-    message: "You are signed in",
-  });
+  users.push({ username, password });
+  res.json({ message: "You are signed up" });
 });
 
+// Signin route
 app.post("/signin", logger, function (req, res) {
-  const username = req.body.username;
-  const password = req.body.password;
-
-  let foundUser = null;
-
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].username === username && users[i].password === password) {
-      foundUser = users[i];
-    }
-  }
+  const { username, password } = req.body;
+  const foundUser = users.find(
+    (user) => user.username === username && user.password === password
+  );
 
   if (!foundUser) {
-    res.json({
-      message: "Credentials incorrect",
-    });
-    return;
-  } else {
-    const token = jwt.sign(
-      {
-        username: foundUser.username,
-      },
-      JWT_SECRET
-    );
-    res.header("jwt", token);
-
-    res.json({
-      token: token,
-    });
+    return res.json({ message: "Credentials incorrect" });
   }
+
+  const token = jwt.sign({ username: foundUser.username }, JWT_SECRET);
+  res.json({ token });
 });
 
+// Auth middleware
 function auth(req, res, next) {
-  const token = req.headers.jwt; // Fixed to read the correct header
-  try {
-    const decodedData = jwt.verify(token, JWT_SECRET);
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith("Bearer ")) {
+    return res.json({ message: "Authorization header missing or invalid" });
+  }
 
-    if (decodedData.username) {
-      req.username = decodedData.username;
-      next();
-    } else {
-      res.json({
-        message: "You are not logged in",
-      });
-    }
+  const token = authHeader.split(" ")[1];
+
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET);
+    req.username = decoded.username;
+    next();
   } catch (err) {
-    res.json({
-      message: "Invalid or expired token",
-    });
+    res.json({ message: "Invalid or expired token" });
   }
 }
 
+// Get user info
 app.get("/me", logger, auth, function (req, res) {
-  const currentUser = req.username;
-  let foundUser = null; // Declared foundUser
-
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].username === currentUser) {
-      foundUser = users[i];
-    }
-  }
-
+  const foundUser = users.find((user) => user.username === req.username);
   if (foundUser) {
-    res.json({
-      username: foundUser.username,
-      password: foundUser.password,
-    });
+    res.json({ username: foundUser.username, password: foundUser.password });
   } else {
-    res.json({
-      message: "User not found",
-    });
+    res.json({ message: "User not found" });
   }
 });
 
