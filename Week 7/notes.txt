@@ -1,2 +1,3 @@
 DATABASES
 
+in a fullstack application there is a frontend, backend and a database
