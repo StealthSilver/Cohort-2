@@ -1,7 +1,7 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 
-const JWT_SECRET = "kirat123123";
+const JWT_SECRET = "random123123";
 
 const app = express();
 app.use(express.json());
@@ -53,7 +53,7 @@ app.post("/signin", logger, function (req, res) {
   } else {
     const token = jwt.sign(
       {
-        username: users[i].username,
+        username: foundUser.username,
       },
       JWT_SECRET
     );
