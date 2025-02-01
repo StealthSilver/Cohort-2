@@ -18,6 +18,14 @@ db.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
+app.post("/signup", function (req, res) {});
+
+app.post("/signin", function (req, res) {});
+
+app.post("/todo", function (req, res) {});
+
+app.get("/todos", function (req, res) {});
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
