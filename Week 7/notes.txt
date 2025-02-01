@@ -24,3 +24,4 @@ a mongo cluster is a bunch of machines where data is stored
 in case on mongo there are object ids
 
 CRUD opeartions in the database -> index.js
+
