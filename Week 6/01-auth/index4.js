@@ -1,35 +1,35 @@
-// token-based authentication using a middleware
-
 const express = require("express");
 const jwt = require("jsonwebtoken");
 
-const JWT_SECRET = "randomstringhello";
-const app = express();
+const JWT_SECRET = "kirat123123";
 
-// this middleware will let us parse the post body
+const app = express();
 app.use(express.json());
 
-// creating an in-memory variable (database)
 const users = [];
 
-// logger moddleware
-
 function logger(req, res, next) {
-  console.log(req.method + " request came ");
+  console.log(req.method + " request came");
+  next();
 }
 
-// generating token using a random string
+// localhost:3000
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
 app.post("/signup", logger, function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
-
   users.push({
     username: username,
     password: password,
   });
 
+  // we should check if a user with this username already exists
+
   res.json({
-    message: "you are signed up",
+    message: "You are signed in",
   });
 });
 
@@ -40,55 +40,57 @@ app.post("/signin", logger, function (req, res) {
   let foundUser = null;
 
   for (let i = 0; i < users.length; i++) {
-    if (users[i].username == username && users[i].password == password) {
+    if (users[i].username === username && users[i].password === password) {
       foundUser = users[i];
     }
   }
 
-  if (foundUser) {
+  if (!foundUser) {
+    res.json({
+      message: "Credentials incorrect",
+    });
+    return;
+  } else {
     const token = jwt.sign(
       {
-        username: username,
+        username: users[i].username,
       },
       JWT_SECRET
     );
+    res.header("jwt", token);
+
+    res.header("random", "harkirat");
 
     res.json({
       token: token,
     });
-  } else {
-    res.status(401).json({
-      message: "Invalid username or password",
-    });
   }
 });
 
-// auth as a middleware
-
 function auth(req, res, next) {
-  const authHeader = req.headers.authorization;
-  if (!authHeader) {
-    return res.status(401).json({ error: "Authorization header missing" });
-  }
+  const token = req.headers.token;
+  const decodedData = jwt.verify(token, JWT_SECRET);
 
-  const token = authHeader.split(" ")[1]; // Assuming "Bearer <token>"
-
-  jwt.verify(token, JWT_SECRET, (err, decoded) => {
-    if (err) {
-      return res.status(403).json({ error: "Invalid token" });
-    }
-    req.user = decoded; // Attach user data to the request
+  if (decodedData.username) {
+    // req = {status, headers...., username, password, userFirstName, random; ":123123"}
+    req.username = decodedData.username;
     next();
-  });
+  } else {
+    res.json({
+      message: "You are not logged in",
+    });
+  }
 }
 
-// auth middleware has to pass data
-
 app.get("/me", logger, auth, function (req, res) {
-  let foundUser = null;
+  // req = {status, headers...., username, password, userFirstName, random; ":123123"}
+  const currentUser = req.username;
+  // const token = req.headers.token;
+  // const decodedData = jwt.verify(token, JWT_SECRET);
+  // const currentUser = decodedData.username
 
   for (let i = 0; i < users.length; i++) {
-    if (users[i].username === req.username) {
+    if (users[i].username === currentUser) {
       foundUser = users[i];
     }
   }
@@ -99,6 +101,4 @@ app.get("/me", logger, auth, function (req, res) {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
-});
+app.listen(3000);
