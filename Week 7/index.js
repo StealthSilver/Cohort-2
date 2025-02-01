@@ -4,83 +4,64 @@ const { auth, JWT_SECRET } = require("./auth");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/todo-app", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://localhost:27017/todo-app");
 
 const app = express();
 app.use(express.json());
 
+// Signup Route
 app.post("/signup", async function (req, res) {
-  const email = req.body.email;
-  const password = req.body.password;
-  const name = req.body.name;
+  const { email, password, name } = req.body;
 
-  await UserModel.create({
-    email: email,
-    password: password,
-    name: name,
-  });
+  if (!email || !password || !name) {
+    return res.status(400).json({ message: "All fields are required." });
+  }
 
-  res.json({
-    message: "You are signed up",
-  });
-});
-
-app.post("/signin", async function (req, res) {
-  const email = req.body.email;
-  const password = req.body.password;
-
-  const response = await UserModel.findOne({
-    email: email,
-    password: password,
-  });
-
-  if (response) {
-    const token = jwt.sign(
-      {
-        id: response._id.toString(),
-      },
-      JWT_SECRET
-    );
-
-    res.json({
-      token,
-    });
-  } else {
-    res.status(403).json({
-      message: "Incorrect creds",
-    });
+  try {
+    await UserModel.create({ email, password, name });
+    res.json({ message: "You are signed up" });
+  } catch (error) {
+    if (error.code === 11000) {
+      return res.status(400).json({ message: "Email already exists." });
+    }
+    res.status(500).json({ message: "Server error." });
   }
 });
 
+// Signin Route
+app.post("/signin", async function (req, res) {
+  const { email, password } = req.body;
+
+  const user = await UserModel.findOne({ email, password });
+  if (user) {
+    const token = jwt.sign({ id: user._id.toString() }, JWT_SECRET);
+    res.json({ token });
+  } else {
+    res.status(403).json({ message: "Incorrect credentials" });
+  }
+});
+
+// Create Todo Route
 app.post("/todo", auth, async function (req, res) {
-  const userId = req.userId;
-  const title = req.body.title;
-  const done = req.body.done;
+  const { title, done } = req.body;
+
+  if (!title) {
+    return res.status(400).json({ message: "Title is required." });
+  }
 
   await TodoModel.create({
-    userId,
+    userId: req.userId,
     title,
-    done,
+    done: done || false,
   });
 
-  res.json({
-    message: "Todo created",
-  });
+  res.json({ message: "Todo created" });
 });
 
+// Get Todos Route
 app.get("/todos", auth, async function (req, res) {
-  const userId = req.userId;
-
-  const todos = await TodoModel.find({
-    userId,
-  });
-
-  res.json({
-    todos,
-  });
+  const todos = await TodoModel.find({ userId: req.userId });
+  res.json({ todos });
 });
 
-app.listen(3000);
+app.listen(3000, () => console.log("Server running on port 3000"));
