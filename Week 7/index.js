@@ -6,6 +6,7 @@ const express = require("express");
 const { UserModel, TodoModel } = require("./db");
 
 const jwt = require("jsonwebtoken");
+const JWT_SECRET = "asdasd1234";
 const bodyParser = require("body-parser");
 
 const app = express();
@@ -48,16 +49,20 @@ app.post("/signin", function (req, res) {
     password: password,
   });
 
-  if(user){
-    const token = "";
+  console.log(user);
+
+  // signing the jwt with the userID payload
+  if (user) {
+    const token = jwt.sign({
+      id: user._id,
+    });
     res.json({
-
-    }),
-
-  }else{
+      token: token,
+    });
+  } else {
     res.status(403).json({
-        message:"incorrect credentials"
-    })
+      message: "incorrect credentials",
+    });
   }
 });
 
