@@ -69,6 +69,8 @@ app.post("/signin", async function (req, res) {
   }
 });
 
+// authentication middleware
+
 app.post("/todo", function (req, res) {});
 
 app.get("/todos", function (req, res) {});
