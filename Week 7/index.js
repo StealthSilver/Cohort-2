@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect("mongodb://localhost:27017todo-app", {
+mongoose.connect("mongodb://localhost:27017/todo-app", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -53,9 +53,12 @@ app.post("/signin", async function (req, res) {
 
   // signing the jwt with the userID payload
   if (user) {
-    const token = jwt.sign({
-      id: user._id,
-    });
+    const token = jwt.sign(
+      {
+        id: user._id,
+      },
+      JWT_SECRET
+    );
     res.json({
       token: token,
     });
