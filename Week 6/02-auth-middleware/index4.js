@@ -1,4 +1,4 @@
-// === Backend (server.js) ===
+// auth middleware with frontend
 const express = require("express");
 const jwt = require("jsonwebtoken");
 
