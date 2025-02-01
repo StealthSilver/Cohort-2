@@ -68,6 +68,21 @@
           password: password,
         });
 
+        alert("user signed up");
+      }
+
+      async function signin() {
+        const username = document.getElementById("signin-username").value;
+        const password = document.getElementById("signin-password").value;
+
+        await axios.post("http://localhost:3000/signin", {
+          username: username,
+          password: password,
+        });
+
+        // saving the token in the local storage
+        localStorage.setItem("token", response.data.token);
+
         alert("user signed in");
       }
     </script>
