@@ -1,3 +1,4 @@
 DATABASES
 
 in a fullstack application there is a frontend, backend and a database
+including a database will make the backend stateless (persiisting the data)
