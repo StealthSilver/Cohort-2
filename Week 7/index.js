@@ -1,7 +1,7 @@
 // backend for the todo application with DB
 
 const express = require("express");
-
+const mongoose = require("mongoose");
 // importing the models
 const { UserModel, TodoModel } = require("./db");
 
