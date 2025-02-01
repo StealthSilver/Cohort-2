@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect("mongodb://localhost:27017/", {
+mongoose.connect("mongodb://localhost:27017todo-app", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -29,7 +29,7 @@ app.post("/signup", async function (req, res) {
   const password = req.body.password;
   const name = req.body.name;
 
-  await UserModel.insert({
+  await UserModel.create({
     mail: email,
     password: password,
     name: name,
