@@ -30,7 +30,7 @@ app.post("/signup", async function (req, res) {
   const name = req.body.name;
 
   await UserModel.create({
-    mail: email,
+    email: email,
     password: password,
     name: name,
   });
