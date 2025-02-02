@@ -44,3 +44,5 @@ becrypt implements salting and makes the brute forcing computationally infeasibl
 if the server throws an error the whole server crashes, if there is any error prone function contain it in a try , catch block
 
 3. INPUT VALIDATION
+
+the user can input anything for that validate the inputs using the ZOD library
