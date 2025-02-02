@@ -28,7 +28,8 @@ CRUD opeartions in the database -> index.js
 02-zod -> index.js
 IMPROVEMENTS 
 
-1. passwords must not be saved as text -> hashing the password 
+1. SALTING 
+passwords must not be saved as text -> hashing the password 
 also even if the passwords are same but still the hashes must be different, for this we use salting
 
 into the password some random string is added (salt) and then it is hashed
@@ -38,6 +39,8 @@ this prevents the hackers to usr precomputed (rainbow) tables to crack passwords
 we can use Bcrypt library for all this
 becrypt implements salting and makes the brute forcing computationally infeasible
 
-ERROR HANDLING 
+2. ERROR HANDLING 
 
 if the server throws an error the whole server crashes, if there is any error prone function contain it in a try , catch block
+
+3. INPUT VALIDATION
