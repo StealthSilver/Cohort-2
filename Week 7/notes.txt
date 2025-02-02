@@ -37,3 +37,7 @@ this prevents the hackers to usr precomputed (rainbow) tables to crack passwords
 
 we can use Bcrypt library for all this
 becrypt implements salting and makes the brute forcing computationally infeasible
+
+ERROR HANDLING 
+
+if the server throws an error the whole server crashes, if there is any error prone function contain it in a try , catch block
