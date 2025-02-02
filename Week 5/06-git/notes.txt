@@ -26,8 +26,8 @@ git diff -> comparing changes across files
 git push -u [name of the branch] -> setting the upsteream for the changes
 git merge -> combinig one branch with the main branch
 git log merge 
-git reset --mixed
-git merge --abort -> exiting hte merging process and returning back tothe state before merging
+git reset --mixed -> used ot undo changes to the working directory and the staging area
+git merge --abort -> exiting hte merging process and returning back to the state before merging
 git reset -> used to reset the conflicted files to their original state
 
 Pull request -> request to merge the changes
