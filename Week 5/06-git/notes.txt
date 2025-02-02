@@ -25,7 +25,7 @@ git checkout [branch_name] -> changing between branches
 git diff -> comparing changes across files 
 git push -u [name of the branch] -> setting the upsteream for the changes
 git merge -> combinig one branch with the main branch
-git log merge 
+git log --merge -> produce the list of commits that are causing the conflict
 git reset --mixed -> used ot undo changes to the working directory and the staging area
 git merge --abort -> exiting hte merging process and returning back to the state before merging
 git reset -> used to reset the conflicted files to their original state
