@@ -34,3 +34,4 @@ Pull request -> request to merge the changes
 add the details of the changes in the PR
 
 in the production enviornment generaly there are conflicts while merging, you have to resolve the conflits before merging
+a good practice is to delete the branch we no longer need
