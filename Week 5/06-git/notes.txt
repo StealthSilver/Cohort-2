@@ -25,6 +25,10 @@ git checkout [branch_name] -> changing between branches
 git diff -> comparing changes across files 
 git push -u [name of the branch] -> setting the upsteream for the changes
 git merge -> combinig one branch with the main branch
+git log merge 
+git reset --mixed
+git merge --abort
+git reset -> used to reset the conflicted files to their original state
 
 Pull request -> request to merge the changes
 add the details of the changes in the PR
