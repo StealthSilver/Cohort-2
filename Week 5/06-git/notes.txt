@@ -10,3 +10,11 @@ they are good for collaboration
 GITHUB -> a web based hosting service
 
 flies are addressed by their SHA1 hashes
+
+GIT COMMANDS
+
+git clone
+git add
+git commit 
+git push
+git pull 
