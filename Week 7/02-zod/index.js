@@ -20,6 +20,9 @@ app.post("/signup", async function (req, res) {
     password: z.string().min(3).max(30),
   });
 
+  //   const parsedData = requiredBody.parse(req.body);
+  const parsedDataWithSuccess = requiredBody.safeParse(req.body);
+
   const email = req.body.email;
   const password = req.body.password;
   const name = req.body.name;
