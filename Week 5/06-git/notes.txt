@@ -19,3 +19,5 @@ git commit -> commiting the changes on the active branch
 git push -> pushing the changes on github
 git pull -> pulling the latest changes
 git status -> checking the status of files
+git branch -> checking the current branch 
+git checkout -b -> creating a new branch
