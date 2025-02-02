@@ -13,8 +13,8 @@ flies are addressed by their SHA1 hashes
 
 GIT COMMANDS
 
-git clone
-git add
-git commit 
-git push
-git pull 
+git clone -> clone a repository
+git add -> adding the changes to the staging area
+git commit -> commiting the changes on the active branch
+git push -> pushing the changes on github
+git pull -> pulling the latest changes
