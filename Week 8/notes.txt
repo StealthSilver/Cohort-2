@@ -4,7 +4,9 @@ CREATING A BASIC COURSE SELLING WEBSITE
 2. add express, jsonwebtoken and other dependencies
 3. cerate index.js 
 4. add route skeleton for user login, signup, create a course, delete a course, add course content
-5. 
-6.
-7.
-8.
+5. add routes for admin login, admin signup, create a course , delete a course, add course content
+6. add middlewares for user andadmin auth
+7. add the database (mongo), use the dotenv to store the database connection string
+8. define the schema for User, Admin , Course , Purchase
+9. Complete the routes for the user login, signup , Purchase a course, see courses (use express routing)
+10. create the frontend
