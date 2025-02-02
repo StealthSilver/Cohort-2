@@ -6,121 +6,79 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const { z } = require("zod");
 
+// Connect to MongoDB
+//db connection
 mongoose.connect("mongodb://localhost:27017/todo-app");
 
 const app = express();
 app.use(express.json());
 
+// Signup route
 app.post("/signup", async function (req, res) {
-  // input validation
-
+  // Define validation schema
   const requiredBody = z.object({
     email: z.string().min(3).max(100).email(),
     name: z.string().min(3).max(100),
     password: z.string().min(3).max(30),
   });
 
-  //   const parsedData = requiredBody.parse(req.body);
+  // Validate request body
   const parsedDataWithSuccess = requiredBody.safeParse(req.body);
-
   if (!parsedDataWithSuccess.success) {
-    res.json({
-      message: "incorrect format",
+    return res.json({
+      message: "Incorrect format",
+      error: parsedDataWithSuccess.error,
     });
   }
 
-  const email = req.body.email;
-  const password = req.body.password;
-  const name = req.body.name;
-
-  //implementing the password hashing
-  //Implementing error handling
-
-  let errorThrown = false;
+  const { email, password, name } = req.body;
 
   try {
+    // Hash the password before storing it
     const hashedPassword = await bcrypt.hash(password, 5);
-    console.log(hashedPassword);
-    await UserModel.create({
-      email: email,
-      password: hashedPassword,
-      name: name,
-    });
+    await UserModel.create({ email, password: hashedPassword, name });
+    res.json({ message: "You are signed up" });
   } catch (e) {
-    res.json({
-      message: "user already exists",
-    });
-    errorThrown = true;
-  }
-
-  if (!errorThrown) {
-    res.json({
-      message: "You are signed up",
-    });
+    // Handle case where user already exists
+    return res.json({ message: "User already exists" });
   }
 });
 
+// Signin route
 app.post("/signin", async function (req, res) {
-  const email = req.body.email;
-  const password = req.body.password;
+  const { email, password } = req.body;
 
-  const response = await UserModel.findOne({
-    email: email,
-  });
-
+  // Check if user exists in the database
+  const response = await UserModel.findOne({ email });
   if (!response) {
-    res.send(402).json({
-      message: "user does not exist in the db",
-    });
+    return res.status(402).json({ message: "User does not exist in the DB" });
   }
 
-  // comparing the hashed password
+  // Compare provided password with hashed password
   const passwordMatch = await bcrypt.compare(password, response.password);
-
   if (passwordMatch) {
-    const token = jwt.sign(
-      {
-        id: response._id.toString(),
-      },
-      JWT_SECRET
-    );
-
-    res.json({
-      token,
-    });
+    // Generate JWT token
+    const token = jwt.sign({ id: response._id.toString() }, JWT_SECRET);
+    res.json({ token });
   } else {
-    res.status(403).json({
-      message: "Incorrect creds",
-    });
+    return res.status(403).json({ message: "Incorrect credentials" });
   }
 });
 
+// Route to create a new todo item
 app.post("/todo", auth, async function (req, res) {
-  const userId = req.userId;
-  const title = req.body.title;
-  const done = req.body.done;
-
-  await TodoModel.create({
-    userId,
-    title,
-    done,
-  });
-
-  res.json({
-    message: "Todo created",
-  });
+  const { title, done } = req.body;
+  await TodoModel.create({ userId: req.userId, title, done });
+  res.json({ message: "Todo created" });
 });
 
+// Route to fetch all todos for the authenticated user
 app.get("/todos", auth, async function (req, res) {
-  const userId = req.userId;
-
-  const todos = await TodoModel.find({
-    userId,
-  });
-
-  res.json({
-    todos,
-  });
+  const todos = await TodoModel.find({ userId: req.userId });
+  res.json({ todos });
 });
 
-app.listen(3000);
+// Start the server
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
