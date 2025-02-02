@@ -36,3 +36,4 @@ along with the hast the salt is also stored in the DB in plain text
 this prevents the hackers to usr precomputed (rainbow) tables to crack passwords
 
 we can use Bcrypt library for all this
+becrypt implements salting and makes the brute forcing computationally infeasible
