@@ -1,8 +1,9 @@
 GIT 
 this is the version control system
 
-Centralised VCS -> Subversion and team foundtion server 
+Centralised VCS -> Subversion, Team foundtion server 
 they are good for backups
 
 Distributed VCS -> Github , Gitlab , Bitbucket
 they are good for collaboration
+
