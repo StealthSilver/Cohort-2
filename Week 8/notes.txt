@@ -1,1 +1,10 @@
 CREATING A BASIC COURSE SELLING WEBSITE 
+
+1. initialize teh new project
+2. add express, jsonwebtoken and other dependencies
+3. cerate index.js 
+4. add route skeleton for user login, signup, create a course, delete a course, add course content
+5. 
+6.
+7.
+8.
