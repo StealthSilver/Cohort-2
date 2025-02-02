@@ -3,3 +3,5 @@ this is the version control system
 
 Centralised VCS -> Subversion and team foundtion server 
 they are good for backups
+
+Distributed VCS -> 
