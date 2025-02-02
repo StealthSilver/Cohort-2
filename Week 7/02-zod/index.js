@@ -16,13 +16,18 @@ app.post("/signup", async function (req, res) {
   const name = req.body.name;
 
   //implementing the password hashing
-  const hashedPassword = await bcrypt.hash(password, 5);
-  console.log(hashedPassword);
-  await UserModel.create({
-    email: email,
-    password: hashedPassword,
-    name: name,
-  });
+  // implementing error handling
+  try {
+    const hashedPassword = await bcrypt.hash(password, 5);
+    console.log(hashedPassword);
+    await UserModel.create({
+      email: email,
+      password: hashedPassword,
+      name: name,
+    });
+  } catch {
+    e;
+  }
 
   res.json({
     message: "You are signed up",
