@@ -12,6 +12,8 @@ const app = express();
 app.use(express.json());
 
 app.post("/signup", async function (req, res) {
+  // input validation
+
   const email = req.body.email;
   const password = req.body.password;
   const name = req.body.name;
