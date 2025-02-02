@@ -22,3 +22,5 @@ git status -> checking the status of files
 git branch -> checking the current branch 
 git checkout -b -> creating a new branch
 git checkout [branch_name] -> changing between branches
+git diff -> comparing changes across files 
+git merge -> 
