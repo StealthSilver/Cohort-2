@@ -15,9 +15,9 @@ app.post("/signup", async function (req, res) {
   // input validation
 
   const requiredBody = z.object({
-    email: z.string(),
-    name: z.string(),
-    password: z.string(),
+    email: z.string().min(3).max(100).email(),
+    name: z.string().min(3).max(100),
+    password: z.string().min(3).max(30),
   });
 
   const email = req.body.email;
