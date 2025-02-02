@@ -4,6 +4,7 @@ const { auth, JWT_SECRET } = require("./auth");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const zod = require("zod");
 
 mongoose.connect("mongodb://localhost:27017/todo-app");
 
