@@ -47,3 +47,4 @@ if the server throws an error the whole server crashes, if there is any error pr
 
 the user can input anything for that validate the inputs using the ZOD library
 ZOD does the runtime schema checks and validation
+
