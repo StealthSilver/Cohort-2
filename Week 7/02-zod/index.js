@@ -23,6 +23,12 @@ app.post("/signup", async function (req, res) {
   //   const parsedData = requiredBody.parse(req.body);
   const parsedDataWithSuccess = requiredBody.safeParse(req.body);
 
+  if (!parsedDataWithSuccess.success) {
+    res.json({
+      message: "incorrect format",
+    });
+  }
+
   const email = req.body.email;
   const password = req.body.password;
   const name = req.body.name;
