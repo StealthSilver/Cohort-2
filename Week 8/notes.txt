@@ -10,3 +10,5 @@ CREATING A BASIC COURSE SELLING WEBSITE
 8. define the schema for User, Admin , Course , Purchase
 9. Complete the routes for the user login, signup , Purchase a course, see courses (use express routing)
 10. create the frontend
+
+we do not store images in mongo , we store them in the web store and store the url in the DB
