@@ -33,5 +33,6 @@ also even if the passwords are same but still the hashes must be different, for 
 
 into the password some random string is added (salt) and then it is hashed
 along with the hast the salt is also stored in the DB in plain text
+
 2.
 
