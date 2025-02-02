@@ -24,5 +24,5 @@ userRouter.get("/user/puchases", function (req, res) {
 });
 
 module.exports = {
-  createUserRoutes: createUserRoutes,
+  userRouter: userRouter,
 };
