@@ -2,21 +2,21 @@ const { Router } = require("express");
 
 const adminRouter = Router();
 
-//signup route
+// Signup route
 adminRouter.post("/signup", function (req, res) {
   res.json({
     message: "signup endpoint",
   });
 });
 
-//signin route
+// Signin route
 adminRouter.post("/signin", function (req, res) {
   res.json({
     message: "signin endpoint",
   });
 });
 
-//create a course
+// Create a course
 adminRouter.post("/course", function (req, res) {
   res.json({
     message: "create course",
