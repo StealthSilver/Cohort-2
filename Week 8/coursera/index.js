@@ -1,5 +1,4 @@
 const express = require("express");
-
-app.use = express();
+const app = express();
 
 app.listen(3000);
