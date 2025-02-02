@@ -25,7 +25,7 @@ in case on mongo there are object ids
 
 CRUD opeartions in the database -> index.js
 
-
+02-zod -> index.js
 IMPROVEMENTS 
 
 1. passwords must not be saved as text
