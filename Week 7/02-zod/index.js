@@ -16,7 +16,10 @@ app.post("/signup", async function (req, res) {
   const name = req.body.name;
 
   //implementing the password hashing
-  // implementing error handling
+  //Implementing error handling
+
+  let errorThrown = false;
+
   try {
     const hashedPassword = await bcrypt.hash(password, 5);
     console.log(hashedPassword);
@@ -26,12 +29,17 @@ app.post("/signup", async function (req, res) {
       name: name,
     });
   } catch (e) {
-    ("error while putting things in the db");
+    res.json({
+      message: "user already exists",
+    });
+    errorThrown = true;
   }
 
-  res.json({
-    message: "You are signed up",
-  });
+  if (!errorThrown) {
+    res.json({
+      message: "You are signed up",
+    });
+  }
 });
 
 app.post("/signin", async function (req, res) {
