@@ -35,7 +35,6 @@ app.post("/signin", async function (req, res) {
 
   const response = await UserModel.findOne({
     email: email,
-    password: password,
   });
 
   if (!response) {
@@ -44,9 +43,10 @@ app.post("/signin", async function (req, res) {
     });
   }
 
+  // comparing the hashed password
   const passwordMatch = bcrypt.compare(password, response.password);
 
-  if (response) {
+  if (passwordMatch) {
     const token = jwt.sign(
       {
         id: response._id.toString(),
