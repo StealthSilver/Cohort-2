@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+app.use("/user", userRouter);
+app.use("/course", courseRouter);
+
 //signup route
 app.post("/user/signup", function (req, res) {
   res.json({
