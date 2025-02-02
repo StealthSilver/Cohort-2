@@ -25,8 +25,8 @@ app.post("/signup", async function (req, res) {
       password: hashedPassword,
       name: name,
     });
-  } catch {
-    e;
+  } catch (e) {
+    ("error while putting things in the db");
   }
 
   res.json({
