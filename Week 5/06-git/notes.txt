@@ -36,3 +36,5 @@ add the details of the changes in the PR
 
 in the production enviornment generaly there are conflicts while merging, you have to resolve the conflits before merging
 a good practice is to delete the branch we no longer need
+
+you can document the required changes in the issue tab in github
