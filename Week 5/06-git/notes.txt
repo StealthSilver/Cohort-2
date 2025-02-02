@@ -25,3 +25,5 @@ git checkout [branch_name] -> changing between branches
 git diff -> comparing changes across files 
 git push -u [name of the branch] -> setting the upsteream for the changes
 git merge ->
+
+Pull request -> request to merge the changes
