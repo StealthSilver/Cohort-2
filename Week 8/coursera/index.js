@@ -19,6 +19,12 @@ app.get("/courses", function (req, res) {
   });
 });
 
+app.post("/course/purchase", function (req, res) {
+  res.json({
+    message: "purchasing the course",
+  });
+});
+
 app.get("/user/puchases", function (req, res) {
   res.json({
     message: "purchased courses",
