@@ -4,7 +4,7 @@ const { auth, JWT_SECRET } = require("./auth");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
-const zod = require("zod");
+const { z } = require("zod");
 
 mongoose.connect("mongodb://localhost:27017/todo-app");
 
@@ -13,6 +13,12 @@ app.use(express.json());
 
 app.post("/signup", async function (req, res) {
   // input validation
+
+  const requiredBody = z.object({
+    email: z.string(),
+    name: z.string(),
+    password: z.string(),
+  });
 
   const email = req.body.email;
   const password = req.body.password;
