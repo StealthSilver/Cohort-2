@@ -1,5 +1,4 @@
 const { Router } = require("express");
-
 const userRouter = Router();
 const { userModel } = require("../db");
 const bcrypt = require("bcrypt");
