@@ -64,11 +64,15 @@ adminRouter.post("/signin", async function (req, res) {
     return res.status(403).json({ message: "Incorrect credentials" });
   }
 
+  if (!JWT_ADMIN_PASSWORD) {
+    return res
+      .status(500)
+      .json({ message: "Server error: Missing JWT secret" });
+  }
+
   const token = jwt.sign(
-    {
-      id: user._id,
-    },
-    JWT_ADMIN_PASSWORD
+    { id: user._id },
+    JWT_ADMIN_PASSWORD // This was previously undefined
   );
 
   res.json({ token });
