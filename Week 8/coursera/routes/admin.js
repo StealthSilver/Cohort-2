@@ -23,6 +23,21 @@ adminRouter.post("/course", function (req, res) {
   });
 });
 
+// change the course
+adminRouter.put("/course", function (req, res) {
+  res.json({
+    message: "create course",
+  });
+});
+
+// get all the courses
+
+adminRouter.get("/course/bulk", function (req, res) {
+  res.json({
+    message: "create course",
+  });
+});
+
 module.exports = {
   adminRouter: adminRouter,
 };
