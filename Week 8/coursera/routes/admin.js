@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const { z } = require("zod");
 const { JWT_ADMIN_PASSWORD } = require("../config");
 const { adminMiddleware } = require("../middleware/admin");
+const admin = require("../middleware/admin");
 const signupSchema = z.object({
   email: z.string().email(),
   password: z.string().min(6, "Password must be at least 6 characters long"),
@@ -78,8 +79,17 @@ adminRouter.post("/signin", async function (req, res) {
 });
 
 // Create a course
-adminRouter.post("/course", adminMiddleware, function (req, res) {
+adminRouter.post("/course", adminMiddleware, async function (req, res) {
   const adminId = req.userId;
+  const { title, description, imageUrl, price } = req.body;
+
+  await courseModel.create({
+    title,
+    description,
+    imageUrl,
+    price,
+    adminId,
+  });
 });
 
 // change the course
