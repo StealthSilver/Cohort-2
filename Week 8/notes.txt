@@ -17,3 +17,10 @@ IMPROVMENTS
 
 1. cookie based authentication
 2. session based authentication
+
+best practices -> package.json 
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js",
+    "dev" : "nodemon index.js"
+  },
