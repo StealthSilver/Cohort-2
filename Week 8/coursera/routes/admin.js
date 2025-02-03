@@ -18,7 +18,7 @@ adminRouter.post("/signin", function (req, res) {
 });
 
 // Create a course
-adminRouter.post("/course", function (req, res) {
+adminRouter.post("/", function (req, res) {
   res.json({
     message: "create course",
   });
