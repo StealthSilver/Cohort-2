@@ -24,3 +24,5 @@ best practices -> package.json
     "start" : "node index.js",
     "dev" : "nodemon index.js"
   },
+
+the JWT_ADMIN_PASSWORD must be diffrent from JWT_USER_PASSWORD
