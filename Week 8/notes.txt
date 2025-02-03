@@ -27,4 +27,9 @@ best practices -> package.json
 
 the JWT_ADMIN_PASSWORD must be diffrent from JWT_USER_PASSWORD
 as the id's can be same, so the passwords must be diffrent to have different payloads
+
+.ENV file 
+store all the secrets in a .env file here all the enviornment variables are stored
+npm i dotenv
+
 .env.example file must be there to give the dummy of .env file
