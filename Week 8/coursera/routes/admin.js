@@ -98,7 +98,28 @@ adminRouter.post("/course", adminMiddleware, async function (req, res) {
 });
 
 // change the course
-adminRouter.put("/course", function (req, res) {});
+adminRouter.put("/course", async function (req, res) {
+  const adminId = req.userId;
+  const { title, description, imageUrl, price, courseId } = req.body;
+
+  const course = await courseModel.updateOne(
+    {
+      _id: courseId,
+    },
+    {
+      title,
+      description,
+      imageUrl,
+      price,
+      creatorId: adminId,
+    }
+  );
+
+  res.json({
+    message: "Course updated",
+    courseId: course._id,
+  });
+});
 
 // get all the courses
 
