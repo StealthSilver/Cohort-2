@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const { userRouter } = require("./routes/user");
 const { adminRouter } = require("./routes/admin");
 const { courseRouter } = require("./routes/course");
@@ -21,3 +22,5 @@ async function main() {
     console.log("Server is running on port 3000");
   });
 }
+
+main();
