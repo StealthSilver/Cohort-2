@@ -12,3 +12,8 @@ CREATING A BASIC COURSE SELLING WEBSITE
 10. create the frontend
 
 we do not store images in mongo , we store them in the web store and store the url in the DB
+
+IMPROVMENTS 
+
+1. cookie based authentication
+2. session based authentication
