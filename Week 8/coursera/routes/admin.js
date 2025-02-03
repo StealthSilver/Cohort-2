@@ -48,10 +48,30 @@ adminRouter.post("/signup", async function (req, res) {
 });
 
 // Signin route
-adminRouter.post("/signin", function (req, res) {
-  res.json({
-    message: "signin endpoint",
-  });
+adminRouter.post("/signin", async function (req, res) {
+  const { email, password } = req.body;
+
+  // Find user by email
+  const user = await adminModel.findOne({ email });
+  if (!user) {
+    return res.status(403).json({ message: "Incorrect credentials" });
+  }
+
+  // Compare passwords
+  const isPasswordValid = await bcrypt.compare(password, user.password);
+  if (!isPasswordValid) {
+    return res.status(403).json({ message: "Incorrect credentials" });
+  }
+
+  // Generate JWT token
+  const token = jwt.sign(
+    {
+      id: user._id,
+    },
+    JWT_USER_PASSWORD
+  );
+
+  res.json({ token });
 });
 
 // Create a course
