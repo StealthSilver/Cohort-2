@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { z } = require("zod");
 const { JWT_ADMIN_PASSWORD } = require("../config");
+const { adminMiddleware } = require("../middleware/admin");
 const signupSchema = z.object({
   email: z.string().email(),
   password: z.string().min(6, "Password must be at least 6 characters long"),
@@ -77,7 +78,7 @@ adminRouter.post("/signin", async function (req, res) {
 });
 
 // Create a course
-adminRouter.post("/course", function (req, res) {
+adminRouter.post("/course", adminMiddleware, function (req, res) {
   res.json({
     message: "create course",
   });
