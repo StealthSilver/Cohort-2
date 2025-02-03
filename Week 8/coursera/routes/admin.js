@@ -79,17 +79,11 @@ adminRouter.post("/signin", async function (req, res) {
 
 // Create a course
 adminRouter.post("/course", adminMiddleware, function (req, res) {
-  res.json({
-    message: "create course",
-  });
+  const adminId = req.userId;
 });
 
 // change the course
-adminRouter.put("/course", function (req, res) {
-  res.json({
-    message: "create course",
-  });
-});
+adminRouter.put("/course", function (req, res) {});
 
 // get all the courses
 
