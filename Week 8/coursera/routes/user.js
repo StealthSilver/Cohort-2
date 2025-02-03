@@ -10,12 +10,17 @@ userRouter.post("/signup", async function (req, res) {
   // add zod validations
   // hash the passwords, use bcrypt
 
-  await userModel.create({
-    email: email,
-    password: password,
-    firstName: firstName,
-    lastName: lastName,
-  });
+  try {
+    await userModel.create({
+      email: email,
+      password: password,
+      firstName: firstName,
+      lastName: lastName,
+    });
+  } catch (e) {
+    return res.json({ message: "User already exists" });
+  }
+
   res.json({
     message: "signup endpoint",
   });
