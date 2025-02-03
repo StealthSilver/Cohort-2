@@ -6,6 +6,9 @@ const { userModel } = require("../db");
 
 // Signup route
 userRouter.post("/signup", function (req, res) {
+  const { email, password, firstName, lastName } = req.body;
+  // add zod validations
+  // hash the passwords, use bcrypt
   res.json({
     message: "signup endpoint",
   });
