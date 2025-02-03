@@ -111,7 +111,6 @@ adminRouter.put("/course", async function (req, res) {
       description,
       imageUrl,
       price,
-      creatorId: adminId,
     }
   );
 
