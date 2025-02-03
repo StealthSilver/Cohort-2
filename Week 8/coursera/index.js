@@ -16,6 +16,7 @@ app.use("/course", courseRouter);
 
 async function main() {
   try {
+    // using the dot env to store the connection string
     await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
