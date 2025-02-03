@@ -5,10 +5,17 @@ const userRouter = Router();
 const { userModel } = require("../db");
 
 // Signup route
-userRouter.post("/signup", function (req, res) {
+userRouter.post("/signup", async function (req, res) {
   const { email, password, firstName, lastName } = req.body;
   // add zod validations
   // hash the passwords, use bcrypt
+
+  await userModel.create({
+    email: email,
+    password: password,
+    firstName: firstName,
+    lastName: lastName,
+  });
   res.json({
     message: "signup endpoint",
   });
