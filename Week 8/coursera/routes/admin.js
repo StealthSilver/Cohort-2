@@ -1,7 +1,8 @@
 const { Router } = require("express");
-
 const adminRouter = Router();
 const { adminModel } = require("../db");
+
+const JWT_ADMIN_PASSWORD = "admin@123";
 
 const signupSchema = z.object({
   email: z.string().email(),
@@ -68,7 +69,7 @@ adminRouter.post("/signin", async function (req, res) {
     {
       id: user._id,
     },
-    JWT_USER_PASSWORD
+    JWT_ADMIN_PASSWORD
   );
 
   res.json({ token });
