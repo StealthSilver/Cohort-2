@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const { userRouter } = require("./routes/user");
@@ -14,13 +15,20 @@ app.use("/admin", adminRouter);
 app.use("/course", courseRouter);
 
 async function main() {
-  //awaiting for the server to connect to the DB
-  await mongoose.connect("mongodb://localhost:27017/coursera");
+  try {
+    await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Connected to MongoDB");
 
-  // Starting the server
-  app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-  });
+    // Starting the server
+    app.listen(3000, () => {
+      console.log("Server is running on port 3000");
+    });
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+  }
 }
 
 main();
