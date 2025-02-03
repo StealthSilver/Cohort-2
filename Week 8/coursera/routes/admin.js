@@ -25,7 +25,7 @@ adminRouter.post("/", function (req, res) {
 });
 
 // change the course
-adminRouter.put("/course", function (req, res) {
+adminRouter.put("/", function (req, res) {
   res.json({
     message: "create course",
   });
