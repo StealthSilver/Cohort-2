@@ -3,9 +3,8 @@ const { userModel } = require("../db");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { z } = require("zod");
-
+const { JWT_USER_PASSWORD } = require("../config");
 const userRouter = Router();
-const JWT_USER_PASSWORD = "atlas123";
 
 // Define schema for signup validation
 const signupSchema = z.object({
