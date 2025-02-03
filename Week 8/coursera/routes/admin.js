@@ -18,14 +18,14 @@ adminRouter.post("/signin", function (req, res) {
 });
 
 // Create a course
-adminRouter.post("/", function (req, res) {
+adminRouter.post("/course", function (req, res) {
   res.json({
     message: "create course",
   });
 });
 
 // change the course
-adminRouter.put("/", function (req, res) {
+adminRouter.put("/course", function (req, res) {
   res.json({
     message: "create course",
   });
