@@ -1,3 +1,5 @@
+// config file to store all the middleware passwords
+
 require("dotenv").config();
 
 console.log("JWT_ADMIN_PASSWORD:", process.env.JWT_ADMIN_PASSWORD);
