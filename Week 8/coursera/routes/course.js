@@ -2,6 +2,8 @@ const { Router } = require("express");
 
 const courseRouter = Router();
 
+const { courseModel } = require("../db");
+
 // Purchase some course (fixed missing '/')
 courseRouter.post("/purchase", function (req, res) {
   res.json({
