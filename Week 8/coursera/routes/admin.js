@@ -1,12 +1,15 @@
 const { Router } = require("express");
-const adminRouter = Router();
 const { adminModel } = require("../db");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { z } = require("zod");
 const { JWT_ADMIN_PASSWORD } = require("../config");
 const { adminMiddleware } = require("../middleware/admin");
-const admin = require("../middleware/admin");
+const { courseModel } = require("../db"); // Make sure you have courseModel imported
+
+const adminRouter = Router();
+
+// Validation schema
 const signupSchema = z.object({
   email: z.string().email(),
   password: z.string().min(6, "Password must be at least 6 characters long"),
@@ -16,7 +19,6 @@ const signupSchema = z.object({
 
 // Signup route
 adminRouter.post("/signup", async function (req, res) {
-  // Validate request body using Zod
   const validation = signupSchema.safeParse(req.body);
   if (!validation.success) {
     return res
@@ -27,16 +29,13 @@ adminRouter.post("/signup", async function (req, res) {
   const { email, password, firstName, lastName } = validation.data;
 
   try {
-    // Check if user already exists
     const existingUser = await adminModel.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: "Admin already exists" });
     }
 
-    // Hash the password before saving
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Save the user to the database
     await adminModel.create({
       email,
       password: hashedPassword,
@@ -55,19 +54,16 @@ adminRouter.post("/signup", async function (req, res) {
 adminRouter.post("/signin", async function (req, res) {
   const { email, password } = req.body;
 
-  // Find user by email
   const user = await adminModel.findOne({ email });
   if (!user) {
     return res.status(403).json({ message: "Incorrect credentials" });
   }
 
-  // Compare passwords
   const isPasswordValid = await bcrypt.compare(password, user.password);
   if (!isPasswordValid) {
     return res.status(403).json({ message: "Incorrect credentials" });
   }
 
-  // Generate JWT token
   const token = jwt.sign(
     {
       id: user._id,
@@ -80,62 +76,76 @@ adminRouter.post("/signin", async function (req, res) {
 
 // Create a course
 adminRouter.post("/course", adminMiddleware, async function (req, res) {
-  const adminId = req.userId;
+  const adminId = req.userID;
   const { title, description, imageUrl, price } = req.body;
 
-  const course = await courseModel.create({
-    title,
-    description,
-    imageUrl,
-    price,
-    creatorId: adminId,
-  });
-
-  res.json({
-    message: "Course created",
-    courseId: course._id,
-  });
-});
-
-// change the course
-adminRouter.put("/course", adminMiddleware, async function (req, res) {
-  const adminId = req.userId;
-  const { title, description, imageUrl, price, courseId } = req.body;
-
-  const course = await courseModel.updateOne(
-    {
-      _id: courseId,
-      creatorId: adminId,
-    },
-    {
+  try {
+    const course = await courseModel.create({
       title,
       description,
       imageUrl,
       price,
+      creatorId: adminId,
+    });
+
+    res.json({
+      message: "Course created",
+      courseId: course._id,
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Error creating course", error });
+  }
+});
+
+// Update a course
+adminRouter.put("/course", adminMiddleware, async function (req, res) {
+  const adminId = req.userID;
+  const { title, description, imageUrl, price, courseId } = req.body;
+
+  try {
+    const course = await courseModel.findOneAndUpdate(
+      {
+        _id: courseId,
+        creatorId: adminId,
+      },
+      {
+        title,
+        description,
+        imageUrl,
+        price,
+      },
+      { new: true } // Returns the updated document
+    );
+
+    if (!course) {
+      return res
+        .status(404)
+        .json({ message: "Course not found or unauthorized" });
     }
-  );
 
-  res.json({
-    message: "Course updated",
-    courseId: course._id,
-  });
+    res.json({
+      message: "Course updated",
+      courseId: course._id,
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Error updating course", error });
+  }
 });
 
-// get all the courses
-
+// Get all courses created by the admin
 adminRouter.get("/course/bulk", adminMiddleware, async function (req, res) {
-  const adminId = req.userId;
+  const adminId = req.userID;
 
-  const course = await courseModel.find({
-    creatorId: adminId,
-  });
+  try {
+    const courses = await courseModel.find({ creatorId: adminId });
 
-  res.json({
-    message: "These are the courses",
-    courseId: course._id,
-  });
+    res.json({
+      message: "These are the courses",
+      courses, // Returns full list of courses instead of just one ID
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching courses", error });
+  }
 });
 
-module.exports = {
-  adminRouter: adminRouter,
-};
+module.exports = { adminRouter };
