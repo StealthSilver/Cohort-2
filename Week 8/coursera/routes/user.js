@@ -13,10 +13,12 @@ userRouter.post("/signup", async function (req, res) {
 
   try {
     await userModel.create({
-      email: email,
-      password: hashedPassword,
-      firstName: firstName,
-      lastName: lastName,
+      email: z.string().email(),
+      hashedPassword: z
+        .string()
+        .min(6, "Password must be at least 6 characters long"),
+      firstName: z.string().min(2, "First name must be at least 2 characters"),
+      lastName: z.string().min(2, "Last name must be at least 2 characters"),
     });
     res.json({ message: "Signup successful" });
   } catch (e) {
