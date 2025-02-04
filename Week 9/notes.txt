@@ -9,3 +9,10 @@ STATE : this is the js object that represents the state of the app. in represent
 
 COMPONENTS : it represents how the DOM element should render, given a state. 
 the components are re-usable and dynamic
+
+Component Libraries 
+1. Material UI
+2. Ant Design
+3. Chakra UI
+4. React Bootstrap 
+5. ShadCN
