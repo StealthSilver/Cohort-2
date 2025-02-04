@@ -19,11 +19,17 @@
 
       function buttonComponentReRender() {
         document.getElementById("buttonParent").innerHTML = "";
+        const component = buttonComponent(state.count);
+        document.getElementById("buttonParent").appendChild(component);
+      }
+
+      function buttonComponent() {
         const button = document.createElement("button");
         button.innerHTML = `Counter ${state.count}`;
         button.setAttribute("onclick", `onButtonPress()`);
-        document.getElementById("buttonParent").appendChild(button);
+        return button;
       }
+
       buttonComponentReRender();
     </script>
   </body>
