@@ -4,7 +4,6 @@ const courseRouter = Router();
 
 const { courseModel, purchaseModel } = require("../db");
 const { userMiddleware } = require("../middleware/user");
-const { purchaseModel } = require("../db");
 
 courseRouter.post("/purchase", userMiddleware, async function (req, res) {
   const userId = req.userId;
