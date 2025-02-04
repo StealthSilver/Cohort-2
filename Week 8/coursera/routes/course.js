@@ -6,7 +6,6 @@ const { courseModel, purchaseModel } = require("../db");
 const { userMiddleware } = require("../middleware/user");
 const { purchaseModel } = require("../db");
 
-// Purchase some course (fixed missing '/')
 courseRouter.post("/purchase", userMiddleware, async function (req, res) {
   const userId = req.userId;
   const courseId = req.body.courseId;
@@ -21,7 +20,9 @@ courseRouter.post("/purchase", userMiddleware, async function (req, res) {
 });
 
 // Get all the courses
-courseRouter.get("/preview", function (req, res) {
+courseRouter.get("/preview", async function (req, res) {
+  const courses = await courseModel.find({});
+
   res.json({
     message: "list of courses",
   });
