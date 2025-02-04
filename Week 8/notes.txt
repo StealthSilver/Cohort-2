@@ -33,3 +33,8 @@ store all the secrets in a .env file here all the enviornment variables are stor
 npm i dotenv
 
 .env.example file must be there to give the dummy of .env file
+
+Good to haves 
+1. use cookies instead of the JWT for auth 
+2. implement a payment gateway logic
+3. Frontend in react
