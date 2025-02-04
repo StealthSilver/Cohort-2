@@ -1,3 +1,4 @@
 FOUNDATIONS OF REACT
 
 for static websites react is not needed
+before react and vue, jQuery and backbone.js were used to make DOM manipulation easier
