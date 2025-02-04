@@ -5,6 +5,8 @@ before react and vue, jQuery and backbone.js were used to make DOM manipulation 
 
 DYNAMIC WEBSITE CONCEPTS
 
+basic dynamic website -> index.html 
+
 STATE : this is the js object that represents the state of the app. in represents the dynamic things in the app (things that change)
 
 State management tools
