@@ -1,2 +1,3 @@
 FOUNDATIONS OF REACT
 
+for static websites react is not needed
