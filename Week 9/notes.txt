@@ -33,3 +33,4 @@ Component Libraries
 
 React V-0 code -> index2.html
 
+React files are written in JSX -> JavaScript XLM as it returns the components in XML
