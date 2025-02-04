@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { z } = require("zod");
 const { JWT_USER_PASSWORD } = require("../config");
+const { userMiddleware } = require("../middleware/user");
 const userRouter = Router();
 
 // Define schema for signup validation
@@ -80,8 +81,13 @@ userRouter.post("/signin", async function (req, res) {
 });
 
 // Getting the purchased courses
-userRouter.get("/purchases", function (req, res) {
-  res.json({ message: "Purchased courses" });
+userRouter.get("/purchases", userMiddleware, async function (req, res) {
+  const userId = req.userId;
+
+  const purchases = await purchaseModel.find({
+    userId,
+  });
+  res.json({ purchases });
 });
 
 module.exports = {
