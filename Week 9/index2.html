@@ -1,3 +1,5 @@
+<!-- basic dynamic website for changing the count and color -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,17 +13,19 @@
       // this is the state in REACT
       let state = {
         count: 0,
+        color: "red",
       };
 
       function onButtonPress() {
         state.count++;
+        state.color = Math.random() > 0.5 ? "red" : "green";
         buttonComponentReRender();
       }
 
       // this is the re-render function in react
       function buttonComponentReRender() {
         document.getElementById("buttonParent").innerHTML = "";
-        const component = buttonComponent(state.count);
+        const component = buttonComponent();
         document.getElementById("buttonParent").appendChild(component);
       }
 
@@ -30,6 +34,8 @@
         const button = document.createElement("button");
         button.innerHTML = `Counter ${state.count}`;
         button.setAttribute("onclick", `onButtonPress()`);
+        button.setAttribute("style", `color: ` + state.color); // FIXED: Use state.color
+
         return button;
       }
 
