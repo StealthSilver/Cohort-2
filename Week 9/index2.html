@@ -8,6 +8,7 @@
   <body>
     <div id="buttonParent"></div>
     <script>
+      // this is the state in REACT
       let state = {
         count: 0,
       };
@@ -17,12 +18,14 @@
         buttonComponentReRender();
       }
 
+      // this is the re-render function in react
       function buttonComponentReRender() {
         document.getElementById("buttonParent").innerHTML = "";
         const component = buttonComponent(state.count);
         document.getElementById("buttonParent").appendChild(component);
       }
 
+      // this is the component in REACT
       function buttonComponent() {
         const button = document.createElement("button");
         button.innerHTML = `Counter ${state.count}`;
