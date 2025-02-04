@@ -22,3 +22,5 @@ Component Libraries
 3. Chakra UI
 4. React Bootstrap 
 5. ShadCN
+
+* A state change triggers a re-render. A re-render represents the actual DOM being manipulated when the state changes
