@@ -75,6 +75,7 @@ userRouter.post("/signin", async function (req, res) {
     JWT_USER_PASSWORD
   );
 
+  // cookie logic will come here in future
   res.json({ token });
 });
 

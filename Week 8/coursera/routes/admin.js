@@ -70,10 +70,7 @@ adminRouter.post("/signin", async function (req, res) {
       .json({ message: "Server error: Missing JWT secret" });
   }
 
-  const token = jwt.sign(
-    { id: user._id },
-    JWT_ADMIN_PASSWORD // This was previously undefined
-  );
+  const token = jwt.sign({ id: user._id }, JWT_ADMIN_PASSWORD);
 
   res.json({ token });
 });
