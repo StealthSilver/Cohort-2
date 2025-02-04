@@ -25,3 +25,4 @@ Component Libraries
 
 * A state change triggers a re-render. A re-render represents the actual DOM being manipulated when the state changes
 
+* we usually have to define all teh components once and then we have to update the state of the app
