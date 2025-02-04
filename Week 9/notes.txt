@@ -7,4 +7,5 @@ DYNAMIC WEBSITE CONCEPTS
 
 STATE : this is the js object that represents the state of the app. in represents the dynamic things in the app (things that change)
 
-COMPONENTS : 
+COMPONENTS : it represents how the DOM element should render, given a state. 
+the components are re-usable and dynamic
