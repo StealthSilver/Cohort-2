@@ -23,8 +23,7 @@ function Counter() {
 
   useEffect(function(){
     setInterval(function(){
-      setCount(count + 1);
-    
+      setCount(count => count + 1);
      }, 1000)
      console.log("mounted")
   }, []);
