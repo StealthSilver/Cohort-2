@@ -1,6 +1,6 @@
 // creating a automatic counter
 
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 function App() {
   return (
@@ -11,10 +11,10 @@ function App() {
   );
 }
 
-// creating the counter component
+// mounting, re-rendering, unmounting
 function Counter() {
 
-  // using the use state hook and initializing the state
+  
   const [count , setCount] = useState(0);
 
  setInterval(function(){
