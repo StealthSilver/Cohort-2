@@ -9,6 +9,7 @@ function App() {
   );
 }
 
+// creating the counter component
 function Counter() {
 
   // using the use state hook and initializing the state
