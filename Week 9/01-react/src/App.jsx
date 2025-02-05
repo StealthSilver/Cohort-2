@@ -1,3 +1,5 @@
+// creating a manual counter
+
 import {useState} from "react";
 
 function App() {
