@@ -38,3 +38,6 @@ React files are written in JSX -> JavaScript XLM as it returns the components in
 react-01
 
 the entry point of any react app is the App.jsx file 
+
+useState -> the useState is a hook that lets you add state to functional components. It returns an array with the current state and 
+the function to update it.
