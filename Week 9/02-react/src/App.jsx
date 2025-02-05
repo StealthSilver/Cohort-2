@@ -13,14 +13,22 @@ function App() {
 
 // mounting, re-rendering, unmounting
 function Counter() {
-
   
   const [count , setCount] = useState(0);
 
- setInterval(function(){
-  setCount(count + 1);
 
- }, 1000)
+  // hooking into the lifecycle events of react
+
+  // guard our setInterval from re-renders
+
+  useEffect(function(){
+    setInterval(function(){
+      setCount(count + 1);
+    
+     }, 1000)
+     console.log("mounted")
+  }, []);
+
 
   return (
     <div>
