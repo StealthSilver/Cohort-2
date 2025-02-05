@@ -37,3 +37,4 @@ React files are written in JSX -> JavaScript XLM as it returns the components in
 
 react-01
 
+the entry point of any react app is the App.jsx file 
