@@ -1,38 +1,37 @@
-// creating a automatic counter
-
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   return (
     <div>
       <b>Hi there</b>
-      <Counter></Counter>
+      <Counter />
     </div>
   );
 }
 
-// mounting, re-rendering, unmounting
+// Mounting, Re-rendering, Unmounting
 function Counter() {
-  
-  const [count , setCount] = useState(0);
-
+  const [count, setCount] = useState(0);
 
   // hooking into the lifecycle events of react
+  useEffect(() => {
+    // Start interval and store its ID
+    const intervalId = setInterval(() => {
+      setCount((count) => count + 1);
+    }, 1000);
 
-  // guard our setInterval from re-renders
+    console.log("Mounted");
 
-  useEffect(function(){
-    setInterval(function(){
-      setCount(count => count + 1);
-     }, 1000)
-     console.log("mounted")
+    // Cleanup function to clear interval when component unmounts
+    return () => {
+      clearInterval(intervalId);
+      console.log("Unmounted");
+    };
   }, []);
-
 
   return (
     <div>
       <h1>{count}</h1>
-      
     </div>
   );
 }
