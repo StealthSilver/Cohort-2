@@ -9,7 +9,7 @@ function App() {
 
 function Counter() {
 
-  let count = 0;
+  const [count , setCount] = useState(0);
 
   function increaseCount(){
     count = count + 1;
