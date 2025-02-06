@@ -8,7 +8,7 @@ function App() {
 
   useEffect(function(){
     setInterval(function(){
-setCounterVariable(c => !c)
+setCounterVisible(c => !c)
     }, 5000);
   },[])
   return (
