@@ -87,3 +87,6 @@ useState -> 05-react
 
 when the value of a state variable changes, the component that uses that state re-renders
 
+useEffect -> 07-react
+
+side effects -> they are the operations that interact with teh outside world
