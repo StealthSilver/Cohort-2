@@ -135,3 +135,12 @@ this lets bound the error so if some component falis then the error does not pro
 fragments in react 
 
 In React, a component can return a single parent element, but it can contain multiple children within that single parent
+
+const MyComponent = () => {
+    return (
+        <>
+            <h1>Hello</h1>
+            <p>World</p>
+        </>
+    );
+};
