@@ -1,8 +1,9 @@
 function App() {
   return (
     <div style = {{display : "flex"}}>
+      
+      <Card innerContent={<div style = {{color : "green"}}>what do you want to post <br /><br /> <input></input> </div> }/>
       <Card innerContent={"hi there"} />
-      <Card innerContent={<div style = {{color : "green"}}>hello </div> }/>
     </div>
   );
 }
