@@ -11,7 +11,8 @@ function increaseCount(){
 useEffect(()=> {
   console.log("above setinterval")
   setInterval(increaseCount, 1000);
-}, [])
+}, []) 
+// this effect will run only on mount, because the array is empty
 
 
   return (
