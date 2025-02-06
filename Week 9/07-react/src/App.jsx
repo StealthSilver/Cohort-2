@@ -7,7 +7,11 @@ function increaseCount(){
   setCount (count +1)
 }
 
-setInterval(increaseCount, 1000);
+
+useEffect(()=> {
+  setInterval(increaseCount, 1000);
+}, [])
+
 
   return (
     <div>
