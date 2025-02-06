@@ -16,8 +16,16 @@ function App() {
 
 function Counter(){
 
+
+
   useEffect(function(){
-    console.log("render")
+
+    console.log("mount")
+
+    return function(){
+      console.log("unmount")
+    }
+    
   }, []);
 
 
