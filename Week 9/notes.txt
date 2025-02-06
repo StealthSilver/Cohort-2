@@ -84,3 +84,4 @@ they allow to split the Ui into resuable and independent pieces
 the data inside the components are changed by props
 
 useState -> 05-react
+
