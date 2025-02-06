@@ -128,6 +128,9 @@ class based components were used previously now functions are used with hooks
 Lifecycle events -> in react the lifecycle events refer to the specific points in a component's life where you can execute code in
 response to changes or actions
 
-error boundry 
+error boundry -> 14-react
 
 this lets bound the error so if some component falis then the error does not propogates
+
+fragments in react 
+
