@@ -73,3 +73,7 @@ only the root div in html is controlled by react we can change other stuff in in
     below the root
     <script type="module" src="/src/main.jsx"></script>
   </body>
+
+benefits of react
+1. structuring the app into components
+2. difining and changging the state of the application
