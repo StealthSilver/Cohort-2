@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
 
-// conditional rendering
-
+// Conditional Rendering
 function App() {
+  const [counterVisible, setCounterVisible] = useState(true);
 
-  let [counterVisible , setCounterVisible] = useState(true);
-
-  useEffect(function(){
-    setInterval(function(){
-setCounterVisible(c => !c)
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCounterVisible((c) => !c);
     }, 5000);
-  },[])
+
+    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+  }, []);
+
   return (
     <div>
-      h1 {counterVisible && <Counter></Counter>} hello
+      <h1>{counterVisible && <Counter />} hello</h1>
     </div>
   );
 }
@@ -22,16 +23,13 @@ setCounterVisible(c => !c)
 function Counter() {
   const [count, setCount] = useState(0);
 
-  // hooking into the lifecycle events of react
   useEffect(() => {
-    // Start interval and store its ID
     const intervalId = setInterval(() => {
       setCount((count) => count + 1);
     }, 1000);
 
     console.log("Mounted");
 
-    // Cleanup function to clear interval when component unmounts
     return () => {
       clearInterval(intervalId);
       console.log("Unmounted");
