@@ -14,7 +14,7 @@ function App() {
 const ToggleMessage = () => {
   const [isVisible , setIsVisible] = useState(false); // defining a new state variable
 
-
+// when the value of a state variable changes, the component that uses that state re-renders
   return(
     <div>
       <button onClick = {()=> setIsVisible(!isVisible)}>Toggle Message</button>
