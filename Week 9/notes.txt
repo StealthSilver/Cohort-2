@@ -53,3 +53,4 @@ can be done without vite using webpack
 
 Vite is a build tool it consists of a dev server and a bundler to run the project with rollup
 
+npm create vite@latest [name of project]
