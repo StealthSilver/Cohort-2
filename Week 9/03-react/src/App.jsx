@@ -6,9 +6,14 @@ function App() {
   
 
   const [count , setCount] = useState(0);
+  const [count2 , setCount2] = useState(0);
 
   function increase(){
     setCount(c => c +1)
+  }
+  
+  function decrease(){
+    setCount(c => c -1)
   }
   
   
@@ -17,6 +22,7 @@ function App() {
     <div>
       <Counter count = {count}/>
       <button onClick = {increase}>Increase Count</button>
+      <button onClick = {decrease}>Decrease Count</button>
     </div>
   )
 
