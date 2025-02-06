@@ -7,7 +7,7 @@ function App() {
 }
 
 function PostComponent() {
-  return
+  return(
 
   <div>
     <div
@@ -42,7 +42,7 @@ function PostComponent() {
       Want to know how to win big? check out how these folks won $6000 in
       bounties
     </div>
-  </div>
+  </div>)
 }
 
 export default App;
