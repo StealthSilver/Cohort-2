@@ -15,8 +15,8 @@ function decreaseCount(){
 // this code will only run on mount and not on every render
 useEffect(()=> {
   
-  setInterval(increaseCount, 1000);
-  setInterval(decreaseCount, 1000);
+  setInterval(increaseCount, 3000);
+  setInterval(decreaseCount, 4000);
 }, []) 
 // this effect will run only on mount, because the array is empty
 
