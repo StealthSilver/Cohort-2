@@ -35,9 +35,11 @@ React V-0 code -> index2.html
 
 React files are written in JSX -> JavaScript XLM as it returns the components in XML
 
-react-01
+01-react -> useState
 
 the entry point of any react app is the App.jsx file 
 
 useState -> the useState is a hook that lets you add state to functional components. It returns an array with the current state and 
 the function to update it.
+
+02-react -> Conditional rendering with useEffect
