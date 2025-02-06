@@ -13,7 +13,7 @@ function App() {
   }
   
   function decrease(){
-    setCount(c => c -1)
+    setCount2(c => c -1)
   }
   
   
