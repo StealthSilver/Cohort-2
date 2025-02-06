@@ -6,13 +6,17 @@ function App() {
   
 
   const [count , setCount] = useState(0);
+
+  function increase(){
+    setCount(c => c +1)
+  }
   
   
 
   return (
     <div>
       <Counter count = {count}/>
-      <button onClick = {increase}>Increase Count</button>>
+      <button onClick = {increase}>Increase Count</button>
     </div>
   )
 
