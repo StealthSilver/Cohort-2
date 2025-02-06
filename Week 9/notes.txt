@@ -43,3 +43,5 @@ useState -> the useState is a hook that lets you add state to functional compone
 the function to update it.
 
 02-react -> Conditional rendering with useEffect
+
+03-react -> useEffect clear render
