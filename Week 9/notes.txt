@@ -113,3 +113,9 @@ keys and lists -> 12-react
 keys are unique ids for the list items
 
 inline styles are given to components in objects
+style={{
+            border: '1px solid #ccc',
+            borderRadius: '5px',            
+        }}
+
+
