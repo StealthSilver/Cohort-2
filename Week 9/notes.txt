@@ -67,3 +67,9 @@ now we have an empty canvas to create our project
 npm run dev to run the project
 
 only the root div in html is controlled by react we can change other stuff in index.html and see the changes in the app
+ <body>
+    above the root
+    <div id="root"></div>
+    below the root
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
