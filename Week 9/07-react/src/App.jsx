@@ -4,7 +4,7 @@ function App() {
   const [count, setCount] = useState(1)
 
 function increaseCount(){
-  setCount (count +1)
+  setCount (currentValue => currentValue + 1)
 }
 
 // this code will only run on mount and not on every render
