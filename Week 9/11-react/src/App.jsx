@@ -1,16 +1,17 @@
 function App() {
   return (
-    <div>
+    <div style = {{display : "flex"}}>
       <Card innerContent={"hi there"} />
+      <Card innerContent={<div style = {{color : "green"}}>hello </div> }/>
     </div>
   );
 }
 
 function Card({ innerContent }) {
   return (
-    <span style={{ background: "black", borderRadius: 10, color: "white" }}>
+    <div style={{ background: "black", borderRadius: 10, color: "white", padding: 10 , margin: 10 }}>
       {innerContent}
-    </span>
+    </div>
   );
 }
 
