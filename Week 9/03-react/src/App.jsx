@@ -19,7 +19,7 @@ function App() {
 
 }
 
-function Counter(){
+function Counter(props){
 
 
 
@@ -34,7 +34,7 @@ function Counter(){
   }, []);
 
 
-  return <div>Counter ! </div>
+  return <div>Counter {props.count} </div>
 }
 
 export default App
