@@ -111,3 +111,5 @@ children -> 11-react
 
 keys and lists -> 12-react
 keys are unique ids for the list items
+
+inline styles are given to components in objects
