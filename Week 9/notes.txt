@@ -63,3 +63,5 @@ entry point : index.html (root component) -> main.jsx -> app.jsx
 
 remove all the predefiuned styles in both the css files and also the prewritten code in App.jsx
 now we have an empty canvas to create our project
+
+npm run dev to run the project
