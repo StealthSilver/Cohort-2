@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Counter count = {count}/>
-      After Counter
+      <button onClick = {increase}>Increase Count</button>>
     </div>
   )
 
