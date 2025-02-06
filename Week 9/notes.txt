@@ -96,3 +96,5 @@ e.g. fetching data from an api
      starting a clock
 
 if we try to run the side effects directly in the components there will be duplicated renders
+
+dependency array , cleanup logic ->  08-react
