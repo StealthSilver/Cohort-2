@@ -99,4 +99,4 @@ if we try to run the side effects directly in the components there will be dupli
 
 dependency array , cleanup logic ->  08-react
 
-linked in navbar -> 09-react
+conditional rendering -> 09-react
