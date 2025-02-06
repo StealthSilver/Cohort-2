@@ -23,6 +23,7 @@ const App = () => {
             </Card>
             <Card>
                 <h2>Another Card</h2>
+                <input type="text" />
                 <p>This card has different content!</p>
             </Card>
         </div>
