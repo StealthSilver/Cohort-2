@@ -45,3 +45,10 @@ the function to update it.
 02-react -> Conditional rendering with useEffect
 
 03-react -> useEffect clear render
+
+REACT RECAP 
+
+make a new react project using vite
+can be done without vite using webpack
+
+Vite is a build tool it consists of a dev server and a 
