@@ -98,3 +98,5 @@ e.g. fetching data from an api
 if we try to run the side effects directly in the components there will be duplicated renders
 
 dependency array , cleanup logic ->  08-react
+
+linked in navbar -> 09-react
