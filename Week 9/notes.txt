@@ -90,3 +90,7 @@ when the value of a state variable changes, the component that uses that state r
 useEffect -> 07-react
 
 side effects -> they are the operations that interact with teh outside world
+e.g. fetching data from an api 
+     modifying the DOM manually 
+     subscribing to events like (web sockets , timers or browser events)
+     starting a clock
