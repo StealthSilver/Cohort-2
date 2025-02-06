@@ -77,3 +77,4 @@ only the root div in html is controlled by react we can change other stuff in in
 benefits of react
 1. structuring the app into components
 2. difining and changging the state of the application
+
