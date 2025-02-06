@@ -94,3 +94,5 @@ e.g. fetching data from an api
      modifying the DOM manually 
      subscribing to events like (web sockets , timers or browser events)
      starting a clock
+
+if we try to run the side effects directly in the components there will be duplicated renders
