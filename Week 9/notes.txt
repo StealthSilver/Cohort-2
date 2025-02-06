@@ -51,4 +51,4 @@ REACT RECAP
 make a new react project using vite
 can be done without vite using webpack
 
-Vite is a build tool it consists of a dev server and a 
+Vite is a build tool it consists of a dev server and a bundler to run the project with rollup
