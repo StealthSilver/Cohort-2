@@ -7,7 +7,7 @@ function increaseCount(){
   setCount (count +1)
 }
 
-
+// this code will only run on mount and not on every render
 useEffect(()=> {
   setInterval(increaseCount, 1000);
 }, [])
