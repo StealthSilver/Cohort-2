@@ -37,6 +37,10 @@ function Counter(props){
     
   }, []);
 
+  useEffect(function(){
+    console.log("count has changed")
+  }, [props.count])
+
 
   return <div>Counter {props.count} </div>
 }
