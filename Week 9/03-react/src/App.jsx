@@ -8,6 +8,7 @@ function App() {
   return (
     <div>
       <Counter></Counter>
+      After Counter
     </div>
   )
 
@@ -29,7 +30,7 @@ function Counter(){
   }, []);
 
 
-  return <div>Counter </div>
+  return <div>Counter ! </div>
 }
 
 export default App
