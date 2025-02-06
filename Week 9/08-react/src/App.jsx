@@ -15,6 +15,13 @@ useEffect(()=> {
 // this effect will run only on mount, because the array is empty
 
 
+useEffect(()=> {
+  console.log("the count has been updated to" + count)
+  setInterval(increaseCount, 1000);
+}, [count]) 
+
+
+
   return (
     <div>
       {count}
