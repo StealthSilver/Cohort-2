@@ -5,33 +5,37 @@ function App() {
   const [tabData, setTabData] = useState({});
   const [loading, setLoading] = useState(true);
 
-  useEffect(function() {
+  useEffect(() => {
     setLoading(true);
     fetch("https://jsonplaceholder.typicode.com/todos/" + currentTab)
       .then(async res => {
         const json = await res.json();
         setTabData(json);
         setLoading(false);
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+        setLoading(false);
       });
 
-  }, [])
-  
-  return <div>
-    <button onClick={function() {
-      setCurrentTab(1)
-    }} style={{color: currentTab == 1 ? "red" : "black"}}>Todo #1</button>
-    <button onClick={function() {
-      setCurrentTab(2)
-    }} style={{color: currentTab == 2 ? "red" : "black"}}>Todo #2</button>
-    <button onClick={function() {
-      setCurrentTab(3)
-    }} style={{color: currentTab == 3 ? "red" : "black"}}>Todo #3</button>
-    <button onClick={function() {
-      setCurrentTab(4)
-    }} style={{color: currentTab == 4 ? "red" : "black"}}>Todo #4</button>
-<br /> 
-    {loading ? "Loading..." : tabData.title}
-  </div>
+  }, [currentTab]); 
+
+  return (
+    <div>
+      {[1, 2, 3, 4].map(num => (
+        <button
+          key={num}
+          onClick={() => setCurrentTab(num)}
+          style={{ color: currentTab === num ? "red" : "black", margin: "5px" }}
+        >
+          Todo #{num}
+        </button>
+      ))}
+      
+      <br />
+      {loading ? "Loading..." : tabData.title}
+    </div>
+  );
 }
 
-export default App
+export default App;
