@@ -65,3 +65,5 @@ remove all the predefiuned styles in both the css files and also the prewritten 
 now we have an empty canvas to create our project
 
 npm run dev to run the project
+
+only the root div in html is controlled by react we can change other stuff in index.html and see the changes in the app
