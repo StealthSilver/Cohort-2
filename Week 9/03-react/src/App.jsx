@@ -48,7 +48,8 @@ function Counter(props){
   }, [props.count])
 
 
-  return <div>Counter {props.count} </div>
+  return <div>Counter 1 {props.count} <br />
+  Counter 2 {props.count2} </div>
 }
 
 export default App
