@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div>
+    <div style = {{backgroundColor: "#dfe6e9" , height: "100vh"}}>
       <PostComponent></PostComponent>
     </div>
   );
@@ -9,29 +9,30 @@ function App() {
 function PostComponent() {
   return(
 
-  <div>
-    <div
-      style={{
-        width: 200,
-        backgroundColor: "white",
-        borderRadius: 10,
-        borderColor: "gray",
-        borderWidth: 1,
-        display: "flex",
-      }}
+  <div  style={{
+    width: 200,
+    backgroundColor: "white",
+    borderRadius: 10,
+    borderColor: "gray",
+    borderWidth: 1,
+   
+    
+  }}>
+    <div style = {{display: "flex"}}
+     
     >
       <img
         src={
           "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwN0-cLq3vtAkGpSg6upZYLjRAbcu6ljrc5RZoXZkmoQObNT7szAUBgMCq8w6wMKDTNtvYb-4UFDGc470xr_BgCA"
         }
         style={{
-          width: 25,
-          height: 25,
+          width: 35,
+          height: 35,
           borderRadius: 20,
         }}
       ></img>
 
-      <div>
+      <div style = {{fontSize:14 , marginLeft: 10}}>
         <b>GADHA</b>
         <div>23,482 followers</div>
         <div>12m</div>
