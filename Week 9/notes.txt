@@ -110,3 +110,4 @@ Props are the way to pass data from one component to another in React.
 children -> 11-react
 
 keys and lists -> 12-react
+keys are unique ids for the list items
