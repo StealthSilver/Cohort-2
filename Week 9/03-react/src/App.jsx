@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      <Counter count = {count}/>
+      <Counter count = {count} count2 = {count2}/>
       <button onClick = {increase}>Increase Count</button>
       <button onClick = {decrease}>Decrease Count</button>
     </div>
