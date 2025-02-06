@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -16,15 +16,31 @@ class ErrorBoundary extends React.Component {
 
     render() {
         if (this.state.hasError) {
-            return <h1>Something went wrong.</h1>;
+            return (
+                <div>
+                    <h1>Oops! Something went wrong.</h1>
+                    <p>Try refreshing the page or contact support.</p>
+                </div>
+            );
         }
 
-        return this.props.children; 
+        return this.props.children;
     }
 }
 
 const BuggyComponent = () => {
-    throw new Error("I crashed!");
+    const [shouldCrash, setShouldCrash] = useState(false);
+
+    if (shouldCrash) {
+        throw new Error("I crashed!");
+    }
+
+    return (
+        <div>
+            <h2>Buggy Component</h2>
+            <button onClick={() => setShouldCrash(true)}>Crash Me!</button>
+        </div>
+    );
 };
 
 const App = () => {
@@ -34,3 +50,5 @@ const App = () => {
         </ErrorBoundary>
     );
 };
+
+export default App;
