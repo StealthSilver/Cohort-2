@@ -12,12 +12,12 @@ function App() {
 }
 
 const ToggleMessage = () => {
-  const [isVisible , setIsVisible] = useState(false);
+  const [isVisible , setIsVisible] = useState(false); // defining a new state variable
 
 
   return(
     <div>
-      <button oClick = {()=> setIsVisible(!isVisible)}>Toggle Message</button>
+      <button onClick = {()=> setIsVisible(!isVisible)}>Toggle Message</button>
       {isVisible && <p>This message is conditionally rendered</p>}
     </div>
   )
