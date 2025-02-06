@@ -119,6 +119,8 @@ style={{
         }}
 
 
+13-react -> class based components and lifecycle events 
+
 class based components vs functional components 
 
 class based components were used previously now functions are used with hooks
