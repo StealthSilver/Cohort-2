@@ -122,3 +122,4 @@ style={{
 class based components vs functional components 
 
 class based components were used previously now functions are used with hooks
+
