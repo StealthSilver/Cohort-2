@@ -99,4 +99,6 @@ if we try to run the side effects directly in the components there will be dupli
 
 dependency array , cleanup logic ->  08-react
 
+clean up logic is necessary when we want to unsubscribe from some renders 
+
 conditional rendering -> 09-react
