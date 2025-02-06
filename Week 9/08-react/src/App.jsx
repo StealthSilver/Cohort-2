@@ -15,11 +15,12 @@ useEffect(()=> {
 // this effect will run only on mount, because the array is empty
 
 
+
 useEffect(()=> {
   console.log("the count has been updated to" + count)
   setInterval(increaseCount, 1000);
 }, [count]) 
-
+// this effect will run every time the count changes as there is the variable in the dependency array
 
 
   return (
