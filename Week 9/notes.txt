@@ -85,5 +85,5 @@ the data inside the components are changed by props
 
 useState -> 05-react
 
-// when the value of a state variable changes, the component that uses that state re-renders
+when the value of a state variable changes, the component that uses that state re-renders
 
