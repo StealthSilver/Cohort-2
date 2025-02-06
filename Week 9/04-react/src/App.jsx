@@ -1,7 +1,8 @@
 function App() {
   return (
     <div style = {{backgroundColor: "#dfe6e9" , height: "100vh"}}>
-      <PostComponent></PostComponent>
+      <div style={{display: "flex" , justifyContent: "center"}}>
+      <PostComponent></PostComponent></div>
     </div>
   );
 }
@@ -15,6 +16,7 @@ function PostComponent() {
     borderRadius: 10,
     borderColor: "gray",
     borderWidth: 1,
+    padding: 20
    
     
   }}>
