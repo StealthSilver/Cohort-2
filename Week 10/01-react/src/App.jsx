@@ -11,9 +11,6 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Link to="/">ALLEN</Link> |
-        <Link to="/neet/online-coaching-class-11">CLass 11</Link> |
-        <Link to="/neet/online-coaching-class-12">CLass 12</Link>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route
@@ -37,8 +34,11 @@ function App() {
 function Layout() {
   return (
     <div>
-      Hi there
+      <Link to="/">ALLEN</Link> |
+      <Link to="/neet/online-coaching-class-11">CLass 11</Link> |
+      <Link to="/neet/online-coaching-class-12">CLass 12</Link>
       <Outlet />
+      footer
     </div>
   );
 }
