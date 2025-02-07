@@ -24,7 +24,6 @@ function Value({ count }) {
   return <p>Count: {count}</p>;
 }
 
-// App Component
 const App = () => {
   return (
     <div>
