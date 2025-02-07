@@ -57,3 +57,5 @@ context api fixes the prop drilling
 
 the context API provides a way to share values (state, functions etc. ) between the 
 components without having to pass props down manually at every level
+
+context must be stored in the context.ts file
