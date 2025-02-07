@@ -35,5 +35,4 @@ Instead of duplicating state in each component, you can lift the state up to Low
 allowing the common ancestor to manage it
 
 
-
-04-react -> 
+04-react -> toggle bulb application
