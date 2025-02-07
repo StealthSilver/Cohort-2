@@ -63,3 +63,7 @@ Colors enhance the mood, draw attention, and impact the overall user experience.
 
 -   AI-Generated, Copyright-Free Images  : [lummi.ai](https://lummi.ai)
 
+key points while designing 
+1. website must be accessible
+2. the performance must be optimised
+3. it must be responsive
