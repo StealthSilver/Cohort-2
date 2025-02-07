@@ -46,3 +46,4 @@ Complexity: You may have to pass props through many intermediate components that
 just to get them to the component that needs them.
 Maintenance: It can make the code harder to maintain, as changes in the props structure require updates in multiple components.
 
+05-react prop-drilling
