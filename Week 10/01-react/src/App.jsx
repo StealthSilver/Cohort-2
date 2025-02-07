@@ -41,7 +41,16 @@ function Class11Program() {
 function Class12Program() {
   const navigate = useNavigate();
 
-  return <div>Class 12 NEET program</div>;
+  function redirectUser() {
+    navigate("/");
+  }
+
+  return (
+    <div>
+      Class 12 NEET program
+      <button onClick={redirectUser}>GO back to the landing page</button>
+    </div>
+  );
 }
 
 export default App;
