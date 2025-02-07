@@ -73,3 +73,6 @@ mockup is the design file with the used resources
 
 animations on page -> youtube : code grid 
                       youtube : oliver larose
+
+
+for the production level design take care of the branding guidlines                    
