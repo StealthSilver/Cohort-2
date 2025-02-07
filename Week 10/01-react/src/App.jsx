@@ -13,10 +13,21 @@ function App() {
             path="/neet/online-coaching-class-12"
             element={<Class12Program />}
           />
+
+<Route
+            path="/"
+            element={<Landing />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
   );
+}
+
+function Landing(){
+  return <div>
+    Landing Page
+  </div>
 }
 
 function Class11Program() {
