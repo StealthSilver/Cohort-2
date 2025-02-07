@@ -26,3 +26,7 @@ there are three ways to define variables in react :
 3. refrences : valueRef = useRef();
 
 03-react -> clock with a start and a stop button
+
+
+Rolling up the states and unoptimal re-render
+04-react -> 
