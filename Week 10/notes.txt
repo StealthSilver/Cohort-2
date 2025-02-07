@@ -50,3 +50,7 @@ Maintenance: It can make the code harder to maintain, as changes in the props st
 
 Context API 
 
+the context api enables to manage state across the application more effectively,
+specially when dealing with deeply nested components
+
+context api fixes the prop drilling
