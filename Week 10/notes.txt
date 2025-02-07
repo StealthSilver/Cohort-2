@@ -6,4 +6,4 @@ SPA are web Applications that load a single HTMl page and dynamically update tha
 npm i react-router-dom
 
 there are same libraries for routing in mobiler and desktop apps made with react native
-use the Link tab to navigate instead of a tag
+use the Link tab to navigate instead of a tag or we can use the useNavigate hook
