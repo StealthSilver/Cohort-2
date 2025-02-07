@@ -10,4 +10,4 @@ use the Link tab to navigate instead of a tag or we can use the useNavigate hook
 
 the useNavigate hook is used for the partial routing
 
-Layouts -> 
+Layouts -> they are used to stick some components of the page that do not change
