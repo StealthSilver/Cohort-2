@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       Sign up
-      <input ref={inputRef} id="name"></input>
+      <input ref={inputRef}></input>
       <input></input>
       <button onClick={focusOnInput}>submit</button>
     </div>
