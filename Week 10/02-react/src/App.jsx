@@ -1,10 +1,12 @@
 function App() {
+  function focusOnInput() {}
+
   return (
     <div>
       Sign up
+      <input id="name"></input>
       <input></input>
-      <input></input>
-      <button>submit</button>
+      <button onClick={focusOnInput}>submit</button>
     </div>
   );
 }
