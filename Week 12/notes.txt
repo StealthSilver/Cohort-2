@@ -70,3 +70,6 @@ key points while designing
 
 translating the mockup into the code 
 mockup is the design file with the used resources
+
+animations on page -> youtube : code grid 
+                      youtube : oliver larose
