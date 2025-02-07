@@ -14,20 +14,15 @@ function App() {
             element={<Class12Program />}
           />
 
-<Route
-            path="/"
-            element={<Landing />}
-          />
+          <Route path="/" element={<Landing />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
 
-function Landing(){
-  return <div>
-    Landing Page
-  </div>
+function Landing() {
+  return <div>Landing Page</div>;
 }
 
 function Class11Program() {
