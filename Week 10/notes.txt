@@ -36,3 +36,5 @@ allowing the common ancestor to manage it
 
 
 04-react -> toggle bulb application
+
+Props and prop drilling
