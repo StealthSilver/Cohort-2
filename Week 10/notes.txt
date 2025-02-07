@@ -19,3 +19,8 @@ but does not trigger a re-render when the value changes
 
 uses are focusing on an value or a DOM element
 refrence to a value is gien such that when we change the value the component does not re-render
+
+there are three ways to define variables in react :
+1. raw variables : let value = 1
+2. use state : [value , setValue] = useState(0)
+3. refrences : valueRef = useRef();
