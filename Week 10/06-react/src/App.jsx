@@ -1,3 +1,5 @@
+import React, { createContext, useContext, useState } from "react";
+
 const CountContext = createContext();
 
 function CountContextProvider({ children }) {
@@ -13,7 +15,7 @@ function CountContextProvider({ children }) {
 function Parent() {
   return (
     <CountContextProvider>
-      <Incrase />
+      <Increase />
       <Decrease />
       <Value />
     </CountContextProvider>
@@ -25,7 +27,7 @@ function Decrease() {
   return <button onClick={() => setCount(count - 1)}>Decrease</button>;
 }
 
-function Incrase() {
+function Increase() {
   const { count, setCount } = useContext(CountContext);
   return <button onClick={() => setCount(count + 1)}>Increase</button>;
 }
@@ -42,4 +44,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;
