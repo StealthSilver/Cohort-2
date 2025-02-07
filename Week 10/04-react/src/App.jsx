@@ -12,6 +12,8 @@ function App() {
 function LightBulb() {
   const [bulbOn, setBulbOn] = useState(true);
 
+  // bulbOn is a prop to the Bulb state component
+
   return (
     <div>
       <BulbState bulbOn={bulbOn} />
