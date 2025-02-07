@@ -1,6 +1,7 @@
-function App() {
-  function focusOnInput() {}
+import { useRef, useState } from "react";
 
+function App() {
+  const ref = useRef();
   return (
     <div>
       Sign up
