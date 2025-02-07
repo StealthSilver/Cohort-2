@@ -17,4 +17,4 @@ Layouts -> they are used to stick some components of the page that do not change
 useRef is a hook in react that provides a way to create a refrence to a value or a DOM element that persists across renders 
 but does not trigger a re-render when the value changes
 
-uses are focusing on an input element
+uses are focusing on an value or a DOM element
