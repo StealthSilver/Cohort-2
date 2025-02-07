@@ -18,3 +18,4 @@ useRef is a hook in react that provides a way to create a refrence to a value or
 but does not trigger a re-render when the value changes
 
 uses are focusing on an value or a DOM element
+refrence to a value is gien such that when we change the value the component does not re-render
