@@ -1,1 +1,2 @@
 Single Page Applications 
+SPA are web Applications that load a single HTMl page and dynamically update that page as the user interacts with the app
