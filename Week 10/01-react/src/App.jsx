@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Link to="/">ALLEN</Link> |<Link to="/">CLass 11</Link> |
-      <Link to="/">CLass 12</Link>
+      <Link to="/">ALLEN</Link> |
+      <Link to="/neet/online-coaching-class-11">CLass 11</Link> |
+      <Link to="/neet/online-coaching-class-12">CLass 12</Link>
       <BrowserRouter>
         <Routes>
           <Route
