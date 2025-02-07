@@ -1,11 +1,12 @@
 import { useRef, useState } from "react";
 
 function App() {
-  const ref = useRef();
+  const inputRef = useRef();
+
   return (
     <div>
       Sign up
-      <input id="name"></input>
+      <input ref={inputRef} id="name"></input>
       <input></input>
       <button onClick={focusOnInput}>submit</button>
     </div>
