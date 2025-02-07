@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 
 function App() {
   return (
@@ -33,6 +39,8 @@ function Class11Program() {
 }
 
 function Class12Program() {
+  const navigate = useNavigate();
+
   return <div>Class 12 NEET program</div>;
 }
 
