@@ -33,7 +33,7 @@ function App() {
 
 function Layout() {
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "100vh", background: "#f1f1f1" }}>
       <Link to="/">ALLEN</Link> |
       <Link to="/neet/online-coaching-class-11">CLass 11</Link> |
       <Link to="/neet/online-coaching-class-12">CLass 12</Link>
