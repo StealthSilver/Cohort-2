@@ -4,6 +4,7 @@ import {
   Route,
   Link,
   useNavigate,
+  Outlet,
 } from "react-router-dom";
 
 function App() {
@@ -32,6 +33,16 @@ function App() {
     </div>
   );
 }
+
+function Layout() {
+  return (
+    <div>
+      Hi there
+      <Outlet />
+    </div>
+  );
+}
+
 function ErrorPage() {
   return <div>Sorry page not found</div>;
 }
