@@ -33,11 +33,13 @@ function App() {
 
 function Layout() {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <Link to="/">ALLEN</Link> |
       <Link to="/neet/online-coaching-class-11">CLass 11</Link> |
       <Link to="/neet/online-coaching-class-12">CLass 12</Link>
-      <Outlet />
+      <div style={{ height: "90vh" }}>
+        <Outlet />
+      </div>
       footer
     </div>
   );
