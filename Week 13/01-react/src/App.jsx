@@ -1,7 +1,5 @@
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return <div className="bg-blue-300">hello</div>;
 }
 
 export default App;
