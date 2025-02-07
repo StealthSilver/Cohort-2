@@ -29,4 +29,10 @@ there are three ways to define variables in react :
 
 
 Rolling up the states and unoptimal re-render
+
+as the application grows there will be multiple components that need to access the same state.
+Instead of duplicating state in each component, you can lift the state up to Lowest Common Ancestor (LCA)
+
+
+
 04-react -> 
