@@ -3,6 +3,10 @@ import { useRef, useState } from "react";
 function App() {
   const inputRef = useRef();
 
+  function focusOnInput() {
+    inputRef.current.focus();
+  }
+
   return (
     <div>
       Sign up
