@@ -24,10 +24,14 @@ function App() {
           />
 
           <Route path="/" element={<Landing />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
+}
+function ErrorPage() {
+  return <div>Sorry page not found</div>;
 }
 
 function Landing() {
