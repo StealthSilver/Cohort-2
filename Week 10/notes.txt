@@ -24,3 +24,5 @@ there are three ways to define variables in react :
 1. raw variables : let value = 1
 2. use state : [value , setValue] = useState(0)
 3. refrences : valueRef = useRef();
+
+03-react -> clock with a start and a stop button
