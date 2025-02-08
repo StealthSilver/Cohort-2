@@ -4,3 +4,6 @@ TAILWIND
 02-react -> grids
 03-react -> responsivness
 responsiveness in tailwind is mobile first
+
+  return <div className="sm:bg-blue-300 bg-red-300">hi there</div>;
+unpefixed utilities take effect by default but the prefixed utilities appear ont he breakpoint and above
