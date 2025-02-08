@@ -7,3 +7,5 @@ responsiveness in tailwind is mobile first
 
 return <div className="sm:bg-blue-300 bg-red-300">hi there</div>;
 unpefixed utilities take effect by default but the prefixed utilities appear ont he breakpoint and above
+
+tailwind comes with some default colors but we can ovverrite them
