@@ -1,6 +1,10 @@
 function App() {
   return (
-    <div className="md:bg-green-300 sm:bg-blue-300 bg-red-300">hi there</div>
+    <div className="grid grid-cols-3 sm:grid-cols-12">
+      <div className="col-span-1 sm:col-span-5 bg-red-300">h1</div>
+      <div className="col-span-1 sm:col-span-5 bg-green-300">h1</div>
+      <div className="col-span-1 sm:col-span-2 bg-blue-300">h1</div>
+    </div>
   );
 }
 
