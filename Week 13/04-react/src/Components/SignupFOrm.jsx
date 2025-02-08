@@ -19,8 +19,8 @@ const SignupForm = () => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-lg w-96">
-      <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
+    <div className="bg-gray-800 p-8 rounded-2xl shadow-lg w-96">
+      <h2 className="text-2xl font-bold text-center text-gray-200 mb-6">
         Create an Account
       </h2>
 
@@ -54,9 +54,9 @@ const SignupForm = () => {
         </Button>
       </form>
 
-      <p className="text-center text-gray-600 text-sm mt-4">
+      <p className="text-center text-gray-400 text-sm mt-4">
         Already have an account?{" "}
-        <a href="#" className="text-blue-500 hover:underline">
+        <a href="#" className="text-blue-400 hover:underline">
           Login
         </a>
       </p>
