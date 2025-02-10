@@ -17,4 +17,6 @@ to compile npx tsc -b
 then node [file name of the javascript file] 
 
 basic types in ts are 
-number , string , boolean , null , undefined
+number , string , boolean , null , undefined 
+
+there is a any type -> this can be anything there won't be any error
