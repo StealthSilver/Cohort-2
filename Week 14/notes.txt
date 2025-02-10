@@ -15,3 +15,6 @@ typescript is a superset of JS
 
 to compile npx tsc -b 
 then node [file name of the javascript file] 
+
+basic types in ts are 
+number , string , boolean , null , undefined
