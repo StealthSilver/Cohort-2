@@ -7,7 +7,11 @@ Loosly Typed : Python , Javascript , Pearl
 
 Typescript compiles down to js 
 tsc is the typescript compiler
+there are other compilers esbuild, svc etc.
 
 tsconfig.json contains the meta information for typescript compilation
 
 typescript is a superset of JS
+
+to compile npx tsc -b 
+then node [file name of the javascript file] 
