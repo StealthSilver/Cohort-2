@@ -20,3 +20,11 @@ basic types in ts are
 number , string , boolean , null , undefined 
 
 there is a any type -> this can be anything there won't be any error
+
+tsconfig.json 
+
+
+target:
+The target option in a tsconfig.json file specifies the ECMAScript target version to which the TypeScript compiler will compile the TypeScript code.
+To try it out, try compiling the following code for target being ES5 and es2020
+"target" : "ES5"

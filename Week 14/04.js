@@ -1,4 +1,5 @@
 "use strict";
+// if-else
 function isLegal(age) {
     if (age > 18) {
         return true;
