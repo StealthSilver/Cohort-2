@@ -9,3 +9,5 @@ Typescript compiles down to js
 tsc is the typescript compiler
 
 tsconfig.json contains the meta information for typescript compilation
+
+typescript is a superset of JS
