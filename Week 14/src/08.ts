@@ -5,7 +5,7 @@ interface User {
 	age: number;
 }
 
-function isLegal(user: User) {
+function isLegal2(user: User) {
     if (user.age > 18) {
         return true
     } else {
