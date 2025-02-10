@@ -4,3 +4,8 @@ there are two kinds of languages Strongly and Loosly typed
 
 Strongly Typed : Go, Typescript , C++ , Rust , Java
 Loosly Typed : Python , Javascript , Pearl
+
+Typescript compiles down to js 
+tsc is the typescript compiler
+
+tsconfig.json contains the meta information for typescript compilation
