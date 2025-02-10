@@ -1,0 +1,13 @@
+WEBSOCKETS 
+
+web sockets is another protocol like HTTP 
+
+WebSockets provide a way to establish a persistent,
+full-duplex communication channel over a single TCP connection between the client (typically a web browser) and the server.
+
+persistent means that once a connection is made it stays there for a connection there is a three way handshake
+1. browser asks the server to connect
+2. server allows the browser to connect 
+3. the browser establishes a connection
+
+Soket-IO is used by Coin DCX and Canva
