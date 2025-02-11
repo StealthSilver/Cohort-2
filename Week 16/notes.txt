@@ -33,3 +33,5 @@ there are various libraries in node js which use websockets
 3.https://socket.io/
 
 we will use the ws library
+
+socket io is another protocol dependent on websockets, it makes using the websockets cleaner
