@@ -2,13 +2,26 @@ import WebSocket, { WebSocketServer } from 'ws';
 
 const wss = new WebSocketServer({ port: 8080 });
 
-wss.on("connection" , function(socket){
-    console.log("user connected");
-    setInterval(() => {
-        socket.send("current price of solana is : " + Math.random());
-    },500);
+wss.on("connection", function (socket) {
+    console.log("User connected");
 
-    socket.on("messgae" , (e)=> {
-        console.log(e.toString());
-    })
-})
+    const interval = setInterval(() => {
+        if (socket.readyState === WebSocket.OPEN) {
+            socket.send("Current price of Solana is: " + Math.random());
+        }
+    }, 500);
+
+    socket.on("message", (e) => {
+        console.log("Received message:", e.toString());
+    });
+
+    socket.on("close", () => {
+        console.log("User disconnected");
+        clearInterval(interval);
+    });
+
+    socket.on("error", (err) => {
+        console.error("WebSocket error:", err.message);
+        clearInterval(interval);
+    });
+});
