@@ -49,3 +49,31 @@ SCALING WEB SOCKET APPLICATIONS
 
 web sockets are not stateless unlike HTTP 
 they are sticky and
+
+How Are WebSocket Servers Scaled?
+WebSocket servers maintain persistent, full-duplex connections with clients, making scaling more complex than traditional request-response architectures like HTTP.
+
+To scale a WebSocket server, you need to handle:
+
+High connection volumes (thousands/millions of connections)
+Load balancing (distributing connections across multiple servers)
+Message broadcasting (sending messages between servers)
+Fault tolerance & failover (ensuring uptime even if a server fails)
+1. Vertical Scaling (Single Server)
+The simplest approach is upgrading the server’s hardware (CPU, RAM, network bandwidth). However, this has limitations:
+
+A single server can only handle a limited number of connections (e.g., 50,000–100,000 WebSocket connections per machine, depending on hardware).
+No redundancy—if the server crashes, all connections are lost.
+💡 Best used for: Small applications with limited WebSocket traffic.
+
+2. Horizontal Scaling (Multiple Servers)
+For high traffic, WebSockets need multiple servers. This requires:
+
+Load Balancing WebSocket Connections
+Message Synchronization Across Servers
+Step 1: Load Balancing WebSocket Connections
+Unlike HTTP, WebSockets require sticky sessions (once a client connects, it must stay on the same server). Common WebSocket load balancers:
+
+Nginx with sticky sessions (route users to the same server)
+HAProxy (efficient connection handling)
+Cloud Load Balancers (AWS ELB, Google Cloud Load Balancer, etc.)
