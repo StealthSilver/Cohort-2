@@ -10,4 +10,6 @@ persistent means that once a connection is made it stays there for a connection 
 2. server allows the browser to connect 
 3. the browser establishes a connection
 
+the same connection is established by the WEB-rtc protocol
+
 Soket-IO is used by Coin DCX and Canva
