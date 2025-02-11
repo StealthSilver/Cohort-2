@@ -21,3 +21,7 @@ web sockets are used in
 for real time communication -> used in trading applications in their order book
 for chat applications
 for sports update applications
+for financial tickers
+for interactive services -> excelidraw
+
+in leetcode polling is used -> they can use websockets but they use polling
