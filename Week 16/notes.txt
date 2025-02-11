@@ -42,3 +42,6 @@ https://github.com/1c3t3a/rust-socketio
 
 metaverse -> used websockets for chat and web rtc(UDP) for motion or voice chat 
 https://framevr.io/
+
+web sockets are different from pub sub in kafka 
+
