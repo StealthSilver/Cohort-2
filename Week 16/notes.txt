@@ -45,3 +45,7 @@ https://framevr.io/
 
 web sockets are different from pub sub in kafka 
 
+SCALING WEB SOCKET APPLICATIONS 
+
+web sockets are not stateless unlike HTTP 
+they are sticky and
