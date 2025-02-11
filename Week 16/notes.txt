@@ -77,3 +77,6 @@ Unlike HTTP, WebSockets require sticky sessions (once a client connects, it must
 Nginx with sticky sessions (route users to the same server)
 HAProxy (efficient connection handling)
 Cloud Load Balancers (AWS ELB, Google Cloud Load Balancer, etc.)
+
+** only the real time messages pass trough the web sockets 
+** and message in the ledger is stored in local storage and then http requests are sent to give messages
