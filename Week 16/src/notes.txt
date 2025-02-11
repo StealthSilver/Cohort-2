@@ -39,3 +39,6 @@ using socket io in cross platform is tough but there are libraries
 
 https://socket.io/blog/native-socket-io-and-android/
 https://github.com/1c3t3a/rust-socketio
+
+metaverse -> used websockets for chat and web rtc(UDP) for motion or voice chat 
+https://framevr.io/
