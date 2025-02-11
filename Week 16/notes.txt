@@ -15,4 +15,7 @@ the same connection is established by the WEB-rtc protocol
 
 Soket-IO is used by Coin DCX and Canva
 
+web sockets are used in
 for real time communication -> used in trading applications in their order book
+for chat applications
+for sports update applications
