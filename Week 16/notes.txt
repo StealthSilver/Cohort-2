@@ -18,7 +18,7 @@ in HTTP we can use polling or non-polling to create the same architecture
 Soket-IO is used by Coin DCX and Canva
 
 web sockets are used in
-for real time communication -> used in trading applications in their order book
+for real time communication -> used in trading applications in their order book (ws.backpack.exchange)
 for chat applications
 for sports update applications
 for financial tickers
