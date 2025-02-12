@@ -36,3 +36,5 @@ in next js the rendering is done on the server side and then the rendered code i
 in react the renering happens in the client side 
 
 in the react application on building the bundles are created and then they can be distributed unlike next js
+
+in react projects we can run the project via cdns and it is cheaper than next js
