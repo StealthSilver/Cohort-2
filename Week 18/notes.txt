@@ -33,4 +33,6 @@ Downsides -
 2. Very opinionated, very hard to move out of it
 
 in next js the rendering is done on the server side and then the rendered code is returned to the client
-in react the renering happens in the client side
+in react the renering happens in the client side 
+
+in the react application on building the bundles are created and then they can be distributed unlike next js
