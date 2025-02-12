@@ -4,3 +4,19 @@ NEXT JS
 2. React does not provide out of the box routing (you have to use react-router-dom)
 3. React is not SEO Optimised (not exactly true today because of React Server components)
 4. Waterfalling problem
+
+the react is not SEO optimised because of the waterfalling problem 
+
+SEO OPTIMIZATION 
+
+Google/Bing has a bunch of crawlers that hit websites and figure out what the website does. 
+It ranks it on Google based on the HTML it gets back
+The crawlers DONT usually run your JS and render your page to see the final output. 
+
+Waterfall problem 
+
+1. Fetching the index.html from the CDN
+2. Fetching script.js from CDN
+3. Checking if user is logged in (if not, redirect them to /login page)
+4. Fetching the actual blogs
+5. There are 4 round trips that happen one after the other (sequentially)
