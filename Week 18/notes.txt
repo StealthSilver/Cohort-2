@@ -31,3 +31,6 @@ Next.js provides you the following upsides over React
 Downsides - 
 1. Can’t be distributed via a CDN, always needs a server running that does server side rendering and hence is expensive
 2. Very opinionated, very hard to move out of it
+
+in next js the rendering is done on the server side and then the rendered code is returned to the client
+in react the renering happens in the client side
