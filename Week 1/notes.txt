@@ -17,10 +17,14 @@ Framer like app
 3. Cloning the landing pages of few simple websites
 
 HTML -> Hyper Text Markup Language
+HTML is used to create the skeleton of the website
+
 CSS -> Cascading Style Sheets
+CSS is used to style the website
 
 CLONED: 
 1. VS CODE LANDING PAGE 
 2. ZERODHA LANDING PAGE 
 3. MOOLA LANDING PAGE 
 4. EXPRESS-VPN LANDING PAGE
+
