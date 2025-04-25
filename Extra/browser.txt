@@ -6,3 +6,4 @@ Components of a browser:
 4. Rendering Engine : 
 5. JS Engine : Dino, V8
 6. Network
+7. Timers: Node JS dosen't have any timers it uses browser timers 
