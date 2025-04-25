@@ -7,3 +7,13 @@ Components of a browser:
 5. JS Engine : Dino, V8
 6. Network
 7. Timers: Node JS dosen't have any timers it uses browser timers 
+
+
+Rendering of HTMl 
+
+> all the elements of the HTML are present in form of the Node List 
+> the HTML file is loaded on the browser
+> the raw bytes are read 
+> the encoding method is checked (UTF 8) and bytes are converted into characters
+> the characters are tokenized 
+> 
