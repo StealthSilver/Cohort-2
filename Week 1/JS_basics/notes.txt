@@ -1,36 +1,33 @@
-# Overview of JavaScript (JS)
+Overview of JavaScript (JS)
 
-## General Overview
-JavaScript (JS) is primarily a web development language, but its use extends beyond the browser. For instance, libraries like **mediasoup** enable WebRTC (Web Real-Time Communication) functionalities.
+General Overview
+JavaScript (JS) is primarily a web development language, but its use extends beyond the browser. For instance, libraries like mediasoup enable WebRTC (Web Real-Time Communication) functionalities.
 
-**React** and **Next.js** are frameworks built on top of JavaScript. These frameworks compile down to **HTML**, **CSS**, and **JavaScript**, as browsers only understand these technologies. 
+React and Next.js are frameworks built on top of JavaScript. These frameworks compile down to HTML, CSS, and JavaScript, as browsers only understand these technologies. 
 
-Code written in languages like C++ or Rust can run on local servers, be converted back to JavaScript, and then rendered by the browser. Additionally, these languages can be compiled to run in the browser using **WebAssembly (WASM)**, which provides near-native performance.
+Code written in languages like C++ or Rust can run on local servers, be converted back to JavaScript, and then rendered by the browser. Additionally, these languages can be compiled to run in the browser using WebAssembly (WASM), which provides near-native performance.
 
----
 
-## Properties of JavaScript
+Properties of JavaScript
 
-### 1. Interpreted
+1. Interpreted
 - JavaScript is interpreted, meaning it runs line by line and is compiled at runtime.
 - It uses **Just-In-Time (JIT)** compilation, combining the benefits of interpreted and compiled languages.
 - For compiled languages like c++ it first the code compiles to a binary file and then it is executed
 
-**Comparison with Rust:**
+Comparison with Rust:
 - Rust has a slower compilation process but produces highly optimized binary files for fast execution in production.
 - JavaScript relies on runtime checks for errors, whereas **TypeScript** helps resolve many issues at compile time by adding type safety.
 
-### 2. Dynamically Typed
+2. Dynamically Typed
 - In JavaScript, variables are dynamically typed, allowing the data type of a variable to change during runtime.
 
-### 3. Single-Threaded
+3. Single-Threaded
 - JavaScript is single-threaded, meaning it processes one task at a time and can utilize only one CPU core.
 - Languages like **Rust** and **Go** are multi-threaded and can handle multiple tasks concurrently.
 
-### 4. Garbage Collection
+4. Garbage Collection
 Languages handle memory management in three primary ways:
 1. **Garbage Collector**: Automatically handles memory allocation and deallocation (e.g., Java, JavaScript).
 2. **Manual Memory Management**: Developers manually manage memory (e.g., C, C++).
 3. **Rust's Ownership Model**: Rust uses a unique approach to manage memory at compile time, ensuring safety and efficiency.
-
----
