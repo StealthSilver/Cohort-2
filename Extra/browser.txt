@@ -31,3 +31,4 @@ Components of a browser:
 > the render tree starts forming using the DOM and the CSSOM, this process is performed by the browser engine 
 > the browser engine does the calculations for the size and color provided by the CSSOM 
 > whenever the browser engine encounters the script tag then the browsers stops rendering and run all the scripts 
+> then the JS execution halts until the CSSOM is ready and after then the script is completely executed
