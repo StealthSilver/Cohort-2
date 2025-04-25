@@ -11,9 +11,10 @@ Components of a browser:
 
 Rendering of HTMl 
 
-> all the elements of the HTML are present in form of the Node List 
 > the HTML file is loaded on the browser
 > the raw bytes are read 
 > the encoding method is checked (UTF 8) and bytes are converted into characters
 > the characters are tokenized 
-> 
+> the attributes of the HTML tags are converted in objects
+> the heiarchy of the tags are structured which creats the DOM (Document Object Model)
+> all the elements are modified as a tree the tags present in form of the Node List 
