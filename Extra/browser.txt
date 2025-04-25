@@ -1,0 +1,7 @@
+Components of a browser: 
+
+1. Data : Cookies , Local Storage
+2. UI : the interface of browser 
+3. Browser Engine :
+4. Rendering Engine : 
+5. JS Engine : Dino, V8
