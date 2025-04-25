@@ -1,6 +1,6 @@
 // arrays / objects
 
-// arrays in jS -> array in C -> array in C++ -> vectors in Rust -> arraylist in java
+// arrays in jS -> array in C -> array in C++ -> vectors in Rust -> array in java
 // objectsin js -> maps in C++ -> hashmap in rust -> hashmap in java
 
 function greet(user) {
