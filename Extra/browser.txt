@@ -5,3 +5,4 @@ Components of a browser:
 3. Browser Engine :
 4. Rendering Engine : 
 5. JS Engine : Dino, V8
+6. Network
