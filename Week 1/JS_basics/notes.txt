@@ -12,12 +12,12 @@ Properties of JavaScript
 
 1. Interpreted
 - JavaScript is interpreted, meaning it runs line by line and is compiled at runtime.
-- It uses **Just-In-Time (JIT)** compilation, combining the benefits of interpreted and compiled languages.
+- It uses Just-In-Time (JIT) compilation, combining the benefits of interpreted and compiled languages.
 - For compiled languages like c++ it first the code compiles to a binary file and then it is executed
 
 Comparison with Rust:
 - Rust has a slower compilation process but produces highly optimized binary files for fast execution in production.
-- JavaScript relies on runtime checks for errors, whereas **TypeScript** helps resolve many issues at compile time by adding type safety.
+- JavaScript relies on runtime checks for errors, whereas TypeScript helps resolve many issues at compile time by adding type safety.
 
 2. Dynamically Typed
 - In JavaScript, variables are dynamically typed, allowing the data type of a variable to change during runtime.
@@ -28,6 +28,6 @@ Comparison with Rust:
 
 4. Garbage Collection
 Languages handle memory management in three primary ways:
-1. **Garbage Collector**: Automatically handles memory allocation and deallocation (e.g., Java, JavaScript).
-2. **Manual Memory Management**: Developers manually manage memory (e.g., C, C++).
-3. **Rust's Ownership Model**: Rust uses a unique approach to manage memory at compile time, ensuring safety and efficiency.
+1. Garbage Collector**: Automatically handles memory allocation and deallocation (e.g., Java, JavaScript).
+2. Manual Memory Management: Developers manually manage memory (e.g., C, C++).
+3. Rust's Ownership Model**: Rust uses a unique approach to manage memory at compile time, ensuring safety and efficiency.
