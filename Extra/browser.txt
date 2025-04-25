@@ -18,3 +18,10 @@ Rendering of HTMl
 > the attributes of the HTML tags are converted in objects
 > the heiarchy of the tags are structured which creats the DOM (Document Object Model)
 > all the elements are modified as a tree the tags present in form of the Node List 
+
+Rendering of CSS 
+
+> the CSS is also converted into raw bytes and loaded 
+> the raw bytes are converted into characteres and then tokens
+> the tokens thus form the objects and establish relations with the HTML DOM
+> then the CSSOM (CSS Object Model) is created
