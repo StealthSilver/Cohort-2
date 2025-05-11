@@ -21,3 +21,8 @@ FRONTEND SETUP
 DATABASE SETUP 
 
 in the mongo compass start an instance locally and copy the connection string
+
+BASIC STRUCTURING 
+
+> create schemas and models and connect with mongoose 
+> create routers
