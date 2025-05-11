@@ -34,6 +34,7 @@ router.post("/signup", async (req, res) => {
     });
   }
 
+  // todo -> add bcry to hash and salt the passwords
   const user = await User.create({
     username: req.body.username,
     password: req.body.password,
