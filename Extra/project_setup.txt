@@ -26,3 +26,5 @@ BASIC STRUCTURING
 
 > create schemas and models and connect with mongoose 
 > create routers
+> add cors , jsonwebtoken and create a jwtsecter in the config.js 
+> write the route logic
