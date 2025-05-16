@@ -1,0 +1,30 @@
+INITIALIZING REPOSITORIES
+
+1. create a repo by the project name
+2. create a repo by the name of backend 
+3. in the terminal > npm create vite@latest frontend -> react with JS or TS 
+
+
+BACKEND SETUP 
+
+1. in the terminal > npm init -y
+2. in the repo index.js 
+3. in the terminal npm i express mongoose zod ...
+4. in the repo add file .gitignore and in the gitignore add node_modules 
+
+
+FRONTEND SETUP 
+
+1. in frontend > src > app.jsx > delete everything
+3. in the app.jsx add the app function and return empty div
+
+DATABASE SETUP 
+
+in the mongo compass start an instance locally and copy the connection string
+
+BASIC STRUCTURING 
+
+> create schemas and models and connect with mongoose 
+> create routers
+> add cors , jsonwebtoken and create a jwtsecter in the config.js 
+> write the route logic
