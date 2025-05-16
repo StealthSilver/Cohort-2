@@ -1,4 +1,3 @@
-// backend/routes/user.js
 const express = require("express");
 
 const router = express.Router();
@@ -14,6 +13,8 @@ const signupBody = zod.object({
   lastName: zod.string(),
   password: zod.string(),
 });
+
+// signup endpoint
 
 router.post("/signup", async (req, res) => {
   const { success } = signupBody.safeParse(req.body);
@@ -64,6 +65,8 @@ const signinBody = zod.object({
   password: zod.string(),
 });
 
+// signin endpoint
+
 router.post("/signin", async (req, res) => {
   const { success } = signinBody.safeParse(req.body);
   if (!success) {
@@ -102,6 +105,7 @@ const updateBody = zod.object({
   lastName: zod.string().optional(),
 });
 
+// updating password and names
 router.put("/", authMiddleware, async (req, res) => {
   const { success } = updateBody.safeParse(req.body);
   if (!success) {
