@@ -123,6 +123,8 @@ router.put("/", authMiddleware, async (req, res) => {
   });
 });
 
+// searching for names
+
 router.get("/bulk", async (req, res) => {
   const filter = req.query.filter || "";
 
