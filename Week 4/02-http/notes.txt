@@ -53,7 +53,7 @@ to check and send requests -> download postman
 
 RESPONSES
 
-the server can return teh respponses in various formats 
+the server can return teh responses in various formats 
 
 JSON -> JavaScript Object Notation
 PLAIN TEXT 
