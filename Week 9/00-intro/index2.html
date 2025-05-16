@@ -34,7 +34,7 @@
         const button = document.createElement("button");
         button.innerHTML = `Counter ${state.count}`;
         button.setAttribute("onclick", `onButtonPress()`);
-        button.setAttribute("style", `color: ` + state.color); // FIXED: Use state.color
+        button.setAttribute("style", `color: ` + state.color);
 
         return button;
       }

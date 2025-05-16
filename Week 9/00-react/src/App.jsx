@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  // this is the use state hook
   const [count, setCount] = useState(0);
 
   function onClickHandler() {
