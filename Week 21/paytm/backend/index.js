@@ -7,7 +7,7 @@ app.use(express.json());
 
 const mainRouter = require("./routes/index");
 
-const PORT = 8000;
+const PORT = 3000;
 
 app.use("/api/v1", mainRouter);
 
