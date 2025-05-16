@@ -4,6 +4,7 @@ import "./App.css";
 
 function App() {
   // this is the use state hook
+  // the array is destructured in the next line
   const [count, setCount] = useState(0);
 
   function onClickHandler() {
