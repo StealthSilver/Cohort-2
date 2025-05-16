@@ -34,7 +34,13 @@ function App() {
       <br />
       <button onClick={addTodo}>Add todo</button>
       <br />
-      {JSON.stringify(todos)}
+      {todos.map((todo) => (
+        <Todo
+          title={todo.title}
+          description={todo.description}
+          done={todo.done}
+        />
+      ))}
     </div>
   );
 }
@@ -44,7 +50,7 @@ function Todo(props) {
     <div>
       <h2>{props.title}</h2>
       <h2>{props.description}</h2>
-      <h2>{props.done}</h2>
+      <h2>{props.done ? "task is done" : "task not done"}</h2>
     </div>
   );
 }
