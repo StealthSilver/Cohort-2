@@ -39,4 +39,14 @@ function App() {
   );
 }
 
+function Todo(props) {
+  return (
+    <div>
+      <h2>{props.title}</h2>
+      <h2>{props.description}</h2>
+      <h2>{props.done}</h2>
+    </div>
+  );
+}
+
 export default App;
