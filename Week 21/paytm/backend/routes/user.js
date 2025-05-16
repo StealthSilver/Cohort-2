@@ -4,7 +4,7 @@ const router = express.Router();
 const zod = require("zod");
 const user = require("../db");
 const jwt = require("jsonwebtoken");
-const { JT_SECRET } = require("../config");
+const { JWT_SECRET } = require("../config");
 const JWT_SECRET = require("../config");
 
 // signin
@@ -34,7 +34,7 @@ router.post("/signup", async (req, res) => {
     });
   }
 
-  // todo -> add bcry to hash and salt the passwords
+  // todo -> add bcrypt to hash and salt the passwords
   const user = await User.create({
     username: req.body.username,
     password: req.body.password,
