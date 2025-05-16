@@ -34,6 +34,7 @@ function App() {
       <br />
       <button onClick={addTodo}>Add todo</button>
       <br />
+      {JSON.stringify(todos)}
     </div>
   );
 }
