@@ -22,9 +22,20 @@ function App() {
       description: "properly",
       done: true,
     });
+
+    setTodos(newArray);
   }
 
-  return <div></div>;
+  return (
+    <div>
+      <input type="text" placeholder="title" />
+      <br />
+      <input type="text" placeholder="description" />
+      <br />
+      <button onClick={addTodo}>Add todo</button>
+      <br />
+    </div>
+  );
 }
 
 export default App;
