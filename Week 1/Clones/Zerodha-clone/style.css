@@ -45,7 +45,7 @@
   width: 24px;
 }
 
-.icon i:hover {
+.icon :hover {
   color: black;
 }
 
