@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
   color: white;
   font-family: Montserrat;
 }
@@ -21,8 +20,13 @@
 
 .nav-right {
   display: flex;
-  margin-right: 50px;
+  margin-right: 120px;
 }
+
+.nav-img {
+  margin-left: 120px;
+}
+
 .nav-img img {
   height: 75px;
   width: 175px;
@@ -38,6 +42,7 @@
   top: 0;
   font-weight: 600;
 }
+
 .sel {
   margin-right: 20px;
 }
@@ -67,7 +72,7 @@ select {
   color: white;
   border: 1px solid rgb(167, 167, 167);
   border-radius: 4px;
-  padding: 8px 18px;
+  padding: 6px 18px;
   font-size: 14px;
   appearance: none;
   -webkit-appearance: none;
