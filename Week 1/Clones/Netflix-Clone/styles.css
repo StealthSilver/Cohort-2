@@ -7,7 +7,7 @@
 
 .nav {
   position: absolute;
-  top: 0;
+  top: 20;
   left: 0;
   width: 100%;
   z-index: 10;
@@ -20,16 +20,16 @@
 
 .nav-right {
   display: flex;
-  margin-right: 120px;
+  margin-right: 140px;
 }
 
 .nav-img {
-  margin-left: 120px;
+  margin-left: 130px;
 }
 
 .nav-img img {
-  height: 75px;
-  width: 175px;
+  height: 80px;
+  width: 180px;
 }
 
 .btn1 {
@@ -44,7 +44,25 @@
 }
 
 .sel {
-  margin-right: 20px;
+  margin-right: 14px;
+}
+
+select {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 4px;
+  padding: 6px 18px;
+  font-size: 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: rgb(227, 227, 227);
 }
 
 .hero {
@@ -65,22 +83,4 @@
   background-color: transparent;
   padding: 20px;
   border-radius: 8px;
-}
-
-select {
-  background-color: transparent;
-  color: white;
-  border: 1px solid rgb(167, 167, 167);
-  border-radius: 4px;
-  padding: 6px 18px;
-  font-size: 14px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-}
-
-select:focus {
-  outline: none;
-  border-color: rgb(227, 227, 227);
 }
