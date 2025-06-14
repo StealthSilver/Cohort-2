@@ -66,8 +66,12 @@ select:focus {
 }
 
 .hero {
-  height: 85vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+  height: 90vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    ),
     url("assets/hero.jpg");
   background-size: cover;
   background-position: center;
