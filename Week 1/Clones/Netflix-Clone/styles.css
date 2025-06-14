@@ -1,5 +1,81 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
+
+  color: white;
+  font-family: Montserrat;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  margin-right: 50px;
+}
+.nav-img img {
+  height: 75px;
+  width: 175px;
+}
+
+.btn1 {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  width: 77px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  top: 0;
+  font-weight: 600;
+}
+.sel {
+  margin-right: 20px;
+}
+
+.hero {
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: white;
+  font-size: 2rem;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+select {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: rgb(227, 227, 227);
 }
