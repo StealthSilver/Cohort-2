@@ -126,13 +126,29 @@ select:focus {
 .red-btn {
   background-color: rgb(229, 9, 20);
   color: white;
-  width: 280px;
+  width: 200px;
   height: 60px;
   border: none;
-  font-size: 30px;
+  font-size: 24px;
   border-radius: 4px;
   top: 0;
   font-weight: 600;
   cursor: pointer;
   transition: 0.2s;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  border: 0.5px solid rgb(167, 167, 167);
+  border-radius: 4px;
+  padding: 6px 18px;
+  font-size: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  height: 45px;
+  width: 350px;
+  margin-right: 10px;
 }
