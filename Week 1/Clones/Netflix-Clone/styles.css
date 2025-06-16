@@ -41,6 +41,12 @@
   border-radius: 4px;
   top: 0;
   font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn1:hover {
+  background-color: rgb(196, 7, 16);
 }
 
 .sel {
@@ -70,6 +76,7 @@ select:focus {
   background: linear-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.8)
     ),
     url("assets/hero.jpg");
@@ -80,11 +87,52 @@ select:focus {
 
 .hero-text {
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  top: 220px;
+  left: 520px;
   color: white;
   font-size: 2rem;
   background-color: transparent;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+}
+
+.main1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -3px;
+}
+
+.main2 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main3 {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.call {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.red-btn {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  width: 280px;
+  height: 60px;
+  border: none;
+  font-size: 30px;
+  border-radius: 4px;
+  top: 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
 }
