@@ -164,7 +164,7 @@ input {
   box-shadow: 0 -5px 40px rgba(0, 123, 255, 0.7);
   position: relative;
   z-index: 2;
-  padding: 50px;
+  padding: 80px;
 }
 
 .conv::before {
@@ -178,4 +178,9 @@ input {
   border-top-left-radius: 100% 100px;
   border-top-right-radius: 100% 100px;
   z-index: 3;
+}
+
+.trend {
+  font-size: 24px;
+  font-weight: 600;
 }
