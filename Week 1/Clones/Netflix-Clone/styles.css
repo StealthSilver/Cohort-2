@@ -152,3 +152,30 @@ input {
   width: 350px;
   margin-right: 10px;
 }
+
+.conv {
+  background-color: black;
+  height: 200px;
+  margin-top: -75px;
+  border-width: 3px;
+  border-color: (rgba(196, 7, 16, 0.8));
+  border-top-left-radius: 100% 40px;
+  border-top-right-radius: 100% 40px;
+  box-shadow: 0 -5px 40px rgba(0, 123, 255, 0.7);
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+}
+
+.conv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, black, rgba(196, 7, 16, 0.8), black);
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+  z-index: 3;
+}
