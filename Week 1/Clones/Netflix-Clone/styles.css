@@ -212,12 +212,13 @@ input {
 
 .left {
   display: flex;
-  border-radius: 6px;
-  margin-right: 40px;
+
+  margin-top: 20px;
 }
 
 .box {
   background: linear-gradient(rgba(214, 45, 212, 0.728), rgba(51, 11, 83, 0.5));
-  height: 50px;
-  width: 200px;
+  height: 100px;
+  width: 300px;
+  margin-right: 50px;
 }
