@@ -1,4 +1,5 @@
 // making a synchronous set timeout
+// this can be used to pause the js thread for the [timeout] time
 
 function setTimeoutSync(timeout) {
   let startTime = new Date();
