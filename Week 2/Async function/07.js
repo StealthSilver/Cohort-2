@@ -3,6 +3,8 @@
 function setTimeoutSync(timeout) {
   let startTime = new Date();
 
+  // This loop continuously checks whether the time elapsed has exceeded the timeout.
+
   while (1) {
     let currrentTime = new Date();
     if (currrentTime.getTime() - startTime.getTime() > timeout) {
