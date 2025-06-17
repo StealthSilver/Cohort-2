@@ -58,11 +58,11 @@ tail -n +25 file.txt| head +5 -> getting lines 25 to 20 from the end
 
 wc b.txt -> gives the number of lines, number of words, and number of characters in order
 
-grep "one" b.txt -> all places where one was used in the file
-grep -c "one" b.txt -> only gives the number of lines where one was there
-grep -h "one" b.txt -> only gives the phases where one was there
-grep -hir "one" b.txt -> gives the occorence of one in the complete folder 
-grep -hiro "one" b.txt -> gives the occorence of one in the complete folder where one comes seperately
+grep "one" b.txt -> all places where "one" was used in the file
+grep -c "one" b.txt -> only gives the number of lines where "one" was there
+grep -h "one" b.txt -> only gives the phases where "one" was there
+grep -hir "one" b.txt -> gives the occorence of "one" in the complete folder 
+grep -hiro "one" b.txt -> gives the occorence of "one" in the complete folder where "one" comes seperately
 
 
 history -> gives the history of all the commands ran 
