@@ -78,4 +78,4 @@ grep -B 5 "ERROR" log.txt -> grab 5 lines before the first error message
 grep -A 5 "ERROR" log.txt -> grab 5 lines after the first error message
 grep -C 5 "ERROR" log.txt -> grab 5 lines after and before the first error message
 
-sed and afk are other commands which come in handy
+sed and afk are other commands which come in handy used for text processing
