@@ -1,5 +1,6 @@
+// Filter for male users aged 18 or older and map their names
+
 function find(array) {
-  // Filter for male users aged 18 or older and map their names
   return array
     .filter((user) => user.age >= 18 && user.gender === "male")
     .map((user) => user.name);
