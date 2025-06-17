@@ -2,7 +2,7 @@
 
 function setTimeoutPromisified(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
-  // returns a object of a promise class
+  // returns an object of a promise class
 }
 
 function callback() {
