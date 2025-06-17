@@ -2,12 +2,12 @@
 
 Classes in JS
 
-primitive types
+primitive data types
 1. number
 2. string
 3. boolean
 
-complex types
+complex data types
 1. object
 2. array
 
