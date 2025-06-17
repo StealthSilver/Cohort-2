@@ -4,7 +4,7 @@
 function setTimeoutSync(timeout) {
   let startTime = new Date();
 
-  // This loop continuously checks whether the time elapsed has exceeded the timeout.
+  // This loop continuously checks whether the time elapsed has exceeded the timeout. (busy waiting)
 
   while (1) {
     let currrentTime = new Date();
