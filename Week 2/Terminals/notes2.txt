@@ -20,6 +20,7 @@ ls Zoo* -> to get the files starting with zoo
 cat -> to view the file 
 touch newfFIle.txt -> creating a new text file
 cat > newFile.txt [random text] -> adding (random text) to newFile.txt 
+cat >> newFilw.txt [random text] -> appending [random text] to newFile.txt
 mkdir test && cd test -> making and entering at the same time
 
 
