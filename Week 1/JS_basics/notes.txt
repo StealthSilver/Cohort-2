@@ -1,7 +1,7 @@
 Overview of JavaScript (JS)
 
 General Overview
-JavaScript (JS) is primarily a web development language, but its use extends beyond the browser. For instance, libraries like mediasoup enable WebRTC (Web Real-Time Communication) functionalities.
+JavaScript (JS) is primarily a web development language, but its use extends beyond the browser. For instance, libraries like mediasoup enable WebRTC (Web Real-Time Communication) functionalities, same for WEBRTCJS and ffmpeg for video processing.
 
 React and Next.js are frameworks built on top of JavaScript. These frameworks compile down to HTML, CSS, and JavaScript, as browsers only understand these technologies. 
 
