@@ -1,3 +1,4 @@
+// basic sync code running (in order)
 function first() {
   console.log("First task");
 }

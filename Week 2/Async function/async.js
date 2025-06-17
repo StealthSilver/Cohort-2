@@ -1,3 +1,5 @@
+// async code running (out of order)
+
 function first() {
   console.log("First task");
 }
