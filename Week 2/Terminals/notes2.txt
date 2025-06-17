@@ -53,7 +53,8 @@ echo $PATH -> displays the path variable
 head a.txt -> first 5 rows of the file
 tail a.txt -> last 5 rows of the file
 head -20 a.txt -> first 20 rows of the file
-command1 | command2 -> the execution of command 1 flows to command 2
+command1 | command2 -> the output of command 1 flows to command 2
+tail -n +25 file.txt| head +5 -> getting lines 25 to 20 from the end
 
 wc b.txt -> gives the number of lines, number of words, and number of characters in order
 
