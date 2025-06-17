@@ -3,3 +3,5 @@
 3. Digital fingerptrinting and how to prevent video piracy(DRM , Screen Recording, Watermarking)
 4. Opinions Market -> tokens -> liquidity pool
 5. Why vidoes need to be transcoded
+6. worker threads, cluster module
+7. making your own async function from scratch
