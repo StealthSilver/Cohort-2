@@ -1,4 +1,4 @@
-// ASYNC AWAIT SYNTAX
+// Async Await syntax
 
 function setTimeoutPromisified(duration) {
   return new Promise(function (resolve) {
