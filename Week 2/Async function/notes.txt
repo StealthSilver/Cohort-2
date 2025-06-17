@@ -42,3 +42,7 @@ Natively async functions
 
 
 * as JS is single threaded so it just has a single call stack
+
+* to take inputs in java script there are two ways 
+- pass the value as the function argument -> node index.js 100
+- pass the value as the enviornment variable ->  NUM = 100 node index.js 
