@@ -1,4 +1,4 @@
-// this is the callback hell
+// callback hell
 
 setTimeout(function () {
   console.log("hi");
