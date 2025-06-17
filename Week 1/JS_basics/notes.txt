@@ -32,9 +32,9 @@ Comparison with Rust:
 4. Garbage Collection
 
 Languages handle memory management in three primary ways:
-1. Garbage Collector**: Automatically handles memory allocation and deallocation (e.g., Java, JavaScript).
+1. Garbage Collector: Automatically handles memory allocation and deallocation (e.g., Java, JavaScript).
 2. Manual Memory Management: Developers manually manage memory (e.g., C, C++).
-3. Rust's Ownership Model**: Rust uses a unique approach to manage memory at compile time, ensuring safety and efficiency.
+3. Rust's Ownership Model: Rust uses a unique approach to manage memory at compile time, ensuring safety and efficiency.
 
 
 * when companies need low latency or memory safety they transition to Go or Rust
