@@ -44,7 +44,7 @@ Natively async functions
 1. readFile, setTimeout, fetch, database calls
 
 
-* as JS is single threaded so it just has a single call stack
+* as JS is single threaded so it just has a single call stack, we can run multiple tasks by using worker threads or cluster module in node js
 
 * to take inputs in java script there are two ways 
 - pass the value as the function argument -> node index.js 100
