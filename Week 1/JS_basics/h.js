@@ -12,11 +12,7 @@ function greet(user) {
   }
   let canVote = true;
 
-  if (age >= 18) {
-    canVote = true;
-  } else {
-    canVote = false;
-  }
+  canVote = age >= 18 ? true : false;
 
   console.log(
     `Hello ${des} ${user.name}, your age is ${user.age}. and the voting ability is ${canVote}`
