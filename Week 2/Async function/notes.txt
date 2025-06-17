@@ -21,7 +21,7 @@ there are some processes which take time
 2. Starting a clock
 3. HTTP requests
 
-running the I/O bound tasks asynchronously is hte best approach
+running the I/O bound tasks asynchronously is the best approach
 
 
 Functional arguments
