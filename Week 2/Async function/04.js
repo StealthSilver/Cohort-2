@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 
+// the print is the callback function
 function print(err, data) {
   if (err) {
     console.log("file not found");
