@@ -1,5 +1,5 @@
 1. Web Asswmbly and how C++ runs in the sandbox enviornment
 2. Rust Ownership model for memory mamagement
-3. Digital fingerptrinting and how to prevent video piracy(DRM , Screen Recording)
+3. Digital fingerptrinting and how to prevent video piracy(DRM , Screen Recording, Watermarking)
 4. Opinions Market -> tokens -> liquidity pool
 5. Why vidoes need to be transcoded
