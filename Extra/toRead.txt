@@ -1,2 +1,3 @@
 1. Web Asswmbly and how C++ runs in the sandbox enviornment
 2. Rust Ownership model for memory mamagement
+3. Digital fingerptrinting and how to prevent video piracy
