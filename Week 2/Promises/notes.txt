@@ -13,9 +13,10 @@ complex data types
 
 JS does not have a concept of destructor -> it does the memeory management by itself
 
-classes will have the properties and methods
+classes will have the properties (variables) and methods (functions)
 
 key features in classes
+
 1. Class decleration
 2. Constructors
 3. Methods 
