@@ -5,3 +5,4 @@
 5. Why vidoes need to be transcoded
 6. worker threads, cluster module
 7. making your own async function from scratch
+8. flushing the call stack to prioritise callback queue
