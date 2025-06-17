@@ -23,6 +23,9 @@ there are some processes which take time
 
 running the I/O bound tasks asynchronously is the best approach
 
+CPU bound task -> they require heavy cpu processing 
+e.g. big loops, recursions
+
 
 Functional arguments
 Passing a function to another function as an argument
