@@ -11,4 +11,6 @@ const contents2 = fs.readFile("b.txt", "utf-8", (err, data) => {
   }
 }); // asynchronous reading
 
+// the (err, data) is the callback function as it is called back when the file is read
+
 console.log(contents2);
