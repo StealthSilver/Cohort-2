@@ -21,11 +21,13 @@ Comparison with Rust:
 - JavaScript relies on runtime checks for errors, whereas TypeScript helps resolve many issues at compile time by adding type safety.
 
 2. Dynamically Typed
+
 - In JavaScript, variables are dynamically typed, allowing the data type of a variable to change during runtime.
 
 3. Single-Threaded
+
 - JavaScript is single-threaded, meaning it processes one task at a time and can utilize only one CPU core.
-- Languages like **Rust** and **Go** are multi-threaded and can handle multiple tasks concurrently.
+- Languages like Rust and Go are multi-threaded and can handle multiple tasks concurrently.
 
 4. Garbage Collection
 Languages handle memory management in three primary ways:
