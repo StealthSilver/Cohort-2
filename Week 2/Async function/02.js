@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const contents = fs.readFileSync("a.txt", "utf-8"); // synchronous reading
-console.log(contents);
+console.log("Sync content: ", contents);
 
 const contents2 = fs.readFile("b.txt", "utf-8", (err, data) => {
   if (err) {
