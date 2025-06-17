@@ -14,6 +14,6 @@ function readFilePromisified(filePath, encoding = "utf8") {
 }
 
 // using
-readFilePromisified("01.txt")
+readFilePromisified("notes.txt")
   .then((data) => console.log(data))
   .catch((err) => console.error("Error:", err));
