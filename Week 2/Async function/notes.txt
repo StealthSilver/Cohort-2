@@ -41,7 +41,7 @@ The call stack keeps running, when the async functions complete then they wait i
 once the sync code completes then the event loop calls all the async outputs and the execution happens one by one
 
 Natively async functions
-1. readFile, setTimeout, fetch , database calls
+1. readFile, setTimeout, fetch, database calls
 
 
 * as JS is single threaded so it just has a single call stack
