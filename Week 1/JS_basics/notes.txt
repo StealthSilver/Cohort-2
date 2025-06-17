@@ -30,6 +30,7 @@ Comparison with Rust:
 - Languages like Rust and Go are multi-threaded and can handle multiple tasks concurrently.
 
 4. Garbage Collection
+
 Languages handle memory management in three primary ways:
 1. Garbage Collector**: Automatically handles memory allocation and deallocation (e.g., Java, JavaScript).
 2. Manual Memory Management: Developers manually manage memory (e.g., C, C++).
