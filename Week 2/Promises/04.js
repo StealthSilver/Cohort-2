@@ -1,7 +1,8 @@
 // promisified version of set timeout
 
 function setTimeoutPromisified(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  let p = new Promise((resolve) => setTimeout(resolve, ms));
+  return p;
   // returns an object of a promise class
 }
 
