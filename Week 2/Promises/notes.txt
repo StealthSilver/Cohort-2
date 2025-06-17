@@ -27,7 +27,7 @@ key features in classes
 02.js
 
 JS has ita own classes 
-e.g. Date class -> for the time related stuff , Map class
+e.g. Date class -> for the time related stuff , Map class -> creating key value pairs (hash maps)
 
 03.js , 04.js , 05.js
 
