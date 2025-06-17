@@ -70,6 +70,7 @@ history -> gives the history of all the commands ran
 
 we can create bash files will multiple lines of scripts 
 newscript.sh 
+to run it -> bash newscript.sh 
 
 grep "ERROR" log.txt -> grab all the error messages from log.txt 
 grep -v "ERROR" log.txt -> grab all the messages apart from the error message from log.txt 
