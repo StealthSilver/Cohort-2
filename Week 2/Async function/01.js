@@ -18,7 +18,7 @@ function rec(n) {
 
 console.log(rec(10));
 
-// the above function just in order 1
+// the above function with time complexity O(1)
 function better(a) {
   return (a * (a + 1)) / 2;
 }
