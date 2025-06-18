@@ -1,5 +1,6 @@
 DOM : Document Object Model 
 
+The DOM is a programming for web documents.
 the DOM represents the structure of a web page as a tree of objects
 the DOM allows the scripts to manipulate the content and structure dynamically
 
@@ -31,3 +32,4 @@ Rendering -> taking hte state and putting it on the components in the DOM
 using the render function and updating the state variables -> index4.html
 
 react does reconcilation in which it updates the state and rerenders the components
+
