@@ -7,6 +7,12 @@ the DOM allows the scripts to manipulate the content and structure dynamically
 
 Static Website - index.html
 
+to create a dynamic website we need to create these four functionalities
+1. READ
+2. CREATE 
+3. EDIT 
+4. DELETE
+
 Basic functions on the document object 
 
 1. querySelector
