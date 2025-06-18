@@ -9,3 +9,4 @@
 9. creating the promise class
 10. tl:dr 
 11. sed and afk bash commands
+12. todo list in html Week 3 -> index4.html
