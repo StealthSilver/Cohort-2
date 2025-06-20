@@ -45,20 +45,17 @@
         const button = document.createElement("button");
 
         button.innerHTML = "Delete";
-        h1.innerHTML = todo.title; /
-
+        h1.innerHTML = todo.title;
 
         button.onclick = function () {
           deleteTodo(index);
         };
-
 
         div.append(h1);
         div.append(button);
 
         return div;
       }
-
 
       function render() {
         document.querySelector("#todos").innerHTML = ""; // Clear the existing to-do list
