@@ -17,6 +17,11 @@ EcmaScript is the standard JS organizational code
 this will create a package.json file
 this is a configuration file, stores the important info. for the project
 
+python has : pyproject.toml
+java has : pom.xml
+rust has : Cargo.tml
+
+
 PACKAGE.JSON 
 
 name : name of the directory
