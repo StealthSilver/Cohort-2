@@ -74,3 +74,7 @@ Creating a command line interface
 create a cli to take the file path as input and then output hte numebr of words in the file
 
 the commander library gives -h for the help command
+
+^ this is called caret 
+~ this is called til-duh
+` this is called backtick
