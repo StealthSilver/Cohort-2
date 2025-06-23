@@ -3,7 +3,7 @@ const { Command } = require("commander");
 const program = new Command();
 
 program
-  .name("counter")
+  .name("word counter")
   .description("CLI to do file-based tasks")
   .version("0.8.0");
 
