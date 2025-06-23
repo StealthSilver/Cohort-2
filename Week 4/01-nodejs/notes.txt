@@ -50,6 +50,8 @@ node_modules is a very heavy folder
 we need not commit it on github, every dependency in the node_modeules is there in pckage.json 
 to get the node_modules locally we just have to run npm install
 
+npm registery has code written by other programmers and we can use them
+
  "chalk": "^4.1.2" 
  this is there in the dpendencies 
 
