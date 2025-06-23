@@ -37,6 +37,7 @@ description:         |
 npm
 pacakage maangers allows us to use the external packages , libraries or packages 
 packages contain the reusable code
+"start": "node index.js" -> this is the script which runs the code
 
 npm install chalk -> using the "chalk" library
 
