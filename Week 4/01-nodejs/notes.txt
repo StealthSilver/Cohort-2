@@ -80,6 +80,8 @@ process.argv: An array containing all command-line arguments.
 process.argv[0] is usually node
 process.argv[1] is the path to your script
 
+to convert node index.js into a cli name of choice -> alias worldcli = "node index.js"
+
 ^ this is called caret 
 ~ this is called til-duh
 ` this is called backtick
