@@ -15,3 +15,4 @@
 15. how backbone and jquery render state also code
 16. airdrops and telegram crypto 
 17. celery and time based transactions (cron jobs)
+18. create a cli for todos (week4/cli)
