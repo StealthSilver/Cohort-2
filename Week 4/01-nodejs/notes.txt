@@ -52,16 +52,16 @@ to get the node_modules locally we just have to run npm install
 
 npm registery has code written by other programmers and we can use them
 
- "chalk": "^4.1.2" 
- this is there in the dpendencies 
+"chalk": "^4.1.2" 
+this is there in the dpendencies 
 
- the three numbers represent the changes MAJOR.MINOR.PATCH 
- the ^ sign means that npm will install latest version below 5
+the three numbers represent the changes MAJOR.MINOR.PATCH 
+the ^ sign means that npm will install latest version below 5
 
- package-lock.json 
+package-lock.json 
 
- we lock versions of dependencies so that multiple developers can have the same version of the dependency
- we should commit the package.lock on github 
+we lock versions of dependencies so that multiple developers can have the same version of the dependency
+we should commit the package.lock on github 
 
 
 cli
