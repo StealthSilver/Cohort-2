@@ -52,6 +52,7 @@ to get the node_modules locally we just have to run npm install
 
 npm registery has code written by other programmers and we can use them
 
+npm i path -> path external library
 console.log(__dirname) -> prints the working directory
 console.log(path.join(__dirname, "index.js)) -> prints the joined path of the working file
 
