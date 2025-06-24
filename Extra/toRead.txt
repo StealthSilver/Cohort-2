@@ -23,3 +23,4 @@
 23. what is SSH
 24. Tamplate Engine
 25. * test website : github.com/code100x/aptitude-test
+26. create the map and filter function from scratch (week5/helper functions)
