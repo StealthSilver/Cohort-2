@@ -83,6 +83,8 @@ BODY
 it refers to the part of an HTTP message that contains the actual data being sent to the server
 usually the data is transferred in the JSON format
 
+the data can be checked in the payload section
+
 ROUTES 
 
 routes are the paths or endpoints that defne how te incoming requests will be handles by the servers
