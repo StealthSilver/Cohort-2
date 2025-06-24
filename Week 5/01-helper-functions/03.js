@@ -5,7 +5,8 @@
 const input = [1, 2, 3, 4, 5, 6];
 
 const transform = (i) => {
-  i % 2 == 0 ? true : false;
+  return i % 2 === 0;
 };
+
 const ans = input.filter(transform);
 console.log(ans);
