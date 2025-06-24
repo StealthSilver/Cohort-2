@@ -104,3 +104,4 @@ ping localhost -> returns the ip of your own machine
 
 
 * we cannot run two processes on a single port, we can run two websites by using reverse proxy
+* Be cautious when running npx <something> if you don’t know what it does. Since it runs code from the internet, it could be dangerous if the package is malicious.
