@@ -74,8 +74,8 @@ they are a 3 digit number returnes by a server to indicate a outcome of a client
 
 200 series : success 
 300 series : redirect
-400 series : client error -> client is sending some erronous data
-500 series : server error -> server crashed
+400 series : client error -> client is sending some erronous data (clients fault)
+500 series : server error -> server crashed (servers fault)
 
 
 BODY 
