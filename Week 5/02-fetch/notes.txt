@@ -1,3 +1,5 @@
 axios knows by itself that the data sent will be json
 
 for fetch we need to know what is the type of data is retrurned by the server
+
+01.js -> to check the incoming requests httpdump.app
