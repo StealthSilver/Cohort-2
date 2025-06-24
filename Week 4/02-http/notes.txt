@@ -78,12 +78,12 @@ they are a 3 digit number returnes by a server to indicate a outcome of a client
 500 series : server error -> server crashed
 
 
-BODY :
+BODY 
 
 it refers to the part of an HTTP message that contains the actual data being sent to the server
 usually the data is transferred in the JSON format
 
-ROUTES :
+ROUTES 
 
 routes are the paths or endpoints that defne how te incoming requests will be handles by the servers
 
