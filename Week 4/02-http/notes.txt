@@ -15,6 +15,11 @@ the http protocol runs on the request response model
 
 creating the protocol -> https://datatracker.ietf.org/doc/html/rfc2616 
 
+there are other protocols to communicate
+1. WebSockets
+2. WebRTC 
+3. GRPC
+
 DOMAIN NAME / IP
 
 the names associated with the server ip address are called the domain names 
@@ -36,7 +41,7 @@ most moders websites run on port 443 on the web
 locally we can run websites on different ports 
 
 default ports: 
-HTTp -> 80
+HTTP -> 80
 HTTPS -> 443
 SSH -> 22
 
