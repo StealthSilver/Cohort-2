@@ -1,1 +1,3 @@
-axios knows by itself that teh data sent will be json
+axios knows by itself that the data sent will be json
+
+for fetch we need to know what is the type of data is retrurned by the server
