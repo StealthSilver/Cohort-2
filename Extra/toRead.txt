@@ -16,7 +16,7 @@
 16. airdrops and telegram crypto 
 17. celery and time based transactions (cron jobs)
 18. create a cli for todos (week4/cli)
-19. create a file based todo application (week4/http)
+19. create a file based todo application and an in memory todo application (week4/http)
 20. how to change the default ip of the local ip resolution (sudo vi etc/host) (week4/http/-2:04)
 21. mac address
 22. reverse proxy with nginx
