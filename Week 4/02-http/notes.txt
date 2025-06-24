@@ -17,8 +17,8 @@ creating the protocol -> https://datatracker.ietf.org/doc/html/rfc2616
 
 DOMAIN NAME / IP
 
-the names associated with teh server ip address are called the domain names 
-the check the ip address of any server use the ping gommand
+the names associated with the server ip address are called the domain names 
+the check the ip address of any server use the ping command
 
 ping google.com -> to get the ip address 
 use sudo vi /etc/hosts -> to check which ip is pointing to which domain name
