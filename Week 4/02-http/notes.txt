@@ -54,7 +54,10 @@ R -> READ -> GET
 U -> UPDATE -> PUT
 D -> DELETE -> DELETE
 
+by default the first request to any website as the URL is a get request
+
 to check and send requests -> download postman
+
 
 RESPONSES
 
