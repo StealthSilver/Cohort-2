@@ -3,8 +3,12 @@ this is the version control system
 
 Centralised VCS -> Subversion, Team foundtion server 
 they are good for backups
+they have a single point of faliure
 
-Distributed VCS -> Github , Gitlab , Bitbucket
+Distributed VCS -> Git, Mercurial
+
+these are the servces which provide the Distributed VCS
+Github , Gitlab , Bitbucket
 they are good for collaboration
 
 GITHUB -> a web based hosting service
