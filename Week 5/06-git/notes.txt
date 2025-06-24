@@ -13,6 +13,8 @@ they are good for collaboration
 
 GITHUB -> a web based hosting service
 
+Blobs : Binary Large Object, they are used to store the file data without the metadata
+
 flies are addressed by their SHA1 hashes
 
 GIT COMMANDS
