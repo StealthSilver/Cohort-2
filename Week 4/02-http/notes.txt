@@ -93,9 +93,9 @@ routes are the paths or endpoints that defne how te incoming requests will be ha
 HTTPS -> HYPER TEXT TRANSFER PROTOCOL SECURED
 
 index.js -> creating a http server 
-* the server can do the res.send only once
 
 use the express library
+* the server can do the res.send only once
 
 ping localhost -> returns the ip of your own machine
 
