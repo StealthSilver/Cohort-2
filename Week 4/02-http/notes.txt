@@ -106,3 +106,6 @@ ping localhost -> returns the ip of your own machine
 * is mobile is a npm package that checks if the site is running on the mobile. use it to deploy multiple videos with different qualities to optimize
 * SSH secure shell protocol is a protocol by which we can communicate with the AWS machines
 * if a website is on http we can sniff the packets in between and this is a security vulnarebility
+
+* to serve the static files 
+* app.use(express.static(path.join(__dirname, "./public)))
