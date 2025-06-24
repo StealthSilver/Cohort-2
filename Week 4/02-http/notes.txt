@@ -45,6 +45,8 @@ HTTP -> 80
 HTTPS -> 443
 SSH -> 22
 
+these are the ports which the browser accesses by default
+
 METHODS 
 
 they are action keywords which denote the CRUD operations
@@ -98,5 +100,7 @@ use the express library
 * the server can do the res.send only once
 
 ping localhost -> returns the ip of your own machine
+
+
 
 * we cannot run two processes on a single port, we can run two websites by using reverse proxy
