@@ -20,3 +20,4 @@
 20. how to change the default ip of the local ip resolution (sudo vi etc/host) (week4/http/-2:04)
 21. mac address
 22. reverse proxy with nginx
+23. what is SSH
