@@ -109,3 +109,5 @@ ping localhost -> returns the ip of your own machine
 
 * to serve the static files 
 * app.use(express.static(path.join(__dirname, "./public)))
+
+* test website : github.com/code100x/aptitude-test
