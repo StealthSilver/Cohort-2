@@ -62,7 +62,7 @@ postman is used for testing requests
 
 RESPONSES
 
-the server can return teh responses in various formats 
+the server can return the responses in various formats 
 
 JSON -> JavaScript Object Notation
 PLAIN TEXT 
