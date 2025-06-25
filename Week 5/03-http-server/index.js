@@ -6,6 +6,7 @@ const app = express();
 const PORT = 3000;
 
 app.get("/sum", function (req, res) {
+  // getting a and b from the query parameters from the request
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
 
