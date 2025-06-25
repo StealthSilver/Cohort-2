@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 
 app.get("/sum/:firstArg/:secondArg", function (req, res) {
+  // the query param can be now anything localhost:3000/add/3/5
   const a = Number(req.params.firstArg);
   const b = Number(req.params.secondArg);
 
