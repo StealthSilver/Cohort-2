@@ -45,7 +45,7 @@ middlewares are the functions that have access to the request object, response o
 2. ending the request-response cycle
 3. calling the next middlewares function in the stack
 
-the middleware may or may notchane the request object 
+the middleware may or may not chane the request object 
 the middleware will either stop the request or forward the request to the real route handler
 
 commonly used middlewares 
