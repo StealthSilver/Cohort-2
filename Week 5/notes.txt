@@ -11,6 +11,10 @@ there are both request and response headers which send different types of reques
 the request headers contain the user related info and the request related info
 the response header contains the metadata about the response
 
+index.html -> to test: http://localhost:3000/sum?a=2&b=5
+index.html -> to test: http://localhost:3000/mul?a=2&b=5
+index.html -> to test: http://localhost:3000/div?a=2&b=5
+
 FETCH API 
 
 index.html 
