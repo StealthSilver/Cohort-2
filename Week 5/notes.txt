@@ -1,3 +1,5 @@
+whenever we send a request to any website a http request goes out. and the server returns json or html data
+
 HEADERS IN HTTP
 
 along with the request there is some other information sent in form of the headers 
