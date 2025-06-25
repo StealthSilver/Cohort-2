@@ -8,6 +8,8 @@ the headers are key value pairs between a client and a server
 they mostly contain metadata, authentication data , content type , referer
 
 there are both request and response headers which send different types of requests
+the request headers contain the user related info and the request related info
+the response header contains the metadata about the response
 
 FETCH API 
 
