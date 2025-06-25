@@ -1,4 +1,5 @@
 axios knows by itself that the data sent will be json
+axios is a promise based http client
 
 for fetch we need to know what is the type of data is retrurned by the server
 
