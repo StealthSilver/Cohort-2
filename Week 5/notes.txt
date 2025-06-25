@@ -68,4 +68,4 @@ npx serve -> this will serve in the files on the private ip
 this helps serve static files
 
 
-express.json under it uses the body-parser library only
+express.json under the hood uses the body-parser library only
