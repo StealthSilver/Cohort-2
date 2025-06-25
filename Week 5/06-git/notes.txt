@@ -14,6 +14,9 @@ they are good for collaboration
 GITHUB -> a web based hosting service
 
 Blobs : Binary Large Object, they are used to store the file data without the metadata
+Trees : they hold the blobs and maintain the associan and sub-directories
+
+Commit object = a node of the linked list
 
 flies are addressed by their SHA1 hashes
 
