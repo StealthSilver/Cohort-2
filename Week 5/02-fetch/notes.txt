@@ -10,3 +10,5 @@ we cannot send body in get request, we can send the extra deta in query params
 in a post request second argument will be body , third argument is the header
 
 the fetch returns the json object, the body mainlt contains the data
+
+we can write the fetch in both frontend and backend, generally in the frontend (client side)
