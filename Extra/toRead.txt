@@ -29,4 +29,4 @@
 29. create a middleware function that logs each incoming request's HTTP method, URL, and timestamp to the console 
 30. create a middleware function thar counts the number of requests
 31. practice the full stack calculator (week 5 / cors)
-32. how cors work under the hood
+32. how cors work under the hood -> github cors
