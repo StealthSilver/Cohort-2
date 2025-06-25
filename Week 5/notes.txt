@@ -17,8 +17,6 @@ index.html -> to test: http://localhost:3000/div?a=2&b=5
 
 FETCH API 
 
-index.html 
-
 there are two ways to send http requests
 1. direct request
 2. background requests -> fetch api
