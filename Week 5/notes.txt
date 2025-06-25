@@ -61,3 +61,4 @@ this lets the frontends communicate with the backend securely
 to host or share files on intranet 
 
 npx serve -> this will serve in the files on the private ip
+this helps serve static files
