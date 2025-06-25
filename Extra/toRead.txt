@@ -26,3 +26,5 @@
 26. create the map and filter function from scratch (week5/helper functions)
 27. axios vs fetch
 28. SSH keys in github
+29. create a middleware function that logs each incoming request's HTTP method, URL, and timestamp to the console 
+30. create a middleware function thar counts the number of requests
