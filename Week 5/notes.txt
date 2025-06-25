@@ -17,6 +17,10 @@ index.html -> to test: http://localhost:3000/div?a=2&b=5
 
 the input in the http request can be sent by the query parameters 
 
+
+generally in the get request the values are passed as query params 
+generally in the post request he data is sent in the body
+
 FETCH API 
 
 there are two ways to send http requests
