@@ -39,7 +39,7 @@ EJS -> (Embeded JavaScript) is used for tampleting
 
 MIDDLEWARES
 
-middlewares are the functions that have access to the request object
+middlewares are the functions that have access to the request object, response object and the next() function. It is a layer on top of the request-response cycle
 
 1. modifying the request or response objects
 2. ending the request-response cycle
@@ -62,3 +62,4 @@ to host or share files on intranet
 
 npx serve -> this will serve in the files on the private ip
 this helps serve static files
+
