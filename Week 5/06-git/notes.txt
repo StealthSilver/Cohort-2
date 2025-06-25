@@ -25,6 +25,7 @@ GIT COMMANDS
 git clone -> clone a repository
 git add -> adding the changes to the staging area
 git commit -> commiting the changes on the active branch
+git rm --cached <file names> -> to unstage the files we dont want to commit
 git push -> pushing the changes on github
 git pull -> pulling the latest changes
 git status -> checking the status of files
