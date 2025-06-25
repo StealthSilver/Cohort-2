@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/sum", function (req, res) {
+  // the values a and b are not part of the header but the body
   const a = parseInt(req.body.a);
   const b = parseInt(req.body.b);
 
