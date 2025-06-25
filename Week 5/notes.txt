@@ -58,10 +58,10 @@ commonly used middlewares
 
 2. cors -> cross origin resource sharing
 
-in express by default cross origin requests are blocked
+in node js / express by default cross origin requests are blocked, this is good so that only the permitted frontends can sent the requests to the apis
 
-this lets the frontends communicate with the backend securely
-to host or share files on intranet 
+this lets the frontends communicate with the backend securely to host or share files on intrernet 
+
 
 npx serve -> this will serve in the files on the private ip
 this helps serve static files
