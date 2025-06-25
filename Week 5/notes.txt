@@ -62,6 +62,12 @@ in node js / express by default cross origin requests are blocked, this is good 
 
 this lets the frontends communicate with the backend securely to host or share files on intrernet 
 
+app.use(cors({
+    domains: [write the address of the domains which you want to send the requests]
+}))
+
+by defauls if you are using cors then all the frontends can send the requests
+
 
 npx serve -> this will serve in the files on the private ip
 this helps serve static files
