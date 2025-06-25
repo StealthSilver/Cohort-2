@@ -76,3 +76,5 @@ this helps serve static files
 we can go to the root folder and then we can serve the folder. then we can access on the intranet
 
 express.json under the hood uses the body-parser library only
+
+every machine on the intranet(same wifi) has the address as 192.168.1.1 , 192.168.1.2 ... 
