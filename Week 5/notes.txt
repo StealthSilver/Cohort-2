@@ -66,8 +66,9 @@ app.use(cors({
     domains: [write the address of the domains which you want to send the requests]
 }))
 
-by defauls if you are using cors then all the frontends can send the requests
+by defaul if you are using cors then all the frontends can send the requests
 
+if frontends and the backend are there on the same address then cors is not required
 
 npx serve -> this will serve in the files on the private ip
 this helps serve static files
