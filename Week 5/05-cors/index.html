@@ -3,21 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cors</title>
+    <title>CORS Sum</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <input id="a" type="text" placeholder="first value" />
-    <input id="b" type="text" placeholder="second value" />
-    <br />
+    <h2>Sum Calculator</h2>
+    <input id="a" type="text" placeholder="First value" />
+    <input id="b" type="text" placeholder="Second value" />
+    <br /><br />
     <button onclick="sendRequest()">Find Sum</button>
+    <div id="result" style="margin-top: 20px; font-weight: bold"></div>
 
     <script>
       function sendRequest() {
-        axios.post("http://localhost:3000/sum", {
-          a: document.getElementById("a").value,
-          b: document.getElementById("b").value,
-        });
+        const a = document.getElementById("a").value;
+        const b = document.getElementById("b").value;
+
+        axios
+          .post("http://localhost:3000/sum", { a, b })
+          .then((response) => {
+            document.getElementById("result").innerText =
+              "Answer: " + response.data.answer;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            document.getElementById("result").innerText = "An error occurred.";
+          });
       }
     </script>
   </body>
