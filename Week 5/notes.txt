@@ -24,13 +24,11 @@ there are two ways to send http requests
 fetch("https://jsonplaceholder.typicode.com/posts/1");
 fetch sends the request to other server get the data
 
-
 AXIOS LIBRARY
 
 index2.html
- 
-axios is an external library for calling libraries
 
+axios is an external library for calling libraries
 
 index.js -> creating a http server
 
