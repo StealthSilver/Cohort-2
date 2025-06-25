@@ -66,5 +66,6 @@ this lets the frontends communicate with the backend securely to host or share f
 npx serve -> this will serve in the files on the private ip
 this helps serve static files
 
+we can go to the root folder and then we can serve the folder. then we can access on the intranet
 
 express.json under the hood uses the body-parser library only
