@@ -5,7 +5,7 @@ const express = require("express");
 
 const app = express();
 
-// Add this middleware to parse JSON request bodies
+// Add this middleware to parse JSON request bodies, to send the json data through the body, it need to be parsed
 app.use(express.json());
 
 app.post("/sum", function (req, res) {
