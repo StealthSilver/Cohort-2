@@ -19,6 +19,7 @@ const users = [
   },
 ];
 
+// getting the kidney status
 app.get("/", function (req, res) {
   const johnKidneys = users[0].kidneys;
 
@@ -40,6 +41,8 @@ app.get("/", function (req, res) {
     numberOfUnHealthyKidneys,
   });
 });
+
+app.post("/", function (req, res) {});
 
 app.listen(3000, () => {
   console.log(`app is running on port ${PORT}`);
