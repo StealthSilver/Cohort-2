@@ -1,3 +1,8 @@
 backend servers can be hit by postman, apps, other backends, frontends
 
 * postman is the app which can be used to sent post and other requests, with the browser we can only send get requests
+
+index.js 
+
+to send the get request just go to the browser and search http://localhost:3000/ -> to get the status of the kidneys
+to send the post request go to postman and send post request on localhost:3000, also use the bodyparser middleware

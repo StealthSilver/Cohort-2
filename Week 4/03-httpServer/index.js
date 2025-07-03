@@ -19,6 +19,9 @@ const users = [
   },
 ];
 
+// using the express.json middleware
+app.use(express.json());
+
 // getting the kidney status
 app.get("/", function (req, res) {
   const johnKidneys = users[0].kidneys;
