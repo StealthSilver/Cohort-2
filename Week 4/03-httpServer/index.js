@@ -35,7 +35,7 @@ app.get("/", function (req, res) {
   const numberOfUnHealthyKidneys = numberOfKidneys - numberOfHealthyKidneys;
 
   res.json({
-    johnKidneys,
+    numberOfKidneys,
     numberOfHealthyKidneys,
     numberOfUnHealthyKidneys,
   });
