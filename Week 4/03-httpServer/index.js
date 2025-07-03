@@ -42,7 +42,15 @@ app.get("/", function (req, res) {
   });
 });
 
-app.post("/", function (req, res) {});
+// adding a healthy or unhealthy kidney
+app.post("/", function (req, res) {
+  const isHealthy = req.body.isHealthy;
+  users[0].kidneys.push({
+    healthy: isHealthy,
+  });
+
+  res.json("done!");
+});
 
 app.listen(3000, () => {
   console.log(`app is running on port ${PORT}`);
