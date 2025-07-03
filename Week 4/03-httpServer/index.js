@@ -22,7 +22,7 @@ const users = [
 app.get("/", function (req, res) {
   const johnKidneys = users[0].kidneys;
 
-  const numberOfKidneys = kidneys.length;
+  const numberOfKidneys = johnKidneys.length;
 
   let numberOfHealthyKidneys = 0;
 
@@ -31,6 +31,14 @@ app.get("/", function (req, res) {
       numberOfHealthyKidneys = numberOfHealthyKidneys + 1;
     }
   }
+
+  const numberOfUnHealthyKidneys = numberOfKidneys - numberOfHealthyKidneys;
+
+  res.json({
+    johnKidneys,
+    numberOfHealthyKidneys,
+    numberOfUnHealthyKidneys,
+  });
 });
 
 app.listen(3000, () => {
