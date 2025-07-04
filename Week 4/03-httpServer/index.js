@@ -58,10 +58,20 @@ app.post("/", function (req, res) {
 // making all the kidneys healthy
 
 app.put("/", function (req, res) {
-  for (let i = 0; i < users[0].kidneys.length; i++) {
-    users[0].kidneys[i].healthy = true;
+  // checking if there are unhealthy kidneys
+
+  if (isthereatleastoneunhealthykidney()) {
+    for (let i = 0; i < users[0].kidneys.length; i++) {
+      users[0].kidneys[i].healthy = true;
+    }
+    res.json({
+      msg: "done",
+    });
+  } else {
+    res.status(411).json({
+      msg: "you have no bad kidneys",
+    });
   }
-  res.json({});
 });
 
 // deleting all the unhealthy kidneys
