@@ -2,6 +2,8 @@ AUTHENTICATION
 
 following are the steps how authentication works on any website
 
+firstly you signup to any website and the mail id and the hashed and salted passwords are stored in the database of the website
+
 1. the user comes to your website
 2. the user sends a request to /signin with their username and password 
 3. the user gets back a token
