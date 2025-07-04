@@ -12,14 +12,14 @@ the token is the thing which gives you persistant login on the website
 a new token is sent by the server every time the user signs in
 
 
-step 1
+step 1: login
 frontend -> username, password -> backend
 frontend <-       token       <-  backend
 
-
-step2 
+step2: request
 frontend -> GET /courses + token -> backend
 frontend <-       courses[]     <-  backend
+
 
 index3.js
 JWT -> JSON WEB TOKENS
