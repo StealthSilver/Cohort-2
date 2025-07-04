@@ -126,7 +126,7 @@ app.post("/signin", function (req, res) {
     const token = generateToken();
     foundUser.token = token;
     res.json({
-      message: token,
+      auth_token: token,
     });
   }
 });
