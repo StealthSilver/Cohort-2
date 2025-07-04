@@ -114,8 +114,8 @@ app.post("/signin", function (req, res) {
     }
   }
 
-  //   const user = users.find(function (u) {
-  //     if (u.username == username) {
+  //   const foundUser = users.find(function (u) {
+  //     if (u.username == username && u.password == password) {
   //       return true;
   //     } else {
   //       return false;
@@ -130,6 +130,8 @@ app.post("/signin", function (req, res) {
     });
   }
 });
+
+console.log(users);
 
 app.listen(PORT, () => {
   console.log(`app is running on port ${PORT}`);
