@@ -150,7 +150,7 @@ app.get("/me", function (req, res) {
       password: foundUser.password,
     });
   } else {
-    res.json({
+    res.status(411).json({
       message: "token invalid",
     });
   }
