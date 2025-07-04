@@ -70,7 +70,6 @@ app.get("/me", function (req, res) {
 
     for (let i = 0; i < users.length; i++) {
       if (users[i].username == username) {
-        // Fixed the bug here
         foundUser = users[i];
       }
     }
