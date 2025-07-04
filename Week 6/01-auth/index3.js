@@ -27,6 +27,7 @@ app.post("/signup", function (req, res) {
   });
 });
 
+// signing in and then generating a jwt
 app.post("/signin", function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
@@ -39,6 +40,7 @@ app.post("/signin", function (req, res) {
     }
   }
 
+  // signing the username using the jwt_secret to generate the jwt
   if (foundUser) {
     const token = jwt.sign(
       {
@@ -61,7 +63,7 @@ app.post("/signin", function (req, res) {
 app.get("/me", function (req, res) {
   try {
     const token = req.headers.token; //jwt
-    const decodedInformation = jwt.verify(token, JWT_SECRET); // converting the JWT
+    const decodedInformation = jwt.verify(token, JWT_SECRET); // checking the user by converting the token back to the username
     const username = decodedInformation.username;
 
     let foundUser = null;
