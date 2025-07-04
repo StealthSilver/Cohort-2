@@ -82,7 +82,7 @@ function generateToken() {
 
   let token = "";
   for (let i = 0; i < 32; i++) {
-    token = token + options[Math.floor(Math.random() * options.length)];
+    token += options[Math.floor(Math.random() * options.length)];
   }
 
   return token;
