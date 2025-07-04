@@ -35,7 +35,7 @@ for making it stateless the username itself is encrypted to form the token
 
 the JWT are compact and self contained way to represent information between two parties
 JWT's contain all the information needed to authenticate a request, so the server dosen't need to store session data.
-All the data is encoded in the token itself 
+All the user data is encoded in the token itself 
 
 JWT are stateless
 
