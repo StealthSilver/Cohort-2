@@ -66,6 +66,15 @@ app.put("/", function (req, res) {
 
 // deleting all the unhealthy kidneys
 app.delete("/", function (req, res) {
+  let atleastoneunhealthykidney = false;
+
+  // checking if there are unhealthy kidneys
+  for (let i = 0; i < users[0].kidneys.length; i++) {
+    if (!users[0].kidneys[i].healthy) {
+      atleastoneunhealthykidney = true;
+    }
+  }
+
   const newKidney = [];
   for (let i = 0; i < users[0].kidneys.length; i++) {
     if (users[0].kidneys[i].healthy) {
