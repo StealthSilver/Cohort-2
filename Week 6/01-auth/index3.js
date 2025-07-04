@@ -12,7 +12,7 @@ app.use(express.json());
 // creating an in-memory variable (database)
 const users = [];
 
-// generating token using a random string
+// signing up
 app.post("/signup", function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
