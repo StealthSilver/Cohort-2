@@ -20,6 +20,7 @@ step2: request
 frontend -> GET /courses + token -> backend
 frontend <-       courses[]     <-  backend
 
+the token is stored in the network tab -> header -> cookie
 
 index3.js
 JWT -> JSON WEB TOKENS
