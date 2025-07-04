@@ -66,30 +66,41 @@ app.put("/", function (req, res) {
 
 // deleting all the unhealthy kidneys
 app.delete("/", function (req, res) {
+  // checking if there are unhealthy kidneys
+
+  if (isthereatleastoneunhealthykidney()) {
+    const newKidney = [];
+    for (let i = 0; i < users[0].kidneys.length; i++) {
+      if (users[0].kidneys[i].healthy) {
+        newKidney.push({
+          healthy: true,
+        });
+      }
+    }
+
+    users[0].kidneys = newKidney;
+
+    res.json({
+      msg: "done",
+    });
+  } else {
+    res.status(411).json({
+      msg: "you have no bad kidneys",
+    });
+  }
+});
+
+function isthereatleastoneunhealthykidney() {
   let atleastoneunhealthykidney = false;
 
-  // checking if there are unhealthy kidneys
   for (let i = 0; i < users[0].kidneys.length; i++) {
     if (!users[0].kidneys[i].healthy) {
       atleastoneunhealthykidney = true;
     }
   }
 
-  const newKidney = [];
-  for (let i = 0; i < users[0].kidneys.length; i++) {
-    if (users[0].kidneys[i].healthy) {
-      newKidney.push({
-        healthy: true,
-      });
-    }
-  }
-
-  users[0].kidneys = newKidney;
-
-  res.json({
-    msg: "done",
-  });
-});
+  return atleastoneunhealthykidney;
+}
 
 app.listen(3000, () => {
   console.log(`app is running on port ${PORT}`);
