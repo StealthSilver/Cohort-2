@@ -29,7 +29,7 @@ index3.js
 
 JWT -> JSON WEB TOKENS
 
-the current token implementation is statefull, the token are stored int eh db for every user and to check teh authenticated endpoint we need to hit the db everytime
+the current token implementation is statefull, the token are stored in the db for every user and to check the authenticated endpoint we need to hit the db everytime
 
 for making it stateless the username itself is encrypted to form the token
 
