@@ -17,6 +17,7 @@ function isOldEnough(age) {
 // middleware that checks the age
 
 function isOldEnoughMiddleware(req, res, next) {
+  const age = req.query.age;
   if (age >= 14) {
     next();
   } else {
@@ -26,28 +27,16 @@ function isOldEnoughMiddleware(req, res, next) {
   }
 }
 
-app.get("/ride1", function (req, res) {
-  if (isOldEnough(req.query.age)) {
-    res.json({
-      msg: "you have successfully riden the ride 1",
-    });
-  } else {
-    res.status(411).json({
-      msg: "sorry you are too young",
-    });
-  }
+app.get("/ride1", isOldEnoughMiddleware, function (req, res) {
+  res.json({
+    msg: "you have successfully riden the ride 1",
+  });
 });
 
-app.get("/ride2", function (req, res) {
-  if (isOldEnough(req.query.age)) {
-    res.json({
-      msg: "you have successfully riden the ride 2",
-    });
-  } else {
-    res.status(411).json({
-      msg: "sorry you are too young",
-    });
-  }
+app.get("/ride2", isOldEnoughMiddleware, function (req, res) {
+  res.json({
+    msg: "you have successfully riden the ride 2",
+  });
 });
 
 app.listen(3000, () => {
