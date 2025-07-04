@@ -30,5 +30,5 @@
 30. create a middleware function thar counts the number of requests
 31. practice the full stack calculator (week 5 / cors)
 32. how cors work under the hood -> github cors
-33. 
+33. cookie based authentication
 34.
