@@ -143,6 +143,7 @@ app.get("/me", function (req, res) {
     }
   }
 
+  // returning the user info after checking the token
   if (foundUser) {
     res.json({
       username: foundUser.username,
