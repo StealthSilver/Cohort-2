@@ -41,6 +41,19 @@ JWT are stateless
 
 JWT prevent 1 round trip from the backend server and database for any user request
 
+step1:
+frontend -> /signup + username + password -> backend -> store the info in the db 
+
+step2: 
+frontend -> /signin + username + password -> backend -> auth from the db and then create the jwt
+frontend <-            jwt                <- backend 
+
+step3:
+frontend -> /me + jwt -> backend 
+fronetnd <- content[] <- backend 
+
+here in step 3 no need to hit the database
+
 to decode JWT's -> jwt.io
 
 to every request user sent to the backend, user has to send the token along with it in the header
