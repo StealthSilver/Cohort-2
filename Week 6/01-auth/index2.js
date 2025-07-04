@@ -4,6 +4,8 @@ const express = require("express");
 
 const app = express();
 
+const PORT = 3000;
+
 // this middleware will let us parse the post body
 app.use(express.json());
 
@@ -113,7 +115,7 @@ app.post("/signin", function (req, res) {
   }
 
   //   const user = users.find(function (u) {
-  //     if (u.username == username) {
+  //     if (u.username == username && u.password == password) {
   //       return true;
   //     } else {
   //       return false;
@@ -153,4 +155,6 @@ app.get("/me", function (req, res) {
   }
 });
 
-app.listen(3000);
+app.listen(PORT, () => {
+  console.log(`app is running on ${PORT}`);
+});
