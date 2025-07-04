@@ -100,6 +100,8 @@ app.post("/signup", function (req, res) {
   res.json({
     message: "you are signed up",
   });
+
+  console.log(users);
 });
 
 app.post("/signin", function (req, res) {
@@ -130,8 +132,6 @@ app.post("/signin", function (req, res) {
     });
   }
 });
-
-console.log(users);
 
 app.listen(PORT, () => {
   console.log(`app is running on port ${PORT}`);
