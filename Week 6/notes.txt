@@ -63,3 +63,5 @@ for every request user sent to the backend, user has to send the token along wit
 the server returns teh cookie in the response header and with every subsequent request teh cset-cookie is sent to the server for authentication
 
 * go to the inspect -> network -> get any request and copy as curl to get all the headers 
+
+working of jwts
