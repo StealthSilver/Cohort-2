@@ -37,3 +37,4 @@
 37. is storing jwt in local storage safe. injecting js and checking the local storage. http only cookie
 38. otp login using twilio and google firebase on the contact numeber and email id
 39. payments using razorpay
+40. Oauth (logn with google , login with facebook) -> passport 

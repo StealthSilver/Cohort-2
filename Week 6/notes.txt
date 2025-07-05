@@ -82,4 +82,4 @@ level of auth
 1. jwt approach
 2. cookie approach
 3. send otp on email 
-4. Oauth (logn with google , login with facebook)
+4. Oauth (logn with google , login with facebook) -> passport 
