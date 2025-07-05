@@ -67,16 +67,21 @@
       }
 
       async function getUserInformation() {
-        const response = await axios.get("http://localhost:3000/me", {
-          headers: {
-            token: localStorage.getItem("token"),
-          },
-        });
+        try {
+          const response = await axios.get("http://localhost:3000/me", {
+            headers: {
+              Authorization: "Bearer " + localStorage.getItem("token"),
+            },
+          });
 
-        document.getElementById("information").innerHTML = `
-    <strong>Username:</strong> ${response.data.username} <br>
-    <strong>Password:</strong> ${response.data.password}
-  `;
+          document.getElementById("information").innerHTML = `
+      <strong>Username:</strong> ${response.data.username} <br>
+      <strong>Password:</strong> ${response.data.password}
+    `;
+        } catch (err) {
+          console.error(err);
+          alert("Failed to fetch user info");
+        }
       }
 
       function logout() {
