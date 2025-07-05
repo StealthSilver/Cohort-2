@@ -75,3 +75,5 @@ with the jwt we can do two things
 this is different that encryption as the original string / payload can be decoded
 
 to send the token in the response headers, res.header("jwt", token)
+
+you have to store the jwt in the local storage. this will be found in the inspect -> application -> storage -> local storage
