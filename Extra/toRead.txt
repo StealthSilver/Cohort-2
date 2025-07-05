@@ -31,4 +31,4 @@
 31. practice the full stack calculator (week 5 / cors)
 32. how cors work under the hood -> github cors
 33. cookie based authentication
-34. browser fingerprinting, ip based fingerprinting, how to bypass the facebook authentication 
+34. browser fingerprinting, ip based fingerprinting, device checking, how to bypass the facebook authentication 
