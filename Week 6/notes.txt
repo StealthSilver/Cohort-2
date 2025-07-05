@@ -58,5 +58,8 @@ to decode JWT's -> jwt.io
 
 for every request user sent to the backend, user has to send the token along with it in the header
 
+
+
 * to get the public ip : in the terminal type ifconfig -> you can check the localhost on any other device on the same network now
-* cookie are special type of auth-header which are automatically set by the browser
+* cookie are special type of auth-header which are automatically set by the browser 
+the server returns teh cookie in the response header and with every subsequent request teh cset-cookie is sent to the server for authentication
