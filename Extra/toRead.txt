@@ -33,4 +33,4 @@
 33. cookie based authentication
 34. browser fingerprinting, ip based fingerprinting, device checking, how to bypass the facebook authentication 
 35. access key, refresh key approach for logging out and auth
-36. how ot copy cookie and login as another person
+36. how to copy someone's cookie and login as another person, how websites prevent this from happening
