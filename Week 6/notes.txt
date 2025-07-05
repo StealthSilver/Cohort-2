@@ -77,3 +77,9 @@ this is different that encryption as the original string / payload can be decode
 to send the token in the response headers, res.header("jwt", token)
 
 you have to store the jwt in the local storage. this will be found in the inspect -> application -> storage -> local storage
+
+level of auth 
+1. jwt approach
+2. cookie approach
+3. send otp on email 
+4. Oauth (logn with google , login with facebook)
