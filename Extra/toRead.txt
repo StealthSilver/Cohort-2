@@ -35,3 +35,5 @@
 35. access key, refresh key approach for logging out and auth
 36. how to copy someone's cookie and login as another person, how websites prevent this from happening
 37. is storing jwt in local storage safe. injecting js and checking the local storage. http only cookie
+38. otp login using twilio and google firebase
+39. payments using razorpay
