@@ -74,3 +74,4 @@ with the jwt we can do two things
 
 this is different that encryption as the original string / payload can be decoded
 
+to send the tken inthe response headers, res.header("jwt", token)
