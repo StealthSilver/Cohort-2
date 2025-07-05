@@ -2,9 +2,13 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 
+const app = express();
+
 const JWT_SECRET = "random123123";
 
-const app = express();
+const PORT = 3000;
+
+// using the json parser middleware
 app.use(express.json());
 
 const users = [];
@@ -76,6 +80,6 @@ app.get("/me", logger, auth, function (req, res) {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
