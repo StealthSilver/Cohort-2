@@ -32,3 +32,4 @@
 32. how cors work under the hood -> github cors
 33. cookie based authentication
 34. browser fingerprinting, ip based fingerprinting, device checking, how to bypass the facebook authentication 
+35. access key, refresh key approach for logging out and auth
