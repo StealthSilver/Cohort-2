@@ -13,6 +13,7 @@ app.use(express.json());
 
 const users = [];
 
+// logger middleware
 function logger(req, res, next) {
   console.log(req.method + " request came");
   next();
