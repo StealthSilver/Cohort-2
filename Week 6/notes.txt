@@ -71,3 +71,5 @@ string + secret -> encoding -> jwt
 with the jwt we can do two things 
 1. decode the token without using the secret 
 2. verify the token using the secret
+
+this is different that encryption as the original string can be decoded
