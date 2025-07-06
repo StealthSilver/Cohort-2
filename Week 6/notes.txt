@@ -83,3 +83,7 @@ level of auth
 2. cookie approach
 3. send otp on email 
 4. Oauth (logn with google , login with facebook) -> passport 
+
+index5.js
+
+try - catch block 
