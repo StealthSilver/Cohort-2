@@ -10,10 +10,10 @@ const app = express();
 // Middleware to parse JSON
 app.use(express.json());
 
-app.use("/user", userRouter);
-app.use("/admin", adminRouter);
-app.use("/course", courseRouter);
-
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/admin", adminRouter);
+app.use("/api/v1/course", courseRouter);
+/api/v1
 async function main() {
   try {
     // using the dot env to store the connection string
