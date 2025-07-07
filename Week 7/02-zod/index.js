@@ -7,7 +7,6 @@ const bcrypt = require("bcrypt");
 const { z } = require("zod");
 
 // Connect to MongoDB
-//db connection
 mongoose.connect("mongodb://localhost:27017/todo-app");
 
 const app = express();
@@ -74,7 +73,6 @@ app.get("/todos", auth, async function (req, res) {
   res.json({ todos });
 });
 
-// Start the server
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
