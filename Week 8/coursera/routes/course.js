@@ -9,7 +9,7 @@ courseRouter.post("/purchase", userMiddleware, async function (req, res) {
   const userId = req.userId;
   const courseId = req.body.courseId;
 
-  // in future should check if hte user has paid
+  // in future should check if the user has paid
   await purchaseModel.create({
     userId,
     courseId,
