@@ -39,7 +39,6 @@ app.post("/signup", async function (req, res) {
     await UserModel.create({ email, password: hashedPassword, name });
     res.json({ message: "You are signed up" });
   } catch (e) {
-    // Handle case where user already exists
     return res.json({ message: "User already exists" });
   }
 });
@@ -48,16 +47,13 @@ app.post("/signup", async function (req, res) {
 app.post("/signin", async function (req, res) {
   const { email, password } = req.body;
 
-  // Check if user exists in the database
   const response = await UserModel.findOne({ email });
   if (!response) {
     return res.status(402).json({ message: "User does not exist in the DB" });
   }
 
-  // Compare provided password with hashed password
   const passwordMatch = await bcrypt.compare(password, response.password);
   if (passwordMatch) {
-    // Generate JWT token
     const token = jwt.sign({ id: response._id.toString() }, JWT_SECRET);
     res.json({ token });
   } else {
