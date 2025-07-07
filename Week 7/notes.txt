@@ -12,7 +12,7 @@ neatly fit into the tabular scheme of relational databases
 
 Properties of Nosql db 
 
-1. they are schemaless
+1. Schema Flexibility
 this is a good choice for an application where there are nested folders, or the data is unscructured
 the schema is flexoible
 
