@@ -46,3 +46,5 @@
 46. adding timestamps on the todos created (week 7 / 02-zod)
 47. regex
 48. bloom filters 
+49. virtual machine, CDN, EC2 deployment
+50. why we cannot use CDN for next js apps
