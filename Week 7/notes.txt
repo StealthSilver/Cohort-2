@@ -23,7 +23,11 @@ a mongo cluster is a bunch of machines where data is stored
 
 in case on mongo there are object ids
 
+no-sql dbs are good for nested data, they are used for schema flexibillity
+
 CRUD opeartions in the database -> index.js
+
+
 
 02-zod -> index.js
 IMPROVEMENTS 
