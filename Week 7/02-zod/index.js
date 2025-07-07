@@ -51,7 +51,7 @@ app.post("/signin", async function (req, res) {
     return res.status(402).json({ message: "User does not exist in the DB" });
   }
 
-  const passwordMatch = await bcrypt.compare(password, response.password);
+  const passwordMatch = bcrypt.compare(password, response.password);
   if (passwordMatch) {
     const token = jwt.sign({ id: response._id.toString() }, JWT_SECRET);
     res.json({ token });
