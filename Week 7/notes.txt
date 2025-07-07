@@ -29,8 +29,8 @@ CRUD opeartions in the database -> index.js
 
 * when we deploy o production we change hte network access of the mongo cluster to the servers that we are using
 
-
 02-zod -> index.js
+
 IMPROVEMENTS 
 
 1. SALTING 
