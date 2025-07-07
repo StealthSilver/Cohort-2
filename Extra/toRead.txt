@@ -50,3 +50,4 @@
 50. why we cannot use CDN for next js apps
 51. check the p5-js codebase, check login with google and login with github
 52. MVC architecture and decoupled frontend
+53. create the frontend for the course selling applciation (Week 8 / coursera)
