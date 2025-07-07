@@ -38,3 +38,6 @@ Good to haves
 1. use cookies instead of the JWT for auth 
 2. implement a payment gateway logic
 3. Frontend in react
+
+* in js projects build is rare, it is done for react -> html / css / js , c++ -> binary , tsc -> js
+* we can use build scriot in package.jaon
