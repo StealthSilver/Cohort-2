@@ -41,3 +41,4 @@
 41. state vs statefull applications
 42. If mongoose is schemaless why do we create schemas
 43. relationships in mongo
+44. hashing and salting the password before storing in the db (week7/01-mongo)
