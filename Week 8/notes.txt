@@ -80,3 +80,11 @@ READ -> User.findById("")
      -> User.findOne({}) 
 UPDATE -> User.update({}) 
 DELETE -> User.delete({})
+
+mongo structure 
+
+1. cluster -> this is the instance of an database 
+2. database -> this is the entity which contains the tables 
+3. table -> these are the objects which contain the data 
+
+Cluster > Database > Table
