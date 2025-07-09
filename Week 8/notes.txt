@@ -52,3 +52,10 @@ databases do not have granular access, so you cannot access selective data, that
 firebase tries to get rid of the http server and give granular access to the client
 
 the http server does the auth checks
+
+4 primitives are allowed by the database 
+
+1. Create 
+2. Read 
+3. Update 
+4. Delete
