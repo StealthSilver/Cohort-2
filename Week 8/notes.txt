@@ -71,3 +71,12 @@ mongose provided these features
 SQL dbs dont let store nested objects as fields easily so schemaless dbs like mongo are better
 
 in mongo object ids are created, they are randomly genereated ids
+
+commands for operations
+
+CREATE -> User.create ({})
+READ -> User.findById("")
+     -> User.find({}) 
+     -> User.findOne({}) 
+UPDATE -> User.update({}) 
+DELETE -> User.delete({})
