@@ -62,3 +62,8 @@ the http server does the auth checks
 
 mongoose is the library that is used to define schemas and create models for the db.
 a schema is the structure of the data that needs to be stored in the db
+
+mongose provided these features 
+1. autocompleteness 
+2. validataion of data 
+3. makes the schemaless db less dangerous
