@@ -69,3 +69,5 @@ mongose provided these features
 3. makes the schemaless db less dangerous
 
 SQL dbs dont let store nested objects as fields easily so schemaless dbs like mongo are better
+
+in mongo object ids are created, they are randomly genereated ids
