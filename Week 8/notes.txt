@@ -67,3 +67,5 @@ mongose provided these features
 1. autocompleteness 
 2. validataion of data 
 3. makes the schemaless db less dangerous
+
+SQL dbs dont let store nested objects as fields easily so schemaless dbs like mongo are better
