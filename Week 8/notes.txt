@@ -50,3 +50,5 @@ servers are transient (they can go up and dowm). databases are persistant.
 databases are created using the protocols that browsers dont understand. 
 databases do not have granular access, so you cannot access selective data, that is why http servers are rewquired to put checks on the clients who are accessing the data
 firebase tries to get rid of the http server and give granular access to the client
+
+the http server does the auth checks
