@@ -42,3 +42,5 @@ Good to haves
 * in js projects build is rare, it is done for react -> html / css / js , c++ -> binary , tsc -> js
 * we can use build scriot in package.jaon
 * on github type mondodb+srv to get private mongodb urls
+
+MONGO DB
