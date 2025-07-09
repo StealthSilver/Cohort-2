@@ -44,3 +44,5 @@ Good to haves
 * on github type mondodb+srv to get private mongodb urls
 
 MONGO DB
+
+servers are transient (they can go up and dowm). databases are persistant
