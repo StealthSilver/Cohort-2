@@ -40,7 +40,7 @@
 40. Oauth (logn with google , login with facebook) -> passport / blog - " explain me like a 5 year old Oauth "
 41. state vs statefull applications
 42. If mongoose is schemaless why do we create schemas
-43. relationships and refrences in mongo 
+43. relationships, aggregations and refrences in mongo 
 44. hashing and salting the password before storing in the db (week7/01-mongo)
 45. bearer token , auth token , api token , differences
 46. adding timestamps on the todos created (week 7 / 02-zod)
