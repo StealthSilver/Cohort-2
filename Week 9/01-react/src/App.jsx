@@ -1,6 +1,6 @@
 // creating a manual counter
 
-import {useState} from "react";
+import { useState } from "react";
 
 function App() {
   return (
@@ -13,28 +13,28 @@ function App() {
 
 // creating the counter component
 function Counter() {
-
   // using the use state hook and initializing the state
-  const [count , setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-  function increaseCount(){
-   setCount(count + 1);
+  function increaseCount() {
+    setCount(count + 1);
   }
 
-  function decreaseCount(){
+  function decreaseCount() {
     setCount(count - 1);
   }
 
-  function resetCount(){
+  function resetCount() {
     setCount(0);
   }
 
   return (
     <div>
       <h1>{count}</h1>
-      <button onClick  = {increaseCount}>Increase Count</button> <br />
-      <button onClick  = {decreaseCount}>Decrease Count</button> <br />
-      <button onClick  = {resetCount}>Reset Count</button>
+      <button onClick={increaseCount}>Increase Count</button> <br /> <br />
+      <button onClick={decreaseCount}>Decrease Count</button> <br />
+      <br />
+      <button onClick={resetCount}>Reset Count</button>
     </div>
   );
 }
