@@ -13,6 +13,7 @@ function App() {
   ]);
 
   function addTodo() {
+    // let newArr = [...todos]
     let newArray = [];
     for (let i = 0; i < todos.length; i++) {
       newArray.push(todos[i]);
