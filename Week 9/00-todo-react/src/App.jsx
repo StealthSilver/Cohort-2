@@ -4,6 +4,7 @@ import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([
+    // initial state
     {
       title: "go to gym",
       description: "regularly",
