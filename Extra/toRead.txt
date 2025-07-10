@@ -52,4 +52,4 @@
 52. MVC architecture and decoupled frontend
 53. create the frontend for the course selling applciation (Week 8 / coursera)
 54. heygen landing page clone, stripe landing page, brilliant landing page
-55. create the proper course selling backend (Week8 coursera)
+55. create the proper course selling backend (Week8 coursera, lecture 8.3 assignment)
