@@ -47,6 +47,7 @@ function App() {
   );
 }
 
+// todo component
 function Todo(props) {
   return (
     <div>
