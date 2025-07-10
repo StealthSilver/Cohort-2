@@ -53,3 +53,4 @@
 53. create the frontend for the course selling applciation (Week 8 / coursera)
 54. heygen landing page clone, stripe landing page, brilliant landing page
 55. create the proper course selling backend (Week8 coursera, lecture 8.3 assignment)
+56. create the frontend in DOM for the course selling application (Week 8 , coursera)
