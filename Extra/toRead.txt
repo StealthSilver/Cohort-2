@@ -57,3 +57,4 @@
 57. bundle size for react and vue
 58. reconciliation, re-rendering, bulk-rendering, diffing algorithm, virtual dom
 59. useContext hook and prop drilling
+60. hot module reloading - vite
