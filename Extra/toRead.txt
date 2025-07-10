@@ -55,3 +55,4 @@
 55. create the proper course selling backend (Week8 coursera, lecture 8.3 assignment)
 56. create the frontend in DOM for the course selling application (Week 8 , coursera)
 57. bundle size for react and vue
+58. reconciliation, re-rendering, bulk-rendering, diffing algorithm
