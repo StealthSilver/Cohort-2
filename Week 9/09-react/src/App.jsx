@@ -8,21 +8,21 @@ function App() {
   useEffect(() => {
     setLoading(true);
     fetch("https://jsonplaceholder.typicode.com/todos/" + currentTab)
-      .then(async res => {
+      .then(async (res) => {
         const json = await res.json();
         setTabData(json);
+        // for checking if loading or not
         setLoading(false);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error fetching data:", error);
         setLoading(false);
       });
-
-  }, [currentTab]); 
+  }, [currentTab]);
 
   return (
     <div>
-      {[1, 2, 3, 4].map(num => (
+      {[1, 2, 3, 4].map((num) => (
         <button
           key={num}
           onClick={() => setCurrentTab(num)}
@@ -31,7 +31,7 @@ function App() {
           Todo #{num}
         </button>
       ))}
-      
+
       <br />
       {loading ? "Loading..." : tabData.title}
     </div>
