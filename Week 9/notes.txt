@@ -46,6 +46,8 @@ the function to update it.
 any dynamic component is re-rendered when the state variable changes. there are infinite renders. 
 to remove the re-rendering, remote the StrictMode
 
+react components have lifecycles. every component is mounted, then the re-rendering happens and then the component is un-mounted
+
 02-react -> Conditional rendering with useEffect
 
 03-react -> useEffect clear render
