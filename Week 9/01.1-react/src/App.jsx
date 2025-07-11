@@ -19,6 +19,9 @@ function Counter() {
     setInterval(function () {
       setCount((count) => count + 1);
     }, 1000);
+
+    // Cleanup to avoid multiple intervals
+    return () => clearInterval(intervalId);
   }, []); // dependency array
 
   return (
