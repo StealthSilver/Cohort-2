@@ -1,3 +1,4 @@
+// changing the effect based on dependency array
 import { useEffect, useState } from "react";
 
 function App() {
