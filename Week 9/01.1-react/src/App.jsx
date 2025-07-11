@@ -1,11 +1,9 @@
-// creating a counter in react
-
 import { useState, useEffect } from "react";
 
 function App() {
   return (
     <div>
-      <Counter></Counter>
+      <Counter />
     </div>
   );
 }
@@ -13,16 +11,14 @@ function App() {
 function Counter() {
   const [count, setCount] = useState(0);
 
-  console.log("counter");
-
-  useEffect(function () {
-    setInterval(function () {
+  useEffect(() => {
+    const intervalId = setInterval(() => {
       setCount((count) => count + 1);
     }, 1000);
 
     // Cleanup to avoid multiple intervals
     return () => clearInterval(intervalId);
-  }, []); // dependency array
+  }, []);
 
   return (
     <div>
