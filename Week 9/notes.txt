@@ -86,7 +86,7 @@ only the root div in html is controlled by react we can change other stuff in in
 
 benefits of react
 1. structuring the app into components
-2. difining and changging the state of the application
+2. difining and changing the state of the application
 
 In react the components are the building block elements of the user interface. 
 they allow to split the Ui into resuable and independent pieces
