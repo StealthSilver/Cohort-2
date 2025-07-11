@@ -50,6 +50,8 @@ react components have lifecycles. every component is mounted, then the re-render
 
 the useEffect hook is used to hook the lifecycle events of the component
 
+we can seprately write logic on the mounting and unmounting of the events
+
 02-react -> Conditional rendering with useEffect
 
 03-react -> useEffect clear render
