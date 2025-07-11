@@ -48,7 +48,7 @@ to remove the re-rendering, remote the StrictMode
 
 react components have lifecycles. every component is mounted, then the re-rendering happens and then the component is un-mounted
 
-the useEffect hook is used to hook the lifecycle of the component
+the useEffect hook is used to hook the lifecycle events of the component
 
 02-react -> Conditional rendering with useEffect
 
