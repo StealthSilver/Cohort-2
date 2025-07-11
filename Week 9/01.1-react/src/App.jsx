@@ -27,3 +27,5 @@ function Counter() {
     </div>
   );
 }
+
+export default App;
