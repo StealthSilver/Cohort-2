@@ -14,8 +14,8 @@ function App() {
 
   // this code will only run on mount and not on every render
   useEffect(() => {
-    const increaseInterval = setInterval(increaseCount, 3000);
-    const decreaseInterval = setInterval(decreaseCount, 4000);
+    const increaseInterval = setInterval(increaseCount, 2000);
+    const decreaseInterval = setInterval(decreaseCount, 3000);
 
     // Cleanup function to clear intervals on unmount
     return () => {
