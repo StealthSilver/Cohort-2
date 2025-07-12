@@ -17,5 +17,9 @@ the fetch call to get the data from the backend is written in the use effect hoo
 
 we can shift the hook logic in a seperate file, in src create hooks folder and the file name can be hookName.js or hookName.jsx
 
+useFetch : this is provided by react swt and tanstack query
+
 useFetch - 04-react : takes the url for the backend and returns the data from the backend
-this is provided by react swt and tanstack query
+this is not the correct implementation as the useFetch initializes an empty object which is filled with data, we can see it on reloading
+
+05-react : making the useFetch dynamic
