@@ -20,6 +20,7 @@ function useCounter() {
 }
 
 function App() {
+  // all the components have their independent state variables
   return (
     <div>
       <Counter></Counter>
