@@ -1,3 +1,5 @@
+// use ref -> first use case:  focusing on the input element
+
 import { useRef, useState } from "react";
 
 function App() {
