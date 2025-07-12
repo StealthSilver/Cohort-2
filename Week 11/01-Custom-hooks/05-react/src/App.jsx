@@ -10,6 +10,10 @@ function App() {
     "https://jsonplaceholder.typicode.com/posts/" + currentPost
   );
 
+  if (loading) {
+    return <div>Loading ...</div>;
+  }
+
   return (
     <div>
       <button onClick={() => setCurrentPost(1)}>1</button>
