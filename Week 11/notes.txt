@@ -23,3 +23,5 @@ useFetch - 04-react : takes the url for the backend and returns the data from th
 this is not the correct implementation as the useFetch initializes an empty object which is filled with data, we can see it on reloading
 
 05-react : making the useFetch dynamic
+
+usePrev hook -> it does something else than whatr it is supposed to
