@@ -4,3 +4,4 @@ useState -> store a state variable, re-render a component when the variable chan
 useEffect -> Run an effect whenever a dependency changes  
 
 custom hook is a function but it should start with use, it should use another hook inside it
+you should never write a native function using a hook
