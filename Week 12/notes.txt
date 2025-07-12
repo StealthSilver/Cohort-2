@@ -5,7 +5,7 @@ UI / UX PRIMITIVES
 Typography is the style and appearance of text used in design.
 
 - Font-Faces  : Serif, Sans-serif, Monospace
-- Font-Weight  : Defines the boldness of the text.
+- Font-Weight : Defines the boldness of the text.
 - Font-Sizes  : Determines the size of the font.
 - Properties  :
   - Line Height (Leading): The vertical spacing between lines of text.
