@@ -9,3 +9,5 @@ you should never write a native function using a hook
 useCounter hook - 01-react :
 
 we use custom hooks for increase readability and resuing
+
+reusing the useCounter hook
