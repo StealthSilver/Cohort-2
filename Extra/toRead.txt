@@ -66,3 +66,5 @@
 66. how to create chrome extentions 
 67. hashRouter
 66. useNavigate hook
+67. useRef , useFetch, usePrev (https://swr.vercel.app)
+68. useFetch with re-fetching 
