@@ -38,7 +38,6 @@ as the application grows there will be multiple components that need to access t
 Instead of duplicating state in each component, you can lift the state up to Lowest Common Ancestor (LCA).
 allowing the common ancestor to manage it
 
-
 04-react -> toggle bulb application
 
 Props and prop drilling
@@ -48,6 +47,7 @@ that is several layers deep in the component tree. This often leads to the follo
 
 Complexity: You may have to pass props through many intermediate components that don’t use the props themselves,
 just to get them to the component that needs them.
+
 Maintenance: It can make the code harder to maintain, as changes in the props structure require updates in multiple components.
 
 05-react prop-drilling
