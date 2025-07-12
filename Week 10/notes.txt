@@ -1,5 +1,8 @@
 Single Page Applications 
+
 SPA are web Applications that load a single HTMl page and dynamically update that page as the user interacts with the app
+as we go from one page to another the whole HTML is not loaded from the backend, only the required parts are fetched from the backend.
+there is no reloading, for optimizing there is lazy loading
 
 01-react routing
 
