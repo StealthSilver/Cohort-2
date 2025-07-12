@@ -52,7 +52,7 @@ Maintenance: It can make the code harder to maintain, as changes in the props st
 
 05-react prop-drilling
 
-Context API 
+Context API (used to fix prop drilling)
 
 the context api enables to manage state across the application more effectively,
 specially when dealing with deeply nested components
