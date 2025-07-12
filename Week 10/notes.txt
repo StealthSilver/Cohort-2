@@ -65,3 +65,7 @@ components without having to pass props down manually at every level
 context must be stored in the context.ts file
 
 06-react context-api
+
+context : container for the data you need to share 
+provider : wraps the part of the application and provides the context to all the descendants 
+consumer : subscribes to context changes
