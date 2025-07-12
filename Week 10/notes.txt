@@ -32,7 +32,6 @@ there are three ways to define variables in react :
 
 03-react -> clock with a start and a stop button
 
-
 Rolling up the states and unoptimal re-render
 
 as the application grows there will be multiple components that need to access the same state.
