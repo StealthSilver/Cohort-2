@@ -20,6 +20,7 @@ function useCounter() {
 }
 
 function App() {
+  // destructuring the object
   const { count, increaseCount } = useCounter();
   return (
     <div>
