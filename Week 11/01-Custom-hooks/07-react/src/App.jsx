@@ -1,20 +1,25 @@
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react";
 
-function useDebounce(originalFn) {
-  const currentClock = useRef();
+function useDebounce(originalFn, delay = 200) {
+  const timeoutRef = useRef(null);
 
-  const fn = () => {
-    clearTimeout(currentClock.current);
-    currentClock.current = setTimeout(originalFn, 200);
-  };
+  const debouncedFn = useCallback(() => {
+    clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      originalFn();
+    }, delay);
+  }, [originalFn, delay]);
+
+  return debouncedFn;
 }
 
 function App() {
   function sendDataToBackend() {
-    fetch("api.amazon.com/search/");
+    fetch("https://api.amazon.com/search/");
+    console.log("API called");
   }
 
-  const debouncedFn = useDebounce(sendDataToBackend);
+  const debouncedFn = useDebounce(sendDataToBackend, 200);
 
   return (
     <>
