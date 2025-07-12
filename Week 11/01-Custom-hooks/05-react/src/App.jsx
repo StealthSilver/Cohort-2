@@ -4,7 +4,7 @@ import "./App.css";
 import { useFetch } from "./hooks/useFetch";
 
 function App() {
-  const [currntPost, setCurrentPost] = useState(1);
+  const [currentPost, setCurrentPost] = useState(1);
 
   const { finalData } = useFetch(
     "https://jsonplaceholder.typicode.com/posts/" + currentPost
