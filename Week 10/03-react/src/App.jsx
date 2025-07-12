@@ -1,4 +1,4 @@
-//clock with a start and a stop button
+// useRef -> second use case : clock with a start and a stop button
 
 import { useState, useRef } from "react";
 
