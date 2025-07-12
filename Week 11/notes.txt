@@ -25,3 +25,5 @@ this is not the correct implementation as the useFetch initializes an empty obje
 05-react : making the useFetch dynamic
 
 usePrev hook -> it does something else than whatr it is supposed to
+
+as the value of the variable changes the usePrev tracks the previous value of the variable
