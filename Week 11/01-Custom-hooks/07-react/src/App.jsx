@@ -3,11 +3,15 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  function sendDataToBackend() {
+    fetch("api.amazon.com/search/");
+  }
+
+  const debouncedFn = useDebounce(sendDataToBackend);
 
   return (
     <>
-      <div></div>
+      <input type="text" onChange={debouncedFn} />
     </>
   );
 }
