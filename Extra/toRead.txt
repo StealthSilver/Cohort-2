@@ -70,3 +70,4 @@
 68. useFetch with re-fetching 
 69. how wordpress works and what is a word press developer
 70. shadcn and how Shandcn works under the hood
+71. redux , recoil , zustang how they optimize and how they were written
