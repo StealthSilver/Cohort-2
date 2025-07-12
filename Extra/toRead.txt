@@ -65,3 +65,4 @@
 65. how to implement routing in react by your own using the state variables
 66. how to create chrome extentions 
 67. hashRouter
+66. useNavigate hook

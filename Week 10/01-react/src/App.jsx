@@ -58,6 +58,7 @@ function Class11Program() {
 }
 
 function Class12Program() {
+  // use navigate hook
   const navigate = useNavigate();
 
   function redirectUser() {
