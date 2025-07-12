@@ -1,14 +1,14 @@
+import "./App.css";
 import { useState, useEffect } from "react";
 
-import "./App.css";
 import { usePostTitle } from "./hooks/useFetch";
 
 function App() {
-  const postTitle = usePostTitle;
+  const postTitle = usePostTitle();
 
   return (
     <>
-      <div>{post.title}</div>
+      <div>{postTitle}</div>
     </>
   );
 }
