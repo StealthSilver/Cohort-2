@@ -13,3 +13,4 @@ we use custom hooks for increase readability and resuing
 reusing the useCounter hook - 02-react 
 
 useFetch hook - 03-react
+the fetch call to get the data from the backedn is written in the use effect hook
