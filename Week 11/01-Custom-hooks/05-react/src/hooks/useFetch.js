@@ -20,6 +20,8 @@ export function useFetch(url) {
     getDetails();
   }, [url]);
 
+  // todo -> implement re-fetching if the data changes on the url
+
   return {
     finalData,
     loading,
