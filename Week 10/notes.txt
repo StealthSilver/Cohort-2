@@ -15,6 +15,8 @@ the useNavigate hook is used for the partial routing
 
 Layouts -> they are used to stick some components of the page that do not change
 
+we can also create the router array to define all teh routes at the top of the page used for UX
+
 02-react -> useRef
 
 useRef is a hook in react that provides a way to create a refrence to a value or a DOM element that persists across renders 
