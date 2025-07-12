@@ -6,4 +6,6 @@ useEffect -> Run an effect whenever a dependency changes
 custom hook is a function but it should start with use, it should use another hook inside it
 you should never write a native function using a hook
 
-useCounter hook : 
+useCounter hook - 01-react :
+
+we use custom hooks for increase readability and resuing
