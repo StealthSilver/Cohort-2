@@ -66,7 +66,7 @@
 66. how to create chrome extentions 
 67. hashRouter
 66. useNavigate hook
-67. useRef , useFetch, usePrev (https://swr.vercel.app/), useContext, useMemo
+67. useRef , useFetch, usePrev (https://swr.vercel.app/), useContext, useMemo, react.memo
 68. useFetch with re-fetching 
 69. how wordpress works and what is a word press developer
 70. shadcn and how Shandcn works under the hood
