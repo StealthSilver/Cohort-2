@@ -66,7 +66,7 @@ function Class12Program() {
 
   return (
     <div>
-      Class 12 NEET program
+      Class 12 NEET program <br /> <br />
       <button onClick={redirectUser}>GO back to the landing page</button>
     </div>
   );
