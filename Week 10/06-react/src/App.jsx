@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
+// define the context in some other file
 const CountContext = createContext();
 
 function CountContextProvider({ children }) {
