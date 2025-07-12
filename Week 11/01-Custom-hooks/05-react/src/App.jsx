@@ -6,7 +6,7 @@ import { useFetch } from "./hooks/useFetch";
 function App() {
   const [currentPost, setCurrentPost] = useState(1);
 
-  const { finalData } = useFetch(
+  const { finalData, loading } = useFetch(
     "https://jsonplaceholder.typicode.com/posts/" + currentPost
   );
 
