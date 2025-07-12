@@ -12,9 +12,15 @@ function useCounter() {
   function increaseCount() {
     setCount((c) => c + 1);
   }
+
+  return {
+    count: count,
+    increaseCount: increaseCount,
+  };
 }
 
 function App() {
+  const { count, increaseCount } = useCounter();
   return (
     <div>
       <button onClick={increaseCount}>Increase {count}</button>
