@@ -16,3 +16,5 @@ usePostTitle hook - 03-react
 the fetch call to get the data from the backend is written in the use effect hook
 
 we can shift the hook logic in a seperate file, in src create hooks folder and the file name can be hookName.js or hookName.jsx
+
+useFetch : takes the url for the backend and returns the data from the backend
