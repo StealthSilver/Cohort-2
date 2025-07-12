@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 
-import { usePostTitle } from "./hooks/useFetch";
+import { usePostTitle } from "./hooks/usePostTitle";
 
 function App() {
   const postTitle = usePostTitle();
