@@ -34,3 +34,4 @@ https://giacomocerquone.com/blog/life-death-useprevious-hook/ -> blog
 useDebounce hook -> 07-react 
 
 debouncing is skipping the requests if they are coming really fast and only after the user has given the complete request then sending it to the backend
+used mostly in search bars
