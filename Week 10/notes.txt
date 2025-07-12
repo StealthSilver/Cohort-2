@@ -69,3 +69,5 @@ context must be stored in the context.ts file
 context : container for the data you need to share 
 provider : wraps the part of the application and provides the context to all the descendants 
 consumer : subscribes to context changes
+
+the more re-rendering is done the less optimized the application is. for reducing the re-rendering we use state management libraries like recoil, redux, zustang
