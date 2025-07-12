@@ -29,3 +29,4 @@ usePrev hook -> it does something else than whatr it is supposed to 06-react
 as the value of the variable changes the usePrev tracks the previous value of the variable
 
 the usePref works because the ref returns first and then the effect would run
+https://giacomocerquone.com/blog/life-death-useprevious-hook/ -> blog 
