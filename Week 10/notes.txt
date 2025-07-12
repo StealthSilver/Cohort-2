@@ -8,7 +8,7 @@ there is no reloading, for optimizing there is lazy loading
 
 npm i react-router-dom
 
-there are same libraries for routing in mobiler and desktop apps made with react native
+there are same libraries for routing in mobile and desktop apps made with react native
 use the Link tab to navigate instead of a tag or we can use the useNavigate hook
 
 the useNavigate hook is used for the partial routing
