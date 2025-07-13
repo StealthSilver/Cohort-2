@@ -7,7 +7,7 @@ react and react dom are the default dependencies in a react project
 to add the tailwind
 npm install tailwindcss @tailwindcss/vite
 
-go to hte tailwindconfig.js and add this 
+go to the tailwindconfig.js and add this 
 content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
 tailwind finally creates a css file
