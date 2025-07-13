@@ -20,11 +20,9 @@ const SignupForm = () => {
 
   return (
     <div className="bg-gray-800 p-8 rounded-2xl shadow-lg w-96">
-      <h2 className="text-2xl font-bold text-center text-gray-200 mb-6">
-        Create an Account
-      </h2>
+      <h2 className="text-2xl font-bold text-center mb-6">Create an Account</h2>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 ">
         <InputField
           label="Full Name"
           type="text"
