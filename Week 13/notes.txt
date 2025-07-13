@@ -2,6 +2,11 @@ TAILWIND
 
 tailwind is used as it is not opioniated
 
+react and react dom are the default dependencies in a react project
+
+to add the tailwind
+npm install tailwindcss @tailwindcss/vite
+
 01-react -> flex
 02-react -> grids
 03-react -> responsivness
