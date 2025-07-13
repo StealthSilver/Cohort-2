@@ -10,6 +10,8 @@ npm install tailwindcss @tailwindcss/vite
 go to hte tailwindconfig.js and add this 
 content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
+tailwind finally creates a css file
+
 these files will be compiled to css
 
 01-react -> flex
