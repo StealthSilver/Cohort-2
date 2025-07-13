@@ -5,14 +5,25 @@ tailwind is used as it is not opioniated
 react and react dom are the default dependencies in a react project
 
 to add the tailwind
-npm install tailwindcss @tailwindcss/vite
 
-go to the tailwindconfig.js and add this 
+1. npm install tailwindcss @tailwindcss/vite
+
+2. go to the tailwindconfig.js and add this 
+
 content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
+these files will be compiled to css
 tailwind finally creates a css file
 
-these files will be compiled to css
+3, add this code in index.css 
+
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 01-react -> flex
 02-react -> grids
