@@ -74,4 +74,5 @@
 72. creating your own reactjs in C, GO 
 73. how VLC media player works under the hood
 74. useTransition hook
-75. setup tailwind (copy paste Week 13 / 05-react until then)
+75. setup tailwind (copy paste Week 13 / 05-react until then)\
+76. video transcoding
