@@ -67,3 +67,14 @@ memo will onyl work if preops are not passed , if rops are passed then re-render
 Selectors : they are a piece or deried state. 
 
 pure function : they do not change the input. for same input there is same output
+
+the main.js will change 
+
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
+  </StrictMode>
+);
