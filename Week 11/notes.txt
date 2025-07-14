@@ -41,3 +41,8 @@ there are libraries which have a lot of custom hooks
 https://usehooks.com
 
 RECOIL - state management library
+
+https://youtu.be/_ISAA_Jt9kI?si=VkTAwzjP9opDjohb
+
+recoil lets you manage global state with fine-grained control 
+recoil minimizes unnecessary renders by only re-rendering the components that depend on the changed atoms
