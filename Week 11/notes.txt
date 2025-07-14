@@ -58,3 +58,4 @@ npm i recoil
 
 atom is like the useState : they are created in scr > store > atoms > [atomname].js
 
+03 - useMemo : usinghte optimal method of useState
