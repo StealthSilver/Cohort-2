@@ -40,4 +40,4 @@ there are libraries which have a lot of custom hooks
 
 https://usehooks.com
 
-RECOIL 
+RECOIL - state management library
