@@ -58,4 +58,6 @@ npm i recoil
 
 atom is like the useState : they are created in scr > store > atoms > [atomname].js
 
-03 - useMemo : usinghte optimal method of useState
+03 - Memo : usinghte optimal method of useState 
+
+whenenevr a component re-renders all of its children also re-render by default so we need to useMemo
