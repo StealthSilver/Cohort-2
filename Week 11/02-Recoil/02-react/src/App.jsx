@@ -37,7 +37,7 @@ function Decrease() {
 
   return (
     <div>
-      <button></button>
+      <button onClick={decrease}>Decrease</button>
     </div>
   );
 }
@@ -50,7 +50,7 @@ function Increase() {
 
   return (
     <div>
-      <button></button>
+      <button onClick={increase}>Increase</button>
     </div>
   );
 }
