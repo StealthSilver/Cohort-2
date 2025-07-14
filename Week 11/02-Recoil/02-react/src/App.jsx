@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { RecoilRoot, useRecoilValue, useSetRecoilState } from "recoil";
 
 import "./App.css";
