@@ -1,6 +1,0 @@
-# Ignore the assignments folder and all its contents
-assignments/
-
-node_modules/
-
-.DS_Store
