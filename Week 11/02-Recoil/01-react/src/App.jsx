@@ -9,8 +9,9 @@ function Counter() {
   return (
     <div>
       {count}
-      <Increaa></Increaa>
-      <Decrease></Decrease>
+      {/* passing setCount as props */}
+      <Increaa setCount={setCount}></Increaa>
+      <Decrease setCount={setCount}></Decrease>
     </div>
   );
 }
