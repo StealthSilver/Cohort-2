@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RecoilRoot } from "recoil";
+
 import "./App.css";
 
 function App() {
@@ -11,10 +12,40 @@ function App() {
 }
 
 function Counter() {
-  const counter = atom({
-    key: "counter",
-    default: 0,
-  });
+  return (
+    <div>
+      <CurrentCount />
+      <Increase />
+      <Decrease />
+    </div>
+  );
 }
 
+function CurrentCount() {
+  return <div></div>;
+}
+
+function Decrease() {
+  function decrease() {
+    setCount((c) => c - 1);
+  }
+
+  return (
+    <div>
+      <button></button>
+    </div>
+  );
+}
+
+function Increase() {
+  function increase() {
+    setCount((c) => c + 1);
+  }
+
+  return (
+    <div>
+      <button></button>
+    </div>
+  );
+}
 export default App;
