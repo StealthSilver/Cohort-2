@@ -15,18 +15,19 @@ function Counter() {
   const [count, setCount] = useState(0);
   return (
     <div>
-      {count}
-      {/* passing setCount as props */}
-      <Increase setCount={setCount} />
-      <Decrease setCount={setCount} />
+      <CurrentCount />
+      <Increase />
+      <Decrease />
     </div>
   );
 }
 
-function Increase({ setCount }) {
-  function increase() {
-    setCount((c) => c + 1);
-  }
+function CurrentCount() {
+  return <div>Hi</div>;
+}
+
+function Increase() {
+  function increase() {}
   return (
     <div>
       <button onClick={increase}>Increase</button>
@@ -34,10 +35,8 @@ function Increase({ setCount }) {
   );
 }
 
-function Decrease({ setCount }) {
-  function decrease() {
-    setCount((c) => c - 1);
-  }
+function Decrease() {
+  function decrease() {}
   return (
     <div>
       <button onClick={decrease}>Decrease</button>
