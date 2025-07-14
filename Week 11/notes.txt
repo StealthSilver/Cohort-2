@@ -51,8 +51,10 @@ Atoms : Units of state that can be read from ans written to from any component
 Selectors : Functions that derive state from the atoms or other selectors, allowing for computed state
 
 01-react : unoptimal prop drilling method 
+to use recoil do : npm install react@18.2.0 react-dom@18.2.0
 
 npm i recoil
 02- react : optimal recoil method
 
 atom is like the useState : they are created in scr > store > atoms > [atomname].js
+
