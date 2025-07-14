@@ -46,3 +46,6 @@ https://youtu.be/_ISAA_Jt9kI?si=VkTAwzjP9opDjohb
 
 recoil lets you manage global state with fine-grained control 
 recoil minimizes unnecessary renders by only re-rendering the components that depend on the changed atoms
+
+Atoms : Units of state that can be read from ans written to from any component
+Selectors : Functions that derive state from the atoms or other selectors, allowing for computed state
