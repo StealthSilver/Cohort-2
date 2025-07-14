@@ -1,11 +1,11 @@
 // this is drilling down the props to achieve the coutner functionality, this will have a lot of re-renders ans is the unoptimal method
-
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Counter></Counter>
+      <Counter />
     </>
   );
 }
@@ -16,8 +16,8 @@ function Counter() {
     <div>
       {count}
       {/* passing setCount as props */}
-      <Increaa setCount={setCount}></Increaa>
-      <Decrease setCount={setCount}></Decrease>
+      <Increase setCount={setCount} />
+      <Decrease setCount={setCount} />
     </div>
   );
 }
@@ -28,7 +28,7 @@ function Increase({ setCount }) {
   }
   return (
     <div>
-      <button>Increase</button>
+      <button onClick={increase}>Increase</button>
     </div>
   );
 }
@@ -39,7 +39,7 @@ function Decrease({ setCount }) {
   }
   return (
     <div>
-      <button>Decrease</button>
+      <button onClick={decrease}>Decrease</button>
     </div>
   );
 }
