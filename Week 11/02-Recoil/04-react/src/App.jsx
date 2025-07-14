@@ -2,14 +2,16 @@ import { useState } from "react";
 
 import "./App.css";
 import { counterAtom, evenSelector } from "./store/atoms/counter";
-import { useRecoilValue, useSetRecoilState } from "recoil";
+import { RecoilRoot, useRecoilValue, useSetRecoilState } from "recoil";
 
 function App() {
   return (
     <div>
-      <Buttons />
-      <COunter />
-      <IsEven />
+      <RecoilRoot>
+        <Buttons />
+        <Counter />
+        <IsEven />
+      </RecoilRoot>
     </div>
   );
 }
@@ -38,7 +40,7 @@ function Counter() {
   return <div>{count}s</div>;
 }
 
-function isEven() {
+function IsEven() {
   const even = useRecoilValue(evenSelector);
 
   return <div>{even ? "Even" : "Odd"}</div>;
