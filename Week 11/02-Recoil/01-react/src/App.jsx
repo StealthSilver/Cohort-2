@@ -16,7 +16,10 @@ function Counter() {
   );
 }
 
-function Increase() {
+function Increase({ setCount }) {
+  function increase() {
+    setCount((c) => c + 1);
+  }
   return (
     <div>
       <button>Increase</button>
@@ -24,7 +27,10 @@ function Increase() {
   );
 }
 
-function Decrease() {
+function Decrease({ setCount }) {
+  function decrease() {
+    setCount((c) => c - 1);
+  }
   return (
     <div>
       <button>Decrease</button>
