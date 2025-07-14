@@ -1,7 +1,13 @@
+// this is drilling down the props to achieve the coutner functionality, this will have a lot of re-renders ans is the unoptimal method
+
 import "./App.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Counter></Counter>
+    </>
+  );
 }
 
 function Counter() {
