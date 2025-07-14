@@ -77,3 +77,4 @@
 75. setup tailwind (copy paste Week 13 / 05-react until then)\
 76. video transcoding
 77. recoil vs context api
+78. https://whereisthemouse.com/react-components-when-do-children-re-render
