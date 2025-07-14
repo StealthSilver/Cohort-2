@@ -63,6 +63,7 @@ atom is like the useState : they are created in scr > store > atoms > [atomname]
 whenenevr a component re-renders all of its children also re-render by default so we need to useMemo
 memo will onyl work if preops are not passed , if rops are passed then re-rendering will happen
 
-Selectors : they are a piece od deried state. 
+04-react 
+Selectors : they are a piece or deried state. 
 
 pure function : they do not change the input. for same input there is same output
