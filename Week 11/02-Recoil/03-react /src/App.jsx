@@ -1,4 +1,4 @@
-// Memo
+// Memo : rendering only the parent using memo
 
 import React, { useState, useEffect, memo } from "react";
 import "./App.css";
