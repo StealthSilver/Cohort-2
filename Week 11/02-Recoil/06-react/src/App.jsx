@@ -8,7 +8,6 @@ import {
 } from "./model/atoms/atoms";
 
 import "./App.css";
-import { totalNotificationSelector } from "../../06-react/src/model/atoms/atoms";
 
 function App() {
   const networkNotificationCount = useRecoilValue(networkAtom);
@@ -16,11 +15,6 @@ function App() {
   const notificationCount = useRecoilValue(notificationsAtom);
   const jobsCount = useRecoilValue(jobsAtom);
   const [messageCount, setMessageCount] = useRecoilState(messagingAtom);
-
-  // using the value fromt he selector
-
-  const totalNotificationCount = useRecoilValue(totalNotificationSelector);
-
   return (
     <>
       <button>Home</button>
@@ -41,7 +35,6 @@ function App() {
       >
         Me
       </button>
-      <button> Total :({totalNotificationCount})</button>
     </>
   );
 }
