@@ -87,3 +87,5 @@ createRoot(document.getElementById("root")).render(
 asynchronous data queries 
 
 7.4-async-queries : getting the values form a backend for the navbar
+
+selectors can be used as one way to incorporate async data into the recoil data flow
