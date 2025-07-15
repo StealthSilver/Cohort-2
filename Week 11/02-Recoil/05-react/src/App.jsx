@@ -1,30 +1,26 @@
-import { useState } from "react";
 import { useRecoilValue, useRecoilState } from "recoil";
 import {
   jobsAtom,
   messagingAtom,
   networkAtom,
   notificationsAtom,
+  totalNotificationSelector,
 } from "./model/atoms/atoms";
 
 import "./App.css";
-import { totalNotificationSelector } from "../../06-react/src/model/atoms/atoms";
 
 function App() {
   const networkNotificationCount = useRecoilValue(networkAtom);
-
   const notificationCount = useRecoilValue(notificationsAtom);
   const jobsCount = useRecoilValue(jobsAtom);
   const [messageCount, setMessageCount] = useRecoilState(messagingAtom);
 
-  // using the value fromt he selector
-
+  // using the value from the selector
   const totalNotificationCount = useRecoilValue(totalNotificationSelector);
 
   return (
     <>
       <button>Home</button>
-
       <button>
         My Network (
         {networkNotificationCount >= 100 ? "99+" : networkNotificationCount})
@@ -33,7 +29,7 @@ function App() {
       <button>Messaging ({messageCount})</button>
       <button>Notification ({notificationCount})</button>
 
-      {/* increase the messaging count -> will be done by a backend */}
+      {/* Simulate backend incrementing message count */}
       <button
         onClick={() => {
           setMessageCount(messageCount + 1);
@@ -41,7 +37,8 @@ function App() {
       >
         Me
       </button>
-      <button> Total :({totalNotificationCount})</button>
+
+      <button>Total: {totalNotificationCount}</button>
     </>
   );
 }
