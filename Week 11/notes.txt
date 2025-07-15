@@ -91,3 +91,5 @@ asynchronous data queries
 selectors can be used as one way to incorporate async data into the recoil data flow
 
 atom-family : they are required to combine same kind of data but having different atoms
+
+selector-family : 
