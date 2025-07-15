@@ -27,7 +27,7 @@ function App() {
       <button>Messaging ({messageCount})</button>
       <button>Notification ({notificationCount})</button>
 
-      {/* increase the messaging count */}
+      {/* increase the messaging count -> will be done by a backend */}
       <button
         onClick={() => {
           setMessageCount(messageCount + 1);
