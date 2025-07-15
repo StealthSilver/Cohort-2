@@ -16,9 +16,6 @@ function App() {
   const jobsCount = useRecoilValue(jobsAtom);
   const [messageCount, setMessageCount] = useRecoilState(messagingAtom);
 
-  // using the value fromt he selector
-
-  const totalNotificationCount = useRecoilValue(totalNotificationSelector);
   return (
     <>
       <button>Home</button>
