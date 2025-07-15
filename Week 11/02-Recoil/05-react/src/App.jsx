@@ -35,10 +35,10 @@ function App() {
           setMessageCount(messageCount + 1);
         }}
       >
-        Me
+        Me Total: {totalNotificationCount}
       </button>
 
-      <button>Total: {totalNotificationCount}</button>
+      <button></button>
     </>
   );
 }
