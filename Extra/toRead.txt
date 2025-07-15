@@ -82,3 +82,4 @@
 80. dev brance , prod branch and main branch
 81. https://www.freecodecamp.org/news/solid-design-principles-in-software-development
 82. ui storybook : blade.razorpay.com : razorpay storybook
+83. how does [await new Promise(r => setTimeout(r,5000)) ] makes the execution delay for 5 sec

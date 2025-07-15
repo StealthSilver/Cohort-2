@@ -3,12 +3,16 @@ import { atom, selector } from "recoil";
 // async data queries
 export const notifications = atom({
   key: "networkAtom",
-  default: {
-    network: 0,
-    jobs: 0,
-    messaging: 0,
-    notifications: 0,
-  },
+  default: selector({
+    key: "networkAtomSelector",
+    get: async () => {
+      const res = axios
+        .get("https://sum-server.100xdevs.com/notifications")
+        .then((res) => {
+          setNetworkCount(res.data);
+        });
+    },
+  }),
 });
 
 export const totalNotificationSelector = selector({
