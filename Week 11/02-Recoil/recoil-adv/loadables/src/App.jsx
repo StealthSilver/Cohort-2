@@ -13,6 +13,7 @@ function App() {
 
 function Todo({ id }) {
   const [todo, setTodo] = useRecoilStateLoadable(todosAtomFamily(id));
+  // it will keep leading until the todo is returned from the backend
   if (todo.state === "loading") {
     return <div>loading...</div>;
   }
