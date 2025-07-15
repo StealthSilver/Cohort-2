@@ -1,5 +1,6 @@
 import { atom, selector } from "recoil";
 
+// async data queries
 export const notifications = atom({
   key: "networkAtom",
   default: {
