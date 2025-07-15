@@ -93,3 +93,5 @@ selectors can be used as one way to incorporate async data into the recoil data 
 atom-family : they are required to combine same kind of data but having different atoms
 
 selector-family : in the todo app if we need to get the todos froma backend we would need a selector family
+
+if the values arent loaded immidiately and we need to show a loader on the screent then we use useRecoilStateLoadable and useRecoilValueLoadable
