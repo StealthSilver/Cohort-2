@@ -83,3 +83,7 @@ createRoot(document.getElementById("root")).render(
 05-react : navbar using atoms 
 
 06-react : selectors
+
+asynchronous data queries 
+
+7.4-async-queries : getting the values form a backend for the navbar
