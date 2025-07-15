@@ -7,15 +7,15 @@ export const networkAtom = atom({
 
 export const jobsAtom = atom({
   key: "jobsAtom",
-  default: 100,
+  default: 0,
 });
 
 export const notificationsAtom = atom({
   key: "notificationAtom",
-  default: 100,
+  default: 13,
 });
 
 export const messagingAtom = atom({
   key: "messagingAtom",
-  default: 100,
+  default: 10,
 });
