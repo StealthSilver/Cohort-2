@@ -24,12 +24,8 @@ function App() {
       </button>
       <button>Jobs ({jobsCount})</button>
       <button>Messaging ({messageCount})</button>
-      <button>Notification ({notificationCount})</button>
-
-      {/* Increment messaging count */}
-      <button onClick={() => setMessageCount(messageCount + 1)}>Me</button>
-
-      {/* Now this shows separately */}
+      <button>Notification ({notificationCount})</button>\
+      <button onClick={() => setMessageCount(messageCount + 1)}>Me</button>\
       <button>Total: {totalNotificationCount}</button>
     </>
   );
