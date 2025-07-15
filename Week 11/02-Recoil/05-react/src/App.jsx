@@ -8,10 +8,11 @@ function App() {
   return (
     <>
       <button>Home</button>
-      <button>My Network</button>
+
+      <button>My Network ()</button>
       <button>Jobs ()</button>
-      <button>Messaging</button>
-      <button>Notification</button>
+      <button>Messaging ()</button>
+      <button>Notification ()</button>
       <button>Me</button>
     </>
   );
