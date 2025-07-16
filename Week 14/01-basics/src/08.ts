@@ -7,10 +7,16 @@ interface User {
 	age: number;
 }
 
-function isLegal2(user: User) {
-    if (user.age > 18) {
-        return true
-    } else {
-        return false;
-    }
+function isLegal2(user: User): boolean {
+	return user.age > 20;
 }
+
+// Example usage:
+const user1: User = {
+	firstName: "Random",
+	lastName: "Verma",
+	email: "random@gmail.com",
+	age: 20
+};
+
+console.log(isLegal2(user1)); // true
