@@ -9,5 +9,5 @@ function isLegal(age: number){
 
 }
 
-
+// the return type will be infered automatically that it is boolean type
 console.log(isLegal(6))
