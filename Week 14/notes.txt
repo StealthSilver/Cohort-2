@@ -23,6 +23,8 @@ typescript is a superset of JS
 to compile npx tsc -b 
 then node [file name of the javascript file] 
 
+typescript is never executed. it first compiles and then javascript runs
+
 basic types in ts are 
 number , string , boolean , null , undefined 
 
