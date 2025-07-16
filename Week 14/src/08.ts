@@ -1,4 +1,4 @@
-// creating an inference for User type -> this is a typescript construct
+// creating an inference for User type -> this is a typescript construct (custom type)
 
 interface User {
 	firstName: string;
