@@ -6,7 +6,7 @@ function greet(firstName: String){
 
 //explicitly calling any
 function greet2(secondName: any){
-    console.log("hello" + secondName)
+    console.log("hello " + secondName)
 }
 
 greet("pogo");
