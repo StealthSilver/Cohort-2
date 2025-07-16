@@ -4,6 +4,8 @@ function delayedCall(anotherFn: () => void ){
     setTimeout(anotherFn, 1000);
 }
 
+
+// this function returns nothing -> void
 function log(){
     console.log("hi there");
 }
