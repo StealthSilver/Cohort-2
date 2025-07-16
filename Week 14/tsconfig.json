@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "target": "es2016", // this is there to run in older browsers, ECMA standard
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "module": "commonjs",
+    "rootDir": "./src", // root directory for ts files
+    "outDir": "./dist", // directory to store js files (can also store in the build folder)
+    "module": "commonjs", 
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
