@@ -4,10 +4,13 @@ there are two kinds of languages Strongly and Loosly typed
 
 Strongly Typed : Go, Typescript , C++ , Rust , Java
 1. lesser runtime errors 
-2. 
-3.
+2. stricter codebase 
+3. easy to catch errors at compile time
 
 Loosly Typed : Python , Javascript , Pearl, php
+1. Easy to write code 
+2. Fast to bootstrap
+3. Low learning curve
 
 Typescript compiles down to js 
 tsc is the typescript compiler
