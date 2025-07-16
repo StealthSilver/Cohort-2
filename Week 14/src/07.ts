@@ -9,3 +9,15 @@ greetUser({
     name: "pogo",
     age: 87
 });
+
+
+// this is explicitly defining the object
+let student : {
+    firstName : string,
+    age : number, 
+    lastName: string
+} = {
+    firstName : "pogo",
+    age : 34, 
+    lastName: "pol"
+}
