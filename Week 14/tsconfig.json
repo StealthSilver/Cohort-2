@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2016", // this is there to run in older browsers, ECMA standard
     "rootDir": "./src",
     "outDir": "./dist",
     "module": "commonjs",
