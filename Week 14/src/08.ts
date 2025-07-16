@@ -1,3 +1,5 @@
+// creating an inference for User type -> this is a typescript construct
+
 interface User {
 	firstName: string;
 	lastName: string;
