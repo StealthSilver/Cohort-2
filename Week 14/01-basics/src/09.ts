@@ -1,9 +1,9 @@
-type Employee = {
+interface Employee {
     name: string;
     startDate: Date;
   };
   
-  type Manager = {
+  interface Manager {
     name: string;
     department: string;
   };
