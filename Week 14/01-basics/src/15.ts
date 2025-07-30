@@ -10,9 +10,9 @@ type Admin = Person & { role: "admin" };
 type Guest = Person & { access: "limited" };
 
 // Union
-type User = Admin | Guest;
+type User10 = Admin | Guest;
 
-function showUserInfo(user: User) {
+function showUserInfo(user: User10) {
   console.log(`Name: ${user.name}, Age: ${user.age}`);
   if ("role" in user) {
     console.log("Admin access");
