@@ -1,4 +1,4 @@
-// interfaces with funcitons
+// interfaces with functions
 
 interface People {
     name: string,
