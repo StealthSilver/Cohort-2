@@ -13,7 +13,7 @@ abstract class User9 {
     }
 }
 
-class Employee extends User9 {
+class Employee4 extends User9 {
     name: string;
     constructor(name: string){
         super(name)
