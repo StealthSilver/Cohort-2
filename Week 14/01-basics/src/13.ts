@@ -2,11 +2,11 @@
 interface PeopleCore {
     name: string;
     age: number;
-    greet: () => string;  // required method
+    greet: () => string; 
 }
 
 // class that implements the interface
-class Manager implements PeopleCore {
+class Manager2 implements PeopleCore {
     name: string;
     age: number;
 
@@ -22,6 +22,6 @@ class Manager implements PeopleCore {
     }
 }
 
-// Example usage
-const mgr = new Manager("Alice", 35);
+
+const mgr = new Manager2("Alice", 35);
 console.log(mgr.greet());
