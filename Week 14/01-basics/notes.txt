@@ -66,3 +66,5 @@ TYPES
 Very similar to interfaces , types let you aggregate data together.
 
 * we can implement abstract interfaces in ts
+
+ABSTRACT CLASS : they are similar to interfaces but they can have default implementations also unlike interfaces
