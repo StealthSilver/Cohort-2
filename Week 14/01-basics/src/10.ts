@@ -1,5 +1,4 @@
 // interfaces
-
 interface User2 {
     name: string;
     age: number;
@@ -18,9 +17,16 @@ let user: User2 = {
         country: "France",
         pincode: 494232,
     },
-    
+};
+
+function isLegal3(user: User2): boolean {
+    return user.age >= 18;
 }
 
-function isLegal(user: User) : boolean{
-    return user.age >= 18;
+const ans = isLegal3(user);
+
+if (ans) {
+    console.log("I am legal");
+} else {
+    console.log("I am illegal");
 }
