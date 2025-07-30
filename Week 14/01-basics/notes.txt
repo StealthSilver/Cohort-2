@@ -64,6 +64,8 @@ interfaces are used to define your custom types
 
 TYPES
 Very similar to interfaces , types let you aggregate data together.
+but we cannot implement the type
+we can do unions and intersections with types
 
 * we can implement abstract interfaces in ts
 
