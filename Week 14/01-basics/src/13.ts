@@ -1,6 +1,19 @@
+// interfaces with funcitons
+
 interface People {
     name: string,
     age: number,
     greet: () => string,
-    greet2(): string
+    
 }
+
+let person : People ={
+    name: "pogo",
+    age: 21,
+    greet: () => {
+        return "hi"
+    }
+}
+
+let greeting = person.greet();
+console.log(greeting)
