@@ -23,6 +23,8 @@ typescript is a superset of JS
 to initialize the typescript code
 1. initialize npm : npm init -y
 2. initialize typescript : npx tsc --init
+3. update tsconfig.json with:  "rootDir" : "./src" and "outDir" : "./dist"
+
 
 to compile npx tsc -b 
 then node [file name of the javascript file] 
