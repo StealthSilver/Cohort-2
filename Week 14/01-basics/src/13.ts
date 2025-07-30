@@ -1,31 +1,27 @@
 // interfaces with functions
-
-interface People {
-    name: string,
-    age: number,
-    greet: () => string,
-    
-}
-
-// object out of hte interface
-let person : People ={
-    name: "pogo",
-    age: 21,
-    greet: () => {
-        return "hi"
-    }
+interface PeopleCore {
+    name: string;
+    age: number;
+    greet: () => string;  // required method
 }
 
 // class that implements the interface
-
-class Manager implements People {
-
+class Manager implements PeopleCore {
     name: string;
     age: number;
-    constructor(){
 
+    // constructor to initialize the object
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Implementing the greet method
+    greet(): string {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
     }
 }
 
-let greeting = person.greet();
-console.log(greeting)
+// Example usage
+const mgr = new Manager("Alice", 35);
+console.log(mgr.greet());
