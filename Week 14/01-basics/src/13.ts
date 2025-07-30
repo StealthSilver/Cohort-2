@@ -1,4 +1,4 @@
-// interfaces with functions
+// interfaces with functions, creating objects from classes
 interface PeopleCore {
     name: string;
     age: number;
