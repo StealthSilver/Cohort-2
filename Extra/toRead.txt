@@ -88,3 +88,4 @@
 86. difference between streaming on youtube and zoom 
 87. RTMP, HLS for webinar how that is implemented
 88. fiverr and gin framework
+89. differecnce between interfaces and types
