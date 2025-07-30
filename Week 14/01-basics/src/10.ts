@@ -1,6 +1,6 @@
 // interfaces
 interface User2 {
-    name: string;
+    name: string; // "koko" | "pogo" -> now only two names are possible
     age: number;
     address: {
         city: string;
