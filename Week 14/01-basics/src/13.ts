@@ -3,6 +3,7 @@ interface PeopleCore {
     name: string;
     age: number;
     greet: () => string; 
+    isLegal5() : boolean;
 }
 
 // class that implements the interface
@@ -19,6 +20,10 @@ class Manager2 implements PeopleCore {
     // Implementing the greet method
     greet(): string {
         return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+
+    isLegal5(): boolean {
+        return this.age>18;
     }
 }
 
