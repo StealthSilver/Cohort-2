@@ -19,7 +19,7 @@ function isLegal4(user: User3): boolean {
     return user.age >= 18;
 }
 
-const ans2 = isLegal4(user2); // use correct function and variable
+const ans2 = isLegal4(user2); 
 
 if (ans) {
     console.log("I am legal");
