@@ -59,7 +59,8 @@ Weather or not to include comments in the final js file
 
 
 INTERFACE 
-they let us accumulate types in objects
+they let us accumulate types in objects, 
+interfaces are used to define your custom types
 
 TYPES
 Very similar to interfaces , types let you aggregate data together.
