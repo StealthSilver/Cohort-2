@@ -25,9 +25,9 @@ function isLegal5(user: User3): boolean {
     return user.age >= 18;
 }
 
-const ans3 = isLegal5(user2); 
+const ans3 = isLegal5(user3); 
 
-if (ans) {
+if (ans3) {
     console.log("I am legal");
 } else {
     console.log("I am illegal");

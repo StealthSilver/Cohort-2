@@ -21,7 +21,7 @@ function isLegal4(user: User3): boolean {
 
 const ans2 = isLegal4(user2); 
 
-if (ans) {
+if (ans2) {
     console.log("I am legal");
 } else {
     console.log("I am illegal");
