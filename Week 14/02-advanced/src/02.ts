@@ -9,5 +9,5 @@ interface User2{
 type UpdateProps = Pick<User2, 'name' | 'age' | 'email'>
 
 function updateUser(UpdateProps: UpdateProps){
-    // hit the database tp update the user
+    // hit the database to update the user
 }
