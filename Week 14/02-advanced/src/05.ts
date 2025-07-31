@@ -1,4 +1,4 @@
-// Records
+// Records : only a typescript thing
 
 
 
