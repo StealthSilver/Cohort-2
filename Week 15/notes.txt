@@ -20,3 +20,6 @@ Creating Brainly Folder
 6. create a scr folder 
 7. create the index.ts file 
 8. in index.js : import express from "express"
+
+
+.d.ts files are the decleration files where the types are specified for the files
