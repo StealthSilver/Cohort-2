@@ -105,7 +105,7 @@ app.post("/api/v1/signin", async (req, res) => {
     const token = jwt.sign(
       { id: existingUser._id },
       JWT_PASSWORD,
-      { expiresIn: "1h" } // Optional: Add expiry
+      { expiresIn: "1h" } // Expiry
     );
 
     res.status(200).json({ token });
