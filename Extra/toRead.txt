@@ -90,3 +90,4 @@
 88. fiverr and gin framework
 89. differecnce between interfaces and types
 90. TRPC ,t3 stack
+91. what is FTX
