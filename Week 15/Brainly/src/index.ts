@@ -82,9 +82,38 @@ app.post("/api/vi/signin" ,async  (req,res) => {
     }
 })
 
-app.get("/api/vi/content" , (req,res) => {
-    
-})
+
+app.post("/api/v1/signin", async (req, res) => {
+  try {
+    const parsed = signupSchema.safeParse(req.body);
+    if (!parsed.success) {
+      return res.status(411).json({ message: "Error in inputs", errors: parsed.error.issues });
+    }
+
+    const { username, password } = parsed.data;
+
+    const existingUser = await UserModel.findOne({ username });
+    if (!existingUser) {
+      return res.status(403).json({ message: "Incorrect credentials" });
+    }
+
+    const isPasswordCorrect = await bcrypt.compare(password, existingUser.password);
+    if (!isPasswordCorrect) {
+      return res.status(403).json({ message: "Incorrect credentials" });
+    }
+
+    const token = jwt.sign(
+      { id: existingUser._id },
+      JWT_PASSWORD,
+      { expiresIn: "1h" } // Optional: Add expiry
+    );
+
+    res.status(200).json({ token });
+  } catch (err) {
+    console.error("Signin error:", err);
+    res.status(500).json({ message: "Server error" });
+  }
+});
 
 
 app.post("/api/vi/content" , (req,res) => {
