@@ -75,6 +75,10 @@ app.post("/api/vi/signin" ,async  (req,res) => {
       res.json({
         token
       })
+    }else{
+      res.status(403).json({
+        message: "incorrect credentials"
+      })
     }
 })
 
