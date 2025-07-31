@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json());
 
 const PORT = 3000;
+const JWT_PASSWORD = "!23234"
 
 
 // Zod schema for input validation
@@ -58,8 +59,13 @@ app.post("/api/v1/signup", async (req, res) => {
 
 
 
-app.post("/api/vi/signin" , (req,res) => {
-    
+app.post("/api/vi/signin" ,async  (req,res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+    const existingUser = await UserModel.findOne({
+      username, password
+    })
 })
 
 app.get("/api/vi/content" , (req,res) => {
