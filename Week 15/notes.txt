@@ -39,3 +39,5 @@ when the knowledge base becoms really big, now it the user wants to query
 you can ask the LLM api with the relevent info from the knowledge base, 
 
 1. functionality : creating the prompt with the relevent knowledge base
+elastic search is the web 2 thing
+vector search and embeddings is the LLM approach
