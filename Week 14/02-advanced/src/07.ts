@@ -6,4 +6,4 @@ const handleEvent = (event: ExcludeEvent) => {
     console.log(`Handling events: ${event}`)
 };
 
-handleEvent('click');
+handleEvent('click'); // can't use scroll
