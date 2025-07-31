@@ -8,3 +8,14 @@ Fetch all existing documents
 Delete a document
 Create a shareable link for second brain
 Fetch a brain by id
+
+Bootstraping a typescript backend project
+Creating Brainly Folder
+
+1. npm init -y
+2. npm i -d typescript : installing as a dev dependency
+3. npx tsc --init : creating the tsconfig file
+4. in the tsconfig set the rootDir : "./src" and the outDir: "./dist"
+5. install dependencies : npm i express
+6. create a scr folder 
+7. create the index.ts file 
