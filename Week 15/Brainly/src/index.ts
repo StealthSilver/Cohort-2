@@ -6,7 +6,10 @@ const app = express();
 const PORT = 3000;
 
 app.post("/api/vi/signup" , (req,res) => {
+// zod validation 
 
+const username = req.body.username;
+const password = req.body.password;
 })
 
 app.post("/api/vi/signin" , (req,res) => {
