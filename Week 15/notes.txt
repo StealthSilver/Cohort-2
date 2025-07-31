@@ -7,3 +7,4 @@ Add new content
 Fetch all existing documents 
 Delete a document
 Create a shareable link for second brain
+Fetch a brain by id
