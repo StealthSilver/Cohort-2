@@ -21,6 +21,7 @@ Creating Brainly Folder
 7. create the index.ts file 
 8. in index.js : import express from "express"
 9. npm i -d @types/express : installing express types , install as a dev dependency as used only in development phase and not in production phase
+10. const app = express();
 
 
 .d.ts files are the decleration files where the types are specified for the files
