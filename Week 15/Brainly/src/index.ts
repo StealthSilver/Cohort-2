@@ -13,10 +13,10 @@ const PORT = 3000;
 
 // Zod schema for input validation
 const signupSchema = z.object({
-  username: z.string().min(3).max(10),
+  username: z.string().min(3).max(20),
   password: z
     .string()
-    .min(8)
+    .min(6)
     .max(20)
     .regex(/[a-z]/, "Must include a lowercase letter")
     .regex(/[A-Z]/, "Must include an uppercase letter")
@@ -55,6 +55,8 @@ app.post("/api/v1/signup", async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
+
+
 
 app.post("/api/vi/signin" , (req,res) => {
     
