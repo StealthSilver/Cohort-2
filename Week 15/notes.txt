@@ -28,6 +28,7 @@ Creating Brainly Folder
 14. import mongoose and jwt 
 15. initialize routes
 16. create db.ts in src
+17. create middleware.ts in src
 
 .d.ts files are the decleration files where the types are specified for the files
 for the npm libraries that are in js the type files are gives so the library also works in ts
