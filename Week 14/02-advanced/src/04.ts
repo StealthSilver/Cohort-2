@@ -14,3 +14,9 @@ const user: User4 = {
 }
 
 // user.age = 32 , this cant be done
+
+// another way to make the complete obj readonly
+const user2: Readonly<User4> = {
+    name: "pop", 
+    age: 90
+}

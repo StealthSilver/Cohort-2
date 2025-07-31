@@ -5,3 +5,8 @@ Pick allows you to create a new type by selecting a set of properties (Keys) fro
 Partial makes all properties of a type optional, creatung a type with the same properties, but each marked as optional
 
 Readonly , when you have a configuration object that should not be altered after initialization, making it readonly ensures it remains constant
+used for making the configuration , api keys constant
+
+Records , they let you a cleaner type to objects
+
+
