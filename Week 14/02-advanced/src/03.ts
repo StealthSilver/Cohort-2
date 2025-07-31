@@ -1,6 +1,6 @@
-// Pick
+ // Partial
 
-interface User2{
+interface User3{
     id:string;
     name: string;
     age: number;
@@ -8,8 +8,9 @@ interface User2{
     password: string;
 }
 
-type UpdateProps = Pick<User2, 'name' | 'age' | 'email'>
 
-function updateUser(UpdateProps: UpdateProps){
+type UpdatePropsOptional = Partial<UpdateProps>
+
+function updateUser2(UpdateProps: UpdateProps){
     // hit the database to update the user
 }

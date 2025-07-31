@@ -1,3 +1,5 @@
 ADVANCED TYPESCRIPT API
 
 Pick allows you to create a new type by selecting a set of properties (Keys) from an existing type (Type)
+
+Partial makes all properties of a type optional, creatung a type with the same properties, but each marked as optional
