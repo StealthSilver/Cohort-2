@@ -42,3 +42,6 @@ you can ask the LLM api with the relevent info from the knowledge base,
 elastic search is the web 2 thing
 vector search and embeddings is the LLM approach
 
+Vector Embedding 
+
+any text can be converted into a vector
