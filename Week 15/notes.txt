@@ -19,3 +19,4 @@ Creating Brainly Folder
 5. install dependencies : npm i express
 6. create a scr folder 
 7. create the index.ts file 
+8. in index.js : import express from "express"
