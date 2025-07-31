@@ -8,5 +8,6 @@ Readonly , when you have a configuration object that should not be altered after
 used for making the configuration , api keys constant
 
 Records , they let you a cleaner type to objects
+Map : to create object by getters and setters
 
-
+Exclude : in a afunction that can accept several types of inputs but you want to Exclude specific types from being passed
