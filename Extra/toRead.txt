@@ -93,3 +93,7 @@
 91. what is FTX
 92. dev dependencies
 93. the express codebase
+94. elastic search (algolia)
+95. embeddings and vector databases 
+95. Chat with a pdf project
+96. RAGs
