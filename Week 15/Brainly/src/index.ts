@@ -1,15 +1,21 @@
 import express from "express"
 import mongoose from "mongoose"
 import jwt from "jsonwebtoken"
+import { UserModel , TagModel, ContentModel, LinkModel } from "./db";
 
 const app = express();
 const PORT = 3000;
 
 app.post("/api/vi/signup" , (req,res) => {
-// zod validation 
+// zod validation , hash and salt the password using the bcrypt library
 
 const username = req.body.username;
 const password = req.body.password;
+
+UserModel.create({
+  username: username,
+  password: password
+})
 })
 
 app.post("/api/vi/signin" , (req,res) => {
