@@ -66,6 +66,16 @@ app.post("/api/vi/signin" ,async  (req,res) => {
     const existingUser = await UserModel.findOne({
       username, password
     })
+
+    if(existingUser){
+      const token = jwt.sign({
+        id:existingUser._id
+      }, JWT_PASSWORD)
+
+      res.json({
+        token
+      })
+    }
 })
 
 app.get("/api/vi/content" , (req,res) => {
