@@ -1,0 +1,9 @@
+Second Brain app 
+
+endpoints : 
+Sign up 
+Sign in 
+Add new content 
+Fetch all existing documents 
+Delete a document
+Create a shareable link for second brain
