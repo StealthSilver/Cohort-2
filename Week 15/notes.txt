@@ -44,4 +44,4 @@ vector search and embeddings is the LLM approach
 
 Vector Embedding 
 
-any text can be converted into a vector
+any text can be converted into a vector. we can give the text to an embedding model and it will return us higher dimention vectors
