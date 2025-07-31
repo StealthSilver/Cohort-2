@@ -1,5 +1,5 @@
 import mongoose, { Schema, Types, model } from 'mongoose';
-
+mongoose.connect("mongodb://localhost:27017/Brainly")
 
 const userSchema = new Schema({
   username: { type: String, required: true, unique: true },
