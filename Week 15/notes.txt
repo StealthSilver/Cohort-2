@@ -30,6 +30,10 @@ Creating Brainly Folder
 16. create db.ts in src
 17. create middleware.ts in src
 18. create the schemas in db.ts
+19 : to start the project : add these scripts is package.json
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "dev": "npm run build && npm run start"
 
 .d.ts files are the decleration files where the types are specified for the files
 for the npm libraries that are in js the type files are gives so the library also works in ts
