@@ -98,3 +98,4 @@
 95. Chat with a pdf project
 96. RAGs
 97. Drizzle
+98. Socket io
