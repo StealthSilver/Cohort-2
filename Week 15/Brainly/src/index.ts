@@ -1,12 +1,11 @@
-import express from "express"
-import mongoose from "mongoose"
-import jwt from "jsonwebtoken"
+import express from "express";
+import mongoose from "mongoose";
+import jwt from "jsonwebtoken";
 import { z } from "zod";
 import bcrypt from "bcrypt";
-import { UserModel , TagModel, ContentModel, LinkModel } from "./db";
+import { UserModel, TagModel, ContentModel, LinkModel } from "./db";
 import { JWT_PASSWORD } from "./config";
 import { userMiddleware } from "./middleware";
-
 
 const app = express();
 app.use(express.json());
@@ -26,26 +25,28 @@ const signupSchema = z.object({
     .regex(/[^A-Za-z0-9]/, "Must include a special character"),
 });
 
+
 app.post("/api/v1/signup", async (req, res) => {
   try {
     const parseResult = signupSchema.safeParse(req.body);
 
     if (!parseResult.success) {
-      return res.status(411).json({ message: "Error in inputs", errors: parseResult.error.issues });
+      return res
+        .status(411)
+        .json({ message: "Error in inputs", errors: parseResult.error.issues });
     }
 
     const { username, password } = parseResult.data;
 
-    
     const existingUser = await UserModel.findOne({ username });
     if (existingUser) {
-      return res.status(403).json({ message: "User already exists with this username" });
+      return res
+        .status(403)
+        .json({ message: "User already exists with this username" });
     }
 
-  
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Save the user
     await UserModel.create({
       username,
       password: hashedPassword,
@@ -58,37 +59,13 @@ app.post("/api/v1/signup", async (req, res) => {
   }
 });
 
-
-
-app.post("/api/vi/signin" ,async  (req,res) => {
-    const username = req.body.username;
-    const password = req.body.password;
-
-    const existingUser = await UserModel.findOne({
-      username, password
-    })
-
-    if(existingUser){
-      const token = jwt.sign({
-        id:existingUser._id
-      }, JWT_PASSWORD)
-
-      res.json({
-        token
-      })
-    }else{
-      res.status(403).json({
-        message: "incorrect credentials"
-      })
-    }
-})
-
-
 app.post("/api/v1/signin", async (req, res) => {
   try {
     const parsed = signupSchema.safeParse(req.body);
     if (!parsed.success) {
-      return res.status(411).json({ message: "Error in inputs", errors: parsed.error.issues });
+      return res
+        .status(411)
+        .json({ message: "Error in inputs", errors: parsed.error.issues });
     }
 
     const { username, password } = parsed.data;
@@ -98,16 +75,17 @@ app.post("/api/v1/signin", async (req, res) => {
       return res.status(403).json({ message: "Incorrect credentials" });
     }
 
-    const isPasswordCorrect = await bcrypt.compare(password, existingUser.password);
+    const isPasswordCorrect = await bcrypt.compare(
+      password,
+      existingUser.password
+    );
     if (!isPasswordCorrect) {
       return res.status(403).json({ message: "Incorrect credentials" });
     }
 
-    const token = jwt.sign(
-      { id: existingUser._id },
-      JWT_PASSWORD,
-      { expiresIn: "1h" } // Expiry
-    );
+    const token = jwt.sign({ id: existingUser._id }, JWT_PASSWORD, {
+      expiresIn: "1h",
+    });
 
     res.status(200).json({ token });
   } catch (err) {
@@ -117,34 +95,40 @@ app.post("/api/v1/signin", async (req, res) => {
 });
 
 
-app.post("/api/vi/content", userMiddleware, async (req,res) => {
-    const link = req.body.link;
-    const type = req.body.type;
+app.post("/api/v1/content", userMiddleware, async (req, res) => {
+  try {
+    const { link, type } = req.body;
     await ContentModel.create({
-      link, 
+      link,
       type,
-      //@ts-ignore
-      userId:req.userId,
-      tags:[]
-    })
+      // @ts-ignore
+      userId: req.userId,
+      tags: [],
+    });
 
     return res.json({
-      message: "Content added"
-    })
-})
+      message: "Content added",
+    });
+  } catch (err) {
+    console.error("Content creation error:", err);
+    res.status(500).json({ message: "Server error" });
+  }
+});
 
-app.delete("/api/vi/content" , (req,res) => {
-    
-})
+app.delete("/api/v1/content", async (req, res) => {
+  
+});
 
-app.post("/api/vi/brain/share" , (req,res) => {
-    
-})
 
-app.get("/api/vi/brain/:shareLink" , (req,res) => {
-    
-})
+app.post("/api/v1/brain/share", async (req, res) => {
+  
+});
+
+
+app.get("/api/v1/brain/:shareLink", async (req, res) => {
+  
+});
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
+  console.log(`Server is running on port ${PORT}`);
+});
