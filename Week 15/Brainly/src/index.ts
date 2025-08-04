@@ -117,15 +117,19 @@ app.post("/api/v1/signin", async (req, res) => {
 });
 
 
-app.post("/api/vi/content", userMiddleware, (req,res) => {
+app.post("/api/vi/content", userMiddleware, async (req,res) => {
     const link = req.body.link;
     const type = req.body.type;
-    ContentModel.create({
+    await ContentModel.create({
       link, 
       type,
       //@ts-ignore
       userId:req.userId,
       tags:[]
+    })
+
+    return res.json({
+      message: "Content added"
     })
 })
 
