@@ -96,6 +96,7 @@ app.post("/api/v1/signin", async (req, res) => {
 
 
 app.post("/api/v1/content", userMiddleware, async (req, res) => {
+  console.log("CONTENT POST HIT");
   try {
     const { link, type, title } = req.body;
     if (!link || !type || !title) {
