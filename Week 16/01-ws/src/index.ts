@@ -2,6 +2,7 @@ import WebSocket, { WebSocketServer } from 'ws';
 
 const wss = new WebSocketServer({ port: 8080 });
 
+// event handler, when there is a new connection sent it to the socket function
 wss.on("connection", function (socket) {
     console.log("User connected");
 
