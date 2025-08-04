@@ -64,7 +64,7 @@ The simplest approach is upgrading the server’s hardware (CPU, RAM, network ba
 
 A single server can only handle a limited number of connections (e.g., 50,000–100,000 WebSocket connections per machine, depending on hardware).
 No redundancy—if the server crashes, all connections are lost.
-💡 Best used for: Small applications with limited WebSocket traffic.
+Best used for: Small applications with limited WebSocket traffic.
 
 2. Horizontal Scaling (Multiple Servers)
 For high traffic, WebSockets need multiple servers. This requires:
