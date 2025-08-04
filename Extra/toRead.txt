@@ -103,3 +103,4 @@
 100. creating alias to shorten commands
 101. Pub-Sub model in kafka
 102. Framevr.io, how these applications use ws and web-rtc (udp)
+103. how realtime games make this happen (BGMI)
