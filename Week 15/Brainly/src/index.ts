@@ -4,12 +4,14 @@ import jwt from "jsonwebtoken"
 import { z } from "zod";
 import bcrypt from "bcrypt";
 import { UserModel , TagModel, ContentModel, LinkModel } from "./db";
+import { JWT_PASSWORD } from "./config";
+
 
 const app = express();
 app.use(express.json());
 
 const PORT = 3000;
-const JWT_PASSWORD = "!23234"
+
 
 
 // Zod schema for input validation
