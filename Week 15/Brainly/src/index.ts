@@ -5,14 +5,13 @@ import { z } from "zod";
 import bcrypt from "bcrypt";
 import { UserModel , TagModel, ContentModel, LinkModel } from "./db";
 import { JWT_PASSWORD } from "./config";
+import { userMiddleware } from "./middleware";
 
 
 const app = express();
 app.use(express.json());
 
 const PORT = 3000;
-
-
 
 // Zod schema for input validation
 const signupSchema = z.object({
@@ -118,8 +117,16 @@ app.post("/api/v1/signin", async (req, res) => {
 });
 
 
-app.post("/api/vi/content" , (req,res) => {
-    
+app.post("/api/vi/content", userMiddleware, (req,res) => {
+    const link = req.body.link;
+    const type = req.body.type;
+    ContentModel.create({
+      link, 
+      type,
+      //@ts-ignore
+      userId:req.userId,
+      tags:[]
+    })
 })
 
 app.delete("/api/vi/content" , (req,res) => {
