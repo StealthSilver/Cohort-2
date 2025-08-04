@@ -97,10 +97,16 @@ app.post("/api/v1/signin", async (req, res) => {
 
 app.post("/api/v1/content", userMiddleware, async (req, res) => {
   try {
-    const { link, type } = req.body;
+    const { link, type, title } = req.body;
+    if (!link || !type || !title) {
+      return res.status(400).json({ message: "link, type, and title are required" });
+    }
+
+    // add zod validations for the content
     await ContentModel.create({
       link,
       type,
+      title,
       // @ts-ignore
       userId: req.userId,
       tags: [],
