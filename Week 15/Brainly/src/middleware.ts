@@ -9,5 +9,10 @@ export const userMiddleware  =(req: Request, res: Response, next: NextFunction)=
     if (decoded){
         //@ts-ignore
         req.userId = decoded.id;
+        next();
+    }else{
+        res.status(403).json({
+            message: "You are not logged in"
+        })
     }
 }
