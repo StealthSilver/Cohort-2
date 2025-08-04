@@ -19,7 +19,7 @@ Soket-IO is used by Coin DCX and Canva
 
 web sockets are used in
 for real time communication -> used in trading applications in their order book (ws.backpack.exchange)
-for chat applications
+for chat applications : as in http there is no two way communication so pushing event in the second person is not posible by itself, ws makes this possible
 for sports update applications
 for financial tickers
 for interactive services -> excelidraw
