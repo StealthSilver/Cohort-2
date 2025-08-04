@@ -102,4 +102,4 @@
 99. creating the http and ws server together. use ws and express in the same file
 100. creating alias to shorten commands
 101. Pub-Sub model in kafka
-102. Framevr.io, how these applications use ws and web-rtc
+102. Framevr.io, how these applications use ws and web-rtc (udp)
