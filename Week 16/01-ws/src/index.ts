@@ -10,7 +10,7 @@ wss.on("connection", function (socket) {
         if (socket.readyState === WebSocket.OPEN) {
             socket.send("Current price of Solana is: " + Math.random());
         }
-    }, 500);
+    }, 2000);
 
     socket.on("message", (e) => {
         console.log("Received message:", e.toString());

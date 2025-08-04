@@ -35,13 +35,14 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const ws_1 = __importStar(require("ws"));
 const wss = new ws_1.WebSocketServer({ port: 8080 });
+// event handler, when there is a new connection sent it to the socket function
 wss.on("connection", function (socket) {
     console.log("User connected");
     const interval = setInterval(() => {
         if (socket.readyState === ws_1.default.OPEN) {
             socket.send("Current price of Solana is: " + Math.random());
         }
-    }, 500);
+    }, 2000);
     socket.on("message", (e) => {
         console.log("Received message:", e.toString());
     });
