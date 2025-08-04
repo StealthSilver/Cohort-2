@@ -13,7 +13,7 @@ for any connction there is a three way handshake
 web sockets create a persistent connection persistent means that once a connection is made it stays there for a connection
 the same connection is established by the WEB-rtc protocol
 
-in HTTP we can use polling or non-polling to create the same architecture
+in HTTP we can use polling or long-polling to create the same architecture
 
 Soket-IO is used by Coin DCX and Canva
 
