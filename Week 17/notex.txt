@@ -14,6 +14,7 @@ promQs is another Query language used for prometheus
 
 stores data in form of rows, most full stack applciations use this 
 
+the schemaless property of the noSql dbs make its vulnurable to data getting corrupted
 
 3. Graph DB : data is stored in form of graphs, useful in relationship models, e.g. Neo4j
 
