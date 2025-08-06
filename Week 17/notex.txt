@@ -9,7 +9,12 @@ migrating from mongo to a sql db is hard so applciations generally use the sql d
 
 it is a good thing to have schemas, having strict fields is good as they can catch errors
 
-2. SQL dbs : Postgres, MySQL (structure query language db)
+2. Graph DB : data is stored in form of graphs, useful in relationship models, e.g. Neo4j
+
+3. Vector dbs: store data in form of vectors, embedding is done, useful in machine learning
+e.g. pinecone
+
+4. SQL dbs : Postgres, MySQL (structure query language db)
 promQs is another Query language used for prometheus
 
 stores data in form of rows, most full stack applciations use this 
@@ -28,7 +33,4 @@ there are 4 parts when using a SQL db:
 3. creating a table and defining it's schema 
 4. run queries on the db to interact with the data
 
-3. Graph DB : data is stored in form of graphs, useful in relationship models, e.g. Neo4j
-
-4. Vector dbs: store data in form of vectors, embedding is done, useful in machine learning
-e.g. pinecone
+to start the db go to neon.tech
