@@ -45,5 +45,7 @@ to run it: install it and then write the command
 psql -h hostname -d database name -U username 
 than write the password, you will get connected to the sql db
 
+then write the commands, either locally or in the Sql editor in neon db
+
 this is the connection string
 postgresql://username:password@host/database
