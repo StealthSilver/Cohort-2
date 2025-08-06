@@ -38,5 +38,12 @@ create a new project
 
 psql 'postgresql://neondb_owner:***********f@ep-silent-wave-afzqxl71-pooler.c-2.us-west-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
 
+there are postgresql guis that let you connect to the db 
+1. psql 
+to run it: install it and then write the command 
+
+psql -h hostname -d database name -U username 
+than write the password, you will get connected to the sql db
+
 this is the connection string
 postgresql://username:password@host/database
