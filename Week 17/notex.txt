@@ -10,6 +10,10 @@ migrating from mongo to a sql db is hard so applciations generally use the sql d
 it is a good thing to have schemas, having strict fields is good as they can catch errors
 
 2. SQL dbs : Postgres, MySQL (structure query language db)
+promQs is another Query language used for prometheus
+
+stores data in form of rows, most full stack applciations use this 
+
 
 3. Graph DB : data is stored in form of graphs, useful in relationship models, e.g. Neo4j
 
