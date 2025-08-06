@@ -7,6 +7,8 @@ we can change the schema whenever we want. mongoose library enforces schemas at 
 gatehertown is also using firebase, but scaling firebase and other nosql dbs are hard.
 migrating from mongo to a sql db is hard so applciations generally use the sql dbs 
 
+it is a good thing to have schemas, having strict fields is good as they can catch errors
+
 2. SQL dbs : Postgres, MySQL (structure query language db)
 
 
