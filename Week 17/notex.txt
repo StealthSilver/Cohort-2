@@ -1,0 +1,7 @@
+TYPES OF DBs 
+
+to check if a website is using mongo or not, if there is a _id: field in the api calls.
+
+NoSQL dbs : they are schmealess : a nested structure can be easily created with nosql dbs like mongo and firebase 
+gatehertown is also using firebase, but scaling firebase and other nosql dbs are hard.
+migrating from mongo to a sql db is hard so applciations generally use the sql dbs
