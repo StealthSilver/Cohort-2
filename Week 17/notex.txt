@@ -11,4 +11,6 @@ it is a good thing to have schemas, having strict fields is good as they can cat
 
 2. SQL dbs : Postgres, MySQL (structure query language db)
 
+3. Graph DB : data is stored in form of graphs, useful in relationship models, e.g. Neo4j
 
+4. Vector dbs: store data in form of vectors, embedding is done 
