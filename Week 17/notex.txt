@@ -34,3 +34,4 @@ there are 4 parts when using a SQL db:
 4. run queries on the db to interact with the data
 
 to start the db go to neon.tech
+create a new project
