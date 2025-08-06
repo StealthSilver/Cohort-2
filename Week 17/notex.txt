@@ -22,6 +22,12 @@ to insert data in the db
 2. put the data that follows that schema 
 3. update the schema as the app changes and perform migrations (DB mighration)
 
+there are 4 parts when using a SQL db:
+1. running the db
+2. using a library that lets you connect to the db 
+3. creating a table and defining it's schema 
+4. run queries on the db to interact with the data
+
 3. Graph DB : data is stored in form of graphs, useful in relationship models, e.g. Neo4j
 
 4. Vector dbs: store data in form of vectors, embedding is done, useful in machine learning
