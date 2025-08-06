@@ -35,3 +35,8 @@ there are 4 parts when using a SQL db:
 
 to start the db go to neon.tech
 create a new project
+
+psql 'postgresql://neondb_owner:***********f@ep-silent-wave-afzqxl71-pooler.c-2.us-west-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
+
+this is the connection string
+postgresql://username:password@host/database
