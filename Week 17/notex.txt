@@ -20,7 +20,7 @@ SQl dbs have a strict schema,
 to insert data in the db
 1. define the schemas 
 2. put the data that follows that schema 
-3. update the schema as the app changes and perform migrations
+3. update the schema as the app changes and perform migrations (DB mighration)
 
 3. Graph DB : data is stored in form of graphs, useful in relationship models, e.g. Neo4j
 
