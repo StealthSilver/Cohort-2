@@ -50,3 +50,5 @@ after initilizing, there is a apps folder, inside which there are two next front
 web : the landing page , docs : the documentation
 
 the packages/ui contains the reusable react components that can be used by the web and the docs
+
+npm run dev will start two applications web and docs 
