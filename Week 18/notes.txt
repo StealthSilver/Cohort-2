@@ -7,7 +7,7 @@ NEXT JS
 
 the react is not SEO optimised because of the waterfalling problem 
 
-SEO OPTIMIZATION 
+Search Engine optimisations
 
 Google/Bing has a bunch of crawlers that hit websites and figure out what the website does. 
 It ranks it on Google based on the HTML it gets back
