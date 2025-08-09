@@ -71,3 +71,4 @@ creating the chat app :
 2. create a http server folder in app
 3. create a ws serve folder in app
 
+the packages/ui should containt eh design system of the applciation
