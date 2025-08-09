@@ -62,4 +62,4 @@ if you want 4 frontends in the turborepo. just copy the docs and change the name
 to create the backend, create a server folder and do the typescript init and all
 yarn build or npn build will build the server too
 
-
+if we are creating some production ready code, crete a monorepo
