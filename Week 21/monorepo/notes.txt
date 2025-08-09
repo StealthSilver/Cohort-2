@@ -12,6 +12,9 @@ we can store the services ( backend , frontend) in various top level folders (mo
 1. services are highly decoupled (dont share any code)
 2. services dont depend on each other
 
+but if there is some sharable codes then we can use a monorepo structure where the services are in a single repo 
+e.g. sharing the zod code for both frontend and backend
+
 TURBOREPO 
 
 this is not the monorepo framework 
