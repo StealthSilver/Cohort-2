@@ -68,5 +68,6 @@ npx create-turbo@latest : the turborepo under the hood uses npm / yarn workspace
 creating the chat app :
 
 1. initialize the turborepo 
-2. create a http server folder 
-3. create a ws serve folder
+2. create a http server folder in app
+3. create a ws serve folder in app
+
