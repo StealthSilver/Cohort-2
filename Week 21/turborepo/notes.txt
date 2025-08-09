@@ -40,6 +40,10 @@ turborepo is added to any monorepo project for :
 2. parallelization 
 3. dependency graph awareness
 
+anything cannot be a turborepo if its not a monorepo 
+
 to create a turborepo :
 
 1. npx create-turbo@latest
+
+after initilizing, there is a apps folder, inside which there are two next frontends: web and docs
