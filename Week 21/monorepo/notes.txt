@@ -8,7 +8,7 @@ e.g. 100xdevs/dailycode, dub.sh
 
 in these repo the structure will have app and packages
 
-we can store the services ( backend , frontend) in various top level folders, if
+we can store the services ( backend , frontend) in various top level folders (monorepo framework is not required), if
 1. services are highly decoupled (dont share any code)
 2. services dont depend on each other
 
