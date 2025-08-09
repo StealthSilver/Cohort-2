@@ -64,3 +64,9 @@ yarn build or npn build will build the server too
 
 if we are creating some production ready code, crete a monorepo
 npx create-turbo@latest : the turborepo under the hood uses npm / yarn workspaces
+
+creating the chat app :
+
+1. initialize the turborepo 
+2. create a http server folder 
+3. create a ws serve folder
