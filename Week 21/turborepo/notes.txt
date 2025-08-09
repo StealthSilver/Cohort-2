@@ -52,3 +52,6 @@ web : the landing page , docs : the documentation
 the packages/ui contains the reusable react components that can be used by the web and the docs
 
 npm run dev will start two applications web and docs 
+
+if the code is changes in the web then the web will only rebuild, same with docs.
+as the unchanges files are cached. this helps when there are too many builds in the CI/CD
