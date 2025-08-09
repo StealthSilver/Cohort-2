@@ -39,3 +39,7 @@ turborepo is added to any monorepo project for :
 1. caching 
 2. parallelization 
 3. dependency graph awareness
+
+to create a turborepo :
+
+1. npx create-turbo@latest
