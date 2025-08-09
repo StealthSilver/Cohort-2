@@ -4,3 +4,6 @@ this is a way to structure the application.
 the debate is should we have the frontend, backend and the devops in the same repo, or in the different repo.
 
 if the code is in the same repo, then it is a monorepo. the upside is that the setup is really easy and the downside is that if someone only needs to work on a single part then it is not possible
+e.g. 100xdevs/dailycode, dub.sh 
+
+in these repo the structure will have app and packages
