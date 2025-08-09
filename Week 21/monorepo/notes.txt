@@ -1,0 +1,4 @@
+MONOREPOS
+
+this is a way to structure the application.
+the debate is should we have the frontend, backend and the devops in the same repo, or in the different repo
