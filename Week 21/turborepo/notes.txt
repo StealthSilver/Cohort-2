@@ -61,3 +61,4 @@ if the ui folder is changes then both teh processes restart and both of them dep
 if you want 4 frontends in the turborepo. just copy the docs and change the name in package.json
 to create the backend, create a server folder and do the typescript init and all
 yarn build or npn build will build hte server too
+
