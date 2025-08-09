@@ -108,4 +108,4 @@
 105. coda.io -> how it works can we make something like this
 106. npm , yarn , pnpm -> package managers
 107. using raw monorepos, without turborepos
-018. PWA : progressive web applciations
+108. PWA : progressive web applications
