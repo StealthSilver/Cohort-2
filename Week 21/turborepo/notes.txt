@@ -55,3 +55,5 @@ npm run dev will start two applications web and docs
 
 if the code is changes in the web then the web will only rebuild, same with docs.
 as the unchanges files are cached. this helps when there are too many builds in the CI/CD
+
+if you want 4 frontends in the turborepo. just copy the docs and change the name in package.json
