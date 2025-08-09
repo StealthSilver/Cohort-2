@@ -7,3 +7,11 @@ if the code is in the same repo, then it is a monorepo. the upside is that the s
 e.g. 100xdevs/dailycode, dub.sh 
 
 in these repo the structure will have app and packages
+
+we can store the services ( backend , frontend) in various top level folders, if
+1. services are highly decoupled (dont share any code)
+2. services dont depend on each other
+
+TURBOREPO 
+
+this is not the monorepo framework 
