@@ -29,3 +29,5 @@ created by jared palmer
 build system vs build system orchestrator vs monorepo framework
 
 build systems are the ts to js compilers, bundlers, minification
+
+build system orchestrator (turborepo), the turborepo tell other build tools to call at the defined times
