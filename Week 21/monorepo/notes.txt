@@ -15,6 +15,9 @@ we can store the services ( backend , frontend) in various top level folders (mo
 but if there is some sharable codes then we can use a monorepo structure where the services are in a single repo 
 e.g. sharing the zod code for both frontend and backend
 
+for the monorepo the builds are optimised, tools like turborepo provide optimised build, reduce testing times
+they also have central testing and configuraton files
+
 TURBOREPO 
 
 this is not the monorepo framework 
