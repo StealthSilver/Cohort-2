@@ -18,6 +18,9 @@ e.g. sharing the zod code for both frontend and backend
 for the monorepo the builds are optimised, tools like turborepo provide optimised build, reduce testing times
 they also have central testing and configuraton files
 
+common monorepo frameworks, 
+lerna, nx, turborepo (not exactly a monorepo framework), yarn/npm workspaces
+
 TURBOREPO 
 
-this is not the monorepo framework 
+this is not the monorepo framework , most applications use turborepo now a days
