@@ -26,3 +26,4 @@ TURBOREPO
 this is not the monorepo framework , most applications use turborepo now a days
 created by jared palmer 
 
+build system vs build system orchestrator vs monorepo framework
