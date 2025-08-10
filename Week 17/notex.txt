@@ -57,5 +57,6 @@ SELECT
 UPDATE 
 DELETE 
 
-
 creating a nodejs backend with sql db
+
+using PostgeSQL client, library -> pg 
