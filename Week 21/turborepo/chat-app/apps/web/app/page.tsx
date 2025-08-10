@@ -20,8 +20,10 @@ export default function Home() {
           gap: "10px", 
         }}
       >
-        <TextInput placeholder = "room name"></TextInput>
-        <button
+        <TextInput onChange size = "small"  placeholder = "room name"></TextInput>
+        <button onClick={() =>  {
+          router.push("/chat/123")
+        }}
           style={{
             padding: "8px 16px",
             borderRadius: "4px",
