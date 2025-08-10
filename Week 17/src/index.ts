@@ -8,3 +8,5 @@ async function main(){
     const response = await pgClient.query("SELECT * FROM users;");
     console.log(response);
 }
+
+main()
