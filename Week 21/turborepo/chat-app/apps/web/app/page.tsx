@@ -1,6 +1,11 @@
-import {TextInput} from "@repo/ui/text-input";
+"use client"; // when using functions that are on the browser, it needs to be a client component
+
+import { TextInput } from "@repo/ui/text-input";
+import { useRouter } from "next/navigation"; 
 
 export default function Home() {
+  const router = useRouter(); 
+
   return (
     <div
       style={{
@@ -8,8 +13,8 @@ export default function Home() {
         width: "100vw",
         background: "black",
         display: "flex",
-        justifyContent: "center", 
-        alignItems: "center", 
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <div
@@ -17,13 +22,14 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "10px", 
+          gap: "10px",
         }}
       >
-        <TextInput onChange size = "small"  placeholder = "room name"></TextInput>
-        <button onClick={() =>  {
-          router.push("/chat/123")
-        }}
+        <TextInput size="small" placeholder="room name" />
+        <button
+          onClick={() => {
+            router.push("/chat/123"); 
+          }}
           style={{
             padding: "8px 16px",
             borderRadius: "4px",

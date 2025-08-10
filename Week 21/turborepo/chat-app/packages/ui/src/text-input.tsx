@@ -1,14 +1,14 @@
 interface PropType {
     placeholder: string;
     size: "big" | "small",
-    onChange: (e: any) => void;
+    
 }
 
 export function TextInput({
-    placeholder, size, onChange
+    placeholder, size, 
 }: PropType) {
     return <input
-        
+       
         placeholder={placeholder}
         style={{
             padding: size === "big" ? 20 : 10,
