@@ -49,3 +49,13 @@ then write the commands, either locally or in the Sql editor in neon db
 
 this is the connection string
 postgresql://username:password@host/database
+
+CRUD OPERATIONS 
+
+INSERT
+SELECT 
+UPDATE 
+DELETE 
+
+
+creating a nodejs backend with sql db
