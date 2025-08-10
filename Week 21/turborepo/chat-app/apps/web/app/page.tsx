@@ -1,3 +1,5 @@
+import {TextInput} from "@repo/ui/text-input";
+
 export default function Home() {
   return (
     <div
@@ -18,7 +20,7 @@ export default function Home() {
           gap: "10px", 
         }}
       >
-        
+        <TextInput placeholder = "room name"></TextInput>
         <button
           style={{
             padding: "8px 16px",
