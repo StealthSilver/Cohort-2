@@ -72,3 +72,6 @@ creating the chat app :
 3. create a ws serve folder in app
 
 the packages/ui should containt the design system of the applciation, e.g razorpay storybook 
+
+in case of a nodejs app, the .env file changing should not need a rebuid of the project 
+in case of a nextjs app, the .env file changing does require the rebuild of hte project
