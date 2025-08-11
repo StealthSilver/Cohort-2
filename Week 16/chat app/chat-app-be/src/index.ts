@@ -19,4 +19,8 @@ wss.on("connection", (socket) => {
       s.send(message.toString() + ": sent from the server");
     }
   });
+  // disconnected the offline sockets
+  socket.on("disconnect", () => {
+    allSockets = allSockets.filter(x => x != socket);
+  })
 });
