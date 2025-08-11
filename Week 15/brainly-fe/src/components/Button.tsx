@@ -2,7 +2,9 @@ export interface ButtonProps{
     variant: "primary" | "secondary";
     size: "sm" | "md" | "lg";
     text: string;
-    startIcon: ;
+    startIcon: any;
+    endIcon: any;
+    onClick: () => void;
 }
 
 
