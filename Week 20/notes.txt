@@ -1,0 +1,11 @@
+CLIENT SIDE RENDERING 
+
+it is a modern technique where the rendering of the web page is done in the browser by js
+it is sutomatically done by react 
+
+browser ---> user ---> CDN 
+white page <--- index.html <--- CDN 
+
+script ---> CDN 
+JS runs the dev logic < --- CDN 
+page renders
