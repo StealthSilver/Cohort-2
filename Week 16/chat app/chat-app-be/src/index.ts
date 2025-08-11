@@ -1,3 +1,8 @@
+// creating the chat room
+// functionality :we chech if the message is join then we join them.
+// if the message is something else then jojn tehn we check 
+// if the member is part of the room and if yes then we sent the message to all others in teh room except the sender
+
 import { WebSocketServer, WebSocket } from "ws";
 
 const wss = new WebSocketServer({ port: 8080 });
