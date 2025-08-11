@@ -124,3 +124,4 @@
 121. normalization in sql 
 122. getServerSidePaths in next js and how to statically generate the complete page in next js
 123. remix, astro other framewors on top of react
+124 ** . next js with tailwind bootstrap
