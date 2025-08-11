@@ -48,3 +48,15 @@ if there are multiple pages then nextjs pre-fetch pages
 
 Layouts 
 
+return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <div className="border-b p-4">Quizio</div>
+        {children}
+      </body>
+    </html>
+  );
+
+the children are rendered on the page, you can write code in layout to wrap other code around
