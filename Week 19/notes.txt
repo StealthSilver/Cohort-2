@@ -38,3 +38,7 @@ in react the renering happens in the client side
 in the react application on building the bundles are created and then they can be distributed unlike next js
 
 in react projects we can run the project via CDNs and it is cheaper than next js
+
+page.tsc has the core code, this is what gets rendered
+
+next js has file based routing. create a folder in app called /users and go to localhost:3000/users to get the content on users page
