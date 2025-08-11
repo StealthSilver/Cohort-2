@@ -11,21 +11,28 @@ interface User{
 let allSockets : User[] = [];
 
 wss.on("connection", (socket) => {
-  allSockets.push(socket);
-
-  userCount = userCount + 1;
-  console.log("user connected" + " " + userCount);
+ 
 
   socket.on("message", (message) => {
-    console.log("message recieved " + message.toString());
-    // broadcasting the message to all the sockets
-    for (let i = 0; i < allSockets.length; i++) {
-      const s = allSockets[i];
-      s.send(message.toString() + ": sent from the server");
+    const parsedMessage = JSON.parse(message as unknown as string);
+    if(parsedMessage.type === "join"){
+      allSockets.push({
+        room: parsedMessage.payload.roomId,
+        socket,
+      })
+    }
+
+    if(parsedMessage.type = "chat"){
+      // const currentUserRoom = allSockets.find((x) => x.socket == socket).room
+      let currentUserRoom = null;
+      for(let i=0; i< allSockets.length; i++){
+        if(allSockets[i].socket == socket){
+          currentUserRoom = allSockets[i].room;
+        }
+      }
     }
   });
-  // disconnected the offline sockets
-  socket.on("disconnect", () => {
-    allSockets = allSockets.filter(x => x != socket);
-  })
+
+
+  
 });
