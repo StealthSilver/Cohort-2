@@ -2,135 +2,167 @@ import express from "express";
 import { random } from "./utils";
 import jwt from "jsonwebtoken";
 import { ContentModel, LinkModel, UserModel } from "./db";
-import { JWT_SECRET } from "./config";
+import { JWT_PASSWORD } from "./config";
 import { userMiddleware } from "./middleware";
 import cors from "cors";
 
 const app = express();
-app.use(express.json()); // Middleware to parse JSON request bodies.
-app.use(cors()); // Middleware to allow cross-origin requests.
+app.use(express.json());
+app.use(cors());
 
-// Route 1: User Signup
 app.post("/api/v1/signup", async (req, res) => {
-    // TODO: Use zod or a similar library for input validation.
-    // TODO: Hash the password before storing it in the database.
+    // TODO: zod validation , hash the password
     const username = req.body.username;
     const password = req.body.password;
 
     try {
-        // Create a new user with the provided username and password.
-        await UserModel.create({ username, password });
-        res.json({ message: "User signed up" }); // Send success response.
-    } catch (e) {
-        // Handle errors like duplicate usernames.
-        res.status(409).json({ message: "User already exists" }); // Conflict status.
-    }
-});
+        await UserModel.create({
+            username: username,
+            password: password
+        }) 
 
-// Route 2: User Signin
+        res.json({
+            message: "User signed up"
+        })
+    } catch(e) {
+        res.status(411).json({
+            message: "User already exists"
+        })
+    }
+})
+
 app.post("/api/v1/signin", async (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
 
-    // Find a user with the provided credentials.
-    const existingUser = await UserModel.findOne({ username, password });
+    const existingUser = await UserModel.findOne({
+        username,
+        password
+    })
     if (existingUser) {
-        // Generate a JWT token with the user's ID.
-        const token = jwt.sign({ id: existingUser._id }, JWT_SECRET);
-        res.json({ token }); // Send the token in response.
-    } else {
-        // Send error response for invalid credentials.
-        res.status(403).json({ message: "Incorrect credentials" });
-    }
-});
+        const token = jwt.sign({
+            id: existingUser._id
+        }, JWT_PASSWORD)
 
-// Route 3: Add Content
+        res.json({
+            token
+        })
+    } else {
+        res.status(403).json({
+            message: "Incorrrect credentials"
+        })
+    }
+})
+
 app.post("/api/v1/content", userMiddleware, async (req, res) => {
-    const { link, type, title } = req.body;
-    // Create a new content entry linked to the logged-in user.
+    const link = req.body.link;
+    const type = req.body.type;
     await ContentModel.create({
         link,
         type,
-        title,
-        userId: req.userId, // userId is added by the middleware.
-        tags: [] // Initialize tags as an empty array.
-    });
+        title: req.body.title,
+        userId: req.userId,
+        tags: []
+    })
 
-    res.json({ message: "Content added" }); // Send success response.
-});
+    res.json({
+        message: "Content added"
+    })
+    
+})
 
-// Route 4: Get User Content
 app.get("/api/v1/content", userMiddleware, async (req, res) => {
-    //@ts-ignore
-    const userId = req.userId;  // User ID is fetched from middleware
-    // Fetch all content associated with the user ID and populate username
-    // The `populate` function is used to include additional details from the referenced `userId`.
-    // For example, it will fetch the username linked to the userId.
-    // Since we specified "username", only the username will be included in the result, 
-    // and other details like password won’t be fetched.
-    const content = await ContentModel.find({ userId: userId }).populate("userId", "username");
-    res.json(content);  // Send the content as response
-});
+    // @ts-ignore
+    const userId = req.userId;
+    const content = await ContentModel.find({
+        userId: userId
+    }).populate("userId", "username")
+    res.json({
+        content
+    })
+})
 
-// Route 5: Delete User Content
 app.delete("/api/v1/content", userMiddleware, async (req, res) => {
     const contentId = req.body.contentId;
 
-    // Delete content based on contentId and userId.
-    await ContentModel.deleteMany({ contentId, userId: req.userId });
-    res.json({ message: "Deleted" }); // Send success response.
-});
+    await ContentModel.deleteMany({
+        contentId,
+        userId: req.userId
+    })
 
-// Route 6: Share Content Link
+    res.json({
+        message: "Deleted"
+    })
+})
+
 app.post("/api/v1/brain/share", userMiddleware, async (req, res) => {
-    const { share } = req.body;
+    const share = req.body.share;
     if (share) {
-        // Check if a link already exists for the user.
-        const existingLink = await LinkModel.findOne({ userId: req.userId });
-        if (existingLink) {
-            res.json({ hash: existingLink.hash }); // Send existing hash if found.
-            return;
-        }
+            const existingLink = await LinkModel.findOne({
+                userId: req.userId
+            });
 
-        // Generate a new hash for the shareable link.
-        const hash = random(10);
-        await LinkModel.create({ userId: req.userId, hash });
-        res.json({ hash }); // Send new hash in the response.
+            if (existingLink) {
+                res.json({
+                    hash: existingLink.hash
+                })
+                return;
+            }
+            const hash = random(10);
+            await LinkModel.create({
+                userId: req.userId,
+                hash: hash
+            })
+
+            res.json({
+                hash
+            })
     } else {
-        // Remove the shareable link if share is false.
-        await LinkModel.deleteOne({ userId: req.userId });
-        res.json({ message: "Removed link" }); // Send success response.
-    }
-});
+        await LinkModel.deleteOne({
+            userId: req.userId
+        });
 
-// Route 7: Get Shared Content
+        res.json({
+            message: "Removed link"
+        })
+    }
+})
+
 app.get("/api/v1/brain/:shareLink", async (req, res) => {
     const hash = req.params.shareLink;
 
-    // Find the link using the provided hash.
-    const link = await LinkModel.findOne({ hash });
+    const link = await LinkModel.findOne({
+        hash
+    });
+
     if (!link) {
-        res.status(404).json({ message: "Invalid share link" }); // Send error if not found.
+        res.status(411).json({
+            message: "Sorry incorrect input"
+        })
         return;
     }
+    // userId
+    const content = await ContentModel.find({
+        userId: link.userId
+    })
 
-    // Fetch content and user details for the shareable link.
-    const content = await ContentModel.find({ userId: link.userId });
-    const user = await UserModel.findOne({ _id: link.userId });
+    console.log(link);
+    const user = await UserModel.findOne({
+        _id: link.userId
+    })
 
     if (!user) {
-        res.status(404).json({ message: "User not found" }); // Handle missing user case.
+        res.status(411).json({
+            message: "user not found, error should ideally not happen"
+        })
         return;
     }
 
     res.json({
         username: user.username,
-        content
-    }); // Send user and content details in response.
-});
+        content: content
+    })
 
-// Start the server
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-});
+})
 
+app.listen(3000);
