@@ -43,3 +43,8 @@ page.tsc has the core code, this is what gets rendered
 
 next js has file based routing. create a folder in app called /users and go to localhost:3000/users to get the content on users page
 we can create recursive routes too in the app/ users create /admin to write the logic for the localhost:3000/users/admin url
+
+if there are multiple pages then nextjs pre-fetch pages 
+
+Layouts 
+
