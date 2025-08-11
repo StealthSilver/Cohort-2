@@ -1,12 +1,36 @@
-import {Client} from "pg";
 
-const pgClient = new Client('postgresql://neondb_owner:npg_i1FznEcw3Aqf@ep-silent-wave-afzqxl71-pooler.c-2.us-west-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require');
+import express from "express";
+import { Client } from "pg";
 
-async function main(){
-    await pgClient.connect();
+const app = express();
+app.use(express.json());
 
-    const response = await pgClient.query("SELECT * FROM users;");
-    console.log(response);
-}
+const pgClient = new Client("postgresql://neondb_owner:wrWG5KI1ziYB@ep-lucky-snow-a50il0b5.us-east-2.aws.neon.tech/neondb?sslmode=require")
 
-main()
+pgClient.connect();
+
+
+app.post("/signup", async (req: { body: { username: any; password: any; email: any; }; }, res: { json: (arg0: { message: string; }) => void; }) => {
+    const username = req.body.username;
+    const password = req.body.password;
+    const email = req.body.email;
+
+    try {
+
+        const insertQuery = `INSERT INTO users (username, email, password) VALUES ($1, $2, $3);`
+
+        const response = await pgClient.query(insertQuery, [username, email, password]);
+
+        res.json({
+            message: "You have signed up"
+        })
+    } catch(e) {
+        console.log(e);
+        res.json({
+            message: "Error while signing up"
+        })
+    }
+
+})
+
+app.listen(3000)
