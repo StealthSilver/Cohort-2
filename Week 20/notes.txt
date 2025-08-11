@@ -17,4 +17,7 @@ the browser is waterfalling the requests one aftere the other.
 
 SERVER SIDE RENDERING 
 
-when the rendering process happens on the server its called server side rendering.
+when the rendering process happens on the server, this is provided by next js
+
+browser ---> url ---> next server ---> db 
+page renders with the details <--- html is populated <--- next server 
