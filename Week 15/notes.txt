@@ -53,3 +53,4 @@ any text can be converted into a vector. we can give the text to an embedding mo
 similar text have similar embeddings
 create a vector database from all the knowledge base and query according to their search
 
+creating the generic button component
