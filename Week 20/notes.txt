@@ -21,3 +21,4 @@ when the rendering process happens on the server, this is provided by next js
 
 browser ---> url ---> next server ---> db 
 page renders with the details <--- html is populated <--- next server 
+the server lifted the components from the server. it is seo optimised, gets rid of hte waterfalling problem as only one request is sent
