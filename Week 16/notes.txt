@@ -81,3 +81,5 @@ Cloud Load Balancers (AWS ELB, Google Cloud Load Balancer, etc.)
 
 ** only the real time messages pass trough the web sockets 
 ** and message in the ledger is stored in local storage and then http requests are sent to give messages
+
+heartbeating is the process in which servers send messages to each other to check wether they are online or offline
