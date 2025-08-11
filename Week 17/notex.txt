@@ -69,3 +69,20 @@ relationships let store data in different table and let us connect the tables
 no-sql databases do not support foreign keys
 
 transactions are combined queries, so that either bith teh queries succeed or both fails
+
+BEGIN; -- or START TRANSACTION;
+
+-- Step 1: Deduct ₹500 from Account 1
+UPDATE accounts
+SET balance = balance - 500
+WHERE account_id = 1;
+
+-- Step 2: Add ₹500 to Account 2
+UPDATE accounts
+SET balance = balance + 500
+WHERE account_id = 2;
+
+-- Step 3: If everything is fine, commit the changes
+COMMIT;
+
+
