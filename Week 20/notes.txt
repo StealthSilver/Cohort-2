@@ -33,4 +33,4 @@ STATIC SITE GENERATION
 at ssg the page's HTML is generated at the build time and converted into a static file which does not change.
 when the user goes on the page it is not re-rendered. this is only possible for static pages
 
-by default the components in next js are statically generated
+by default the components in next js are statically generated, there is no re-rendering
