@@ -6,7 +6,6 @@
 import { WebSocketServer, WebSocket } from "ws";
 
 const wss = new WebSocketServer({ port: 8080 });
-let userCount = 0;
 
 interface User {
   socket: WebSocket;
@@ -16,29 +15,55 @@ interface User {
 let allSockets: User[] = [];
 
 wss.on("connection", (socket) => {
+  console.log("New client connected");
+
   socket.on("message", (message) => {
-    const parsedMessage = JSON.parse(message as unknown as string);
+    let parsedMessage: any;
+    try {
+      parsedMessage = JSON.parse(message.toString());
+    } catch (e) {
+      console.error("Invalid JSON:", message.toString());
+      return;
+    }
+
     if (parsedMessage.type === "join") {
-      allSockets.push({
-        room: parsedMessage.payload.roomId,
-        socket,
+      const roomId = parsedMessage.payload?.roomId;
+      if (!roomId) return;
+
+      allSockets.push({ socket, room: roomId });
+      console.log(`User joined room: ${roomId}`);
+
+      socket.send(JSON.stringify({
+        type: "system",
+        payload: { message: `You joined room: ${roomId}` }
+      }));
+    }
+
+    if (parsedMessage.type === "chat") {
+      const currentUser = allSockets.find((x) => x.socket === socket);
+      if (!currentUser) return;
+
+      const currentUserRoom = currentUser.room;
+      const chatMessage = parsedMessage.payload?.message;
+
+      if (!chatMessage) return;
+
+      // Broadcast to everyone in the same room
+      allSockets.forEach((user) => {
+        if (user.room === currentUserRoom) {
+          user.socket.send(JSON.stringify({
+            type: "chat",
+            payload: { message: chatMessage }
+          }));
+        }
       });
     }
+  });
 
-    if ((parsedMessage.type = "chat")) {
-      // const currentUserRoom = allSockets.find((x) => x.socket == socket).room
-      let currentUserRoom = null;
-      for (let i = 0; i < allSockets.length; i++) {
-        if (allSockets[i].socket == socket) {
-          currentUserRoom = allSockets[i].room;
-        }
-      }
-
-      for(let i=0; i<allSockets.length; i++){
-        if(allSockets[i].room == currentUserRoom){
-          allSockets[i].socket.send(parsedMessage.payload.message)
-        }
-      }
-    }
+  socket.on("close", () => {
+    console.log("Client disconnected");
+    allSockets = allSockets.filter((user) => user.socket !== socket);
   });
 });
+
+console.log("WebSocket server running on ws://localhost:8080");
