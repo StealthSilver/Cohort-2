@@ -52,3 +52,4 @@ Vector Embedding
 any text can be converted into a vector. we can give the text to an embedding model and it will return us higher dimention vectors
 similar text have similar embeddings
 create a vector database from all the knowledge base and query according to their search
+

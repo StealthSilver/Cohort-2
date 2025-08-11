@@ -113,3 +113,4 @@
 110. create the week 21 chat app
 111. open source repos : dub.sh, documento
 112. preventing sql injections : week 17 
+113. complete the brainly app, week 15 with AI and vector embeddings
