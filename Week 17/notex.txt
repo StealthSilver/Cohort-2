@@ -86,3 +86,5 @@ WHERE account_id = 2;
 COMMIT;
 
 
+Joins in sql is joining data between two tables
+
