@@ -116,3 +116,4 @@
 113. complete the brainly app, week 15 with AI and vector embeddings
 114. swc and swr for creting the react project
 115. complete projects on quiz.100xdevs.com
+116. pub-sub model
