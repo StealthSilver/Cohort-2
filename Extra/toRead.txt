@@ -117,3 +117,4 @@
 114. swc and swr for creting the react project
 115. complete projects on quiz.100xdevs.com
 116. pub-sub model
+117. websocket vs sse vs socketio vs mqtt
