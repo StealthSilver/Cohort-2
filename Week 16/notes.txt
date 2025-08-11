@@ -85,3 +85,5 @@ Cloud Load Balancers (AWS ELB, Google Cloud Load Balancer, etc.)
 heartbeating is the process in which servers send messages to each other to check wether they are online or offline
 
 using pub sub for websockets
+
+chat app : a broadcast chat app
