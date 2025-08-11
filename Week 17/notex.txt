@@ -62,3 +62,7 @@ creating a nodejs backend with sql db
 using PostgeSQL client, library -> pg 
 
 Relationships and Transactions 
+
+no-sql databases do not prevent a nested structure for the db. it is good for a course selling application
+
+relationships let store data in different table and let us connect the tables
