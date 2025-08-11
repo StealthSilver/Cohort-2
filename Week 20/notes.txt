@@ -24,3 +24,11 @@ page renders with the details <--- html is populated <--- next server
 the server lifted the components from the server. it is seo optimised, gets rid of hte waterfalling problem as only one request is sent
 
 ssr is expensive, vercel bill is high
+harder to scale as we cannot scale it through CDNs 
+
+how to make SSR less expensive 
+
+STATIC SITE GENERATION 
+
+at ssg the page is generated at the build time and converted into a static file which does not change.
+when the user goes on the page it is not re-rendered. this is only possible for static pages
