@@ -122,3 +122,4 @@
 119. how slack and discord works, how fan architecture can be used with the pub-sub model
 120. when we upload images or docs they are first uploaded to s3 and then the url is shared in the chat (whatsapp)
 121. normalization in sql 
+122. getServerSidePaths in next js and how to statically generate the complete page in next js
