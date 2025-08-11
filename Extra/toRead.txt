@@ -118,3 +118,4 @@
 115. complete projects on quiz.100xdevs.com
 116. pub-sub model
 117. websocket vs sse vs socketio vs mqtt
+118 ** . the week 16 chat-app-fe has the tailwind with react bootstrap
