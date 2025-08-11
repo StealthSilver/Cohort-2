@@ -16,7 +16,7 @@ wss.on("connection", (socket) => {
     // broadcasting the message to all the sockets
     for (let i = 0; i < allSockets.length; i++) {
       const s = allSockets[i];
-      socket.send(message.toString() + ": sent from the server");
+      s.send(message.toString() + ": sent from the server");
     }
   });
 });
