@@ -119,5 +119,5 @@
 116. pub-sub model
 117. websocket vs sse vs socketio vs mqtt
 118 ** . the week 16 chat-app-fe has the tailwind with react bootstrap
-119. how slack and discord works
+119. how slack and discord works, how fan architecture can be used with the pub-sub model
 120. when we upload images or docs they are first uploaded to s3 and then the url is shared in the chat (whatsapp)
