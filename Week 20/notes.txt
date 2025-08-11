@@ -36,4 +36,4 @@ when the user goes on the page it is not re-rendered. this is only possible for 
 by default the components in next js are statically generated, there is no re-rendering
 
 we can revalidate the cache and then the page can be updated using revalidate
-
+also we can use next actions
