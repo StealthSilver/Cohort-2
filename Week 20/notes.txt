@@ -34,3 +34,6 @@ at ssg the page's HTML is generated at the build time and converted into a stati
 when the user goes on the page it is not re-rendered. this is only possible for static pages
 
 by default the components in next js are statically generated, there is no re-rendering
+
+we can revalidate the cache and then the page can be updated using revalidate
+
