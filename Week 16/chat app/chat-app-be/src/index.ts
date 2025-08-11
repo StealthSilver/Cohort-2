@@ -3,7 +3,12 @@ import { WebSocketServer, WebSocket } from "ws";
 const wss = new WebSocketServer({ port: 8080 });
 let userCount = 0;
 
-let allSockets: WebSocket[] = [];
+interface User{
+  socket: WebSocket;
+  room: string;
+}
+
+let allSockets : User[] = [];
 
 wss.on("connection", (socket) => {
   allSockets.push(socket);
