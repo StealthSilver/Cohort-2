@@ -25,4 +25,8 @@ this will generate a schema.prisma and the .env file
 write the db url in the .env file 
 
 create the models and write the schema
-tehn migrate the db, command : npx prisma migrate dev
+then migrate the db, command : npx prisma migrate dev
+
+now we have to change the schema in schema.prisma and then re-migrate, it will automatically genereate the migrations and tables
+
+to dry run a migration in prisma 
