@@ -47,3 +47,8 @@ there are a diffrent types of realtionships, one-many , one-one, many-one, many-
 sometimes dummy data is added in the databse in the seeed file
 
 recommended to install prisma as dev dependency
+
+there are three workspace enviornments 
+
+dev        - staging -  prod
+developing - testing -  for users
