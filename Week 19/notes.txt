@@ -84,4 +84,7 @@ turpopack is a bundler for next js
 SERVER SIDE NEXT JS (as next js is a fullstack framework)
 
 make most projects in next js if thre is no reason to use react,
-mosttly the landing pages are in next js but the core application is in react
+mostly the landing pages are in next js but the core application is in react
+
+
+since the application can have both the frontend and backend in the same origin so there is no cors issues 
