@@ -40,3 +40,6 @@ client represents all the functions that convert the orm provided functions into
 
 ** remove the output   = "../src/generated/prisma" from the prisma.schema 
 it will else give errors
+
+relationships: 
+there are a diffrent types of realtionships, one-many , one-one, many-one, many-many
