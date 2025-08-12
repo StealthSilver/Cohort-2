@@ -1,10 +1,19 @@
 import  {NextResponse, NextRequest} from "next/server";
+import { PrismaClient } from "@prisma/client/extension";
+
+const prismaClient = new PrismaClient();
 
 export async function POST(req: NextRequest){
 
     const data = await req.json();
 
-    console.log(data);
+prismaClient.user.create({
+    data: {
+        username: data.username, 
+        password: data.password
+    }
+})
+    
     return NextResponse.json({
         message: "you have been signed up"
     })
