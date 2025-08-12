@@ -132,3 +132,4 @@
 129. cms codebase : github.com/code100xdevs/cms
 130. default export and constant export
 131. redis and caching
+132. rfc (request for code) for the react server component and client component
