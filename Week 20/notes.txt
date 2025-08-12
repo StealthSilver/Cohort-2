@@ -31,6 +31,11 @@ if the page is completely static and has no dynamic data then it can be statical
 to get the static pages , npm run build, the pages with circles are statically generate
 we can also force client side render
 
+HYDRATION
+
+client components and server components
+there are some components that will render on the server but will never render on the client
+
 browser ---> user ---> CDN 
 white page <--- index.html <--- CDN 
 
