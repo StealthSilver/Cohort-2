@@ -1,1 +1,6 @@
-PRISMA
+ORMs 
+
+Object-Relational Mapping 
+this is a pogramming technique to convert incompatible data typw systems in object oriented programming languages
+this creates a virtual object database ß
+
