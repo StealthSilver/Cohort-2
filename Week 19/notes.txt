@@ -82,3 +82,5 @@ export default function Profile(){
 turpopack is a bundler for next js
 
 SERVER SIDE NEXT JS
+
+make most projects in next js if thre is no reason to use react
