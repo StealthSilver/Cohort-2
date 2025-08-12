@@ -126,3 +126,4 @@
 123. remix, astro other framewors on top of react
 124 ** . next js with tailwind bootstrap
 125. openapi spec
+126. create the express todo with prisma
