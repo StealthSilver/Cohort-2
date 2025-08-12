@@ -20,8 +20,10 @@ CLIENT SIDE RENDERING
 it is a modern technique where the rendering of the web page is done in the browser by js
 it is sutomatically done by react 
 
-CLIENT SIDE RENDERING : this happens in react
-STATIC SITE GENERATION
+CLIENT SIDE RENDERING : only this happens in react, there is no ssr in react.
+next js has client side rendering but also has server side rendering 
+
+STATIC SITE GENERATION : 
 
 browser ---> user ---> CDN 
 white page <--- index.html <--- CDN 
