@@ -40,6 +40,9 @@ but some component do change over time we make them the client components, they 
 
 both the client and server side components are rendered on the server side, if using RTCPpperconnection, useState, useEffect, onClick then they must me client components
 
+hydration is the process by which a client side js framework such as reaact takes over an already rendered HTML page and makes it interactive.
+in next js the html page is server side rendered ir statically generated. On the client side the static page is hydrated wit React's bundle by event listeners and interactive behaviour
+
 browser ---> user ---> CDN 
 white page <--- index.html <--- CDN 
 
