@@ -37,3 +37,6 @@ if there is already some data in the then if a new field is added then either ma
 
 generating the prisma client : npx prisma generate
 client represents all the functions that convert the orm provided functions into SQL code
+
+** remove the output   = "../src/generated/prisma" from the prisma.schema 
+it will else give errors
