@@ -1,3 +1,9 @@
+
+
+
+
+
+
 CLIENT SIDE RENDERING 
 
 it is a modern technique where the rendering of the web page is done in the browser by js
