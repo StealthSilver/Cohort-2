@@ -140,3 +140,5 @@
 137. SEO crawlers dont do to auth pages
 138. pg ai used for RAGs
 139. simba like application
+140. serverless backends
+141. architecture of probo
