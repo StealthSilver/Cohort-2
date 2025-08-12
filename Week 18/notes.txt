@@ -4,3 +4,4 @@ Object-Relational Mapping
 this is a pogramming technique to convert incompatible data typw systems in object oriented programming languages
 this creates a virtual object database ß
 
+mongoose is sort of a orm -> it is a ODM (object document mapping)
