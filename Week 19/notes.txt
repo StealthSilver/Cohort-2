@@ -61,3 +61,20 @@ return (
 
 the children are rendered on the page, you can write code in layout to wrap other code around
 
+any repo which is inside the circular braces () will not be considered in the route 
+
+HYDRATION 
+
+this is the processing of checking if the components on the server side match the client side.
+if there is a mismatch it emmits an hydration error.
+
+'use client'
+
+export default function Profile(){
+    let x = new Date().getTime();
+
+    return <div>
+    Profile Page(x)
+    </div>
+    
+}
