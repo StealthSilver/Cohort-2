@@ -45,3 +45,5 @@ relationships:
 there are a diffrent types of realtionships, one-many , one-one, many-one, many-many
 
 sometimes dummy data is added in the databse in the seeed file
+
+recommended to install prisma as dev dependency
