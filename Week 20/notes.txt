@@ -1,5 +1,5 @@
 
-
+if any folder is wrapped in the () they are not used in url
 
 
 
