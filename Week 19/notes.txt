@@ -80,3 +80,5 @@ export default function Profile(){
 }
 
 turpopack is a bundler for next js
+
+SERVER SIDE NEXT JS
