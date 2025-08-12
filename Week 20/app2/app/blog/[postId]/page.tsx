@@ -1,5 +1,16 @@
-export default function BlogPage(){
-return <div>
-    Blog page
-</div>
-}
+interface BlogPageProps {
+    params: {
+      blogId: string;
+    };
+  }
+  
+  export default function BlogPage({ params }: BlogPageProps) {
+    const postId = params.blogId;
+  
+    return (
+      <div>
+        Blog page {postId}
+      </div>
+    );
+  }
+  
