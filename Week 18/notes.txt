@@ -10,3 +10,5 @@ PRISMA, this is an ORM
 this is helps in migration from one db to another.
 
 * migrating the raw data is really tought but chnaging the server side code is easy
+
+Prisma gives us automatic migrations 
