@@ -72,9 +72,9 @@ if there is a mismatch it emmits an hydration error.
 
 export default function Profile(){
     let x = new Date().getTime();
-
+    // wrap this in the use effect
     return <div>
     Profile Page(x)
     </div>
-    
+
 }
