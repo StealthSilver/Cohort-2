@@ -88,3 +88,7 @@ external providers :
 autho.com 
 clerk.com
 firebase auth
+
+we can use it without nextAuth by using in house cookies
+
+to login with google / facebook we can use Oauth protocol
