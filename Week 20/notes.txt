@@ -95,3 +95,5 @@ to login with google / facebook we can use Oauth protocol
 
 the first request cannot have the request header with the token. so the jwt approach or the local storage approach cannot be used in next js
 so we use the cookie approach
+
+in next js by default there is ssr so we cannot use the localstorage over there
