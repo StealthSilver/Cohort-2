@@ -103,4 +103,8 @@ too many requests are going out, waterfalling problem
 for the next js 
 browser -> nextjs server -> backend server
 
+app3 using next js without server side rendering
 by default the next components are server components. when using useState, useEffect then use the 'use client'
+
+app4 actual server side rendering
+here the intiial html will get the pre-rendered html
