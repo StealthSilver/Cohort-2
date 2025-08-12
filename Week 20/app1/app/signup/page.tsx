@@ -1,9 +1,9 @@
 export default function(){
     return <div>
-        Sign in
+        Sign up
         <br />
         <input type="text"></input>
         <input type="text"></input>
-        <button>Sign in</button>
+        <button>Sign up</button>
     </div>
 }
