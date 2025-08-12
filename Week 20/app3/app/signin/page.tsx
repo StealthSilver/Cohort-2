@@ -12,7 +12,7 @@ export default function SignInPage() {
       username,
       password,
       redirect: true,
-      callbackUrl: "/", // After login, go to homepage
+      callbackUrl: "/", 
     });
   };
 
