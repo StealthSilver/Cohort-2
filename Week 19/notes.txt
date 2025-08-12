@@ -96,4 +96,6 @@ for nextJS the frontend and backend are deployed on the same machine
 
 for the react frontend. 
 there is the first hit to the frontend and a empty html is returned.
-the next hit gets the js and te componets are mounted and rendered
+the next hit gets the js and the componets are mounted and rendered
+
+too many requests are going out, waterfalling problem
