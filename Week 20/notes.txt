@@ -1,6 +1,7 @@
 ROUTE GROUPS
 if any folder is wrapped in the () they are not used in url
 
+app1: the layout in the (auth) route will only apply on the signin and signup page
 
 
 
