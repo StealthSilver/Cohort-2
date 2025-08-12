@@ -104,3 +104,6 @@ all the companies which use OAuth can be provided via Next Auth
 use a catch all route by creating api/auth/[...nextAuth]/route.ts
 
 app3 this will give the default signin page on localhost:300/api/auth/signin we can ovverride this but this is the basic page with next auth
+
+we can add more providers by next auth and providers 
+
