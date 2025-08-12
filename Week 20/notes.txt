@@ -3,6 +3,12 @@ if any folder is wrapped in the () they are not used in url
 
 app1: the layout in the (auth) route will only apply on the signin and signup page
 
+DYNAMIC ROUTES 
+
+a folder or file in the form [slug] defines a dynamic parameter in the route
+e.g. /blog/[slug] might match /blog/1 or /blog/2
+
+app2: using dynamic routes 
 
 
 CLIENT SIDE RENDERING 
