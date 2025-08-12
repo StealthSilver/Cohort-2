@@ -102,3 +102,5 @@ too many requests are going out, waterfalling problem
 
 for the next js 
 browser -> nextjs server -> backend server
+
+by default the next components are server components. when using useState, useEffect then use the 'use client'
