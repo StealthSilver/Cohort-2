@@ -43,6 +43,8 @@ both the client and server side components are rendered on the server side, if u
 hydration is the process by which a client side js framework such as reaact takes over an already rendered HTML page and makes it interactive.
 in next js the html page is server side rendered ir statically generated. On the client side the static page is hydrated wit React's bundle by event listeners and interactive behaviour
 
+hydration happens on the client side
+
 browser ---> user ---> CDN 
 white page <--- index.html <--- CDN 
 
