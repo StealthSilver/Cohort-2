@@ -11,4 +11,6 @@ this is helps in migration from one db to another.
 
 * migrating the raw data is really tought but chnaging the server side code is easy
 
-Prisma gives us automatic migrations 
+Prisma gives us automatic migrations if using pg we will need to create mgrations by our own.
+
+PRISMA can be used with mongo, mysql, postgres
