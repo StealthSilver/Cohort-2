@@ -56,7 +56,7 @@ export default function Signin() {
                     disabled={loading}
                     className="w-full p-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition disabled:bg-blue-300"
                 >
-                    {loading ? "Signing in..." : "Sign In"}
+                    {loading ? "Signing up..." : "Sign up"}
                 </button>
 
                 {message && (
