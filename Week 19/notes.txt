@@ -99,3 +99,6 @@ there is the first hit to the frontend and a empty html is returned.
 the next hit gets the js and the componets are mounted and rendered
 
 too many requests are going out, waterfalling problem
+
+for the next js 
+browser -> nextjs server -> backend server
