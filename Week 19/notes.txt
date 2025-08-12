@@ -116,4 +116,4 @@ frontend and backend on the same server
 
 using next js and prisma together can create too many db conections due to hot module reloading so use a singleton
 
-serverless means the responsibily of scaling is given to someone else and you dont need to worry
+serverless means the responsibily of scaling is given to someone else and you dont need to worry, the code is yet on the server you dont know where
