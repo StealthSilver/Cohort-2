@@ -139,3 +139,4 @@
 136. superbase 
 137. SEO crawlers dont do to auth pages
 138. pg ai used for RAGs
+139. simba like application
