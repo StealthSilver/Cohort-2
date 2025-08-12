@@ -36,6 +36,8 @@ HYDRATION
 client components and server components
 there are some components that will render on the server but will never render on the client
 
+but some component do change over time we make them the client components
+
 browser ---> user ---> CDN 
 white page <--- index.html <--- CDN 
 
