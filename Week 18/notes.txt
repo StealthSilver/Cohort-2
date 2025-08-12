@@ -34,3 +34,5 @@ to dry run a migration in prisma
 whenever the schema is changed then remigrate the db
 
 if there is already some data in the then if a new field is added then either make the field optional or give it  default value which will be applied to all the entries from before
+
+generating the prisma client
