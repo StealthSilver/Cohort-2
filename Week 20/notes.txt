@@ -101,4 +101,5 @@ in next js by default there is ssr so we cannot use the localstorage over there
 nextAuth supports providers. login with email, login with google, login with faceboot.
 all the companies which use OAuth can be provided via Next Auth
 
-use a catchall route by creating api/auth/[...nextAuth]/route.ts
+use a catch all route by creating api/auth/[...nextAuth]/route.ts
+
