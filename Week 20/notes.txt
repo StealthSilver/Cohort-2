@@ -79,3 +79,12 @@ by default the components in next js are statically generated, there is no re-re
 
 we can revalidate the cache and then the page can be updated using revalidate
 also we can use next actions
+
+NEXT AUTH 
+
+this is a authentication library, used in next js
+
+external providers :
+autho.com 
+clerk.com
+firebase auth
