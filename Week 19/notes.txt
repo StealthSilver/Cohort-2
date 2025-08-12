@@ -113,3 +113,5 @@ also create a loading.tsx so that the next js falls back on loading until the co
 
 app5
 frontend and backend on the same server
+
+using next js and prisma together can create too many db conections due to hot module reloading so use a singleton
