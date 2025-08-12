@@ -13,13 +13,15 @@ const client_1 = require("@prisma/client");
 const client = new client_1.PrismaClient();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        yield client.user.create({
-            data: {
-                username: 'John Doe',
-                password: 'john@example.com',
-                age: 32,
+        const user = yield client.user.findFirst({
+            where: {
+                id: 1
             },
+            include: {
+                todos: true
+            }
         });
+        console.log(user);
     });
 }
 main()

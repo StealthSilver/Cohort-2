@@ -4,13 +4,16 @@ import { PrismaClient } from '@prisma/client';
 const client = new PrismaClient();
 
 async function main() {
-    await client.user.create({
-        data: {
-            username: 'John Doe',
-            password: 'john@example.com',
-            age: 32,
+    const user = await client.user.findFirst({
+        where: {
+            id:1
         },
-    });
+        include: {
+            todos: true
+        }
+    })
+
+    console.log(user)
 }
 
 main()
