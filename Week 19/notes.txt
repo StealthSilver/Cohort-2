@@ -88,3 +88,8 @@ mostly the landing pages are in next js but the core application is in react
 
 
 since the application can have both the frontend and backend in the same origin so there is no cors issues 
+
+react -> s3 / object store 
+node js -> EC2 virtual machine 
+
+for nextJS the frontend and backend are deployed on the same machine
