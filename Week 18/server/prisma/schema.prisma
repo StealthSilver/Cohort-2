@@ -10,7 +10,7 @@ datasource db {
 }
 
 model User {
-  id          Int       @default(autoincrement)   @id
+  id          Int       @default(autoincrement())   @id
   username    String    @unique
   password    String 
   age         Int

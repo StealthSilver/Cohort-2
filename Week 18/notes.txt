@@ -23,3 +23,6 @@ then npx prisma init
 
 this will generate a schema.prisma and the .env file
 write the db url in the .env file 
+
+create the models and write the schema
+tehn migrate the db, command : npx prisma migrate dev
