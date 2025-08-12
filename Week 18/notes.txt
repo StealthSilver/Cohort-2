@@ -14,3 +14,12 @@ this is helps in migration from one db to another.
 Prisma gives us automatic migrations if using pg we will need to create mgrations by our own.
 
 PRISMA can be used with mongo, mysql, postgres
+
+creating a prisma app 
+
+initialize the ts server 
+
+then npx prisma init 
+
+this will generate a schema.prisma and the .env file
+write the db url in the .env file 
