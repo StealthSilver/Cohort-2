@@ -81,7 +81,7 @@ export default function Profile(){
 
 turpopack is a bundler for next js
 
-SERVER SIDE NEXT JS
+SERVER SIDE NEXT JS (as next js is a fullstack framework)
 
 make most projects in next js if thre is no reason to use react,
 mosttly the landing pages are in next js but the core application is in react
