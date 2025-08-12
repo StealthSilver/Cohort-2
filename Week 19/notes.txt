@@ -108,3 +108,8 @@ by default the next components are server components. when using useState, useEf
 
 app4 actual server side rendering
 here the intiial html will get the pre-rendered html
+
+also create a loading.tsx so that the next js falls back on loading until the content appears from page.tsx
+
+app5
+frontend and backend on the same server
