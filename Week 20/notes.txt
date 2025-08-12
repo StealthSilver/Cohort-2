@@ -28,6 +28,8 @@ SERVER SIDE RENDERING : the initial page on the next js renders on the next serv
 STATIC SITE GENERATION : gastby framework were heavy on static file generation
 if the page is completely static and has no dynamic data then it can be statically generated, also static parts on the dynamic page can also be statically generated and dumped in a html file
 
+to get hte static pages , npm run build, the pages with circles are statically generate
+
 browser ---> user ---> CDN 
 white page <--- index.html <--- CDN 
 
