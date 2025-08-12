@@ -97,3 +97,6 @@ the first request cannot have the request header with the token. so the jwt appr
 so we use the cookie approach
 
 in next js by default there is ssr so we cannot use the localstorage over there
+
+nextAuth supports providers. login with email, login with google, login with faceboot.
+all the companies which use OAuth can be provided via Next Auth
