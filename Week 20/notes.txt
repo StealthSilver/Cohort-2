@@ -10,6 +10,10 @@ e.g. /blog/[slug] might match /blog/1 or /blog/2
 
 app2: using dynamic routes 
 
+CATCH ALL SEGMENT 
+
+this is used ot create infinite nested folders
+[...blogs] -> this will catch everything after the blogs in blogs/1/2/3/4/
 
 CLIENT SIDE RENDERING 
 
