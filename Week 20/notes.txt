@@ -92,3 +92,5 @@ firebase auth
 we can use it without nextAuth by using in house cookies
 
 to login with google / facebook we can use Oauth protocol
+
+the first request cannot have the request header with the token. so the jwt approach or the local storage approach cannot be used in next js
