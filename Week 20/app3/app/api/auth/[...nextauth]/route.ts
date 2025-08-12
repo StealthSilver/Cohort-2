@@ -1,28 +1,31 @@
-
-import NextAuth from "next-auth";
+import NextAuth, { AuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-console.log(process.env.NEXTAUTH_SECRET);
-const handler = NextAuth({
-    providers: [
-        CredentialsProvider({
-            name: "Email",
-            credentials: {
-              username: { label: "Username", type: "text", placeholder: "jsmith" },
-              password: { label: "Password", type: "password" }
-            },
-            async authorize(credentials, req) {
-              
-                return {
-                    name: "pogoo",
-                    id: "1",
-                    email: "pogo@gmail.com"
-                }
-            },
-          })
-    ],
-    secret: process.env.NEXTAUTH_SECRET
-});
+export const authOptions: AuthOptions = {
+  providers: [
+    CredentialsProvider({
+      name: "Email",
+      credentials: {
+        username: { label: "Username", type: "text", placeholder: "jsmith" },
+        password: { label: "Password", type: "password" },
+      },
+      async authorize(credentials) {
+        if (
+          credentials?.username === "pogo" &&
+          credentials?.password === "123"
+        ) {
+          return { id: "1", name: "pogoo", email: "pogo@gmail.com" };
+        }
+        return null;
+      },
+    }),
+  ],
+  secret: process.env.NEXTAUTH_SECRET,
+  pages: {
+    signIn: "/signin",
+  },
+};
 
-export const GET = handler;
-export const POST = handler;
+const handler = NextAuth(authOptions);
+
+export { handler as GET, handler as POST };
